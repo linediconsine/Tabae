@@ -1,34 +1,42 @@
 {
-  "application.js": "/packs/js/application-4585ee0843d232c12edb.js",
-  "application.js.map": "/packs/js/application-4585ee0843d232c12edb.js.map",
+  "application.css": "/packs/css/application-e6dbe3db.css",
+  "application.js": "/packs/js/application-a51a36f971453f05a422.js",
+  "application.js.map": "/packs/js/application-a51a36f971453f05a422.js.map",
   "entrypoints": {
     "application": {
+      "css": [
+        "/packs/css/application-e6dbe3db.css"
+      ],
       "js": [
-        "/packs/js/application-4585ee0843d232c12edb.js"
+        "/packs/js/application-a51a36f971453f05a422.js"
       ],
       "js.map": [
-        "/packs/js/application-4585ee0843d232c12edb.js.map"
+        "/packs/js/application-a51a36f971453f05a422.js.map"
       ]
     },
     "stylesheets/application": {
+      "css": [
+        "/packs/css/stylesheets/application-e6dbe3db.css"
+      ],
       "js": [
-        "/packs/js/stylesheets/application-72629f14e5eaa0fd1712.js"
+        "/packs/js/stylesheets/application-2e076d7ccf628c7995bb.js"
       ],
       "js.map": [
-        "/packs/js/stylesheets/application-72629f14e5eaa0fd1712.js.map"
+        "/packs/js/stylesheets/application-2e076d7ccf628c7995bb.js.map"
       ]
     },
     "voice": {
       "js": [
-        "/packs/js/voice-3d5747985b27896a3daa.js"
+        "/packs/js/voice-18588f634425f5c9a8a5.js"
       ],
       "js.map": [
-        "/packs/js/voice-3d5747985b27896a3daa.js.map"
+        "/packs/js/voice-18588f634425f5c9a8a5.js.map"
       ]
     }
   },
-  "stylesheets/application.js": "/packs/js/stylesheets/application-72629f14e5eaa0fd1712.js",
-  "stylesheets/application.js.map": "/packs/js/stylesheets/application-72629f14e5eaa0fd1712.js.map",
-  "voice.js": "/packs/js/voice-3d5747985b27896a3daa.js",
-  "voice.js.map": "/packs/js/voice-3d5747985b27896a3daa.js.map"
+  "stylesheets/application.css": "/packs/css/stylesheets/application-e6dbe3db.css",
+  "stylesheets/application.js": "/packs/js/stylesheets/application-2e076d7ccf628c7995bb.js",
+  "stylesheets/application.js.map": "/packs/js/stylesheets/application-2e076d7ccf628c7995bb.js.map",
+  "voice.js": "/packs/js/voice-18588f634425f5c9a8a5.js",
+  "voice.js.map": "/packs/js/voice-18588f634425f5c9a8a5.js.map"
 }
