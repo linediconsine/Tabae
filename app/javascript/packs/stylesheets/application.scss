@@ -1,0 +1,9 @@
+// app/javascript/packs/stylesheets/application.scss
+
+@import "~bootstrap/scss/bootstrap"; // never forget the semicolon at the end
+//@import "./_custom";
+
+// app/javascript/packs/stylesheets/_custom.scss
+h1 { 
+  color: red;
+}

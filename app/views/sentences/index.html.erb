@@ -1,0 +1,33 @@
+<%= javascript_pack_tag 'voice' %>
+
+
+<%= link_to 'Nuova Frase', new_sentence_path %>
+
+<div class="container pt-3">
+  <div class="row">
+    <% @sentences.each do |sentence| %>
+      <div class="col-sm-3 pb-3" >
+        
+        <div class="dropdown float-right">
+              <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Altro
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <%= link_to 'Edita', edit_sentence_path(sentence) , class: "dropdown-item"%>
+                  <%= link_to 'Cancella', sentence, method: :delete, data: { confirm: 'Are you sure?' } , class: "dropdown-item" %>
+              </div>
+        </div>
+        <div class="card">
+          <a class="d-block p-3 view overlay zoom" onClick="voice('<%= sentence.sentence %>')">
+            <%= truncate(sentence.sentence, :length => 10) %>    
+          </a>
+        </div>
+      </div>
+    <% end %>
+    
+  </div>
+</div>
+
+
+
+
