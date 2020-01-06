@@ -25,3 +25,4 @@ import './stylesheets/application.scss'
 document.addEventListener("turbolinks:load", () => {
   $('[data-toggle="tooltip"]').tooltip()
 })
+
