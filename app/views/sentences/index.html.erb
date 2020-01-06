@@ -1,8 +1,6 @@
 <%= javascript_pack_tag 'voice' %>
 
 
-<%= link_to 'Nuova Frase', new_sentence_path %>
-
 <div class="container pt-3">
   <div class="row">
     <% @sentences.each do |sentence| %>
@@ -14,7 +12,7 @@
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                   <%= link_to 'Edita', edit_sentence_path(sentence) , class: "dropdown-item"%>
-                  <%= link_to 'Cancella', sentence, method: :delete, data: { confirm: 'Are you sure?' } , class: "dropdown-item" %>
+                  <%= link_to 'Cancella', sentence, method: :delete, data: { confirm: 'Conferma per cencellare' } , class: "dropdown-item" %>
               </div>
         </div>
         <div class="card">

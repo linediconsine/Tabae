@@ -25,8 +25,20 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
-         
           <li class="nav-item">
+            <%= link_to 'Nuova Frase', new_sentence_path , class: "nav-link btn btn-primary"%>
+          </li>
+   
+          <!--
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+          -->
+        </ul>
+
+          <ul class="navbar-nav mr-auto">
+      
+          <li class="nav-item">  
             <%= link_to "Esci", destroy_user_session_path, method: :delete , class: "nav-link"%>
           </li>
           <!--

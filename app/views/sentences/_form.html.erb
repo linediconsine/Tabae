@@ -1,3 +1,4 @@
+<%= javascript_pack_tag 'voice' %>
 <%= form_with(model: sentence, local: true) do |form| %>
   <% if sentence.errors.any? %>
     <div id="error_explanation">
@@ -19,13 +20,16 @@
 
   <div class="field">
     <%= form.label :sentence %> <br>
-    <%= form.text_area :sentence %>
+    <%= form.text_area :sentence, :class => 'w-100 mh-100', style: 'min-height:7em' %>
     
   </div>
 
 
 
   <div class="actions">
-    <%= form.submit %>
+
+    <%= form.submit "Salva" , :class => 'btn btn-space btn-secondary'%> 
+
+    <a onclick="voice(document.getElementById('sentence_sentence').value)" class="btn btn-space btn-primary">Parla</a>
   </div>
 <% end %>

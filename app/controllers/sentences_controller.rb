@@ -11,6 +11,7 @@ class SentencesController < ApplicationController
   # GET /sentences/1
   # GET /sentences/1.json
   def show
+    redirect_to action: "index"
   end
 
   # GET /sentences/new
@@ -29,7 +30,7 @@ class SentencesController < ApplicationController
 
     respond_to do |format|
       if @sentence.save
-        format.html { redirect_to @sentence, notice: 'Sentence was successfully created.' }
+        format.html { redirect_to @sentence, notice: 'Ho aggiunto la frase a quelle salvate.' }
         format.json { render :show, status: :created, location: @sentence }
       else
         format.html { render :new }
@@ -43,7 +44,7 @@ class SentencesController < ApplicationController
   def update
     respond_to do |format|
       if @sentence.update(sentence_params)
-        format.html { redirect_to @sentence, notice: 'Sentence was successfully updated.' }
+        format.html { redirect_to @sentence, notice: 'Frase aggiornata.' }
         format.json { render :show, status: :ok, location: @sentence }
       else
         format.html { render :edit }
@@ -57,7 +58,7 @@ class SentencesController < ApplicationController
   def destroy
     @sentence.destroy
     respond_to do |format|
-      format.html { redirect_to sentences_url, notice: 'Sentence was successfully destroyed.' }
+      format.html { redirect_to sentences_url, notice: 'Ho cancellato la frase.' }
       format.json { head :no_content }
     end
   end
