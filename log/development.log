@@ -5134,3 +5134,535 @@ Processing by SentencesController#index as HTML
 Completed 200 OK in 30ms (Views: 23.7ms | ActiveRecord: 0.6ms | Allocations: 9851)
 
 
+Started GET "/sentences/7/edit" for 127.0.0.1 at 2020-01-06 16:06:33 +0100
+Processing by SentencesController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mSentence Load (0.7ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/sentences_controller.rb:69:in `set_sentence'
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/edit.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 28.2ms | Allocations: 3328)
+  Rendered sentences/edit.html.erb within layouts/application (Duration: 32.6ms | Allocations: 3702)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 59ms (Views: 46.7ms | ActiveRecord: 3.0ms | Allocations: 9877)
+
+
+Started GET "/sentences" for 127.0.0.1 at 2020-01-06 20:44:21 +0100
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (8.1ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:6
+  Rendered sentences/index.html.erb within layouts/application (Duration: 326.1ms | Allocations: 3245)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 785ms (Views: 583.2ms | ActiveRecord: 10.0ms | Allocations: 8981)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-06 20:44:40 +0100
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (1.3ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:6
+  Rendered sentences/index.html.erb within layouts/application (Duration: 41.0ms | Allocations: 3199)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 83ms (Views: 66.4ms | ActiveRecord: 4.7ms | Allocations: 8809)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-24 21:20:27 +0100
+  
+PG::ConnectionBad (could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+):
+  
+pg (1.2.0) lib/pg.rb:57:in `initialize'
+pg (1.2.0) lib/pg.rb:57:in `new'
+pg (1.2.0) lib/pg.rb:57:in `connect'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:46:in `postgresql_connection'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:889:in `new_connection'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:933:in `checkout_new_connection'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:912:in `try_to_checkout_new_connection'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:873:in `acquire_connection'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:595:in `checkout'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:439:in `connection'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1121:in `retrieve_connection'
+activerecord (6.0.2.1) lib/active_record/connection_handling.rb:238:in `retrieve_connection'
+activerecord (6.0.2.1) lib/active_record/connection_handling.rb:206:in `connection'
+activerecord (6.0.2.1) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-01-24 21:21:29 +0100
+  [1m[35m (4.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SentencesController#index as HTML
+Completed 401 Unauthorized in 18ms (ActiveRecord: 0.0ms | Allocations: 1092)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-01-24 21:21:29 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 4.5ms | Allocations: 602)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 30.0ms | Allocations: 2889)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 150ms (Views: 106.6ms | ActiveRecord: 23.1ms | Allocations: 16518)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-01-24 21:23:01 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1044)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 40ms (Views: 37.2ms | ActiveRecord: 0.0ms | Allocations: 5560)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-01-24 21:23:07 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.8ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1038)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 43ms (Views: 41.5ms | ActiveRecord: 0.0ms | Allocations: 5650)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-01-24 21:23:11 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.2ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 8.3ms | Allocations: 1037)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 35.8ms | ActiveRecord: 0.0ms | Allocations: 5519)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-01-24 21:23:17 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 7.0ms | Allocations: 1037)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 52ms (Views: 48.5ms | ActiveRecord: 0.0ms | Allocations: 5524)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-01-24 21:23:20 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 26.0ms | Allocations: 1037)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 50ms (Views: 48.0ms | ActiveRecord: 0.0ms | Allocations: 5635)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-24 21:23:26 +0100
+Processing by SentencesController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 316)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-01-24 21:23:26 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 7.0ms | Allocations: 1037)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 25.6ms | ActiveRecord: 0.0ms | Allocations: 5545)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-01-24 21:23:29 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"O9WcsCmvT0yUFjBpe2UuciMF3PYjsW8gU7RCrUX3886vMRNObGH3g1dUtv95DnnTrBCLyENBsYCr9Q2NwftFRg==", "user"=>{"email"=>"linediconsine@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (14.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "linediconsine@gmail.com"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 215ms (ActiveRecord: 15.1ms | Allocations: 5265)
+
+
+Started GET "/" for 127.0.0.1 at 2020-01-24 21:23:29 +0100
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (2.1ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:6
+  Rendered sentences/index.html.erb within layouts/application (Duration: 35.1ms | Allocations: 7873)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 112ms (Views: 56.4ms | ActiveRecord: 11.0ms | Allocations: 17281)
+
+
+Started DELETE "/sentences/7" for 127.0.0.1 at 2020-01-24 21:23:40 +0100
+Processing by SentencesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"oXxtnMzWpAGbiT/q2R0HTPSdw0r/BxzvTRL7rpMcj3z7LOiuzmv6nP0JJ8jtNBJYCOWp1gxe6RAI7cprxlmV6w==", "id"=>"7"}
+  [1m[36mSentence Load (12.6ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/sentences_controller.rb:69:in `set_sentence'
+  [1m[36mUser Load (8.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (3.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/sentences_controller.rb:59:in `destroy'
+  [1m[36mSentence Destroy (14.1ms)[0m  [1m[31mDELETE FROM "sentences" WHERE "sentences"."id" = $1[0m  [["id", 7]]
+  ↳ app/controllers/sentences_controller.rb:59:in `destroy'
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/sentences_controller.rb:59:in `destroy'
+Redirected to http://127.0.0.1:3000/sentences
+Completed 302 Found in 62ms (ActiveRecord: 41.2ms | Allocations: 4189)
+
+
+Started GET "/sentences" for 127.0.0.1 at 2020-01-24 21:23:40 +0100
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.5ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:6
+  Rendered sentences/index.html.erb within layouts/application (Duration: 20.7ms | Allocations: 3082)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 50ms (Views: 40.7ms | ActiveRecord: 1.9ms | Allocations: 8720)
+
+
+Started GET "/sentences" for 127.0.0.1 at 2020-01-24 21:23:45 +0100
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (7.1ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:6
+  Rendered sentences/index.html.erb within layouts/application (Duration: 17.9ms | Allocations: 3081)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 43ms (Views: 30.4ms | ActiveRecord: 8.6ms | Allocations: 8701)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-09 10:20:06 +0100
+  [1m[35m (4.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SentencesController#index as HTML
+Completed 401 Unauthorized in 19ms (ActiveRecord: 0.0ms | Allocations: 1261)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-02-09 10:20:06 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 4.6ms | Allocations: 602)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 43.2ms | Allocations: 2889)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 193ms (Views: 157.3ms | ActiveRecord: 15.4ms | Allocations: 16671)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-02-09 10:20:09 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"Xx2TP55TqhXTZ9/RhQzjdcIML13k2DwacvDN6lBkcnAzcw/g7f37jXXw8Y7MKt/73qJETHhHev0Wr79sgIjY4Q==", "user"=>{"email"=>"linediconsine@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (7.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "linediconsine@gmail.com"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 336ms (ActiveRecord: 16.3ms | Allocations: 5419)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-09 10:20:10 +0100
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (49.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (4.2ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:6
+  Rendered sentences/index.html.erb within layouts/application (Duration: 64.3ms | Allocations: 7704)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 418ms (Views: 166.5ms | ActiveRecord: 69.2ms | Allocations: 17163)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-09 10:21:10 +0100
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.7ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:6
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 87.5ms | Allocations: 4025)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 103.4ms | Allocations: 7561)
+Completed 500 Internal Server Error in 118ms (ActiveRecord: 1.6ms | Allocations: 10558)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <%= javascript_pack_tag 'voice' %>
+    2: <%= form_with(model: sentence, local: true) do |form| %>
+    3:   <% if sentence.errors.any? %>
+    4:     <div id="error_explanation">
+    5:       <h2><%= pluralize(sentence.errors.count, "error") %> prohibited this sentence from being saved:</h2>
+    6: 
+  
+app/views/sentences/_form.html.erb:3
+app/views/sentences/_form.html.erb:2
+app/views/sentences/index.html.erb:30
+Started GET "/" for 127.0.0.1 at 2020-02-09 10:22:01 +0100
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (8.0ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:6
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 28.8ms | Allocations: 3309)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 96.8ms | Allocations: 6842)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 548ms (Views: 275.4ms | ActiveRecord: 40.6ms | Allocations: 23652)
+
+
+Started POST "/sentences" for 127.0.0.1 at 2020-02-09 10:22:10 +0100
+Processing by SentencesController#create as HTML
+  Parameters: {"authenticity_token"=>"+MPuZaiWSIUY8zgHPgpqlHqLMWjPBzne2W1cCIYssMNo2fyq1lXMNG+OsuFIXJoNAy/jqkE0jq6/sYx/6TcZFQ==", "sentence"=>{"name"=>"", "color"=>"", "group"=>"", "sentence"=>"ciao"}, "commit"=>"Salva"}
+  [1m[36mUser Load (4.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (3.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/sentences_controller.rb:33:in `block in create'
+  [1m[36mSentence Create (37.2ms)[0m  [1m[32mINSERT INTO "sentences" ("name", "sentence", "group", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", ""], ["sentence", "ciao"], ["group", ""], ["created_at", "2020-02-09 09:22:10.618997"], ["updated_at", "2020-02-09 09:22:10.618997"], ["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:33:in `block in create'
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/sentences_controller.rb:33:in `block in create'
+Redirected to http://127.0.0.1:3000/sentences/10
+Completed 302 Found in 85ms (ActiveRecord: 48.6ms | Allocations: 4614)
+
+
+Started GET "/sentences/10" for 127.0.0.1 at 2020-02-09 10:22:10 +0100
+Processing by SentencesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mSentence Load (2.2ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/sentences_controller.rb:70:in `set_sentence'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/sentences
+Completed 302 Found in 31ms (ActiveRecord: 2.7ms | Allocations: 3027)
+
+
+Started GET "/sentences" for 127.0.0.1 at 2020-02-09 10:22:10 +0100
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (7.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.5ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:6
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 11.8ms | Allocations: 2762)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 33.0ms | Allocations: 6021)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 74ms (Views: 53.0ms | ActiveRecord: 7.6ms | Allocations: 11912)
+
+
+Started GET "/sentences/new" for 127.0.0.1 at 2020-02-09 10:22:22 +0100
+Processing by SentencesController#new as HTML
+  [1m[36mUser Load (5.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/new.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 33.1ms | Allocations: 2918)
+  Rendered sentences/new.html.erb within layouts/application (Duration: 38.9ms | Allocations: 3110)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 75ms (Views: 59.4ms | ActiveRecord: 5.4ms | Allocations: 9091)
+
+
+Started GET "/sentences" for 127.0.0.1 at 2020-02-09 10:24:02 +0100
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.6ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:6
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 15.4ms | Allocations: 3120)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 27.1ms | Allocations: 6775)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 64ms (Views: 55.3ms | ActiveRecord: 1.3ms | Allocations: 13834)
+
+
+Started GET "/sentences" for 127.0.0.1 at 2020-02-09 10:24:04 +0100
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (5.8ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:6
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 21.2ms | Allocations: 2762)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 47.3ms | Allocations: 6020)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 106ms (Views: 74.4ms | ActiveRecord: 6.5ms | Allocations: 11889)
+
+
+Started GET "/sentences" for 127.0.0.1 at 2020-02-09 10:24:20 +0100
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (1.9ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:6
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 39.7ms | Allocations: 2759)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 77.7ms | Allocations: 6014)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 122ms (Views: 108.9ms | ActiveRecord: 4.0ms | Allocations: 11875)
+
+
+Started GET "/sentences" for 127.0.0.1 at 2020-02-09 10:24:51 +0100
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.8ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:6
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 12.9ms | Allocations: 3120)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 39.0ms | Allocations: 6779)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 140ms (Views: 126.2ms | ActiveRecord: 4.7ms | Allocations: 13958)
+
+
+Started POST "/sentences" for 127.0.0.1 at 2020-02-09 10:24:57 +0100
+Processing by SentencesController#create as HTML
+  Parameters: {"authenticity_token"=>"I6M7gAMnmm0Sx0OngHTxu035xAiVn7WDAvj7mx0sGaWzuSlPfeQe3GW6yUH2IgEiNF0WyhusAvNkJCvscjewcw==", "sentence"=>{"name"=>"", "color"=>"", "group"=>"", "sentence"=>"sasa"}, "commit"=>"Salva"}
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (6.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/sentences_controller.rb:33:in `block in create'
+  [1m[36mSentence Create (8.9ms)[0m  [1m[32mINSERT INTO "sentences" ("name", "sentence", "group", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", ""], ["sentence", "sasa"], ["group", ""], ["created_at", "2020-02-09 09:24:57.058549"], ["updated_at", "2020-02-09 09:24:57.058549"], ["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:33:in `block in create'
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/sentences_controller.rb:33:in `block in create'
+Redirected to http://127.0.0.1:3000/sentences/11
+Completed 302 Found in 44ms (ActiveRecord: 23.3ms | Allocations: 4358)
+
+
+Started GET "/sentences/11" for 127.0.0.1 at 2020-02-09 10:24:57 +0100
+Processing by SentencesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mSentence Load (2.1ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/sentences_controller.rb:70:in `set_sentence'
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/sentences
+Completed 302 Found in 15ms (ActiveRecord: 5.5ms | Allocations: 2495)
+
+
+Started GET "/sentences" for 127.0.0.1 at 2020-02-09 10:24:57 +0100
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.4ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:6
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 9.7ms | Allocations: 2762)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 22.0ms | Allocations: 6139)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 43ms (Views: 36.7ms | ActiveRecord: 1.0ms | Allocations: 12032)
+
+
+Started GET "/sentences" for 127.0.0.1 at 2020-02-09 10:28:29 +0100
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+Started GET "/sentences" for 127.0.0.1 at 2020-02-09 10:28:29 +0100
+Started GET "/sentences" for 127.0.0.1 at 2020-02-09 10:28:29 +0100
+Started GET "/sentences" for 127.0.0.1 at 2020-02-09 10:28:29 +0100
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (1.2ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:6
+Processing by SentencesController#index as HTML
+Processing by SentencesController#index as HTML
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+  Rendering sentences/index.html.erb within layouts/application
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 543.9ms | Allocations: 18140)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 1347.4ms | Allocations: 24050)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.9ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:6
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 384.7ms | Allocations: 4376)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 849.1ms | Allocations: 16114)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.8ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:6
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 2685ms (Views: 2351.2ms | ActiveRecord: 5.1ms | Allocations: 40770)
+
+
+  [1m[36mSentence Load (26.9ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:6
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 203.5ms | Allocations: 6998)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 1207.1ms | Allocations: 24161)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1351ms (Views: 1329.8ms | ActiveRecord: 2.6ms | Allocations: 33897)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1370ms (Views: 1242.3ms | ActiveRecord: 10.1ms | Allocations: 37534)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 582.0ms | Allocations: 12433)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 1810.4ms | Allocations: 35745)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 2306ms (Views: 2251.9ms | ActiveRecord: 35.2ms | Allocations: 45116)
+
+
+Started GET "/sentences" for 127.0.0.1 at 2020-02-09 10:28:37 +0100
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (20.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (24.3ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:6
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 110.9ms | Allocations: 2759)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 214.1ms | Allocations: 6133)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 369ms (Views: 313.0ms | ActiveRecord: 45.1ms | Allocations: 12105)
+
+
+Started GET "/sentences" for 127.0.0.1 at 2020-02-09 10:28:38 +0100
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.9ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:6
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 17.9ms | Allocations: 2759)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 47.0ms | Allocations: 6133)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 90ms (Views: 74.5ms | ActiveRecord: 1.6ms | Allocations: 11995)
+
+

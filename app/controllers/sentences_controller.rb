@@ -6,6 +6,7 @@ class SentencesController < ApplicationController
   # GET /sentences.json
   def index
     @sentences = current_user.sentences.all
+    @sentence = current_user.sentences.build
   end
 
   # GET /sentences/1
