@@ -1,33 +1,57 @@
 <%= javascript_pack_tag 'voice' %>
 
- <a href="#new">Nuova frase</a>
-<div class="container pt-3">
+
+<% if user_signed_in? %> 
+    <div class="nav nav-pills" id="nav-tab" role="tablist">
+      <a class=" nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Bottoni</a>
+      <a class=" nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Nuova Frase</a>
+    </div>
+<% end %> 
+
+<div class="tab-content" id="nav-tabContent">
+  <section class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+    
+<div class="fluid-container pt-3">
   <div class="row" id="main">
     <% @sentences.each do |sentence| %>
-      <div class="col-sm-3 pb-3" >
-        
-        <div class="dropdown float-right">
-              <button class="btn btn-sm btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Altro
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <%= link_to 'Edita', edit_sentence_path(sentence) , class: "dropdown-item"%>
-                  <%= link_to 'Cancella', sentence, method: :delete, data: { confirm: 'Conferma per cencellare' } , class: "dropdown-item" %>
-              </div>
-        </div>
-        <div class="card">
-          <a class="d-block p-3 view overlay zoom" onClick="voice('<%= sentence.sentence %>')">
-            <%= truncate(sentence.sentence, :length => 10) %>    
-          </a>
+      
+      <div class="col-lg-4 my-1" >
+        <div class="card card-item bg-light">
+          
+          <div>
+            <a class="d-block p-3 view overlay zoom" onClick="voice('<%= sentence.sentence %>')">
+              <%= truncate(sentence.sentence, :length => 10) %>    
+            </a>
+          </div>
+
+
+          <div class="p-2">
+            <span class="dropdown">
+                  <button class="btn  btn-icon p-0 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Altro
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <%= link_to 'Edita', edit_sentence_path(sentence) , class: "dropdown-item"%>
+                      <%= link_to 'Cancella', sentence, method: :delete, data: { confirm: 'Conferma per cencellare' } , class: "dropdown-item" %>
+                  </div>
+            </span>
+          </div>
         </div>
       </div>
     <% end %>
     
   </div>
 </div>
+  
+  
+  </section>
+  <section class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+    <div id="new">
+      <%= render 'form', sentence: @sentence %>
+    <div>
+</section>
+</div>
 
-<div id="new">
-  <%= render 'form', sentence: @sentence %>
-  <a href="#main">Torna su</a>
-<div>
+
 
