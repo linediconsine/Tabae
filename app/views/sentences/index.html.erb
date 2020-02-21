@@ -20,13 +20,14 @@
         <div class="card card-item bg-light">
           
           <div>
-            <a class="d-block p-3 view overlay zoom" onClick="voice('<%= sentence.sentence %>')">
+            <a class="d-block p-3 view overlay zoom" onClick="voice('<%= escape_javascript sentence.sentence %>')">
               <%= truncate(sentence.sentence, :length => 10) %>    
             </a>
           </div>
 
 
           <div class="p-2">
+          
             <span class="dropdown">
                   <button class="btn  btn-icon p-0 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Altro

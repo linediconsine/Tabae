@@ -7367,3 +7367,488 @@ Processing by SentencesController#index as HTML
 Completed 200 OK in 64ms (Views: 54.4ms | ActiveRecord: 4.3ms | Allocations: 15351)
 
 
+Started GET "/" for 127.0.0.1 at 2020-02-21 09:39:02 +0100
+Processing by SentencesController#index as HTML
+Completed 401 Unauthorized in 72ms (ActiveRecord: 0.0ms | Allocations: 203)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-02-21 09:39:02 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 8.1ms | Allocations: 598)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 53.6ms | Allocations: 2319)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 297ms (Views: 275.0ms | ActiveRecord: 0.0ms | Allocations: 11751)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-02-21 09:39:13 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"ENH9NPnFiKj0SeTn54JIn5m0nRiQb3oyd98lZRqPM3LtzSno4P05lnAfZStpFc7mFvdI0ZZDYAMu4y7omwUPnw==", "user"=>{"email"=>"linediconsine@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (14.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "linediconsine@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 359ms (ActiveRecord: 18.3ms | Allocations: 2598)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"ENH9NPnFiKj0SeTn54JIn5m0nRiQb3oyd98lZRqPM3LtzSno4P05lnAfZStpFc7mFvdI0ZZDYAMu4y7omwUPnw==", "user"=>{"email"=>"linediconsine@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 992)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 446ms (Views: 180.5ms | ActiveRecord: 0.0ms | Allocations: 8442)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-02-21 09:39:16 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 3.2ms | Allocations: 197)
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 119)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 43.1ms | Allocations: 1742)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 193ms (Views: 179.8ms | ActiveRecord: 0.0ms | Allocations: 9901)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-02-21 09:39:25 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"uBBCNTgdb/ohPFuz8rV+6+dd2v9zFCNeCbPeNCE/PE4ZK0znJwggaWFgGFJeY7hSHKbOOuPN5NEpspDrIDsDew==", "user"=>{"email"=>"linediconsine@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (4.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (2.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "linediconsine@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (2.2ms)[0m  [1m[31mROLLBACK[0m
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 196)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 79)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 60.6ms | Allocations: 1177)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 689ms (Views: 179.3ms | ActiveRecord: 8.4ms | Allocations: 15730)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-02-21 09:39:32 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 79)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 987)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 45ms (Views: 43.4ms | ActiveRecord: 0.0ms | Allocations: 8436)
+
+
+Started GET "/" for 127.0.0.1 at 2020-02-21 09:39:40 +0100
+Processing by SentencesController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 290)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-02-21 09:39:40 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 13.3ms | Allocations: 994)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 71ms (Views: 69.9ms | ActiveRecord: 0.0ms | Allocations: 8543)
+
+
+Started GET "/users/password/new" for 127.0.0.1 at 2020-02-21 09:39:43 +0100
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 137)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 6.3ms | Allocations: 941)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 66ms (Views: 61.5ms | ActiveRecord: 0.0ms | Allocations: 9020)
+
+
+Started POST "/users/password" for 127.0.0.1 at 2020-02-21 09:39:52 +0100
+Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"authenticity_token"=>"wleXJgJ9aIKd0xYDxGqgrm/GUNVkLc52PQE0/8soLHVMgTIcOo3AnvgZtn2uFk5lowOg2E9ankgM5wqGhJIJFQ==", "user"=>{"email"=>"lineidiconsine@gmail.com"}, "commit"=>"Send me reset password instructions"}
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "lineidiconsine@gmail.com"], ["LIMIT", 1]]
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.9ms | Allocations: 184)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 853)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 120ms (Views: 95.9ms | ActiveRecord: 3.4ms | Allocations: 10946)
+
+
+Started POST "/users/password" for 127.0.0.1 at 2020-02-21 09:40:01 +0100
+Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"authenticity_token"=>"oZtPudxqcBG4gUeRhHlJaGlAJHYVFr5efd+Ry6sVq4pch5tlxVLBLzzXxl0K7s8R5gPxvxM6pG8k45pGKp+XZw==", "user"=>{"email"=>"linediconsine@gmail.com"}, "commit"=>"Send me reset password instructions"}
+  [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "linediconsine@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."reset_password_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["reset_password_token", "fdb3ffaaff3e88b6d607286c08ba89ce5250e3210efe38cbd52c575f464c95b4"], ["LIMIT", 1]]
+  [1m[35m (5.8ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Update (9.3ms)[0m  [1m[33mUPDATE "users" SET "reset_password_token" = $1, "reset_password_sent_at" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["reset_password_token", "fdb3ffaaff3e88b6d607286c08ba89ce5250e3210efe38cbd52c575f464c95b4"], ["reset_password_sent_at", "2020-02-21 08:40:01.333251"], ["updated_at", "2020-02-21 08:40:01.335494"], ["id", 1]]
+  [1m[35m (20.7ms)[0m  [1m[35mCOMMIT[0m
+  Rendering devise/mailer/reset_password_instructions.html.erb
+  Rendered devise/mailer/reset_password_instructions.html.erb (Duration: 12.7ms | Allocations: 238)
+Devise::Mailer#reset_password_instructions: processed outbound mail in 32.1ms
+Delivered mail 5e4f9761c2524_16fdb40c46853c@MacBook-Air.local.mail (111.7ms)
+Date: Fri, 21 Feb 2020 09:40:01 +0100
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: linediconsine@gmail.com
+Message-ID: <5e4f9761c2524_16fdb40c46853c@MacBook-Air.local.mail>
+Subject: Istruzioni per reimpostare la password
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hello linediconsine@gmail.com!</p>
+
+<p>Someone has requested a link to change your password. You can do this through the link below.</p>
+
+<p><a href="http://localhost:3000/users/password/edit?reset_password_token=nGWxHaJoWY8FvxoZbPz7">Change my password</a></p>
+
+<p>If you didn't request this, please ignore this email.</p>
+<p>Your password won't change until you access the link above and create a new one.</p>
+
+Redirected to http://0.0.0.0:3000/users/sign_in
+Completed 302 Found in 800ms (ActiveRecord: 43.9ms | Allocations: 30246)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-02-21 09:40:01 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 998)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 71ms (Views: 68.4ms | ActiveRecord: 0.0ms | Allocations: 8549)
+
+
+Started GET "/users/password/edit?reset_password_token=[FILTERED]" for ::1 at 2020-02-21 09:40:21 +0100
+Processing by Devise::PasswordsController#edit as HTML
+  Parameters: {"reset_password_token"=>"[FILTERED]"}
+  Rendering devise/passwords/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 129)
+  Rendered devise/passwords/edit.html.erb within layouts/application (Duration: 13.1ms | Allocations: 1091)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 76ms (Views: 70.1ms | ActiveRecord: 0.0ms | Allocations: 8530)
+
+
+Started PUT "/users/password" for ::1 at 2020-02-21 09:40:26 +0100
+Processing by Devise::PasswordsController#update as HTML
+  Parameters: {"authenticity_token"=>"Ay4GdjoVpG5A+Ag95ZQgBxU69LaUWhiwNXs+7FOXEvonagOOPjNHeQ1sFuWEfSmIbFLjqr9aqD3iWTzuvjaJJw==", "user"=>{"reset_password_token"=>"[FILTERED]", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Change my password"}
+  [1m[36mUser Load (11.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."reset_password_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["reset_password_token", "2c4703ce4e88720d81343f53d8aa0cfb6ea2483d6383862e36ada6783dcabb81"], ["LIMIT", 1]]
+  Rendering devise/passwords/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 2.4ms | Allocations: 224)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 128)
+  Rendered devise/passwords/edit.html.erb within layouts/application (Duration: 15.0ms | Allocations: 959)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 116ms (Views: 79.7ms | ActiveRecord: 11.4ms | Allocations: 11761)
+
+
+Started PUT "/users/password" for ::1 at 2020-02-21 09:40:38 +0100
+Processing by Devise::PasswordsController#update as HTML
+  Parameters: {"authenticity_token"=>"pWCjrehSNLs/ZGkF4Zt2rrGrRWRejPcxd1xFVhHsplKBJKZV7HTXrHLwd92Acn8hyMNSeHWMR7ygfkdU/E09jw==", "user"=>{"reset_password_token"=>"[FILTERED]", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Change my password"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."reset_password_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["reset_password_token", "2c4703ce4e88720d81343f53d8aa0cfb6ea2483d6383862e36ada6783dcabb81"], ["LIMIT", 1]]
+  Rendering devise/passwords/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 3.7ms | Allocations: 224)
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 128)
+  Rendered devise/passwords/edit.html.erb within layouts/application (Duration: 7.7ms | Allocations: 959)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 77ms (Views: 63.5ms | ActiveRecord: 1.5ms | Allocations: 10649)
+
+
+Started GET "/users/password/edit?reset_password_token=[FILTERED]" for ::1 at 2020-02-21 09:40:50 +0100
+Processing by Devise::PasswordsController#edit as HTML
+  Parameters: {"reset_password_token"=>"[FILTERED]"}
+  Rendering devise/passwords/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 128)
+  Rendered devise/passwords/edit.html.erb within layouts/application (Duration: 2.1ms | Allocations: 754)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 61ms (Views: 59.3ms | ActiveRecord: 0.0ms | Allocations: 8224)
+
+
+Started PUT "/users/password" for ::1 at 2020-02-21 09:40:56 +0100
+Processing by Devise::PasswordsController#update as HTML
+  Parameters: {"authenticity_token"=>"WAzm20mn+UAmNrCC2CekDYdfb9YcToB7soW2+e3bUXh8SOMjTYEaV2uirlq5zq2C/jd4yjdOMPZlp7T7AHrKpQ==", "user"=>{"reset_password_token"=>"[FILTERED]", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Change my password"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."reset_password_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["reset_password_token", "2c4703ce4e88720d81343f53d8aa0cfb6ea2483d6383862e36ada6783dcabb81"], ["LIMIT", 1]]
+  Rendering devise/passwords/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.9ms | Allocations: 224)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 128)
+  Rendered devise/passwords/edit.html.erb within layouts/application (Duration: 4.3ms | Allocations: 959)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 66ms (Views: 54.9ms | ActiveRecord: 0.5ms | Allocations: 10611)
+
+
+Started GET "/users/password/edit?reset_password_token=[FILTERED]" for ::1 at 2020-02-21 09:41:03 +0100
+Processing by Devise::PasswordsController#edit as HTML
+  Parameters: {"reset_password_token"=>"[FILTERED]"}
+  Rendering devise/passwords/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 128)
+  Rendered devise/passwords/edit.html.erb within layouts/application (Duration: 10.6ms | Allocations: 754)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 75ms (Views: 73.3ms | ActiveRecord: 0.0ms | Allocations: 8154)
+
+
+Started GET "/users/password" for ::1 at 2020-02-21 09:41:03 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/password"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-02-21 09:41:14 +0100
+Processing by SentencesController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 309)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-21 09:41:14 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.8ms | Allocations: 133)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1001)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 38ms (Views: 35.4ms | ActiveRecord: 0.0ms | Allocations: 8581)
+
+
+Started GET "/" for ::1 at 2020-02-21 09:41:14 +0100
+Processing by SentencesController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-21 09:41:15 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.9ms | Allocations: 985)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 36.3ms | ActiveRecord: 0.0ms | Allocations: 8616)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-02-21 09:41:27 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"oRD/lyHrQlTifoq2ahLZLqwuHzDdBRCeHAm+ZGa+KxSFVPpvJc2hQ6/qlG4L+9Ch1UYILPYFoBPLK7xmix+wyQ==", "user"=>{"email"=>"linediconsine@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "linediconsine@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 188ms (ActiveRecord: 2.3ms | Allocations: 1886)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"oRD/lyHrQlTifoq2ahLZLqwuHzDdBRCeHAm+ZGa+KxSFVPpvJc2hQ6/qlG4L+9Ch1UYILPYFoBPLK7xmix+wyQ==", "user"=>{"email"=>"linediconsine@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 12.6ms | Allocations: 983)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 461ms (Views: 156.6ms | ActiveRecord: 0.0ms | Allocations: 8418)
+
+
+Started GET "/users/password/new" for ::1 at 2020-02-21 09:41:31 +0100
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 129)
+  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 6.4ms | Allocations: 684)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 44ms (Views: 42.8ms | ActiveRecord: 0.0ms | Allocations: 8058)
+
+
+Started POST "/users/password" for ::1 at 2020-02-21 09:41:39 +0100
+Processing by Devise::PasswordsController#create as HTML
+  Parameters: {"authenticity_token"=>"26tOL7H+3cx0J4e9VYmiuIg49R1p4E+P5n3FT7st6Q0EQxy4n13aUUFK+bAUgaDyDh69jD707RAqncfCpwDRRw==", "user"=>{"email"=>"linediconsine@gmail.com"}, "commit"=>"Send me reset password instructions"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "linediconsine@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."reset_password_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["reset_password_token", "d5608ba8b1df239de6e4316b9cdbdec6121acf7d825743a06750862d4804958a"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Update (4.4ms)[0m  [1m[33mUPDATE "users" SET "reset_password_token" = $1, "reset_password_sent_at" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["reset_password_token", "d5608ba8b1df239de6e4316b9cdbdec6121acf7d825743a06750862d4804958a"], ["reset_password_sent_at", "2020-02-21 08:41:39.339872"], ["updated_at", "2020-02-21 08:41:39.340186"], ["id", 1]]
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+  Rendering devise/mailer/reset_password_instructions.html.erb
+  Rendered devise/mailer/reset_password_instructions.html.erb (Duration: 1.9ms | Allocations: 84)
+Devise::Mailer#reset_password_instructions: processed outbound mail in 5.4ms
+Delivered mail 5e4f97c35bd94_16fdb66446863d@MacBook-Air.local.mail (26.3ms)
+Date: Fri, 21 Feb 2020 09:41:39 +0100
+From: please-change-me-at-config-initializers-devise@example.com
+Reply-To: please-change-me-at-config-initializers-devise@example.com
+To: linediconsine@gmail.com
+Message-ID: <5e4f97c35bd94_16fdb66446863d@MacBook-Air.local.mail>
+Subject: Istruzioni per reimpostare la password
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Hello linediconsine@gmail.com!</p>
+
+<p>Someone has requested a link to change your password. You can do this through the link below.</p>
+
+<p><a href="http://localhost:3000/users/password/edit?reset_password_token=w1B62jjHQksYXsPWyiZN">Change my password</a></p>
+
+<p>If you didn't request this, please ignore this email.</p>
+<p>Your password won't change until you access the link above and create a new one.</p>
+
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 78ms (ActiveRecord: 13.8ms | Allocations: 10932)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-21 09:41:39 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 983)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 30.4ms | ActiveRecord: 0.0ms | Allocations: 8516)
+
+
+Started GET "/users/password/edit?reset_password_token=[FILTERED]" for ::1 at 2020-02-21 09:41:53 +0100
+Processing by Devise::PasswordsController#edit as HTML
+  Parameters: {"reset_password_token"=>"[FILTERED]"}
+  Rendering devise/passwords/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 128)
+  Rendered devise/passwords/edit.html.erb within layouts/application (Duration: 2.7ms | Allocations: 754)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 26.0ms | ActiveRecord: 0.0ms | Allocations: 8197)
+
+
+Started PUT "/users/password" for ::1 at 2020-02-21 09:42:01 +0100
+Processing by Devise::PasswordsController#update as HTML
+  Parameters: {"authenticity_token"=>"s5i23Jwl1XjP6leWvuu27Nazd1bN5xCGYczL8DXg4BmX3LMkmAM2b4J+SU7fAr9jr9tgSubnoAu27sny2EF7xA==", "user"=>{"reset_password_token"=>"[FILTERED]", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Change my password"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."reset_password_token" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["reset_password_token", "e2b99e154104e3e52909d28ecb83df002be405e58cd637347257e5b5a92f25f7"], ["LIMIT", 1]]
+  Rendering devise/passwords/edit.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 224)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 128)
+  Rendered devise/passwords/edit.html.erb within layouts/application (Duration: 2.0ms | Allocations: 959)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 63ms (Views: 52.9ms | ActiveRecord: 0.6ms | Allocations: 10646)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-02-21 09:42:10 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 80)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1000)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 34.6ms | ActiveRecord: 0.0ms | Allocations: 8477)
+
+
+Started POST "/users" for ::1 at 2020-02-21 09:42:24 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"3TeVlZf3qmhWu9ms6piakHDzUzOqjwHJ8MweaYclD9sBvB38tmcxQ7fZmBK+C3qW4bcUpWDMx3GCSOuozU9/HA==", "user"=>{"email"=>"cavallo@cavallo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "cavallo@cavallo.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (15.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "cavallo@cavallo.com"], ["encrypted_password", "$2a$11$OG03CkODxpN2crJ40PFrG.C7zoLL2P2dVAdZc7aVzDJTGNbR800de"], ["created_at", "2020-02-21 08:42:25.093425"], ["updated_at", "2020-02-21 08:42:25.093425"]]
+  [1m[35m (1.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 351ms (ActiveRecord: 18.2ms | Allocations: 6851)
+
+
+Started GET "/" for ::1 at 2020-02-21 09:42:25 +0100
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (2.0ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/views/sentences/index.html.erb:17
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 27.2ms | Allocations: 2989)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 59.2ms | Allocations: 6335)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 139ms (Views: 122.9ms | ActiveRecord: 2.6ms | Allocations: 15870)
+
+
+Started POST "/sentences" for ::1 at 2020-02-21 09:42:47 +0100
+Processing by SentencesController#create as HTML
+  Parameters: {"authenticity_token"=>"HMjW3hVD3eTGgvpb8xJ2kP85c3GfFfoRZVle46PlpZQ4jNMmEWU+84sW5IOS+38fhlFkbbQVSpyye1zhTkQ+SQ==", "sentence"=>{"name"=>"", "color"=>"", "group"=>"", "sentence"=>"asdasdsa\r\n\r\n\r\n\r\ns\r\ns\r\ns\r\nciao"}, "commit"=>"Salva"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/sentences_controller.rb:33:in `block in create'
+  [1m[36mSentence Create (18.9ms)[0m  [1m[32mINSERT INTO "sentences" ("name", "sentence", "group", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", ""], ["sentence", "asdasdsa\r\n\r\n\r\n\r\ns\r\ns\r\ns\r\nciao"], ["group", ""], ["created_at", "2020-02-21 08:42:47.045394"], ["updated_at", "2020-02-21 08:42:47.045394"], ["user_id", 2]]
+  ↳ app/controllers/sentences_controller.rb:33:in `block in create'
+  [1m[35m (4.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/sentences_controller.rb:33:in `block in create'
+Redirected to http://localhost:3000/sentences/16
+Completed 302 Found in 49ms (ActiveRecord: 24.6ms | Allocations: 4183)
+
+
+Started GET "/sentences/16" for ::1 at 2020-02-21 09:42:47 +0100
+Processing by SentencesController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mSentence Load (0.4ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/sentences_controller.rb:70:in `set_sentence'
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/sentences
+Completed 302 Found in 12ms (ActiveRecord: 1.3ms | Allocations: 2316)
+
+
+Started GET "/sentences" for ::1 at 2020-02-21 09:42:47 +0100
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (1.2ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/views/sentences/index.html.erb:17
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 21.6ms | Allocations: 2620)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 55.6ms | Allocations: 5653)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 194ms (Views: 182.6ms | ActiveRecord: 1.9ms | Allocations: 14497)
+
+
+Started GET "/sentences" for ::1 at 2020-02-21 09:42:58 +0100
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.4ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/views/sentences/index.html.erb:17
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 9.9ms | Allocations: 2969)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 40.3ms | Allocations: 6440)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 81ms (Views: 72.5ms | ActiveRecord: 1.6ms | Allocations: 16496)
+
+
+Started GET "/sentences" for ::1 at 2020-02-21 09:43:22 +0100
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (5.7ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/views/sentences/index.html.erb:17
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 16.6ms | Allocations: 2969)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 85.7ms | Allocations: 6448)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 139ms (Views: 122.9ms | ActiveRecord: 8.1ms | Allocations: 16407)
+
+
+Started GET "/sentences" for ::1 at 2020-02-21 09:44:48 +0100
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.6ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/views/sentences/index.html.erb:17
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 25.9ms | Allocations: 2972)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 62.0ms | Allocations: 6536)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 133ms (Views: 118.5ms | ActiveRecord: 1.1ms | Allocations: 16575)
+
+
