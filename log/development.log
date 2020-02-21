@@ -7852,3 +7852,437 @@ Processing by SentencesController#index as HTML
 Completed 200 OK in 133ms (Views: 118.5ms | ActiveRecord: 1.1ms | Allocations: 16575)
 
 
+Started GET "/sentences" for ::1 at 2020-02-21 09:46:03 +0100
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.6ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/views/sentences/index.html.erb:17
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 17.4ms | Allocations: 2969)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 59.6ms | Allocations: 6450)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 121ms (Views: 112.2ms | ActiveRecord: 1.0ms | Allocations: 16437)
+
+
+Started POST "/sentences" for ::1 at 2020-02-21 09:47:10 +0100
+Processing by SentencesController#create as HTML
+  Parameters: {"authenticity_token"=>"iK3diN2r6EF56VjAaQlUuDqPZ/sqxEJciK2R31pvfKqs6dhw2Y0LVjR9RhgI4F03Q+dw5wHE8tFfj5Pdt87ndw==", "sentence"=>{"name"=>"", "color"=>"", "group"=>"", "sentence"=>"Questa e' una nuova frase"}, "commit"=>"Salva"}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/sentences_controller.rb:33:in `block in create'
+  [1m[36mSentence Create (1.0ms)[0m  [1m[32mINSERT INTO "sentences" ("name", "sentence", "group", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", ""], ["sentence", "Questa e' una nuova frase"], ["group", ""], ["created_at", "2020-02-21 08:47:10.127605"], ["updated_at", "2020-02-21 08:47:10.127605"], ["user_id", 2]]
+  ↳ app/controllers/sentences_controller.rb:33:in `block in create'
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/sentences_controller.rb:33:in `block in create'
+Redirected to http://localhost:3000/sentences/17
+Completed 302 Found in 38ms (ActiveRecord: 7.1ms | Allocations: 4176)
+
+
+Started GET "/sentences/17" for ::1 at 2020-02-21 09:47:10 +0100
+Processing by SentencesController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mSentence Load (2.8ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/sentences_controller.rb:70:in `set_sentence'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/sentences
+Completed 302 Found in 12ms (ActiveRecord: 3.6ms | Allocations: 2308)
+
+
+Started GET "/sentences" for ::1 at 2020-02-21 09:47:10 +0100
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (1.7ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/views/sentences/index.html.erb:17
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 49.0ms | Allocations: 2623)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 109.1ms | Allocations: 5780)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 184ms (Views: 170.7ms | ActiveRecord: 2.6ms | Allocations: 14665)
+
+
+Started GET "/sentences/16/edit" for ::1 at 2020-02-21 09:47:31 +0100
+Processing by SentencesController#edit as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mSentence Load (3.8ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/sentences_controller.rb:70:in `set_sentence'
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering sentences/edit.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 17.6ms | Allocations: 2822)
+  Rendered sentences/edit.html.erb within layouts/application (Duration: 22.4ms | Allocations: 3060)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 78ms (Views: 59.9ms | ActiveRecord: 7.0ms | Allocations: 12280)
+
+
+Started PATCH "/sentences/16" for ::1 at 2020-02-21 09:47:35 +0100
+Processing by SentencesController#update as HTML
+  Parameters: {"authenticity_token"=>"jfO7tCthhrS7KfsQjd0c7YfzrJGkEj5yvvevPwemKRerQqUJaTP6tLqS48leae3X/4AK8aarF9j99BkI52jE1g==", "sentence"=>{"name"=>"", "color"=>"", "group"=>"", "sentence"=>"Ciao"}, "commit"=>"Salva", "id"=>"16"}
+  [1m[36mSentence Load (2.0ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/sentences_controller.rb:70:in `set_sentence'
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (6.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/sentences_controller.rb:47:in `block in update'
+  [1m[36mUser Load (7.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/sentences_controller.rb:47:in `block in update'
+  [1m[36mSentence Update (7.9ms)[0m  [1m[33mUPDATE "sentences" SET "sentence" = $1, "updated_at" = $2 WHERE "sentences"."id" = $3[0m  [["sentence", "Ciao"], ["updated_at", "2020-02-21 08:47:35.408596"], ["id", 16]]
+  ↳ app/controllers/sentences_controller.rb:47:in `block in update'
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/sentences_controller.rb:47:in `block in update'
+Redirected to http://localhost:3000/sentences/16
+Completed 302 Found in 55ms (ActiveRecord: 29.6ms | Allocations: 5944)
+
+
+Started GET "/sentences/16" for ::1 at 2020-02-21 09:47:35 +0100
+Processing by SentencesController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mSentence Load (1.2ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/sentences_controller.rb:70:in `set_sentence'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/sentences
+Completed 302 Found in 14ms (ActiveRecord: 2.2ms | Allocations: 2296)
+
+
+Started GET "/sentences" for ::1 at 2020-02-21 09:47:35 +0100
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.4ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/views/sentences/index.html.erb:17
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 16.9ms | Allocations: 2620)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 112.2ms | Allocations: 5764)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 156ms (Views: 148.1ms | ActiveRecord: 2.0ms | Allocations: 14630)
+
+
+Started DELETE "/sentences/16" for ::1 at 2020-02-21 09:47:44 +0100
+Processing by SentencesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"5jYh/4ke8xUSSp+KCKLj3PY3+JhMYOHj7En7/BM8tJHCciQHjTgQAl/egVJpS+pTj1/vhGdgUW47a/n+/p0vTA==", "id"=>"16"}
+  [1m[36mSentence Load (0.9ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."id" = $1 LIMIT $2[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/sentences_controller.rb:70:in `set_sentence'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/sentences_controller.rb:60:in `destroy'
+  [1m[36mSentence Destroy (3.0ms)[0m  [1m[31mDELETE FROM "sentences" WHERE "sentences"."id" = $1[0m  [["id", 16]]
+  ↳ app/controllers/sentences_controller.rb:60:in `destroy'
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/sentences_controller.rb:60:in `destroy'
+Redirected to http://localhost:3000/sentences
+Completed 302 Found in 23ms (ActiveRecord: 6.0ms | Allocations: 4013)
+
+
+Started GET "/sentences" for ::1 at 2020-02-21 09:47:44 +0100
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.5ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/views/sentences/index.html.erb:17
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 10.7ms | Allocations: 2620)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 31.1ms | Allocations: 5641)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 59ms (Views: 51.2ms | ActiveRecord: 1.2ms | Allocations: 14409)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2020-02-21 09:47:56 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"KplBZrgcPWTND0jNM44KFfeN8PnlLW9JY5clyai0XOgO3USevDrec4CbVhVSZwOajuXn5c4t38S0tSfLRRXHNQ=="}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 80ms (ActiveRecord: 1.3ms | Allocations: 4624)
+
+
+Started GET "/" for ::1 at 2020-02-21 09:47:56 +0100
+Processing by SentencesController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 297)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-21 09:47:56 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.6ms | Allocations: 514)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 11.6ms | Allocations: 1810)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 51ms (Views: 46.0ms | ActiveRecord: 0.0ms | Allocations: 10384)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-02-21 09:48:05 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"eqZbvhgjsH3NkW+G5wYd0QkJFQb6WNhVXBUdMwZlswYkn7iQfBk600+1Zn0S2fmlA7VZZdU7GOZl7EjAoOrJew==", "user"=>{"email"=>"cavallo@cavallo.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "cavallo@cavallo.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 183ms (ActiveRecord: 0.9ms | Allocations: 3721)
+
+
+Started GET "/" for ::1 at 2020-02-21 09:48:05 +0100
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.5ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/views/sentences/index.html.erb:17
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 8.3ms | Allocations: 2629)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 20.8ms | Allocations: 5658)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 52ms (Views: 44.9ms | ActiveRecord: 2.0ms | Allocations: 14511)
+
+
+Started GET "/" for ::1 at 2020-02-21 09:48:50 +0100
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.4ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/views/sentences/index.html.erb:17
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 20.9ms | Allocations: 2969)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 63.8ms | Allocations: 6443)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 127ms (Views: 112.6ms | ActiveRecord: 1.0ms | Allocations: 16485)
+
+
+Started GET "/" for ::1 at 2020-02-21 09:48:56 +0100
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.4ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/views/sentences/index.html.erb:17
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 9.3ms | Allocations: 2969)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 22.6ms | Allocations: 6444)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 53ms (Views: 45.7ms | ActiveRecord: 1.1ms | Allocations: 16506)
+
+
+Started GET "/" for ::1 at 2020-02-21 09:49:06 +0100
+Processing by SentencesController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 188)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-21 09:49:06 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 3.0ms | Allocations: 514)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 9.3ms | Allocations: 1815)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 50ms (Views: 49.0ms | ActiveRecord: 0.0ms | Allocations: 10266)
+
+
+Started GET "/apple-touch-icon-120x120-precomposed.png" for ::1 at 2020-02-21 09:49:06 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-120x120-precomposed.png"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/apple-touch-icon-120x120.png" for ::1 at 2020-02-21 09:49:07 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-120x120.png"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/apple-touch-icon-120x120-precomposed.png" for ::1 at 2020-02-21 09:49:07 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-120x120-precomposed.png"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/apple-touch-icon-120x120.png" for ::1 at 2020-02-21 09:49:07 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/apple-touch-icon-120x120.png"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-02-21 09:49:12 +0100
+Processing by SentencesController#index as HTML
+Completed 401 Unauthorized in 14ms (ActiveRecord: 0.0ms | Allocations: 189)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-02-21 09:49:13 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 7.8ms | Allocations: 995)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 67ms (Views: 59.3ms | ActiveRecord: 0.0ms | Allocations: 8605)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-02-21 09:49:22 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"FQ6Ebws6bFdmEN8WIJBahGo18GfEB/Zk86nuSY2JatclQTOT2+5yR7igp3sStE0Piwx8dq68pwiaFXZ2/+9Xvw==", "user"=>{"email"=>"cavallo@cavallo.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "cavallo@cavallo.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 293ms (ActiveRecord: 0.7ms | Allocations: 3700)
+
+
+Started GET "/" for ::1 at 2020-02-21 09:49:22 +0100
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (2.5ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/views/sentences/index.html.erb:17
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 11.7ms | Allocations: 2629)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 45.3ms | Allocations: 5658)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 86ms (Views: 74.9ms | ActiveRecord: 3.0ms | Allocations: 14433)
+
+
+Started POST "/sentences" for ::1 at 2020-02-21 09:49:46 +0100
+Processing by SentencesController#create as HTML
+  Parameters: {"authenticity_token"=>"6BoE1P3Y8JHHv0iL7LehEGBspDhtsPutqqPaIZ2e4CNdQwLe43vovlKIjeD5wPVFyrH0MYD7Illq+kzP4f/0wA==", "sentence"=>{"name"=>"", "color"=>"", "group"=>"", "sentence"=>"Loren is pun ninja ninja cavaliers Loren is pun ninja ninja cavaliers Loren is pun ninja ninja cavaliers Loren is pun ninja ninja cavaliers Loren is pun ninja ninja cavaliers Loren is pun ninja ninja cavaliers Loren is pun ninja ninja cavaliers Loren is pun ninja ninja cavaliers Loren is pun ninja ninja cavaliers Loren is pun ninja ninja cavaliers Loren is pun ninja ninja cavaliers Loren is pun ninja ninja cavaliers Loren is pun ninja ninja cavaliers Loren is pun ninja ninja cavaliers Loren is pun ninja ninja cavaliers Loren is pun ninja ninja cavaliers Loren is pun ninja ninja cavaliers Loren is pun ninja ninja cavaliers Loren is pun ninja ninja cavaliers Loren is pun ninja ninja cavaliers Loren is pun ninja ninja cavaliers Loren is pun ninja ninja cavaliers "}, "commit"=>"Salva"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (2.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/sentences_controller.rb:33:in `block in create'
+  [1m[36mSentence Create (7.2ms)[0m  [1m[32mINSERT INTO "sentences" ("name", "sentence", "group", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", ""], ["sentence", "Loren is pun ninja ninja cavaliers Loren is pun ninja ninja cavaliers Loren is pun ninja ninja cavaliers Loren is pun ninja ninja cavaliers Loren is pun ninja ninja cavaliers Loren is pun ninja ninja cavaliers Loren is pun ninja ninja cavaliers Loren is pun ninja ninja cavaliers Loren is pun ninja ninja cavaliers Loren is pun ninja ninja cavaliers Loren is pun ninja ninja cavaliers Loren is pun ninja ninja cavaliers Loren is pun ninja ninja cavaliers Loren is pun ninja ninja cavaliers Loren is pun ninja ninja cavaliers Loren is pun ninja ninja cavaliers Loren is pun ninja ninja cavaliers Loren is pun ninja ninja cavaliers Loren is pun ninja ninja cavaliers Loren is pun ninja ninja cavaliers Loren is pun ninja ninja cavaliers Loren is pun ninja ninja cavaliers "], ["group", ""], ["created_at", "2020-02-21 08:49:46.446384"], ["updated_at", "2020-02-21 08:49:46.446384"], ["user_id", 2]]
+  ↳ app/controllers/sentences_controller.rb:33:in `block in create'
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/sentences_controller.rb:33:in `block in create'
+Redirected to http://localhost:3000/sentences/18
+Completed 302 Found in 34ms (ActiveRecord: 12.1ms | Allocations: 4177)
+
+
+Started GET "/sentences/18" for ::1 at 2020-02-21 09:49:46 +0100
+Processing by SentencesController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mSentence Load (0.6ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/sentences_controller.rb:70:in `set_sentence'
+  [1m[36mUser Load (10.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/sentences
+Completed 302 Found in 139ms (ActiveRecord: 11.0ms | Allocations: 2303)
+
+
+Started GET "/sentences" for ::1 at 2020-02-21 09:49:46 +0100
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (11.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.4ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 2]]
+  ↳ app/views/sentences/index.html.erb:17
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 12.5ms | Allocations: 2620)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 55.5ms | Allocations: 5765)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 237ms (Views: 116.9ms | ActiveRecord: 11.8ms | Allocations: 14558)
+
+
