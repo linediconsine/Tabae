@@ -4,6 +4,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.7.0'
 
 gem 'devise'
+# gem 'google_sign_in' 
+# https://github.com/basecamp/google_sign_in
 gem 'bootstrap',  '~>4.3.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
