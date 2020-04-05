@@ -1,13 +1,21 @@
 {
-  "application.js": "/packs/js/application-4585ee0843d232c12edb.js",
-  "application.js.map": "/packs/js/application-4585ee0843d232c12edb.js.map",
+  "application.js": "/packs/js/application-fd6454b8854e632a8086.js",
+  "application.js.map": "/packs/js/application-fd6454b8854e632a8086.js.map",
   "entrypoints": {
     "application": {
       "js": [
-        "/packs/js/application-4585ee0843d232c12edb.js"
+        "/packs/js/application-fd6454b8854e632a8086.js"
       ],
       "js.map": [
-        "/packs/js/application-4585ee0843d232c12edb.js.map"
+        "/packs/js/application-fd6454b8854e632a8086.js.map"
+      ]
+    },
+    "main_vue": {
+      "js": [
+        "/packs/js/main_vue-994f37dadb543b39828b.js"
+      ],
+      "js.map": [
+        "/packs/js/main_vue-994f37dadb543b39828b.js.map"
       ]
     },
     "stylesheets/application": {
@@ -27,6 +35,8 @@
       ]
     }
   },
+  "main_vue.js": "/packs/js/main_vue-994f37dadb543b39828b.js",
+  "main_vue.js.map": "/packs/js/main_vue-994f37dadb543b39828b.js.map",
   "stylesheets/application.js": "/packs/js/stylesheets/application-72629f14e5eaa0fd1712.js",
   "stylesheets/application.js.map": "/packs/js/stylesheets/application-72629f14e5eaa0fd1712.js.map",
   "voice.js": "/packs/js/voice-3d5747985b27896a3daa.js",

@@ -1,43 +1,52 @@
 <%= javascript_pack_tag 'voice' %>
-
+<%= javascript_pack_tag 'main_vue' %>
 
 <% if user_signed_in? %> 
     <div class="nav nav-pills" id="nav-tab" role="tablist">
-      <a class=" nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Bottoni</a>
+      <a class=" nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Frasi</a>
       <a class=" nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Nuova Frase</a>
+      <a class=" nav-link" id="nav-icons-tab" data-toggle="tab" href="#nav-icons" role="tab" aria-controls="nav-icons" aria-selected="false">Icone</a>
+      
     </div>
 <% end %> 
 
 <div class="tab-content" id="nav-tabContent">
   <section class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+11
+    <div id="app"></div>
 
-    
+    11
 <div class="fluid-container pt-3">
   <div class="row" id="main">
+
+ 
+
     <% @sentences.each do |sentence| %>
       
-      <div class="col-lg-4 my-1" >
-        <div class="card card-item bg-light">
-          
-          <div>
-            <a class="d-block p-3 view overlay zoom" onClick="voice('<%= escape_javascript sentence.sentence %>')">
-              <%= truncate(sentence.sentence, :length => 30) %>    
-            </a>
+      <div class="col-lg-4 my-1 " >
+        <div class="card card-item shadow bg-light sentence">
+          <div class="row">
+            <div class="col-10">
+              <a class="d-block p-1 view overlay zoom" onClick="voice('<%= escape_javascript sentence.sentence %>')">
+                <%= truncate(sentence.sentence, :length => 30) %>    
+              </a>
+            </div>
+            <div class="p-2 col-2">
+              <span class="dropdown">
+                    <button class="btn  btn-icon p-0 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Altro
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <%= link_to 'Edita', edit_sentence_path(sentence) , class: "dropdown-item"%>
+                        <%= link_to 'Cancella', sentence, method: :delete, data: { confirm: 'Conferma per cencellare' } , class: "dropdown-item" %>
+                    </div>
+              </span>
+          </div>
+
           </div>
 
 
-          <div class="p-2">
           
-            <span class="dropdown">
-                  <button class="btn  btn-icon p-0 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Altro
-                  </button>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <%= link_to 'Edita', edit_sentence_path(sentence) , class: "dropdown-item"%>
-                      <%= link_to 'Cancella', sentence, method: :delete, data: { confirm: 'Conferma per cencellare' } , class: "dropdown-item" %>
-                  </div>
-            </span>
-          </div>
         </div>
       </div>
     <% end %>
@@ -47,11 +56,22 @@
   
   
   </section>
+  
   <section class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
     <div id="new">
       <%= render 'form', sentence: @sentence %>
     <div>
-</section>
+  </section>
+
+   <section class="tab-pane fade" id="nav-icons" role="tabpanel" aria-labelledby="nav-icons-tab">
+    <i class="fas fa-toilet"></i>
+
+
+  <i class="fa fa-car"></i>
+  <i class="fa fa-car" style="font-size:48px;"></i>
+  <i class="fa fa-car" style="font-size:60px;color:red;"></i>
+
+  </section>
 </div>
 
 

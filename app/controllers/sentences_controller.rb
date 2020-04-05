@@ -1,5 +1,6 @@
 class SentencesController < ApplicationController
   before_action :set_sentence, only: [:show, :edit, :update, :destroy]
+  #before_action :set_json_response, only: [:apicreate]
   before_action :authenticate_user!
 
   # GET /sentences
@@ -9,6 +10,28 @@ class SentencesController < ApplicationController
     @sentence = current_user.sentences.build
   end
 
+  # post /api/new (JSON)
+  def apicreate
+    request.format = :json
+    
+    @api_sentence =  params['sentence']
+    @sentence = current_user.sentences.new()
+    
+    @sentence.sentence = @api_sentence 
+    @sentence.name = @api_sentence 
+
+    if @sentence.save
+       respond_to do |format|
+        format.json { render :show, status: :created, location: @sentence }
+       end
+    else
+      respond_to do |format|
+        format.json { render json: @sentence.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  
   # GET /sentences/1
   # GET /sentences/1.json
   def show
@@ -40,6 +63,7 @@ class SentencesController < ApplicationController
     end
   end
 
+
   # PATCH/PUT /sentences/1
   # PATCH/PUT /sentences/1.json
   def update
@@ -69,6 +93,7 @@ class SentencesController < ApplicationController
     def set_sentence
       @sentence = Sentence.find(params[:id])
     end
+
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def sentence_params

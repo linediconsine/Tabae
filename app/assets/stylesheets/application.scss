@@ -27,3 +27,14 @@ $theme-colors: (
 );
 @import "scaffolds";
 @import "bootstrap"; //bootstrap gem
+
+body {
+  font-family: "Lato", sans-serif;
+}
+.sentence {
+  font-size: 13px;
+}
+.sentence button {
+  font-size: 8px;
+  padding-right: 5px;
+}
