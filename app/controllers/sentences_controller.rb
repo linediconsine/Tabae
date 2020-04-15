@@ -6,7 +6,7 @@ class SentencesController < ApplicationController
   # GET /sentences
   # GET /sentences.json
   def index
-    @sentences = current_user.sentences.all
+    @sentences = current_user.sentences.all.reverse
     @sentence = current_user.sentences.build
   end
 

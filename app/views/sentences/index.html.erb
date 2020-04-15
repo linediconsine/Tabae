@@ -1,26 +1,20 @@
 <%= javascript_pack_tag 'voice' %>
-<%= javascript_pack_tag 'main_vue' %>
+<%= javascript_pack_tag 'serviceworker' %>
 
 <% if user_signed_in? %> 
     <div class="nav nav-pills" id="nav-tab" role="tablist">
       <a class=" nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Frasi</a>
       <a class=" nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Nuova Frase</a>
-      <a class=" nav-link" id="nav-icons-tab" data-toggle="tab" href="#nav-icons" role="tab" aria-controls="nav-icons" aria-selected="false">Icone</a>
+      <!-- <a class=" nav-link" id="nav-icons-tab" data-toggle="tab" href="#nav-icons" role="tab" aria-controls="nav-icons" aria-selected="false">Icone</a> -->
       
     </div>
 <% end %> 
 
 <div class="tab-content" id="nav-tabContent">
   <section class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-11
-    <div id="app"></div>
 
-    11
 <div class="fluid-container pt-3">
   <div class="row" id="main">
-
- 
-
     <% @sentences.each do |sentence| %>
       
       <div class="col-lg-4 my-1 " >
@@ -31,7 +25,7 @@
                 <%= truncate(sentence.sentence, :length => 30) %>    
               </a>
             </div>
-            <div class="p-2 col-2">
+            <div class="p-2 col-2 only_online">
               <span class="dropdown">
                     <button class="btn  btn-icon p-0 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Altro
@@ -73,6 +67,15 @@
 
   </section>
 </div>
+<script>
+
+if (localStorage.getItem("_m_tabae") == null){
+   stored = <%=raw @sentences.to_json() %>;
+   localStorage.setItem("_m_tabae",stored)
+}
+
+
+</script>
 
 
 

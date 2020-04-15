@@ -8,6 +8,8 @@ gem 'devise'
 # https://github.com/basecamp/google_sign_in
 gem 'bootstrap',  '~>4.3.1'
 
+gem 'serviceworker-rails'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
 # Use postgresql as the database for Active Record

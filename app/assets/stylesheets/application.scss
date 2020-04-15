@@ -23,7 +23,7 @@ $theme-colors: (
   "warning": #0de2ea,
   "danger": #06648c,
   "light": #ececec,
-  "dark": #222222
+  "dark": #222222,
 );
 @import "scaffolds";
 @import "bootstrap"; //bootstrap gem
@@ -37,4 +37,10 @@ body {
 .sentence button {
   font-size: 8px;
   padding-right: 5px;
+}
+
+body.offline .only_online,
+body.online .offline_message,
+body.online .only_offline {
+  display: none;
 }

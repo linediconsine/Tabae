@@ -12463,3 +12463,1752 @@ Processing by SentencesController#index as HTML
 Completed 200 OK in 103ms (Views: 92.4ms | ActiveRecord: 3.7ms | Allocations: 21094)
 
 
+Started GET "/" for 127.0.0.1 at 2020-04-13 12:59:02 +0200
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Compiling...
+Started GET "/" for 127.0.0.1 at 2020-04-13 12:59:04 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: af08458c618e41478336
+Version: webpack 4.41.5
+Time: 8066ms
+Built at: 04/13/2020 12:59:15 PM
+                                                 Asset      Size                   Chunks                         Chunk Names
+                js/application-fd6454b8854e632a8086.js  1.57 MiB              application  [emitted] [immutable]  application
+            js/application-fd6454b8854e632a8086.js.map  1.75 MiB              application  [emitted] [dev]        application
+                   js/main_vue-994f37dadb543b39828b.js   237 KiB                 main_vue  [emitted] [immutable]  main_vue
+               js/main_vue-994f37dadb543b39828b.js.map   290 KiB                 main_vue  [emitted] [dev]        main_vue
+    js/stylesheets/application-72629f14e5eaa0fd1712.js   681 KiB  stylesheets/application  [emitted] [immutable]  stylesheets/application
+js/stylesheets/application-72629f14e5eaa0fd1712.js.map   704 KiB  stylesheets/application  [emitted] [dev]        stylesheets/application
+                      js/voice-3d5747985b27896a3daa.js  4.38 KiB                    voice  [emitted] [immutable]  voice
+                  js/voice-3d5747985b27896a3daa.js.map  4.22 KiB                    voice  [emitted] [dev]        voice
+                                         manifest.json  1.37 KiB                           [emitted]              
+Entrypoint application = js/application-fd6454b8854e632a8086.js js/application-fd6454b8854e632a8086.js.map
+Entrypoint main_vue = js/main_vue-994f37dadb543b39828b.js js/main_vue-994f37dadb543b39828b.js.map
+Entrypoint stylesheets/application = js/stylesheets/application-72629f14e5eaa0fd1712.js js/stylesheets/application-72629f14e5eaa0fd1712.js.map
+Entrypoint voice = js/voice-3d5747985b27896a3daa.js js/voice-3d5747985b27896a3daa.js.map
+[./app/javascript/app.vue] 293 bytes {main_vue} [built] [failed] [1 error]
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.29 KiB {application} [built]
+[./app/javascript/packs/main_vue.js] 229 bytes {main_vue} [built]
+[./app/javascript/packs/stylesheets/application.scss] 729 bytes {stylesheets/application} {application} [built]
+[./app/javascript/packs/voice.js] 530 bytes {voice} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/packs/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/packs/stylesheets/application.scss 666 KiB {application} {stylesheets/application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 878 bytes {application} {main_vue} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 38 hidden modules
+
+ERROR in ./app/javascript/app.vue 1:0
+Module parse failed: Unexpected token (1:0)
+You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
+> <template>
+|   <div id="app">
+|     <h1>{{ message }}</h1>
+ @ ./app/javascript/packs/main_vue.js 2:0-29 7:15-18
+
+
+warning ../../../../package.json: No license field
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.8ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:24
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 13.6ms | Allocations: 3306)
+[Webpacker] Compilation failed:
+Hash: af08458c618e41478336
+Version: webpack 4.41.5
+Time: 8068ms
+Built at: 04/13/2020 12:59:15 PM
+                                                 Asset      Size                   Chunks                         Chunk Names
+                js/application-fd6454b8854e632a8086.js  1.57 MiB              application  [emitted] [immutable]  application
+            js/application-fd6454b8854e632a8086.js.map  1.75 MiB              application  [emitted] [dev]        application
+                   js/main_vue-994f37dadb543b39828b.js   237 KiB                 main_vue  [emitted] [immutable]  main_vue
+               js/main_vue-994f37dadb543b39828b.js.map   290 KiB                 main_vue  [emitted] [dev]        main_vue
+    js/stylesheets/application-72629f14e5eaa0fd1712.js   681 KiB  stylesheets/application  [emitted] [immutable]  stylesheets/application
+js/stylesheets/application-72629f14e5eaa0fd1712.js.map   704 KiB  stylesheets/application  [emitted] [dev]        stylesheets/application
+                      js/voice-3d5747985b27896a3daa.js  4.38 KiB                    voice  [emitted] [immutable]  voice
+                  js/voice-3d5747985b27896a3daa.js.map  4.22 KiB                    voice  [emitted] [dev]        voice
+                                         manifest.json  1.37 KiB                           [emitted]              
+Entrypoint application = js/application-fd6454b8854e632a8086.js js/application-fd6454b8854e632a8086.js.map
+Entrypoint main_vue = js/main_vue-994f37dadb543b39828b.js js/main_vue-994f37dadb543b39828b.js.map
+Entrypoint stylesheets/application = js/stylesheets/application-72629f14e5eaa0fd1712.js js/stylesheets/application-72629f14e5eaa0fd1712.js.map
+Entrypoint voice = js/voice-3d5747985b27896a3daa.js js/voice-3d5747985b27896a3daa.js.map
+[./app/javascript/app.vue] 293 bytes {main_vue} [built] [failed] [1 error]
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.29 KiB {application} [built]
+[./app/javascript/packs/main_vue.js] 229 bytes {main_vue} [built]
+[./app/javascript/packs/stylesheets/application.scss] 729 bytes {stylesheets/application} {application} [built]
+[./app/javascript/packs/voice.js] 530 bytes {voice} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/packs/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/packs/stylesheets/application.scss 666 KiB {application} {stylesheets/application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 878 bytes {application} {main_vue} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 38 hidden modules
+
+ERROR in ./app/javascript/app.vue 1:0
+Module parse failed: Unexpected token (1:0)
+You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
+> <template>
+|   <div id="app">
+|     <h1>{{ message }}</h1>
+ @ ./app/javascript/packs/main_vue.js 2:0-29 7:15-18
+
+
+warning ../../../../package.json: No license field
+
+  Rendered sentences/index.html.erb within layouts/application (Duration: 10884.1ms | Allocations: 12362)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.6ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:24
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 6.4ms | Allocations: 2769)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 12248.1ms | Allocations: 31339)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11172ms (Views: 11165.3ms | ActiveRecord: 2.0ms | Allocations: 51758)
+
+
+Completed 200 OK in 12574ms (Views: 12508.1ms | ActiveRecord: 10.2ms | Allocations: 73839)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-13 12:59:52 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 5d84eda34de6cd31372e
+Version: webpack 4.41.5
+Time: 6850ms
+Built at: 04/13/2020 1:00:03 PM
+                                                 Asset      Size                   Chunks                         Chunk Names
+                js/application-fd6454b8854e632a8086.js  1.57 MiB              application  [emitted] [immutable]  application
+            js/application-fd6454b8854e632a8086.js.map  1.75 MiB              application  [emitted] [dev]        application
+                   js/main_vue-994f37dadb543b39828b.js   237 KiB                 main_vue  [emitted] [immutable]  main_vue
+               js/main_vue-994f37dadb543b39828b.js.map   290 KiB                 main_vue  [emitted] [dev]        main_vue
+    js/stylesheets/application-72629f14e5eaa0fd1712.js   681 KiB  stylesheets/application  [emitted] [immutable]  stylesheets/application
+js/stylesheets/application-72629f14e5eaa0fd1712.js.map   704 KiB  stylesheets/application  [emitted] [dev]        stylesheets/application
+                      js/voice-4b665a4bef8be6152d9a.js  4.65 KiB                    voice  [emitted] [immutable]  voice
+                  js/voice-4b665a4bef8be6152d9a.js.map  4.53 KiB                    voice  [emitted] [dev]        voice
+                                         manifest.json  1.37 KiB                           [emitted]              
+Entrypoint application = js/application-fd6454b8854e632a8086.js js/application-fd6454b8854e632a8086.js.map
+Entrypoint main_vue = js/main_vue-994f37dadb543b39828b.js js/main_vue-994f37dadb543b39828b.js.map
+Entrypoint stylesheets/application = js/stylesheets/application-72629f14e5eaa0fd1712.js js/stylesheets/application-72629f14e5eaa0fd1712.js.map
+Entrypoint voice = js/voice-4b665a4bef8be6152d9a.js js/voice-4b665a4bef8be6152d9a.js.map
+[./app/javascript/app.vue] 293 bytes {main_vue} [built] [failed] [1 error]
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.29 KiB {application} [built]
+[./app/javascript/packs/main_vue.js] 229 bytes {main_vue} [built]
+[./app/javascript/packs/stylesheets/application.scss] 729 bytes {stylesheets/application} {application} [built]
+[./app/javascript/packs/voice.js] 803 bytes {voice} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/packs/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/packs/stylesheets/application.scss 666 KiB {application} {stylesheets/application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 878 bytes {application} {main_vue} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 38 hidden modules
+
+ERROR in ./app/javascript/app.vue 1:0
+Module parse failed: Unexpected token (1:0)
+You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
+> <template>
+|   <div id="app">
+|     <h1>{{ message }}</h1>
+ @ ./app/javascript/packs/main_vue.js 2:0-29 7:15-18
+
+
+warning ../../../../package.json: No license field
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.5ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:24
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 10.1ms | Allocations: 2660)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 11842.4ms | Allocations: 11391)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11872ms (Views: 11864.4ms | ActiveRecord: 1.2ms | Allocations: 20287)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-13 13:01:04 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.5ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:21
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 14.2ms | Allocations: 3009)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 55.3ms | Allocations: 11070)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 99ms (Views: 86.5ms | ActiveRecord: 1.2ms | Allocations: 21085)
+
+
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from load at /Users/marco-explorabiotech/.rbenv/versions/2.7.0/bin/rake:23)
+Started GET "/" for 127.0.0.1 at 2020-04-13 13:01:18 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.4ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:21
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 6.0ms | Allocations: 3009)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 27.7ms | Allocations: 11068)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 53ms (Views: 47.7ms | ActiveRecord: 1.0ms | Allocations: 21175)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-13 14:01:43 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.5ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:21
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 14.8ms | Allocations: 2672)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 107.7ms | Allocations: 10292)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 171ms (Views: 140.2ms | ActiveRecord: 1.7ms | Allocations: 19289)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2020-04-13 14:01:50 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"FC39woC+cMsTJLJd1ylzVuoAHjxoan1O3wk8xeC0suSBd2uKD0JLFIM5FXAyZGy60tEZEeSPW3Sjp/JPd9gSdw=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 29ms (ActiveRecord: 0.5ms | Allocations: 5003)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-13 14:01:50 +0200
+Processing by SentencesController#index as HTML
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms | Allocations: 309)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-13 14:01:50 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 3.0ms | Allocations: 598)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 25.0ms | Allocations: 2558)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 58ms (Views: 48.6ms | ActiveRecord: 0.0ms | Allocations: 11416)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-13 14:02:03 +0200
+Processing by SentencesController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 296)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-13 14:02:03 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 988)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 31.1ms | ActiveRecord: 0.0ms | Allocations: 8670)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2020-04-13 14:02:08 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"rK/aZPpyUvyiP+myeNE2RaaNpBs/mB4MqZXRM0QwO5il76wvmmm/E9LYdAFnHcbGTVHB957t9WzjfRMGvCx+dA=="}
+Redirected to http://127.0.0.1:3000/
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 418)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-13 14:02:08 +0200
+Processing by SentencesController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 311)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-13 14:02:08 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 983)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 22.7ms | ActiveRecord: 0.0ms | Allocations: 8583)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-04-13 14:02:13 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"5BCq8TBwzzXFOTuS8A6lZfcCAdbaoND0Y1XNwgUUR8jtUNy6UGsi2rXepiHvwlXmHN5kOnvVO5QpvQ/3/QgCJA==", "user"=>{"email"=>"linediconsine@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "linediconsine@gmail.com"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 162ms (ActiveRecord: 0.6ms | Allocations: 4676)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-13 14:02:13 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.4ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:21
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 6.0ms | Allocations: 2669)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 20.1ms | Allocations: 10246)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 38ms (Views: 33.9ms | ActiveRecord: 0.9ms | Allocations: 19155)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-13 14:03:55 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.4ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:21
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 8.5ms | Allocations: 3013)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 43.1ms | Allocations: 11070)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 82ms (Views: 75.4ms | ActiveRecord: 0.9ms | Allocations: 21175)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-13 14:04:29 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.4ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:21
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 5.1ms | Allocations: 2666)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 28.3ms | Allocations: 10241)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3312ms (Views: 3305.2ms | ActiveRecord: 1.0ms | Allocations: 79871)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-13 14:05:26 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.5ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:21
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 11.7ms | Allocations: 3009)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 40.7ms | Allocations: 11068)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 88ms (Views: 81.8ms | ActiveRecord: 0.9ms | Allocations: 21076)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-13 14:05:33 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (10.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.6ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:21
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 24.3ms | Allocations: 2663)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 75.7ms | Allocations: 10659)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 104ms (Views: 87.4ms | ActiveRecord: 10.7ms | Allocations: 19548)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-13 14:06:05 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.4ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:21
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 9.1ms | Allocations: 3009)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 32.5ms | Allocations: 11067)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 61ms (Views: 55.7ms | ActiveRecord: 0.7ms | Allocations: 21168)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-13 14:06:55 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.5ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:21
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 33.8ms | Allocations: 3095)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 240.2ms | Allocations: 10670)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 287ms (Views: 275.5ms | ActiveRecord: 2.2ms | Allocations: 19475)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-13 14:07:21 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (17.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.9ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:21
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 10.3ms | Allocations: 2660)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 64.6ms | Allocations: 11353)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 166ms (Views: 138.4ms | ActiveRecord: 18.2ms | Allocations: 22207)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-13 14:08:32 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 5c355c3e667aa16fdc15
+Version: webpack 4.41.5
+Time: 6767ms
+Built at: 04/13/2020 2:08:43 PM
+                                                 Asset      Size                   Chunks                         Chunk Names
+                js/application-fd6454b8854e632a8086.js  1.57 MiB              application  [emitted] [immutable]  application
+            js/application-fd6454b8854e632a8086.js.map  1.75 MiB              application  [emitted] [dev]        application
+                   js/main_vue-994f37dadb543b39828b.js   237 KiB                 main_vue  [emitted] [immutable]  main_vue
+               js/main_vue-994f37dadb543b39828b.js.map   290 KiB                 main_vue  [emitted] [dev]        main_vue
+    js/stylesheets/application-72629f14e5eaa0fd1712.js   681 KiB  stylesheets/application  [emitted] [immutable]  stylesheets/application
+js/stylesheets/application-72629f14e5eaa0fd1712.js.map   704 KiB  stylesheets/application  [emitted] [dev]        stylesheets/application
+                      js/voice-13491fb412959806d845.js  4.74 KiB                    voice  [emitted] [immutable]  voice
+                  js/voice-13491fb412959806d845.js.map  4.65 KiB                    voice  [emitted] [dev]        voice
+                                         manifest.json  1.37 KiB                           [emitted]              
+Entrypoint application = js/application-fd6454b8854e632a8086.js js/application-fd6454b8854e632a8086.js.map
+Entrypoint main_vue = js/main_vue-994f37dadb543b39828b.js js/main_vue-994f37dadb543b39828b.js.map
+Entrypoint stylesheets/application = js/stylesheets/application-72629f14e5eaa0fd1712.js js/stylesheets/application-72629f14e5eaa0fd1712.js.map
+Entrypoint voice = js/voice-13491fb412959806d845.js js/voice-13491fb412959806d845.js.map
+[./app/javascript/app.vue] 293 bytes {main_vue} [built] [failed] [1 error]
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.29 KiB {application} [built]
+[./app/javascript/packs/main_vue.js] 229 bytes {main_vue} [built]
+[./app/javascript/packs/stylesheets/application.scss] 729 bytes {stylesheets/application} {application} [built]
+[./app/javascript/packs/voice.js] 900 bytes {voice} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/packs/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/packs/stylesheets/application.scss 666 KiB {application} {stylesheets/application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 878 bytes {application} {main_vue} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 38 hidden modules
+
+ERROR in ./app/javascript/app.vue 1:0
+Module parse failed: Unexpected token (1:0)
+You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
+> <template>
+|   <div id="app">
+|     <h1>{{ message }}</h1>
+ @ ./app/javascript/packs/main_vue.js 2:0-29 7:15-18
+
+
+warning ../../../../package.json: No license field
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.4ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:21
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 6.8ms | Allocations: 2660)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 11515.2ms | Allocations: 11385)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11540ms (Views: 11533.7ms | ActiveRecord: 1.6ms | Allocations: 20185)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-13 14:10:37 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.5ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:21
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 7.2ms | Allocations: 3009)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 27.6ms | Allocations: 11069)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1870ms (Views: 1863.8ms | ActiveRecord: 0.8ms | Allocations: 78570)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-13 14:11:15 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.4ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:21
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 7.3ms | Allocations: 3009)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 36.2ms | Allocations: 11068)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 65ms (Views: 58.3ms | ActiveRecord: 0.8ms | Allocations: 21054)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-13 14:12:42 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.3ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:21
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 9.9ms | Allocations: 3012)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 38.8ms | Allocations: 11066)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 66ms (Views: 61.1ms | ActiveRecord: 0.6ms | Allocations: 21160)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-13 14:12:45 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.3ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:21
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 5.4ms | Allocations: 2663)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 30.3ms | Allocations: 10238)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 53ms (Views: 45.7ms | ActiveRecord: 0.7ms | Allocations: 19034)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-13 14:15:15 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.3ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:21
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 7.3ms | Allocations: 3014)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 33.7ms | Allocations: 11071)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 2323ms (Views: 2316.3ms | ActiveRecord: 0.7ms | Allocations: 78949)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-13 14:15:29 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.4ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:21
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 7.9ms | Allocations: 3013)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 26.4ms | Allocations: 11072)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 40.7ms | ActiveRecord: 0.7ms | Allocations: 21069)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-13 14:55:07 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.5ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:21
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 12.9ms | Allocations: 3013)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 66.2ms | Allocations: 11115)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 137ms (Views: 105.5ms | ActiveRecord: 1.6ms | Allocations: 21323)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-13 14:55:14 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (4.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.6ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:21
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 11.6ms | Allocations: 2663)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 39.4ms | Allocations: 10242)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 91ms (Views: 75.3ms | ActiveRecord: 4.8ms | Allocations: 19443)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-13 15:11:27 +0200
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Compiling...
+Started GET "/" for 127.0.0.1 at 2020-04-13 15:11:30 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 44a66c0b61e73c62328c
+Version: webpack 4.41.5
+Time: 9257ms
+Built at: 04/13/2020 3:11:41 PM
+                                                 Asset      Size                   Chunks                         Chunk Names
+                js/application-fd6454b8854e632a8086.js  1.57 MiB              application  [emitted] [immutable]  application
+            js/application-fd6454b8854e632a8086.js.map  1.75 MiB              application  [emitted] [dev]        application
+                   js/main_vue-994f37dadb543b39828b.js   237 KiB                 main_vue  [emitted] [immutable]  main_vue
+               js/main_vue-994f37dadb543b39828b.js.map   290 KiB                 main_vue  [emitted] [dev]        main_vue
+              js/serviceworker-30a1bf7cd9a2d80119bb.js  5.31 KiB            serviceworker  [emitted] [immutable]  serviceworker
+          js/serviceworker-30a1bf7cd9a2d80119bb.js.map   5.5 KiB            serviceworker  [emitted] [dev]        serviceworker
+    js/stylesheets/application-72629f14e5eaa0fd1712.js   681 KiB  stylesheets/application  [emitted] [immutable]  stylesheets/application
+js/stylesheets/application-72629f14e5eaa0fd1712.js.map   704 KiB  stylesheets/application  [emitted] [dev]        stylesheets/application
+                      js/voice-13491fb412959806d845.js  4.74 KiB                    voice  [emitted] [immutable]  voice
+                  js/voice-13491fb412959806d845.js.map  4.65 KiB                    voice  [emitted] [dev]        voice
+                                         manifest.json  1.71 KiB                           [emitted]              
+Entrypoint application = js/application-fd6454b8854e632a8086.js js/application-fd6454b8854e632a8086.js.map
+Entrypoint main_vue = js/main_vue-994f37dadb543b39828b.js js/main_vue-994f37dadb543b39828b.js.map
+Entrypoint serviceworker = js/serviceworker-30a1bf7cd9a2d80119bb.js js/serviceworker-30a1bf7cd9a2d80119bb.js.map
+Entrypoint stylesheets/application = js/stylesheets/application-72629f14e5eaa0fd1712.js js/stylesheets/application-72629f14e5eaa0fd1712.js.map
+Entrypoint voice = js/voice-13491fb412959806d845.js js/voice-13491fb412959806d845.js.map
+[./app/javascript/app.vue] 293 bytes {main_vue} [built] [failed] [1 error]
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.29 KiB {application} [built]
+[./app/javascript/packs/main_vue.js] 229 bytes {main_vue} [built]
+[./app/javascript/packs/serviceworker.js] 1.4 KiB {serviceworker} [built]
+[./app/javascript/packs/stylesheets/application.scss] 729 bytes {stylesheets/application} {application} [built]
+[./app/javascript/packs/voice.js] 900 bytes {voice} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/packs/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/packs/stylesheets/application.scss 666 KiB {application} {stylesheets/application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 878 bytes {application} {main_vue} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 38 hidden modules
+
+ERROR in ./app/javascript/app.vue 1:0
+Module parse failed: Unexpected token (1:0)
+You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
+> <template>
+|   <div id="app">
+|     <h1>{{ message }}</h1>
+ @ ./app/javascript/packs/main_vue.js 2:0-29 7:15-18
+
+
+warning ../../../../package.json: No license field
+
+[Webpacker] Compilation failed:
+Hash: 44a66c0b61e73c62328c
+Version: webpack 4.41.5
+Time: 7358ms
+Built at: 04/13/2020 3:11:41 PM
+                                                 Asset      Size                   Chunks                         Chunk Names
+                js/application-fd6454b8854e632a8086.js  1.57 MiB              application  [emitted] [immutable]  application
+            js/application-fd6454b8854e632a8086.js.map  1.75 MiB              application  [emitted] [dev]        application
+                   js/main_vue-994f37dadb543b39828b.js   237 KiB                 main_vue  [emitted] [immutable]  main_vue
+               js/main_vue-994f37dadb543b39828b.js.map   290 KiB                 main_vue  [emitted] [dev]        main_vue
+              js/serviceworker-30a1bf7cd9a2d80119bb.js  5.31 KiB            serviceworker  [emitted] [immutable]  serviceworker
+          js/serviceworker-30a1bf7cd9a2d80119bb.js.map   5.5 KiB            serviceworker  [emitted] [dev]        serviceworker
+    js/stylesheets/application-72629f14e5eaa0fd1712.js   681 KiB  stylesheets/application  [emitted] [immutable]  stylesheets/application
+js/stylesheets/application-72629f14e5eaa0fd1712.js.map   704 KiB  stylesheets/application  [emitted] [dev]        stylesheets/application
+                      js/voice-13491fb412959806d845.js  4.74 KiB                    voice  [emitted] [immutable]  voice
+                  js/voice-13491fb412959806d845.js.map  4.65 KiB                    voice  [emitted] [dev]        voice
+                                         manifest.json  1.71 KiB                           [emitted]              
+Entrypoint application = js/application-fd6454b8854e632a8086.js js/application-fd6454b8854e632a8086.js.map
+Entrypoint main_vue = js/main_vue-994f37dadb543b39828b.js js/main_vue-994f37dadb543b39828b.js.map
+Entrypoint serviceworker = js/serviceworker-30a1bf7cd9a2d80119bb.js js/serviceworker-30a1bf7cd9a2d80119bb.js.map
+Entrypoint stylesheets/application = js/stylesheets/application-72629f14e5eaa0fd1712.js js/stylesheets/application-72629f14e5eaa0fd1712.js.map
+Entrypoint voice = js/voice-13491fb412959806d845.js js/voice-13491fb412959806d845.js.map
+[./app/javascript/app.vue] 293 bytes {main_vue} [built] [failed] [1 error]
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.29 KiB {application} [built]
+[./app/javascript/packs/main_vue.js] 229 bytes {main_vue} [built]
+[./app/javascript/packs/serviceworker.js] 1.4 KiB {serviceworker} [built]
+[./app/javascript/packs/stylesheets/application.scss] 729 bytes {stylesheets/application} {application} [built]
+[./app/javascript/packs/voice.js] 900 bytes {voice} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/packs/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/packs/stylesheets/application.scss 666 KiB {application} {stylesheets/application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 878 bytes {application} {main_vue} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 38 hidden modules
+
+ERROR in ./app/javascript/app.vue 1:0
+Module parse failed: Unexpected token (1:0)
+You may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders
+> <template>
+|   <div id="app">
+|     <h1>{{ message }}</h1>
+ @ ./app/javascript/packs/main_vue.js 2:0-29 7:15-18
+
+
+warning ../../../../package.json: No license field
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.7ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:21
+  [1m[36mSentence Load (70.0ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:21
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 35.7ms | Allocations: 8102)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 10786.5ms | Allocations: 21140)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 107.1ms | Allocations: 6107)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 14027.4ms | Allocations: 29762)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25059ms (Views: 24916.5ms | ActiveRecord: 79.4ms | Allocations: 240719)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21802ms (Views: 21792.6ms | ActiveRecord: 2.7ms | Allocations: 227355)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-13 15:13:19 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.5ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:21
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 7.6ms | Allocations: 2699)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 44.9ms | Allocations: 10349)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 93ms (Views: 85.9ms | ActiveRecord: 1.1ms | Allocations: 19462)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-13 15:13:22 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.4ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:21
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 10.4ms | Allocations: 2696)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 33.7ms | Allocations: 10342)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 62ms (Views: 53.9ms | ActiveRecord: 1.0ms | Allocations: 19369)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-13 15:13:59 +0200
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.7ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:21
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 13.7ms | Allocations: 3346)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 43.3ms | Allocations: 11704)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 368ms (Views: 292.4ms | ActiveRecord: 9.5ms | Allocations: 46463)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-13 15:18:28 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.5ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:21
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 11.9ms | Allocations: 3048)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 43.4ms | Allocations: 11183)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 80ms (Views: 71.4ms | ActiveRecord: 1.6ms | Allocations: 21407)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-04-13 15:18:29 +0200
+Started GET "/" for 127.0.0.1 at 2020-04-13 15:19:16 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/marco-explorabiotech/Documents/RoR/tabae2/tabae/public/packs
+[Webpacker] warning ../../../../package.json: No license field
+
+[Webpacker] Hash: 7cf1655fe4e6247d0372
+Version: webpack 4.41.5
+Time: 6779ms
+Built at: 04/13/2020 3:19:27 PM
+                                                 Asset      Size                   Chunks                         Chunk Names
+                js/application-fd6454b8854e632a8086.js  1.57 MiB              application  [emitted] [immutable]  application
+            js/application-fd6454b8854e632a8086.js.map  1.75 MiB              application  [emitted] [dev]        application
+              js/serviceworker-30a1bf7cd9a2d80119bb.js  5.31 KiB            serviceworker  [emitted] [immutable]  serviceworker
+          js/serviceworker-30a1bf7cd9a2d80119bb.js.map   5.5 KiB            serviceworker  [emitted] [dev]        serviceworker
+    js/stylesheets/application-72629f14e5eaa0fd1712.js   681 KiB  stylesheets/application  [emitted] [immutable]  stylesheets/application
+js/stylesheets/application-72629f14e5eaa0fd1712.js.map   704 KiB  stylesheets/application  [emitted] [dev]        stylesheets/application
+                      js/voice-13491fb412959806d845.js  4.74 KiB                    voice  [emitted] [immutable]  voice
+                  js/voice-13491fb412959806d845.js.map  4.65 KiB                    voice  [emitted] [dev]        voice
+                                         manifest.json   1.4 KiB                           [emitted]              
+Entrypoint application = js/application-fd6454b8854e632a8086.js js/application-fd6454b8854e632a8086.js.map
+Entrypoint serviceworker = js/serviceworker-30a1bf7cd9a2d80119bb.js js/serviceworker-30a1bf7cd9a2d80119bb.js.map
+Entrypoint stylesheets/application = js/stylesheets/application-72629f14e5eaa0fd1712.js js/stylesheets/application-72629f14e5eaa0fd1712.js.map
+Entrypoint voice = js/voice-13491fb412959806d845.js js/voice-13491fb412959806d845.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.29 KiB {application} [built]
+[./app/javascript/packs/serviceworker.js] 1.4 KiB {serviceworker} [built]
+[./app/javascript/packs/stylesheets/application.scss] 729 bytes {stylesheets/application} {application} [built]
+[./app/javascript/packs/voice.js] 900 bytes {voice} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/packs/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/packs/stylesheets/application.scss 666 KiB {application} {stylesheets/application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 878 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 38 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/index.html.erb within layouts/application (Duration: 11849.7ms | Allocations: 9065)
+Completed 500 Internal Server Error in 11861ms (ActiveRecord: 0.6ms | Allocations: 11155)
+
+
+  
+ActionView::Template::Error (Webpacker can't find main_vue in /Users/marco-explorabiotech/Documents/RoR/tabae2/tabae/public/packs/manifest.json. Possible causes:
+1. You want to set webpacker.yml value of compile to true for your environment
+   unless you are using the `webpack -w` or the webpack-dev-server.
+2. webpack has not yet re-run to reflect updates.
+3. You have misconfigured Webpacker's config/webpacker.yml file.
+4. Your webpack configuration is not creating a manifest.
+Your manifest contains:
+{
+  "application.js": "/packs/js/application-fd6454b8854e632a8086.js",
+  "application.js.map": "/packs/js/application-fd6454b8854e632a8086.js.map",
+  "entrypoints": {
+    "application": {
+      "js": [
+        "/packs/js/application-fd6454b8854e632a8086.js"
+      ],
+      "js.map": [
+        "/packs/js/application-fd6454b8854e632a8086.js.map"
+      ]
+    },
+    "serviceworker": {
+      "js": [
+        "/packs/js/serviceworker-30a1bf7cd9a2d80119bb.js"
+      ],
+      "js.map": [
+        "/packs/js/serviceworker-30a1bf7cd9a2d80119bb.js.map"
+      ]
+    },
+    "stylesheets/application": {
+      "js": [
+        "/packs/js/stylesheets/application-72629f14e5eaa0fd1712.js"
+      ],
+      "js.map": [
+        "/packs/js/stylesheets/application-72629f14e5eaa0fd1712.js.map"
+      ]
+    },
+    "voice": {
+      "js": [
+        "/packs/js/voice-13491fb412959806d845.js"
+      ],
+      "js.map": [
+        "/packs/js/voice-13491fb412959806d845.js.map"
+      ]
+    }
+  },
+  "serviceworker.js": "/packs/js/serviceworker-30a1bf7cd9a2d80119bb.js",
+  "serviceworker.js.map": "/packs/js/serviceworker-30a1bf7cd9a2d80119bb.js.map",
+  "stylesheets/application.js": "/packs/js/stylesheets/application-72629f14e5eaa0fd1712.js",
+  "stylesheets/application.js.map": "/packs/js/stylesheets/application-72629f14e5eaa0fd1712.js.map",
+  "voice.js": "/packs/js/voice-13491fb412959806d845.js",
+  "voice.js.map": "/packs/js/voice-13491fb412959806d845.js.map"
+}
+):
+    1: <%= javascript_pack_tag 'voice' %>
+    2: <%= javascript_pack_tag 'main_vue' %>
+    3: 
+    4: <% if user_signed_in? %> 
+    5:     <div class="nav nav-pills" id="nav-tab" role="tablist">
+  
+app/views/sentences/index.html.erb:2
+Started GET "/" for 127.0.0.1 at 2020-04-13 15:20:11 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.6ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:20
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 6.7ms | Allocations: 3024)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 22.0ms | Allocations: 8966)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 55ms (Views: 48.7ms | ActiveRecord: 1.5ms | Allocations: 19351)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-04-13 15:20:11 +0200
+Started GET "/" for 127.0.0.1 at 2020-04-13 15:20:38 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.4ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:21
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 8.4ms | Allocations: 3024)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 28.8ms | Allocations: 11103)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 59ms (Views: 49.0ms | ActiveRecord: 1.2ms | Allocations: 21268)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-04-13 15:20:39 +0200
+Started GET "/" for 127.0.0.1 at 2020-04-13 15:21:01 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (1.4ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:21
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 10.8ms | Allocations: 2675)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 52.1ms | Allocations: 10276)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 82ms (Views: 72.7ms | ActiveRecord: 2.4ms | Allocations: 19235)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-04-13 15:21:01 +0200
+Started GET "/" for 127.0.0.1 at 2020-04-13 15:21:18 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.5ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:21
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 5.2ms | Allocations: 2672)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 23.1ms | Allocations: 10270)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 44ms (Views: 37.0ms | ActiveRecord: 1.1ms | Allocations: 19237)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-04-13 15:21:19 +0200
+Started DELETE "/sentences/22" for 127.0.0.1 at 2020-04-13 15:23:21 +0200
+Processing by SentencesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"t3XZhUxPLenGmae3uVNhXt1bOoe8AqaRKm9s6U9YGu+hsS/7v4MBYaU84u9iWyBW11N0QdLfhIvj9KpFywNQwA==", "id"=>"22"}
+  [1m[36mSentence Load (2.5ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."id" = $1 LIMIT $2[0m  [["id", 22], ["LIMIT", 1]]
+  ↳ app/controllers/sentences_controller.rb:94:in `set_sentence'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (1.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/sentences_controller.rb:84:in `destroy'
+  [1m[36mSentence Destroy (5.6ms)[0m  [1m[31mDELETE FROM "sentences" WHERE "sentences"."id" = $1[0m  [["id", 22]]
+  ↳ app/controllers/sentences_controller.rb:84:in `destroy'
+  [1m[35m (5.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/sentences_controller.rb:84:in `destroy'
+Redirected to http://127.0.0.1:3000/sentences
+Completed 302 Found in 41ms (ActiveRecord: 15.4ms | Allocations: 4212)
+
+
+Started GET "/sentences" for 127.0.0.1 at 2020-04-13 15:23:21 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.3ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:21
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 12.2ms | Allocations: 3024)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 57.1ms | Allocations: 10985)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 112ms (Views: 104.4ms | ActiveRecord: 0.9ms | Allocations: 21182)
+
+
+Started DELETE "/sentences/26" for 127.0.0.1 at 2020-04-13 15:23:27 +0200
+Processing by SentencesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"MGTF0H+IUbugeKWcKERf6FhWjQ4EqLbE5JHKxb9FHDomoDOujER9M8Pd4MTzTB7gUl7DyGp1lN4tCgxpOx5WFQ==", "id"=>"26"}
+  [1m[36mSentence Load (0.8ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/sentences_controller.rb:94:in `set_sentence'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/sentences_controller.rb:84:in `destroy'
+  [1m[36mSentence Destroy (2.5ms)[0m  [1m[31mDELETE FROM "sentences" WHERE "sentences"."id" = $1[0m  [["id", 26]]
+  ↳ app/controllers/sentences_controller.rb:84:in `destroy'
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/sentences_controller.rb:84:in `destroy'
+Redirected to http://127.0.0.1:3000/sentences
+Completed 302 Found in 16ms (ActiveRecord: 5.4ms | Allocations: 4027)
+
+
+Started GET "/sentences" for 127.0.0.1 at 2020-04-13 15:23:27 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.4ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:21
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 9.7ms | Allocations: 2675)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 27.5ms | Allocations: 10037)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 72ms (Views: 68.3ms | ActiveRecord: 0.7ms | Allocations: 19036)
+
+
+Started DELETE "/sentences/31" for 127.0.0.1 at 2020-04-13 15:23:30 +0200
+Processing by SentencesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"5SoSgGNb2ZpmdVcprdKZqHHhxUJq0b4VYIpD9/3Hc4nz7uT+kJf1EgXQEnF22tige+mLhAQMnA+pEYVbeZw5pg==", "id"=>"31"}
+  [1m[36mSentence Load (0.7ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."id" = $1 LIMIT $2[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/sentences_controller.rb:94:in `set_sentence'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/sentences_controller.rb:84:in `destroy'
+  [1m[36mSentence Destroy (0.9ms)[0m  [1m[31mDELETE FROM "sentences" WHERE "sentences"."id" = $1[0m  [["id", 31]]
+  ↳ app/controllers/sentences_controller.rb:84:in `destroy'
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/sentences_controller.rb:84:in `destroy'
+Redirected to http://127.0.0.1:3000/sentences
+Completed 302 Found in 14ms (ActiveRecord: 4.4ms | Allocations: 4027)
+
+
+Started GET "/sentences" for 127.0.0.1 at 2020-04-13 15:23:30 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.4ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:21
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 6.8ms | Allocations: 2672)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 84.4ms | Allocations: 9914)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 104ms (Views: 99.1ms | ActiveRecord: 1.0ms | Allocations: 19009)
+
+
+Started DELETE "/sentences/37" for 127.0.0.1 at 2020-04-13 15:23:36 +0200
+Processing by SentencesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qfpia1M/vB4Oy7YiOHNEg20YdA7WgjWtBlTIkOZvbZ6/PpQVoPOQlm1u83rjewWLZxA6yLhfF7fPzw48YjQnsQ==", "id"=>"37"}
+  [1m[36mSentence Load (0.8ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."id" = $1 LIMIT $2[0m  [["id", 37], ["LIMIT", 1]]
+  ↳ app/controllers/sentences_controller.rb:94:in `set_sentence'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/sentences_controller.rb:84:in `destroy'
+  [1m[36mSentence Destroy (1.3ms)[0m  [1m[31mDELETE FROM "sentences" WHERE "sentences"."id" = $1[0m  [["id", 37]]
+  ↳ app/controllers/sentences_controller.rb:84:in `destroy'
+  [1m[35m (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/sentences_controller.rb:84:in `destroy'
+Redirected to http://127.0.0.1:3000/sentences
+Completed 302 Found in 15ms (ActiveRecord: 4.8ms | Allocations: 4035)
+
+
+Started GET "/sentences" for 127.0.0.1 at 2020-04-13 15:23:36 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (13.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.6ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:21
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 11.2ms | Allocations: 2672)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 77.9ms | Allocations: 9792)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 116ms (Views: 95.9ms | ActiveRecord: 14.2ms | Allocations: 18802)
+
+
+Started DELETE "/sentences/35" for 127.0.0.1 at 2020-04-13 15:23:41 +0200
+Processing by SentencesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ehcunk404jhZ9VafJYj4da3keKgkg8cd/KEJmzr2dwls09jgvfjOsDpQE8f+gLl9p+w2bkpe5Qc1Os83vq09Jg==", "id"=>"35"}
+  [1m[36mSentence Load (0.9ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."id" = $1 LIMIT $2[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/sentences_controller.rb:94:in `set_sentence'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/sentences_controller.rb:84:in `destroy'
+  [1m[36mSentence Destroy (1.0ms)[0m  [1m[31mDELETE FROM "sentences" WHERE "sentences"."id" = $1[0m  [["id", 35]]
+  ↳ app/controllers/sentences_controller.rb:84:in `destroy'
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/sentences_controller.rb:84:in `destroy'
+Redirected to http://127.0.0.1:3000/sentences
+Completed 302 Found in 14ms (ActiveRecord: 6.6ms | Allocations: 4033)
+
+
+Started GET "/sentences" for 127.0.0.1 at 2020-04-13 15:23:41 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.6ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:21
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 11.4ms | Allocations: 2672)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 52.5ms | Allocations: 9673)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 81ms (Views: 73.9ms | ActiveRecord: 1.7ms | Allocations: 18771)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-13 15:38:46 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/marco-explorabiotech/Documents/RoR/tabae2/tabae/public/packs
+[Webpacker] warning ../../../../package.json: No license field
+
+[Webpacker] Hash: 8910dbc546e343a5f1f7
+Version: webpack 4.41.5
+Time: 11205ms
+Built at: 04/13/2020 3:39:03 PM
+                                                 Asset      Size                   Chunks                         Chunk Names
+                js/application-fd6454b8854e632a8086.js  1.57 MiB              application  [emitted] [immutable]  application
+            js/application-fd6454b8854e632a8086.js.map  1.75 MiB              application  [emitted] [dev]        application
+              js/serviceworker-afe703169ea4f9939e14.js  5.52 KiB            serviceworker  [emitted] [immutable]  serviceworker
+          js/serviceworker-afe703169ea4f9939e14.js.map  5.78 KiB            serviceworker  [emitted] [dev]        serviceworker
+    js/stylesheets/application-72629f14e5eaa0fd1712.js   681 KiB  stylesheets/application  [emitted] [immutable]  stylesheets/application
+js/stylesheets/application-72629f14e5eaa0fd1712.js.map   704 KiB  stylesheets/application  [emitted] [dev]        stylesheets/application
+                      js/voice-13491fb412959806d845.js  4.74 KiB                    voice  [emitted] [immutable]  voice
+                  js/voice-13491fb412959806d845.js.map  4.65 KiB                    voice  [emitted] [dev]        voice
+                                         manifest.json   1.4 KiB                           [emitted]              
+Entrypoint application = js/application-fd6454b8854e632a8086.js js/application-fd6454b8854e632a8086.js.map
+Entrypoint serviceworker = js/serviceworker-afe703169ea4f9939e14.js js/serviceworker-afe703169ea4f9939e14.js.map
+Entrypoint stylesheets/application = js/stylesheets/application-72629f14e5eaa0fd1712.js js/stylesheets/application-72629f14e5eaa0fd1712.js.map
+Entrypoint voice = js/voice-13491fb412959806d845.js js/voice-13491fb412959806d845.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.29 KiB {application} [built]
+[./app/javascript/packs/serviceworker.js] 1.61 KiB {serviceworker} [built]
+[./app/javascript/packs/stylesheets/application.scss] 729 bytes {stylesheets/application} {application} [built]
+[./app/javascript/packs/voice.js] 900 bytes {voice} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/packs/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/packs/stylesheets/application.scss 666 KiB {application} {stylesheets/application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 878 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 38 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (1.0ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:21
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 12.9ms | Allocations: 2672)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 17372.1ms | Allocations: 10984)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17447ms (Views: 17409.9ms | ActiveRecord: 2.7ms | Allocations: 20070)
+
+
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-04-13 15:39:04 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-04-13 15:39:04 +0200
+Started GET "/manifest.json" for 127.0.0.1 at 2020-04-13 15:39:06 +0200
+Started GET "/" for 127.0.0.1 at 2020-04-13 15:40:00 +0200
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.9ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:21
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 14.7ms | Allocations: 3322)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 42.5ms | Allocations: 11036)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 336ms (Views: 257.1ms | ActiveRecord: 10.9ms | Allocations: 46087)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-04-13 15:40:01 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-04-13 15:40:05 +0200
+Started GET "/" for 127.0.0.1 at 2020-04-13 15:46:09 +0200
+Processing by SentencesController#index as */*
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/marco-explorabiotech/Documents/RoR/tabae2/tabae/public/packs
+[Webpacker] warning ../../../../package.json: No license field
+
+[Webpacker] Hash: 6d49bc23a16f129d994d
+Version: webpack 4.41.5
+Time: 6973ms
+Built at: 04/13/2020 3:46:21 PM
+                                                 Asset      Size                   Chunks                         Chunk Names
+                js/application-fd6454b8854e632a8086.js  1.57 MiB              application  [emitted] [immutable]  application
+            js/application-fd6454b8854e632a8086.js.map  1.75 MiB              application  [emitted] [dev]        application
+              js/serviceworker-27991ce78e92a96fff46.js  5.51 KiB            serviceworker  [emitted] [immutable]  serviceworker
+          js/serviceworker-27991ce78e92a96fff46.js.map  5.76 KiB            serviceworker  [emitted] [dev]        serviceworker
+    js/stylesheets/application-72629f14e5eaa0fd1712.js   681 KiB  stylesheets/application  [emitted] [immutable]  stylesheets/application
+js/stylesheets/application-72629f14e5eaa0fd1712.js.map   704 KiB  stylesheets/application  [emitted] [dev]        stylesheets/application
+                      js/voice-13491fb412959806d845.js  4.74 KiB                    voice  [emitted] [immutable]  voice
+                  js/voice-13491fb412959806d845.js.map  4.65 KiB                    voice  [emitted] [dev]        voice
+                                         manifest.json   1.4 KiB                           [emitted]              
+Entrypoint application = js/application-fd6454b8854e632a8086.js js/application-fd6454b8854e632a8086.js.map
+Entrypoint serviceworker = js/serviceworker-27991ce78e92a96fff46.js js/serviceworker-27991ce78e92a96fff46.js.map
+Entrypoint stylesheets/application = js/stylesheets/application-72629f14e5eaa0fd1712.js js/stylesheets/application-72629f14e5eaa0fd1712.js.map
+Entrypoint voice = js/voice-13491fb412959806d845.js js/voice-13491fb412959806d845.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.29 KiB {application} [built]
+[./app/javascript/packs/serviceworker.js] 1.6 KiB {serviceworker} [built]
+[./app/javascript/packs/stylesheets/application.scss] 729 bytes {stylesheets/application} {application} [built]
+[./app/javascript/packs/voice.js] 900 bytes {voice} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/packs/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/packs/stylesheets/application.scss 666 KiB {application} {stylesheets/application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 878 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 38 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.5ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:21
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 8.0ms | Allocations: 3024)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 12491.4ms | Allocations: 12654)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12544ms (Views: 12520.9ms | ActiveRecord: 6.4ms | Allocations: 26511)
+
+
+Started GET "/sentences.json" for 127.0.0.1 at 2020-04-13 15:48:29 +0200
+Processing by SentencesController#index as JSON
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.json.jbuilder
+  [1m[36mSentence Load (0.6ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.json.jbuilder:1
+  Rendered sentences/_sentence.json.jbuilder (Duration: 2.9ms | Allocations: 181)
+  Rendered sentences/_sentence.json.jbuilder (Duration: 0.5ms | Allocations: 87)
+  Rendered sentences/_sentence.json.jbuilder (Duration: 1.0ms | Allocations: 87)
+  Rendered sentences/_sentence.json.jbuilder (Duration: 0.4ms | Allocations: 87)
+  Rendered sentences/_sentence.json.jbuilder (Duration: 0.7ms | Allocations: 87)
+  Rendered sentences/_sentence.json.jbuilder (Duration: 0.5ms | Allocations: 87)
+  Rendered sentences/_sentence.json.jbuilder (Duration: 0.8ms | Allocations: 88)
+  Rendered sentences/_sentence.json.jbuilder (Duration: 0.5ms | Allocations: 87)
+  Rendered sentences/_sentence.json.jbuilder (Duration: 0.4ms | Allocations: 86)
+  Rendered sentences/_sentence.json.jbuilder (Duration: 0.3ms | Allocations: 86)
+  Rendered sentences/_sentence.json.jbuilder (Duration: 0.3ms | Allocations: 86)
+  Rendered sentences/_sentence.json.jbuilder (Duration: 0.3ms | Allocations: 87)
+  Rendered sentences/_sentence.json.jbuilder (Duration: 0.4ms | Allocations: 86)
+  Rendered sentences/_sentence.json.jbuilder (Duration: 0.3ms | Allocations: 86)
+  Rendered sentences/_sentence.json.jbuilder (Duration: 0.3ms | Allocations: 86)
+  Rendered sentences/_sentence.json.jbuilder (Duration: 0.4ms | Allocations: 86)
+  Rendered sentences/index.json.jbuilder (Duration: 24.2ms | Allocations: 5314)
+Completed 200 OK in 53ms (Views: 42.5ms | ActiveRecord: 1.3ms | Allocations: 8693)
+
+
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-04-13 15:48:31 +0200
+Started GET "/" for 127.0.0.1 at 2020-04-13 15:49:56 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/marco-explorabiotech/Documents/RoR/tabae2/tabae/public/packs
+[Webpacker] warning ../../../../package.json: No license field
+
+[Webpacker] Hash: eb1fcd19dfeda1c3038c
+Version: webpack 4.41.5
+Time: 6845ms
+Built at: 04/13/2020 3:50:08 PM
+                                                 Asset      Size                   Chunks                         Chunk Names
+                js/application-fd6454b8854e632a8086.js  1.57 MiB              application  [emitted] [immutable]  application
+            js/application-fd6454b8854e632a8086.js.map  1.75 MiB              application  [emitted] [dev]        application
+               js/localstorage-aab74820b4c2cb5b79b0.js  3.93 KiB             localstorage  [emitted] [immutable]  localstorage
+           js/localstorage-aab74820b4c2cb5b79b0.js.map  3.62 KiB             localstorage  [emitted] [dev]        localstorage
+              js/serviceworker-27991ce78e92a96fff46.js  5.51 KiB            serviceworker  [emitted] [immutable]  serviceworker
+          js/serviceworker-27991ce78e92a96fff46.js.map  5.76 KiB            serviceworker  [emitted] [dev]        serviceworker
+    js/stylesheets/application-72629f14e5eaa0fd1712.js   681 KiB  stylesheets/application  [emitted] [immutable]  stylesheets/application
+js/stylesheets/application-72629f14e5eaa0fd1712.js.map   704 KiB  stylesheets/application  [emitted] [dev]        stylesheets/application
+                      js/voice-13491fb412959806d845.js  4.74 KiB                    voice  [emitted] [immutable]  voice
+                  js/voice-13491fb412959806d845.js.map  4.65 KiB                    voice  [emitted] [dev]        voice
+                                         manifest.json  1.74 KiB                           [emitted]              
+Entrypoint application = js/application-fd6454b8854e632a8086.js js/application-fd6454b8854e632a8086.js.map
+Entrypoint localstorage = js/localstorage-aab74820b4c2cb5b79b0.js js/localstorage-aab74820b4c2cb5b79b0.js.map
+Entrypoint serviceworker = js/serviceworker-27991ce78e92a96fff46.js js/serviceworker-27991ce78e92a96fff46.js.map
+Entrypoint stylesheets/application = js/stylesheets/application-72629f14e5eaa0fd1712.js js/stylesheets/application-72629f14e5eaa0fd1712.js.map
+Entrypoint voice = js/voice-13491fb412959806d845.js js/voice-13491fb412959806d845.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.29 KiB {application} [built]
+[./app/javascript/packs/localstorage.js] 33 bytes {localstorage} [built]
+[./app/javascript/packs/serviceworker.js] 1.6 KiB {serviceworker} [built]
+[./app/javascript/packs/stylesheets/application.scss] 729 bytes {stylesheets/application} {application} [built]
+[./app/javascript/packs/voice.js] 900 bytes {voice} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/packs/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/packs/stylesheets/application.scss 666 KiB {application} {stylesheets/application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 878 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 38 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.6ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:21
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 8.5ms | Allocations: 2701)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 12471.2ms | Allocations: 11132)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12502ms (Views: 12491.9ms | ActiveRecord: 1.1ms | Allocations: 20332)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-04-13 15:50:09 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-04-13 15:50:11 +0200
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-13 15:50:12 +0200
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 24ms (ActiveRecord: 0.4ms | Allocations: 4159)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-13 15:50:12 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.3ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:21
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 6.0ms | Allocations: 2696)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 20.3ms | Allocations: 9744)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 33.6ms | ActiveRecord: 0.8ms | Allocations: 18752)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-04-13 15:50:13 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-04-13 15:50:14 +0200
+Started GET "/sentences.json" for 127.0.0.1 at 2020-04-13 15:50:19 +0200
+Processing by SentencesController#index as JSON
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.json.jbuilder
+  [1m[36mSentence Load (0.6ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.json.jbuilder:1
+  Rendered sentences/_sentence.json.jbuilder (Duration: 0.8ms | Allocations: 108)
+  Rendered sentences/_sentence.json.jbuilder (Duration: 0.9ms | Allocations: 87)
+  Rendered sentences/_sentence.json.jbuilder (Duration: 0.5ms | Allocations: 87)
+  Rendered sentences/_sentence.json.jbuilder (Duration: 0.4ms | Allocations: 87)
+  Rendered sentences/_sentence.json.jbuilder (Duration: 0.7ms | Allocations: 87)
+  Rendered sentences/_sentence.json.jbuilder (Duration: 0.4ms | Allocations: 87)
+  Rendered sentences/_sentence.json.jbuilder (Duration: 1.0ms | Allocations: 88)
+  Rendered sentences/_sentence.json.jbuilder (Duration: 0.6ms | Allocations: 87)
+  Rendered sentences/_sentence.json.jbuilder (Duration: 0.5ms | Allocations: 86)
+  Rendered sentences/_sentence.json.jbuilder (Duration: 0.5ms | Allocations: 86)
+  Rendered sentences/_sentence.json.jbuilder (Duration: 0.3ms | Allocations: 86)
+  Rendered sentences/_sentence.json.jbuilder (Duration: 0.4ms | Allocations: 87)
+  Rendered sentences/_sentence.json.jbuilder (Duration: 0.3ms | Allocations: 86)
+  Rendered sentences/_sentence.json.jbuilder (Duration: 0.2ms | Allocations: 86)
+  Rendered sentences/_sentence.json.jbuilder (Duration: 0.2ms | Allocations: 86)
+  Rendered sentences/_sentence.json.jbuilder (Duration: 0.3ms | Allocations: 86)
+  Rendered sentences/index.json.jbuilder (Duration: 20.5ms | Allocations: 5042)
+Completed 200 OK in 27ms (Views: 20.9ms | ActiveRecord: 1.1ms | Allocations: 7166)
+
+
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-04-13 15:50:21 +0200
+Started GET "/" for 127.0.0.1 at 2020-04-13 15:57:47 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.5ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:18
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 11.2ms | Allocations: 3046)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 58.3ms | Allocations: 10630)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 123ms (Views: 100.0ms | ActiveRecord: 1.8ms | Allocations: 20954)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-04-13 15:57:48 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-04-13 15:57:50 +0200
+Started GET "/" for 127.0.0.1 at 2020-04-13 15:57:50 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (1.1ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:18
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 8.0ms | Allocations: 2699)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 35.2ms | Allocations: 9752)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 84ms (Views: 69.2ms | ActiveRecord: 2.6ms | Allocations: 18804)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-04-13 15:57:51 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-04-13 15:57:53 +0200
+Started GET "/" for 127.0.0.1 at 2020-04-13 15:58:07 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.5ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:18
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 8.4ms | Allocations: 3046)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 37.5ms | Allocations: 12472)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 67ms (Views: 59.8ms | ActiveRecord: 0.9ms | Allocations: 22690)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-04-13 15:58:08 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-04-13 15:58:10 +0200
+Started GET "/" for 127.0.0.1 at 2020-04-13 15:59:23 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.6ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:18
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 9.1ms | Allocations: 3046)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 40.8ms | Allocations: 12459)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 70ms (Views: 64.0ms | ActiveRecord: 1.1ms | Allocations: 22742)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-04-13 15:59:24 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-04-13 15:59:26 +0200
+Started GET "/" for 127.0.0.1 at 2020-04-13 16:00:48 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.4ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:18
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 7.9ms | Allocations: 3046)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 35.9ms | Allocations: 12509)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 67ms (Views: 57.5ms | ActiveRecord: 2.0ms | Allocations: 22829)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-04-13 16:00:48 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-04-13 16:00:50 +0200
+Started GET "/" for 127.0.0.1 at 2020-04-13 16:01:06 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.4ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:18
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 8.2ms | Allocations: 3046)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 35.8ms | Allocations: 12467)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 62ms (Views: 55.5ms | ActiveRecord: 1.1ms | Allocations: 22772)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-04-13 16:01:07 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-04-13 16:01:09 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-04-13 16:13:54 +0200
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2020-04-13 16:13:55 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.7ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:18
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 18.8ms | Allocations: 3343)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 66.1ms | Allocations: 13004)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 290ms (Views: 164.8ms | ActiveRecord: 20.1ms | Allocations: 46356)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-04-13 16:13:57 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-04-13 16:13:59 +0200
+Started GET "/" for 127.0.0.1 at 2020-04-13 16:15:00 +0200
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.4ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:18
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 14.3ms | Allocations: 3343)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 42.2ms | Allocations: 13010)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 347ms (Views: 272.1ms | ActiveRecord: 10.2ms | Allocations: 47890)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-04-13 16:15:01 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-04-13 16:15:03 +0200
+Started GET "/" for 127.0.0.1 at 2020-04-13 17:02:32 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mSentence Load (0.5ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/sentences/index.html.erb:18
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 15.1ms | Allocations: 2699)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 77.6ms | Allocations: 11662)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 153ms (Views: 127.1ms | ActiveRecord: 1.8ms | Allocations: 20888)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-04-13 17:02:34 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-04-13 17:02:36 +0200
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from load at /Users/marco-explorabiotech/.rbenv/versions/2.7.0/bin/rake:23)
+Started GET "/" for 127.0.0.1 at 2020-04-15 21:34:57 +0200
+  [1m[35m (5.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SentencesController#index as HTML
+Completed 401 Unauthorized in 16ms (ActiveRecord: 0.0ms | Allocations: 1103)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-15 21:34:57 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 4.2ms | Allocations: 602)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 25.6ms | Allocations: 2826)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 351ms (Views: 310.4ms | ActiveRecord: 19.8ms | Allocations: 27787)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-04-15 21:35:06 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"uVStoVyqXq2g6/k6FNEoUXpnfIJWUM7O6z2W+Q0zfFdjk+7ImNzs+hTCcPb6LHK8KJshFu09aJH6j0c+i6t7WQ==", "user"=>{"email"=>"linediconsine@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (8.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "linediconsine@gmail.com"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 190ms (ActiveRecord: 8.6ms | Allocations: 5267)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-15 21:35:06 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSentence Load (2.3ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:9:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 7.4ms | Allocations: 4094)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 41.0ms | Allocations: 10789)
+Completed 500 Internal Server Error in 118ms (ActiveRecord: 7.8ms | Allocations: 21588)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <%= javascript_pack_tag 'voice' %>
+    2: <%= form_with(model: sentence, local: true) do |form| %>
+    3:   <% if sentence.errors.any? %>
+    4:     <div id="error_explanation">
+    5:       <h2><%= pluralize(sentence.errors.count, "error") %> prohibited this sentence from being saved:</h2>
+    6: 
+  
+app/views/sentences/_form.html.erb:3
+app/views/sentences/_form.html.erb:2
+app/views/sentences/index.html.erb:56
+Started GET "/" for 127.0.0.1 at 2020-04-15 21:35:42 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSentence Load (0.4ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:9:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 10.0ms | Allocations: 2849)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 34.7ms | Allocations: 10917)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 88ms (Views: 50.6ms | ActiveRecord: 7.3ms | Allocations: 30740)
+
+
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-04-15 21:35:43 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-04-15 21:35:43 +0200
+Started POST "/sentences" for 127.0.0.1 at 2020-04-15 21:35:53 +0200
+Processing by SentencesController#create as HTML
+  Parameters: {"authenticity_token"=>"ntKrgyQ2Amik8HRYtZ+VITbvkg+PHQ02z4VSSKJaWWp6mUcF/JRkbSMvdCwPq/TLymQ1ESZmBt7nRmdXhMJw+Q==", "sentence"=>{"name"=>"", "color"=>"", "group"=>"", "sentence"=>"ultima"}, "commit"=>"Salva"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/sentences_controller.rb:56:in `block in create'
+  [1m[36mSentence Create (27.8ms)[0m  [1m[32mINSERT INTO "sentences" ("name", "sentence", "group", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", ""], ["sentence", "ultima"], ["group", ""], ["created_at", "2020-04-15 19:35:53.428145"], ["updated_at", "2020-04-15 19:35:53.428145"], ["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:56:in `block in create'
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/sentences_controller.rb:56:in `block in create'
+Redirected to http://127.0.0.1:3000/sentences/40
+Completed 302 Found in 47ms (ActiveRecord: 35.1ms | Allocations: 4579)
+
+
+Started GET "/sentences/40" for 127.0.0.1 at 2020-04-15 21:35:53 +0200
+Processing by SentencesController#show as HTML
+  Parameters: {"id"=>"40"}
+  [1m[36mSentence Load (0.4ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."id" = $1 LIMIT $2[0m  [["id", 40], ["LIMIT", 1]]
+  ↳ app/controllers/sentences_controller.rb:94:in `set_sentence'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/sentences
+Completed 302 Found in 6ms (ActiveRecord: 0.8ms | Allocations: 2951)
+
+
+Started GET "/sentences" for 127.0.0.1 at 2020-04-15 21:35:53 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSentence Load (0.5ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:9:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 5.8ms | Allocations: 2696)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 32.7ms | Allocations: 10955)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 55ms (Views: 49.2ms | ActiveRecord: 0.8ms | Allocations: 20857)
+
+
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-04-15 21:35:54 +0200
+Started GET "/sentences" for 127.0.0.1 at 2020-04-15 21:37:17 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSentence Load (0.4ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:9:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 6.3ms | Allocations: 2696)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 29.6ms | Allocations: 10967)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 54ms (Views: 48.4ms | ActiveRecord: 1.0ms | Allocations: 20928)
+
+
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-04-15 21:37:18 +0200
+Started GET "/" for 127.0.0.1 at 2020-04-15 21:37:54 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSentence Load (0.6ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:9:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 9.3ms | Allocations: 2696)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 26.6ms | Allocations: 10967)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 60ms (Views: 42.1ms | ActiveRecord: 1.7ms | Allocations: 20839)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-15 21:37:54 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSentence Load (0.4ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:9:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 5.1ms | Allocations: 2696)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 17.9ms | Allocations: 10968)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 36ms (Views: 29.7ms | ActiveRecord: 0.8ms | Allocations: 20857)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-15 21:37:55 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSentence Load (1.6ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:9:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 6.7ms | Allocations: 2696)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 33.8ms | Allocations: 10967)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 57ms (Views: 47.8ms | ActiveRecord: 2.7ms | Allocations: 20939)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-15 21:39:12 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSentence Load (0.3ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:9:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 5.2ms | Allocations: 2696)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 29.8ms | Allocations: 10968)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 86ms (Views: 79.6ms | ActiveRecord: 0.6ms | Allocations: 24045)
+
+
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-04-15 21:39:13 +0200
+Started GET "/" for 127.0.0.1 at 2020-04-15 21:39:31 +0200
+Processing by SentencesController#index as HTML
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.0ms | Allocations: 254)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-04-15 21:39:31 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 143)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1018)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 51ms (Views: 49.3ms | ActiveRecord: 0.0ms | Allocations: 9151)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-04-15 21:39:33 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-04-15 21:39:36 +0200
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-04-15 21:39:38 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"iGsTXfMFay3yaByYNVYlSRRJ1CODMq4w6kDJEyZo/lAS0QOSYaLdnlZ16d2sOLkSHSGo8IpZP3SqKlQWn6ZsWg==", "user"=>{"email"=>"linediconsine@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "linediconsine@gmail.com"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 159ms (ActiveRecord: 0.8ms | Allocations: 2767)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-15 21:39:38 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSentence Load (0.5ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:9:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 10.4ms | Allocations: 2700)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 39.2ms | Allocations: 10969)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 67ms (Views: 59.7ms | ActiveRecord: 0.8ms | Allocations: 20895)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-04-15 21:39:39 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-04-15 21:39:40 +0200
+Started GET "/" for 127.0.0.1 at 2020-04-15 21:39:44 +0200
+Processing by SentencesController#index as */*
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSentence Load (0.6ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:9:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 17.1ms | Allocations: 3208)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 48.6ms | Allocations: 11956)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 149ms (Views: 138.4ms | ActiveRecord: 1.2ms | Allocations: 23679)
+
+
+Started GET "/" for 127.0.0.1 at 2020-04-15 21:40:22 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSentence Load (0.5ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:9:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 5.9ms | Allocations: 2696)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 34.8ms | Allocations: 10967)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 69ms (Views: 53.8ms | ActiveRecord: 1.0ms | Allocations: 20890)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-04-15 21:40:26 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-04-15 21:40:27 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-04-15 21:44:32 +0200

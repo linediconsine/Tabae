@@ -4,3 +4,6 @@
 .card {
   background: #88cf8f;
 }
+body.offline .only_online {
+  display: none;
+}
