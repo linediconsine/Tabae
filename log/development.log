@@ -15661,3 +15661,41 @@ Completed 200 OK in 72ms (Views: 61.0ms | ActiveRecord: 1.0ms | Allocations: 204
 
 Started GET "/manifest.json" for 127.0.0.1 at 2020-04-18 10:13:01 +0200
 Started GET "/serviceworker.js" for 127.0.0.1 at 2020-04-18 10:13:02 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-04-18 10:33:24 +0200
+  [1m[35m (4.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/sentences" for 127.0.0.1 at 2020-04-18 10:33:24 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSentence Load (0.6ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:9:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 15.7ms | Allocations: 3490)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 61.0ms | Allocations: 12668)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 379ms (Views: 259.8ms | ActiveRecord: 18.0ms | Allocations: 51708)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-04-18 10:33:25 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-04-18 10:33:27 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-04-18 10:33:48 +0200
+Started GET "/sentences" for 127.0.0.1 at 2020-04-18 10:33:49 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSentence Load (0.4ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:9:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 7.4ms | Allocations: 2699)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 55.4ms | Allocations: 10537)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 97ms (Views: 82.2ms | ActiveRecord: 1.3ms | Allocations: 20492)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-04-18 10:33:50 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-04-18 10:33:52 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-04-18 10:34:03 +0200
