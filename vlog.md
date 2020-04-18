@@ -10,3 +10,7 @@ psql -c '\x' -c 'ALTER USER amph CREATEDB;'
 
 psql -c '\x' -c 'ALTER USER amph CREATEDB;'
 CREATE DATABASE databasename
+
+# start pg
+
+pg_ctl -D /usr/local/var/postgres start
