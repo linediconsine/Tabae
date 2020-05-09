@@ -1,0 +1,29 @@
+// Your variable overrides
+$body-bg: #5547f6;
+$body-color: #fff;
+$input-focus-border-color: #6d2077;
+
+$theme-colors: (
+  "primary": #222,
+  "secondary": #cacaca,
+  "success": #bec0d3,
+  "info": #0f81c7,
+  "warning": #0de2ea,
+  "danger": #06648c,
+  "light": #ececec,
+  "dark": #222222,
+);
+
+// Typography
+//$font-size-base: 12px; // this changes the font-size throughout bootstrap
+//$font-family-sans-serif: "Raleway", sans-serif;
+$font-size-base: 1.3rem;
+//$line-height-base: 1.2;
+
+.card {
+  border-radius: 10px;
+}
+.card-text {
+  color: #3e33b9;
+  font-size: 1.2rem;
+}

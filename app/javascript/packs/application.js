@@ -3,6 +3,10 @@
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
 
+//= require jquery3
+//= require popper
+//= require bootstrap-sprockets
+
 require("@rails/ujs").start();
 require("turbolinks").start();
 require("@rails/activestorage").start();
@@ -19,22 +23,11 @@ require("axios");
 // const imagePath = (name) => images(name, true)
 
 import "bootstrap";
-import "./stylesheets/application.scss";
+import "../stylesheets/application";
 import axios from "axios";
-import vue from "vue";
+//import vue from "vue";
 
 document.addEventListener("turbolinks:load", () => {
   $('[data-toggle="tooltip"]').tooltip();
-
-  // window.axios = axios;
-  // const csrfToken = document
-  //   .querySelector('[name="csrf-token"]')
-  //   .getAttribute("content");
-  // axios.post("/api/new", {
-  //   name: "name",
-  //   sentence: "sentence",
-  //   color: "color",
-  //   group: "group",
-  //   authenticity_token: csrfToken,
-  // });
+  $('[data-toggle="popover"]').popover();
 });

@@ -3,6 +3,16 @@ class SentencesController < ApplicationController
   #before_action :set_json_response, only: [:apicreate]
   before_action :authenticate_user!
 
+  # DELETE /sentences/1
+  # DELETE /sentences/1.json
+  def destroy
+    @sentence.destroy
+    respond_to do |format|
+      format.html { redirect_to sentences_url, notice: 'Ho cancellato la frase.' }
+      format.json { head :no_content }
+    end
+  end
+
   # GET /sentences
   # GET /sentences.json
   def index
@@ -78,15 +88,7 @@ class SentencesController < ApplicationController
     end
   end
 
-  # DELETE /sentences/1
-  # DELETE /sentences/1.json
-  def destroy
-    @sentence.destroy
-    respond_to do |format|
-      format.html { redirect_to sentences_url, notice: 'Ho cancellato la frase.' }
-      format.json { head :no_content }
-    end
-  end
+
 
   private
     # Use callbacks to share common setup or constraints between actions.

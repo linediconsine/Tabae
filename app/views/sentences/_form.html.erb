@@ -30,5 +30,8 @@
     <!-- <a class='only_offline btn btn-space btn-secondary'> Salva offline </a> -->
 
     <a onclick="voice(document.getElementById('sentence_sentence').value)" class="btn btn-space btn-primary">Parla</a>
+
+   <%= link_to 'Cancella', sentence, method: :delete, data: { confirm: 'Conferma per cencellare' } , class: "btn btn-space btn-secondary" %>
+       
   </div>
 <% end %>

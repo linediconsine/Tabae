@@ -16,7 +16,22 @@
 <div class="fluid-container pt-3">
   <div class="row" id="main">
     <% @sentences.each do |sentence| %>
-      
+
+    <div class="col-lg-4 my-1" >
+      <div class="card" >
+       <a class="d-block p-1 view overlay zoom" onClick="voice('<%= escape_javascript sentence.sentence %>')">
+        
+          <div class="card-body">
+                <p class="card-text"><%= truncate(sentence.sentence, :length => 30) %>   </p>
+          </div>
+
+         </a>
+         <div class="card-footer small" style="padding: 7px 10px">
+            <%= link_to 'Edita', edit_sentence_path(sentence) , class: "card-link float-right"%>
+         </div>
+    </div>
+  </div>
+      <!--
       <div class="col-lg-4 my-1 " >
         <div class="card card-item shadow bg-light sentence">
           <div class="row">
@@ -43,6 +58,7 @@
           
         </div>
       </div>
+      -->
     <% end %>
     
   </div>

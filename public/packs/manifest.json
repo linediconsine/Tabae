@@ -1,13 +1,13 @@
 {
-  "application.js": "/packs/js/application-fd6454b8854e632a8086.js",
-  "application.js.map": "/packs/js/application-fd6454b8854e632a8086.js.map",
+  "application.js": "/packs/js/application-23dc33199c13564c1f20.js",
+  "application.js.map": "/packs/js/application-23dc33199c13564c1f20.js.map",
   "entrypoints": {
     "application": {
       "js": [
-        "/packs/js/application-fd6454b8854e632a8086.js"
+        "/packs/js/application-23dc33199c13564c1f20.js"
       ],
       "js.map": [
-        "/packs/js/application-fd6454b8854e632a8086.js.map"
+        "/packs/js/application-23dc33199c13564c1f20.js.map"
       ]
     },
     "localstorage": {
@@ -26,14 +26,6 @@
         "/packs/js/serviceworker-27991ce78e92a96fff46.js.map"
       ]
     },
-    "stylesheets/application": {
-      "js": [
-        "/packs/js/stylesheets/application-72629f14e5eaa0fd1712.js"
-      ],
-      "js.map": [
-        "/packs/js/stylesheets/application-72629f14e5eaa0fd1712.js.map"
-      ]
-    },
     "voice": {
       "js": [
         "/packs/js/voice-13491fb412959806d845.js"
@@ -47,8 +39,6 @@
   "localstorage.js.map": "/packs/js/localstorage-aab74820b4c2cb5b79b0.js.map",
   "serviceworker.js": "/packs/js/serviceworker-27991ce78e92a96fff46.js",
   "serviceworker.js.map": "/packs/js/serviceworker-27991ce78e92a96fff46.js.map",
-  "stylesheets/application.js": "/packs/js/stylesheets/application-72629f14e5eaa0fd1712.js",
-  "stylesheets/application.js.map": "/packs/js/stylesheets/application-72629f14e5eaa0fd1712.js.map",
   "voice.js": "/packs/js/voice-13491fb412959806d845.js",
   "voice.js.map": "/packs/js/voice-13491fb412959806d845.js.map"
 }
