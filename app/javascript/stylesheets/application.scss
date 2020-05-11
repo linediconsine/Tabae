@@ -6,3 +6,9 @@
 h1 {
   color: red;
 }
+
+body.offline .only_online,
+body.online .offline_message,
+body.online .only_offline {
+  display: none;
+}

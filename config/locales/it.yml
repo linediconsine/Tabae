@@ -1,5 +1,15 @@
 it:
-  activerecord:
+  sentences: "Frasi"
+  new_sentence: "Nuova Frase"
+  delete: "Cancella"
+  talk: "Parla"
+  save: "salve"
+  edit: "Edita"
+
+  title:
+    edit_sentence: "Edita Frase"
+
+    activerecord:
     attributes:
       user:
         confirmation_sent_at: Conferma inviata a

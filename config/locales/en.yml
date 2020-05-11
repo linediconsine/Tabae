@@ -31,3 +31,11 @@
 
 en:
   hello: "Hello world"
+  sentences: sentences
+  new_sentence: "New sentence"
+  delete: "Delete"
+  talk: "Talk"
+  save: "Save"
+
+  title:
+    edit_sentence: "Edit sentence"

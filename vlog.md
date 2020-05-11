@@ -14,3 +14,6 @@ CREATE DATABASE databasename
 # start pg
 
 pg_ctl -D /usr/local/var/postgres start
+
+https://opentechschool.github.io/social-coding/extras/heroku.html
+#git push heroku master

@@ -19198,3 +19198,1138 @@ Completed 200 OK in 109ms (Views: 94.0ms | ActiveRecord: 1.4ms | Allocations: 20
 
 Started GET "/manifest.json" for 127.0.0.1 at 2020-05-09 07:59:33 +0200
 Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-09 07:59:34 +0200
+Started GET "/" for 127.0.0.1 at 2020-05-09 08:02:13 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSentence Load (2.8ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:19:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 8.0ms | Allocations: 2754)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 136.3ms | Allocations: 10415)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 179ms (Views: 166.7ms | ActiveRecord: 3.1ms | Allocations: 20217)
+
+
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-09 08:02:15 +0200
+Started GET "/" for 127.0.0.1 at 2020-05-09 08:02:23 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSentence Load (1.2ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:19:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 7.3ms | Allocations: 2754)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 28.1ms | Allocations: 10415)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 60ms (Views: 49.5ms | ActiveRecord: 2.3ms | Allocations: 20304)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2020-05-09 08:02:25 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"I2zLkkq3yrttBD9KuqM/qB1pgRyF7ejAn0uA4QLf3rueE0tfZ/DleGW+cbcmxJwT9A8N8nj+M0HGfe1nZq9XQw=="}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 10ms (ActiveRecord: 0.7ms | Allocations: 2148)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-09 08:02:26 +0200
+Processing by SentencesController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 331)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-05-09 08:02:26 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.5ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 991)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 42ms (Views: 39.5ms | ActiveRecord: 0.0ms | Allocations: 8877)
+
+
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-09 08:02:27 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 07:59:30 +0200
+  [1m[35m (3.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 07:59:32 +0200
+Started GET "/" for 127.0.0.1 at 2020-05-10 07:59:33 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSentence Load (4.3ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:19:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Volumes/Elements/work/RoR/tabae2/tabae/public/packs
+[Webpacker] Hash: 8888fae2294e74c85d96
+Version: webpack 4.41.5
+Time: 7184ms
+Built at: 05/10/2020 7:59:46 AM
+                                       Asset      Size         Chunks                         Chunk Names
+      js/application-d10ccda0bffca433bb2f.js  1.36 MiB    application  [emitted] [immutable]  application
+  js/application-d10ccda0bffca433bb2f.js.map  1.49 MiB    application  [emitted] [dev]        application
+     js/localstorage-aab74820b4c2cb5b79b0.js  3.93 KiB   localstorage  [emitted] [immutable]  localstorage
+ js/localstorage-aab74820b4c2cb5b79b0.js.map  3.62 KiB   localstorage  [emitted] [dev]        localstorage
+    js/serviceworker-27991ce78e92a96fff46.js  5.51 KiB  serviceworker  [emitted] [immutable]  serviceworker
+js/serviceworker-27991ce78e92a96fff46.js.map  5.76 KiB  serviceworker  [emitted] [dev]        serviceworker
+            js/voice-13491fb412959806d845.js  4.74 KiB          voice  [emitted] [immutable]  voice
+        js/voice-13491fb412959806d845.js.map  4.65 KiB          voice  [emitted] [dev]        voice
+                               manifest.json  1.33 KiB                 [emitted]              
+Entrypoint application = js/application-d10ccda0bffca433bb2f.js js/application-d10ccda0bffca433bb2f.js.map
+Entrypoint localstorage = js/localstorage-aab74820b4c2cb5b79b0.js js/localstorage-aab74820b4c2cb5b79b0.js.map
+Entrypoint serviceworker = js/serviceworker-27991ce78e92a96fff46.js js/serviceworker-27991ce78e92a96fff46.js.map
+Entrypoint voice = js/voice-13491fb412959806d845.js js/voice-13491fb412959806d845.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.1 KiB {application} [built]
+[./app/javascript/packs/localstorage.js] 33 bytes {localstorage} [built]
+[./app/javascript/packs/serviceworker.js] 1.6 KiB {serviceworker} [built]
+[./app/javascript/packs/voice.js] 900 bytes {voice} [built]
+[./app/javascript/stylesheets/application.scss] 717 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 670 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 878 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 35 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 115.2ms | Allocations: 3425)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 13484.5ms | Allocations: 13151)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14407ms (Views: 14209.6ms | ActiveRecord: 24.2ms | Allocations: 55101)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-05-10 07:59:48 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 07:59:50 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:01:24 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:01:24 +0200
+Started GET "/" for 127.0.0.1 at 2020-05-10 08:01:25 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSentence Load (0.7ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:19:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/index.html.erb within layouts/application (Duration: 531.2ms | Allocations: 182630)
+Completed 500 Internal Server Error in 551ms (ActiveRecord: 1.3ms | Allocations: 186345)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `sentences' for #<#<Class:0x00007fef20263c40>:0x00007fef1fa5c3d0>
+Did you mean?  @sentences
+               @sentence):
+    3: 
+    4: <% if user_signed_in? %> 
+    5:     <div class="nav nav-pills" id="nav-tab" role="tablist">
+    6:       <a class=" nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><% t sentences %></a>
+    7:       <a class=" nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Nuova Frase</a>
+    8:       <!-- <a class=" nav-link" id="nav-icons-tab" data-toggle="tab" href="#nav-icons" role="tab" aria-controls="nav-icons" aria-selected="false">Icone</a> -->
+    9:       
+  
+app/views/sentences/index.html.erb:6
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:01:29 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:06:36 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:06:36 +0200
+Started GET "/" for 127.0.0.1 at 2020-05-10 08:06:37 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSentence Load (2.1ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:19:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/index.html.erb within layouts/application (Duration: 744.0ms | Allocations: 179671)
+Completed 500 Internal Server Error in 798ms (ActiveRecord: 6.5ms | Allocations: 182742)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `sentences' for #<#<Class:0x00007fef20263c40>:0x00007fef1fb9d000>
+Did you mean?  @sentences
+               @sentence):
+    3: 
+    4: <% if user_signed_in? %> 
+    5:     <div class="nav nav-pills" id="nav-tab" role="tablist">
+    6:       <a class=" nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><% t sentences %></a>
+    7:       <a class=" nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Nuova Frase</a>
+    8:       <!-- <a class=" nav-link" id="nav-icons-tab" data-toggle="tab" href="#nav-icons" role="tab" aria-controls="nav-icons" aria-selected="false">Icone</a> -->
+    9:       
+  
+app/views/sentences/index.html.erb:6
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:06:40 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:08:27 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:08:28 +0200
+Started GET "/" for 127.0.0.1 at 2020-05-10 08:08:29 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  [1m[36mSentence Load (0.4ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:19:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/index.html.erb within layouts/application (Duration: 577.6ms | Allocations: 179720)
+Completed 500 Internal Server Error in 732ms (ActiveRecord: 17.6ms | Allocations: 194161)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `sentences' for #<#<Class:0x00007fef2207d618>:0x00007fef1fc00268>
+Did you mean?  @sentences
+               @sentence):
+    3: 
+    4: <% if user_signed_in? %> 
+    5:     <div class="nav nav-pills" id="nav-tab" role="tablist">
+    6:       <a class=" nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><% t sentences %></a>
+    7:       <a class=" nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Nuova Frase</a>
+    8:       <!-- <a class=" nav-link" id="nav-icons-tab" data-toggle="tab" href="#nav-icons" role="tab" aria-controls="nav-icons" aria-selected="false">Icone</a> -->
+    9:       
+  
+app/views/sentences/index.html.erb:6
+app/controllers/application_controller.rb:10:in `switch_locale'
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:08:32 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:26:10 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:26:10 +0200
+Started GET "/" for 127.0.0.1 at 2020-05-10 08:26:11 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  [1m[36mSentence Load (2.8ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:19:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 24.2ms | Allocations: 3184)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 207.3ms | Allocations: 12023)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 269ms (Views: 235.0ms | ActiveRecord: 8.9ms | Allocations: 19428)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-05-10 08:26:13 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:26:15 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:26:45 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:26:45 +0200
+Started GET "/" for 127.0.0.1 at 2020-05-10 08:26:46 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  [1m[36mSentence Load (0.5ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:19:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 6.6ms | Allocations: 2798)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 95.7ms | Allocations: 10535)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 425ms (Views: 115.7ms | ActiveRecord: 14.0ms | Allocations: 29248)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-05-10 08:26:48 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:26:50 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:27:21 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:27:22 +0200
+Started GET "/" for 127.0.0.1 at 2020-05-10 08:27:23 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  [1m[36mSentence Load (0.4ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:19:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 23.8ms | Allocations: 3168)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 145.5ms | Allocations: 11491)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 411ms (Views: 184.5ms | ActiveRecord: 11.2ms | Allocations: 30380)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-05-10 08:27:24 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:27:26 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:27:35 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:27:35 +0200
+Started GET "/" for 127.0.0.1 at 2020-05-10 08:27:36 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  [1m[36mSentence Load (0.8ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:19:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 7.4ms | Allocations: 2798)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 95.9ms | Allocations: 10535)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 351ms (Views: 127.2ms | ActiveRecord: 13.1ms | Allocations: 29182)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-05-10 08:27:37 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:27:39 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:29:01 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:29:01 +0200
+Started GET "/?locale=en" for 127.0.0.1 at 2020-05-10 08:29:02 +0200
+Processing by SentencesController#index as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  [1m[36mSentence Load (2.5ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:19:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 24.1ms | Allocations: 2789)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 229.3ms | Allocations: 10651)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 317ms (Views: 256.2ms | ActiveRecord: 6.2ms | Allocations: 17464)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-05-10 08:29:04 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:29:05 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:29:33 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:29:33 +0200
+Started GET "/?locale=en" for 127.0.0.1 at 2020-05-10 08:29:34 +0200
+Processing by SentencesController#index as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  [1m[36mSentence Load (0.6ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:19:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 9.6ms | Allocations: 2798)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 126.0ms | Allocations: 10532)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 207ms (Views: 138.8ms | ActiveRecord: 11.0ms | Allocations: 26339)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-05-10 08:29:35 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:29:37 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:29:46 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:29:46 +0200
+Started GET "/?locale=en" for 127.0.0.1 at 2020-05-10 08:29:47 +0200
+Processing by SentencesController#index as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  [1m[36mSentence Load (0.6ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:19:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 6.4ms | Allocations: 2798)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 24.7ms | Allocations: 10532)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 85ms (Views: 34.3ms | ActiveRecord: 8.5ms | Allocations: 26327)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-05-10 08:29:48 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:29:50 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:29:58 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:29:58 +0200
+Started GET "/?locale=it" for 127.0.0.1 at 2020-05-10 08:29:59 +0200
+Processing by SentencesController#index as HTML
+  Parameters: {"locale"=>"it"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  [1m[36mSentence Load (0.6ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:19:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 11.4ms | Allocations: 2786)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 40.7ms | Allocations: 10531)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 74ms (Views: 55.3ms | ActiveRecord: 1.2ms | Allocations: 16525)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-05-10 08:30:00 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:30:02 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:30:33 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:30:33 +0200
+Started GET "/?locale=it" for 127.0.0.1 at 2020-05-10 08:30:34 +0200
+Processing by SentencesController#index as HTML
+  Parameters: {"locale"=>"it"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  [1m[36mSentence Load (0.5ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:19:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 26.1ms | Allocations: 3161)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 57.6ms | Allocations: 11498)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 95ms (Views: 84.6ms | ActiveRecord: 1.0ms | Allocations: 18718)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-05-10 08:30:36 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:30:37 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:30:57 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:30:57 +0200
+Started GET "/?locale=it" for 127.0.0.1 at 2020-05-10 08:30:59 +0200
+Processing by SentencesController#index as HTML
+  Parameters: {"locale"=>"it"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  [1m[36mSentence Load (0.4ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:19:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 13.6ms | Allocations: 2789)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 50.2ms | Allocations: 10539)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 81ms (Views: 66.7ms | ActiveRecord: 1.0ms | Allocations: 16532)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-05-10 08:31:00 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:31:01 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:31:08 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:31:09 +0200
+Started GET "/?locale=it" for 127.0.0.1 at 2020-05-10 08:31:10 +0200
+Processing by SentencesController#index as HTML
+  Parameters: {"locale"=>"it"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  [1m[36mSentence Load (0.5ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:19:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 8.1ms | Allocations: 2798)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 31.1ms | Allocations: 10533)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 259ms (Views: 46.5ms | ActiveRecord: 13.4ms | Allocations: 29253)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-05-10 08:31:11 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:31:13 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:31:43 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:31:43 +0200
+Started GET "/?locale=it" for 127.0.0.1 at 2020-05-10 08:31:44 +0200
+Processing by SentencesController#index as HTML
+  Parameters: {"locale"=>"it"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  [1m[36mSentence Load (0.3ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:19:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 6.2ms | Allocations: 2798)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 31.8ms | Allocations: 10533)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 120ms (Views: 39.4ms | ActiveRecord: 9.7ms | Allocations: 29171)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-05-10 08:31:46 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:31:47 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:32:09 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:32:09 +0200
+Started GET "/?locale=it" for 127.0.0.1 at 2020-05-10 08:32:10 +0200
+Processing by SentencesController#index as HTML
+  Parameters: {"locale"=>"it"}
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  [1m[36mSentence Load (0.5ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:19:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 137.2ms | Allocations: 3161)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 163.4ms | Allocations: 11537)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 445ms (Views: 431.7ms | ActiveRecord: 3.7ms | Allocations: 18772)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-05-10 08:32:11 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:32:13 +0200
+Started GET "/?locale=it" for 127.0.0.1 at 2020-05-10 08:32:40 +0200
+Processing by SentencesController#index as HTML
+  Parameters: {"locale"=>"it"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  [1m[36mSentence Load (0.3ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:19:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 6.5ms | Allocations: 2798)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 33.7ms | Allocations: 10550)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 398ms (Views: 51.8ms | ActiveRecord: 12.6ms | Allocations: 29059)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-05-10 08:32:41 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:33:07 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:33:07 +0200
+Started GET "/?locale=it" for 127.0.0.1 at 2020-05-10 08:33:09 +0200
+Processing by SentencesController#index as HTML
+  Parameters: {"locale"=>"it"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  [1m[36mSentence Load (0.9ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:19:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 19.5ms | Allocations: 3161)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 39.8ms | Allocations: 11528)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 73ms (Views: 64.0ms | ActiveRecord: 2.2ms | Allocations: 18740)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-05-10 08:33:10 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:33:11 +0200
+Started GET "/sentences/28/edit" for 127.0.0.1 at 2020-05-10 08:33:26 +0200
+Processing by SentencesController#edit as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mSentence Load (3.1ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ app/controllers/sentences_controller.rb:96:in `set_sentence'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  Rendering sentences/edit.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 7.6ms | Allocations: 3006)
+  Rendered sentences/edit.html.erb within layouts/application (Duration: 8.3ms | Allocations: 3240)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 500 Internal Server Error in 25ms (Views: 16.3ms | ActiveRecord: 3.5ms | Allocations: 9315)
+
+
+  
+TypeError (no implicit conversion of Symbol into String):
+  
+app/controllers/application_controller.rb:11:in `+'
+app/controllers/application_controller.rb:11:in `switch_locale'
+Started PUT "/__web_console/repl_sessions/31179d4fb510a4e1d4cebda65c660393" for 127.0.0.1 at 2020-05-10 08:33:39 +0200
+Started PUT "/__web_console/repl_sessions/31179d4fb510a4e1d4cebda65c660393" for 127.0.0.1 at 2020-05-10 08:33:39 +0200
+Started PUT "/__web_console/repl_sessions/31179d4fb510a4e1d4cebda65c660393" for 127.0.0.1 at 2020-05-10 08:33:45 +0200
+Started PUT "/__web_console/repl_sessions/31179d4fb510a4e1d4cebda65c660393" for 127.0.0.1 at 2020-05-10 08:33:46 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:34:12 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:34:12 +0200
+Started GET "/sentences/28/edit" for 127.0.0.1 at 2020-05-10 08:34:13 +0200
+Processing by SentencesController#edit as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mSentence Load (0.7ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ app/controllers/sentences_controller.rb:96:in `set_sentence'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  Rendering sentences/edit.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 7.7ms | Allocations: 3063)
+  Rendered sentences/edit.html.erb within layouts/application (Duration: 8.5ms | Allocations: 3175)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 79ms (Views: 16.7ms | ActiveRecord: 16.5ms | Allocations: 17710)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-05-10 08:34:14 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:34:16 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:34:21 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:34:21 +0200
+Started DELETE "/sentences/28" for 127.0.0.1 at 2020-05-10 08:34:22 +0200
+Processing by SentencesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"E6f+Ar4Q/yii/JBax3Q2mpRGgxCm/6eQO8e5Eb5l7ReYpZqfjyKmvZRKyyy0z7adG+QdFyKpMvYtnDZKleu2qw==", "id"=>"28"}
+  [1m[36mSentence Load (1.2ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."id" = $1 LIMIT $2[0m  [["id", 28], ["LIMIT", 1]]
+  ↳ app/controllers/sentences_controller.rb:96:in `set_sentence'
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/sentences_controller.rb:9:in `destroy'
+  [1m[36mSentence Destroy (7.4ms)[0m  [1m[31mDELETE FROM "sentences" WHERE "sentences"."id" = $1[0m  [["id", 28]]
+  ↳ app/controllers/sentences_controller.rb:9:in `destroy'
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/sentences_controller.rb:9:in `destroy'
+Redirected to http://127.0.0.1:3000/sentences
+Completed 302 Found in 25ms (ActiveRecord: 13.3ms | Allocations: 3631)
+
+
+Started GET "/sentences" for 127.0.0.1 at 2020-05-10 08:34:22 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  [1m[36mSentence Load (2.2ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:19:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 10.2ms | Allocations: 2786)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 32.3ms | Allocations: 10220)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 61ms (Views: 47.1ms | ActiveRecord: 3.1ms | Allocations: 17127)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-05-10 08:34:23 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:34:25 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:34:38 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:34:38 +0200
+Started GET "/sentences?locale=en" for 127.0.0.1 at 2020-05-10 08:34:39 +0200
+Processing by SentencesController#index as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  [1m[36mSentence Load (0.5ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:19:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 5.8ms | Allocations: 2786)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 31.3ms | Allocations: 10399)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 56ms (Views: 45.0ms | ActiveRecord: 0.9ms | Allocations: 17010)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-05-10 08:34:40 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:34:42 +0200
+Started GET "/sentences/32/edit" for 127.0.0.1 at 2020-05-10 08:34:46 +0200
+Processing by SentencesController#edit as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mSentence Load (1.3ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/sentences_controller.rb:96:in `set_sentence'
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  Rendering sentences/edit.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 16.7ms | Allocations: 3387)
+  Rendered sentences/edit.html.erb within layouts/application (Duration: 17.4ms | Allocations: 3498)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 45ms (Views: 33.6ms | ActiveRecord: 3.4ms | Allocations: 9056)
+
+
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:34:50 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:34:50 +0200
+Started GET "/sentences/32/edit?locale=en" for 127.0.0.1 at 2020-05-10 08:34:51 +0200
+Processing by SentencesController#edit as HTML
+  Parameters: {"locale"=>"en", "id"=>"32"}
+  [1m[36mSentence Load (0.6ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/sentences_controller.rb:96:in `set_sentence'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  Rendering sentences/edit.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 17.5ms | Allocations: 2993)
+  Rendered sentences/edit.html.erb within layouts/application (Duration: 18.6ms | Allocations: 3104)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 38ms (Views: 29.7ms | ActiveRecord: 1.2ms | Allocations: 8754)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-05-10 08:34:52 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:34:53 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:36:12 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:36:12 +0200
+Started GET "/sentences/32/edit?locale=en" for 127.0.0.1 at 2020-05-10 08:36:13 +0200
+Processing by SentencesController#edit as HTML
+  Parameters: {"locale"=>"en", "id"=>"32"}
+  [1m[36mSentence Load (0.4ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/sentences_controller.rb:96:in `set_sentence'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  Rendering sentences/edit.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 12.7ms | Allocations: 3058)
+  Rendered sentences/edit.html.erb within layouts/application (Duration: 13.8ms | Allocations: 3170)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 115ms (Views: 22.2ms | ActiveRecord: 10.4ms | Allocations: 20594)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-05-10 08:36:15 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:36:16 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:37:49 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:37:49 +0200
+Started GET "/sentences/32/edit?locale=en" for 127.0.0.1 at 2020-05-10 08:37:50 +0200
+Processing by SentencesController#edit as HTML
+  Parameters: {"locale"=>"en", "id"=>"32"}
+  [1m[36mSentence Load (0.6ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/sentences_controller.rb:96:in `set_sentence'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  Rendering sentences/edit.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 14.2ms | Allocations: 4200)
+  Rendered sentences/edit.html.erb within layouts/application (Duration: 15.5ms | Allocations: 4521)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 1.0ms | Allocations: 7273)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 1..2)):
+    35: 
+    36:     <a onclick="voice(document.getElementById('sentence_sentence').value)" class="btn btn-space btn-primary"><%= t "talk"%></a>
+    37: 
+    38:    <%= link_to t "delete", sentence, method: :delete, data: { confirm: 'Conferma per cencellare' } , class: "btn btn-space btn-secondary" %>
+    39:        
+    40:   </div>
+    41: <% end %>
+  
+app/views/sentences/_form.html.erb:38
+app/views/sentences/_form.html.erb:2
+app/views/sentences/edit.html.erb:3
+app/controllers/application_controller.rb:10:in `switch_locale'
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:37:53 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:44:38 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:44:38 +0200
+Started GET "/sentences/32/edit?locale=en" for 127.0.0.1 at 2020-05-10 08:44:39 +0200
+Processing by SentencesController#edit as HTML
+  Parameters: {"locale"=>"en", "id"=>"32"}
+  [1m[36mSentence Load (0.7ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/sentences_controller.rb:96:in `set_sentence'
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  Rendering sentences/edit.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 204.6ms | Allocations: 4185)
+  Rendered sentences/edit.html.erb within layouts/application (Duration: 208.2ms | Allocations: 4501)
+Completed 500 Internal Server Error in 242ms (ActiveRecord: 2.0ms | Allocations: 7416)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 1..2)):
+    35: 
+    36:     <a onclick="voice(document.getElementById('sentence_sentence').value)" class="btn btn-space btn-primary"><%= t "talk"%></a>
+    37: 
+    38:    <%= link_to t "delete", sentence, method: :delete, data: { confirm: 'Conferma per cencellare' } , class: "btn btn-space btn-secondary" %>
+    39:        
+    40:   </div>
+    41: <% end %>
+  
+app/views/sentences/_form.html.erb:38
+app/views/sentences/_form.html.erb:2
+app/views/sentences/edit.html.erb:3
+app/controllers/application_controller.rb:10:in `switch_locale'
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:44:42 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:44:50 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:44:50 +0200
+Started GET "/sentences/32/edit?locale=en" for 127.0.0.1 at 2020-05-10 08:44:51 +0200
+Processing by SentencesController#edit as HTML
+  Parameters: {"locale"=>"en", "id"=>"32"}
+  [1m[36mSentence Load (2.1ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/sentences_controller.rb:96:in `set_sentence'
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  Rendering sentences/edit.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 91.1ms | Allocations: 3433)
+  Rendered sentences/edit.html.erb within layouts/application (Duration: 93.3ms | Allocations: 3799)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 133ms (Views: 115.9ms | ActiveRecord: 7.0ms | Allocations: 10716)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-05-10 08:44:52 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:44:54 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:45:03 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:45:03 +0200
+Started GET "/sentences/32/edit?locale=en" for 127.0.0.1 at 2020-05-10 08:45:04 +0200
+Processing by SentencesController#edit as HTML
+  Parameters: {"locale"=>"en", "id"=>"32"}
+  [1m[36mSentence Load (0.6ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/sentences_controller.rb:96:in `set_sentence'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  Rendering sentences/edit.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 19.3ms | Allocations: 3428)
+  Rendered sentences/edit.html.erb within layouts/application (Duration: 21.5ms | Allocations: 3793)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 60ms (Views: 47.4ms | ActiveRecord: 1.2ms | Allocations: 10549)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-05-10 08:45:05 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:45:06 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:47:41 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:47:41 +0200
+Started GET "/sentences/32/edit?locale=en" for 127.0.0.1 at 2020-05-10 08:47:42 +0200
+Processing by SentencesController#edit as HTML
+  Parameters: {"locale"=>"en", "id"=>"32"}
+  [1m[36mSentence Load (0.4ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/sentences_controller.rb:96:in `set_sentence'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  Rendering sentences/edit.html.erb within layouts/application
+  Rendered sentences/edit.html.erb within layouts/application (Duration: 14.2ms | Allocations: 1088)
+Completed 500 Internal Server Error in 274ms (ActiveRecord: 15.8ms | Allocations: 15727)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1><%= t 'title.edit_sentence'</h1>
+
+<%= render 'form', sentence: @sentence %>
+
+<!-- <%= link_to 'Show', @sentence %> | -->
+<%= link_to 'Back', sentences_path %>
+):
+1:    <h1><%= t 'title.edit_sentence'</h1>
+2:    
+3:    <%= render 'form', sentence: @sentence %>
+4:    
+5:    <!-- <%= link_to 'Show', @sentence %> | -->
+6:    <%= link_to 'Back', sentences_path %>
+  
+app/views/sentences/edit.html.erb:8: unterminated regexp meets end of file
+app/views/sentences/edit.html.erb:8: unmatched close parenthesis: /h1>
+app/views/sentences/edit.html.erb:8: syntax error, unexpected end-of-input, expecting ')'
+app/views/sentences/edit.html.erb:8: unterminated regexp meets end of file
+app/views/sentences/edit.html.erb:8: unmatched close parenthesis: /h1>
+app/views/sentences/edit.html.erb:8: syntax error, unexpected end-of-input, expecting ')'
+app/views/sentences/edit.html.erb:8: unterminated regexp meets end of file
+app/views/sentences/edit.html.erb:8: unmatched close parenthesis: /h1>
+app/views/sentences/edit.html.erb:8: syntax error, unexpected end-of-input, expecting ')'
+app/views/sentences/edit.html.erb:8: unterminated regexp meets end of file
+app/views/sentences/edit.html.erb:8: unmatched close parenthesis: /h1>
+app/views/sentences/edit.html.erb:8: syntax error, unexpected end-of-input, expecting ')'
+app/views/sentences/edit.html.erb:8: unterminated regexp meets end of file
+app/views/sentences/edit.html.erb:8: unmatched close parenthesis: /h1>
+app/views/sentences/edit.html.erb:8: syntax error, unexpected end-of-input, expecting ')'
+app/views/sentences/edit.html.erb:8: unterminated regexp meets end of file
+app/views/sentences/edit.html.erb:8: unmatched close parenthesis: /h1>
+app/views/sentences/edit.html.erb:8: syntax error, unexpected end-of-input, expecting ')'
+app/controllers/application_controller.rb:10:in `switch_locale'
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:47:45 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:47:45 +0200
+Started GET "/sentences/32/edit?locale=en" for 127.0.0.1 at 2020-05-10 08:47:47 +0200
+Processing by SentencesController#edit as HTML
+  Parameters: {"locale"=>"en", "id"=>"32"}
+  [1m[36mSentence Load (1.7ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/sentences_controller.rb:96:in `set_sentence'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  Rendering sentences/edit.html.erb within layouts/application
+  Rendered sentences/edit.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1075)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 2.4ms | Allocations: 2983)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1><%= t 'title.edit_sentence'</h1>
+
+<%= render 'form', sentence: @sentence %>
+
+<!-- <%= link_to 'Show', @sentence %> | -->
+<%= link_to 'Back', sentences_path %>
+):
+1:    <h1><%= t 'title.edit_sentence'</h1>
+2:    
+3:    <%= render 'form', sentence: @sentence %>
+4:    
+5:    <!-- <%= link_to 'Show', @sentence %> | -->
+6:    <%= link_to 'Back', sentences_path %>
+  
+app/views/sentences/edit.html.erb:8: unterminated regexp meets end of file
+app/views/sentences/edit.html.erb:8: unmatched close parenthesis: /h1>
+app/views/sentences/edit.html.erb:8: syntax error, unexpected end-of-input, expecting ')'
+app/views/sentences/edit.html.erb:8: unterminated regexp meets end of file
+app/views/sentences/edit.html.erb:8: unmatched close parenthesis: /h1>
+app/views/sentences/edit.html.erb:8: syntax error, unexpected end-of-input, expecting ')'
+app/views/sentences/edit.html.erb:8: unterminated regexp meets end of file
+app/views/sentences/edit.html.erb:8: unmatched close parenthesis: /h1>
+app/views/sentences/edit.html.erb:8: syntax error, unexpected end-of-input, expecting ')'
+app/views/sentences/edit.html.erb:8: unterminated regexp meets end of file
+app/views/sentences/edit.html.erb:8: unmatched close parenthesis: /h1>
+app/views/sentences/edit.html.erb:8: syntax error, unexpected end-of-input, expecting ')'
+app/views/sentences/edit.html.erb:8: unterminated regexp meets end of file
+app/views/sentences/edit.html.erb:8: unmatched close parenthesis: /h1>
+app/views/sentences/edit.html.erb:8: syntax error, unexpected end-of-input, expecting ')'
+app/views/sentences/edit.html.erb:8: unterminated regexp meets end of file
+app/views/sentences/edit.html.erb:8: unmatched close parenthesis: /h1>
+app/views/sentences/edit.html.erb:8: syntax error, unexpected end-of-input, expecting ')'
+app/controllers/application_controller.rb:10:in `switch_locale'
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:47:49 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:49:13 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:49:13 +0200
+Started GET "/sentences/32/edit?locale=en" for 127.0.0.1 at 2020-05-10 08:49:14 +0200
+Processing by SentencesController#edit as HTML
+  Parameters: {"locale"=>"en", "id"=>"32"}
+  [1m[36mSentence Load (1.1ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/sentences_controller.rb:96:in `set_sentence'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  Rendering sentences/edit.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 120.7ms | Allocations: 3485)
+  Rendered sentences/edit.html.erb within layouts/application (Duration: 125.0ms | Allocations: 3894)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 191ms (Views: 182.6ms | ActiveRecord: 1.9ms | Allocations: 10654)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-05-10 08:49:15 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:49:17 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:49:23 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:49:23 +0200
+Started DELETE "/sentences/32" for 127.0.0.1 at 2020-05-10 08:49:24 +0200
+Processing by SentencesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"SMC1HRy/PUfVxRk6BE6FPKIibgkVNZX9Q6TnAxjVpMLDwtGALY1k0uNzQkx39QU7LYDwDpFjAJtV/2hYM1v/fg==", "id"=>"32"}
+  [1m[36mSentence Load (2.1ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/sentences_controller.rb:96:in `set_sentence'
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/sentences_controller.rb:9:in `destroy'
+  [1m[36mSentence Destroy (2.4ms)[0m  [1m[31mDELETE FROM "sentences" WHERE "sentences"."id" = $1[0m  [["id", 32]]
+  ↳ app/controllers/sentences_controller.rb:9:in `destroy'
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/sentences_controller.rb:9:in `destroy'
+Redirected to http://127.0.0.1:3000/sentences
+Completed 302 Found in 22ms (ActiveRecord: 9.2ms | Allocations: 3580)
+
+
+Started GET "/sentences" for 127.0.0.1 at 2020-05-10 08:49:24 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  [1m[36mSentence Load (0.3ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:19:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 5.3ms | Allocations: 2838)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 607.4ms | Allocations: 10589)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 632ms (Views: 619.6ms | ActiveRecord: 0.8ms | Allocations: 18135)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-05-10 08:49:26 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:49:27 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:50:22 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:50:22 +0200
+Started GET "/sentences" for 127.0.0.1 at 2020-05-10 08:50:23 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  [1m[36mSentence Load (0.4ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:19:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 8.8ms | Allocations: 2833)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 39.1ms | Allocations: 10077)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 67ms (Views: 53.1ms | ActiveRecord: 0.9ms | Allocations: 16054)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-05-10 08:50:24 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:50:26 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:51:40 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:51:40 +0200
+Started GET "/sentences" for 127.0.0.1 at 2020-05-10 08:51:41 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  [1m[36mSentence Load (0.4ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:19:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 23.6ms | Allocations: 3230)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 162.0ms | Allocations: 11212)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 404ms (Views: 186.8ms | ActiveRecord: 15.5ms | Allocations: 30898)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-05-10 08:51:42 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:51:44 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:51:52 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:51:52 +0200
+Started GET "/sentences?locale=en" for 127.0.0.1 at 2020-05-10 08:51:53 +0200
+Processing by SentencesController#index as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  [1m[36mSentence Load (1.0ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:19:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 6.5ms | Allocations: 2836)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 46.3ms | Allocations: 14456)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 67ms (Views: 55.1ms | ActiveRecord: 3.0ms | Allocations: 21055)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-05-10 08:51:54 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:51:55 +0200
+Started GET "/" for 127.0.0.1 at 2020-05-10 08:52:13 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  [1m[36mSentence Load (2.3ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:19:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 10.0ms | Allocations: 2833)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 36.0ms | Allocations: 10247)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 63ms (Views: 47.1ms | ActiveRecord: 5.0ms | Allocations: 16619)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-10 08:52:16 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  [1m[36mSentence Load (1.7ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:19:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 19.7ms | Allocations: 2833)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 56.7ms | Allocations: 10227)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 106ms (Views: 90.9ms | ActiveRecord: 4.6ms | Allocations: 16185)
+
+
+Started GET "/" for 127.0.0.1 at 2020-05-10 08:52:21 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  [1m[36mSentence Load (0.3ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:19:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 7.1ms | Allocations: 2833)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 22.4ms | Allocations: 10227)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 44ms (Views: 35.8ms | ActiveRecord: 0.9ms | Allocations: 16191)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-05-10 08:52:22 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:53:51 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:53:51 +0200
+Started GET "/" for 127.0.0.1 at 2020-05-10 08:53:52 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  [1m[36mSentence Load (0.4ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:19:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Volumes/Elements/work/RoR/tabae2/tabae/public/packs
+[Webpacker] Hash: f406a2126fc8ef2b6a08
+Version: webpack 4.41.5
+Time: 7713ms
+Built at: 05/10/2020 8:54:06 AM
+                                       Asset      Size         Chunks                         Chunk Names
+      js/application-4d70bb7ff66c8cf1a3ea.js  1.36 MiB    application  [emitted] [immutable]  application
+  js/application-4d70bb7ff66c8cf1a3ea.js.map  1.49 MiB    application  [emitted] [dev]        application
+     js/localstorage-aab74820b4c2cb5b79b0.js  3.93 KiB   localstorage  [emitted] [immutable]  localstorage
+ js/localstorage-aab74820b4c2cb5b79b0.js.map  3.62 KiB   localstorage  [emitted] [dev]        localstorage
+    js/serviceworker-27991ce78e92a96fff46.js  5.51 KiB  serviceworker  [emitted] [immutable]  serviceworker
+js/serviceworker-27991ce78e92a96fff46.js.map  5.76 KiB  serviceworker  [emitted] [dev]        serviceworker
+            js/voice-13491fb412959806d845.js  4.74 KiB          voice  [emitted] [immutable]  voice
+        js/voice-13491fb412959806d845.js.map  4.65 KiB          voice  [emitted] [dev]        voice
+                               manifest.json  1.33 KiB                 [emitted]              
+Entrypoint application = js/application-4d70bb7ff66c8cf1a3ea.js js/application-4d70bb7ff66c8cf1a3ea.js.map
+Entrypoint localstorage = js/localstorage-aab74820b4c2cb5b79b0.js js/localstorage-aab74820b4c2cb5b79b0.js.map
+Entrypoint serviceworker = js/serviceworker-27991ce78e92a96fff46.js js/serviceworker-27991ce78e92a96fff46.js.map
+Entrypoint voice = js/voice-13491fb412959806d845.js js/voice-13491fb412959806d845.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.1 KiB {application} [built]
+[./app/javascript/packs/localstorage.js] 33 bytes {localstorage} [built]
+[./app/javascript/packs/serviceworker.js] 1.6 KiB {serviceworker} [built]
+[./app/javascript/packs/voice.js] 900 bytes {voice} [built]
+[./app/javascript/stylesheets/application.scss] 717 bytes {application} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/stylesheets/application.scss 670 KiB {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 878 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 35 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 6.4ms | Allocations: 2833)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 14237.0ms | Allocations: 11506)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14267ms (Views: 14257.7ms | ActiveRecord: 0.7ms | Allocations: 17473)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-05-10 08:54:08 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:54:09 +0200
+Started GET "/sentences/30/edit" for 127.0.0.1 at 2020-05-10 08:54:55 +0200
+Processing by SentencesController#edit as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mSentence Load (1.0ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/sentences_controller.rb:96:in `set_sentence'
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  Rendering sentences/edit.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 41.2ms | Allocations: 3047)
+  Rendered sentences/edit.html.erb within layouts/application (Duration: 52.2ms | Allocations: 3310)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 105ms (Views: 86.1ms | ActiveRecord: 1.6ms | Allocations: 9089)
+
+
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:55:00 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:55:00 +0200
+Started DELETE "/sentences/30" for 127.0.0.1 at 2020-05-10 08:55:01 +0200
+Processing by SentencesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"K+4C8kH0/p9Us8M9FNVKnT9TGnW0cyS1O/0eeZ8s5hOg7GZvcManCmIFmEtnbsqasPGEcjAlsdMtppEitKK9rw==", "id"=>"30"}
+  [1m[36mSentence Load (0.5ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."id" = $1 LIMIT $2[0m  [["id", 30], ["LIMIT", 1]]
+  ↳ app/controllers/sentences_controller.rb:96:in `set_sentence'
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/sentences_controller.rb:9:in `destroy'
+  [1m[36mSentence Destroy (2.9ms)[0m  [1m[31mDELETE FROM "sentences" WHERE "sentences"."id" = $1[0m  [["id", 30]]
+  ↳ app/controllers/sentences_controller.rb:9:in `destroy'
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/sentences_controller.rb:9:in `destroy'
+Redirected to http://127.0.0.1:3000/sentences
+Completed 302 Found in 19ms (ActiveRecord: 7.0ms | Allocations: 3568)
+
+
+Started GET "/sentences" for 127.0.0.1 at 2020-05-10 08:55:01 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  [1m[36mSentence Load (0.5ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:19:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 22.3ms | Allocations: 2833)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 54.8ms | Allocations: 9957)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 90ms (Views: 78.5ms | ActiveRecord: 1.2ms | Allocations: 15940)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-05-10 08:55:02 +0200
+Started GET "/" for 127.0.0.1 at 2020-05-10 08:55:03 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `switch_locale'
+  [1m[36mSentence Load (0.8ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:19:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 13.3ms | Allocations: 2833)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 46.6ms | Allocations: 9965)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 78ms (Views: 58.6ms | ActiveRecord: 1.4ms | Allocations: 15909)
+
+
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-10 08:55:04 +0200
