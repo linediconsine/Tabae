@@ -17,3 +17,13 @@ pg_ctl -D /usr/local/var/postgres start
 
 https://opentechschool.github.io/social-coding/extras/heroku.html
 #git push heroku master
+
+Webpack
+bundle update webpacker
+rails webpacker:binstubs
+yarn upgrade @rails/webpacker --latest
+yarn add webpack-dev-server@^3.1.14
+Then follow the steps in: https://github.com/rails/webpacker/blob/master/docs/v4-upgrade.md#webpacker-upgrade-guide
+
+weback by hand
+./bin/webpack-dev-server

@@ -1,71 +1,54 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Tabae</title>
     <meta name="viewport" content="width=device-width, user-scalable=no,
 initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <link rel="manifest" href="/manifest.json" />
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-  
-  </head>
+</head>
 
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
-      <%= link_to "TaBaE", root_path , class: "navbar-brand"%>
-      <span class="offline_message text-light">Offline</span>
-      <button class="navbar-toggler only_online" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-         
-          <!--
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-          -->
-        </ul>
 
-          <ul class="navbar-nav mr-auto">
-            <li class="pl-4 nav-item">  
-              <%= link_to "Esci", destroy_user_session_path, method: :delete , class: "nav-link"%>
-            </li>
-          <!--
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-          -->
-        </ul>
-        <!--
-        <form class="form-inline mt-2 mt-md-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-        -->
-      </div>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+        <%= link_to "TaBaE", root_path , class: "navbar-brand"%>
+        <span class="offline_message text-light">Offline</span>
+        <button class="navbar-toggler only_online" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <ul class="navbar-nav mr-auto">
+                <li class="pl-4 nav-item">
+                    <%= link_to "Esci", destroy_user_session_path, method: :delete , class: "nav-link"%>
+                </li>
+            </ul>
+        </div>
     </nav>
 
     <main role="main" class="container-fluid w">
-      <% unless notice.nil? %>
+        <% unless notice.nil? %>
         <p id="notice" class="notice"><%= notice %></p>
-      <% end %>
-      <% unless alert.nil? %>
+        <% end %>
+        <% unless alert.nil? %>
         <p id="alert" class="alert"><%= alert %></p>
-      <% end %>
-    
-      <%= yield %>
-       
+        <% end %>
+
+        <%= yield %>
     </main>
 
 
-
+      <%= javascript_pack_tag 'checkconnection' %>
 </body>
 
 

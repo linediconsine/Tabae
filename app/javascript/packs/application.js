@@ -23,7 +23,7 @@ require("axios");
 // const imagePath = (name) => images(name, true)
 
 import "bootstrap";
-import "../stylesheets/application";
+import "./stylesheets/application.scss";
 import axios from "axios";
 //import vue from "vue";
 

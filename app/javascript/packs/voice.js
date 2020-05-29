@@ -14,18 +14,3 @@ window.voice = (sentence) => {
   voice.text = sentence;
   speechSynthesis.speak(voice);
 };
-
-window.Checkconnection = () => {
-  const $body = document.querySelector("body");
-  if (navigator.onLine) {
-    $body.classList.remove("offline");
-    $body.classList.add("online");
-  } else {
-    $body.classList.remove("online");
-    $body.classList.add("offline");
-  }
-};
-window.Checkconnection();
-setInterval(function () {
-  window.Checkconnection();
-}, 3000);

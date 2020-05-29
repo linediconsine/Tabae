@@ -1,12 +1,10 @@
 <%= javascript_pack_tag 'voice' %>
-<%= javascript_pack_tag 'serviceworker' %>
+
 
 <% if user_signed_in? %> 
     <div class="nav nav-pills" id="nav-tab" role="tablist">
       <a class=" nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><%= t "sentences" %></a>
       <a class=" nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><%= t "new_sentence" %></a>
-      <!-- <a class=" nav-link" id="nav-icons-tab" data-toggle="tab" href="#nav-icons" role="tab" aria-controls="nav-icons" aria-selected="false">Icone</a> -->
-      
     </div>
 <% end %> 
 
@@ -19,46 +17,17 @@
 
     <div class="col-lg-4 my-1" >
       <div class="card" >
-       <a class="d-block p-1 view overlay zoom" onClick="voice('<%= escape_javascript sentence.sentence %>')">
-        
+       <a class="d-block p-1 view overlay zoom" href="#" onClick="voice('<%= escape_javascript sentence.sentence %>')">
           <div class="card-body">
                 <p class="card-text"><%= truncate(sentence.sentence, :length => 30) %>   </p>
           </div>
-
-         </a>
-         <div class="card-footer small" style="padding: 7px 10px">
-            <%= link_to t('edit'), edit_sentence_path(sentence) , class: "card-link float-right"%>
-         </div>
+       </a>
+       
+       <div class="card-footer small" style="padding: 7px 10px">
+         <%= link_to t('edit'), edit_sentence_path(sentence) , class: "card-link float-right"%>
+       </div>
     </div>
   </div>
-      <!--
-      <div class="col-lg-4 my-1 " >
-        <div class="card card-item shadow bg-light sentence">
-          <div class="row">
-            <div class="col-10">
-              <a class="d-block p-1 view overlay zoom" onClick="voice('<%= escape_javascript sentence.sentence %>')">
-                <%= truncate(sentence.sentence, :length => 30) %>    
-              </a>
-            </div>
-            <div class="p-2 col-2 only_online">
-              <span class="dropdown">
-                    <button class="btn  btn-icon p-0 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Altro
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <%= link_to 'Edita', edit_sentence_path(sentence) , class: "dropdown-item"%>
-                        <%= link_to 'Cancella', sentence, method: :delete, data: { confirm: 'Conferma per cencellare' } , class: "dropdown-item" %>
-                    </div>
-              </span>
-          </div>
-
-          </div>
-
-
-          
-        </div>
-      </div>
-      -->
     <% end %>
     
   </div>
