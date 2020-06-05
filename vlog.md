@@ -4,12 +4,12 @@ https://stackoverflow.com/questions/189430/detect-the-internet-connection-is-off
 1. use browse memory and upload message when online
 2. hide any action will make the app offline when offline
 
-psql -c "CREATE USER amph WITH PASSWORD 'cavallo';"
-psql -c '\x' -c 'GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO amph;'
-psql -c '\x' -c 'ALTER USER amph CREATEDB;'
+psql -c "CREATE USER tabae WITH PASSWORD 'cavallo';"
+psql -c '\x' -c 'GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO tabae;'
+psql -c '\x' -c 'ALTER USER tabae CREATEDB;'
 
 psql -c '\x' -c 'ALTER USER amph CREATEDB;'
-CREATE DATABASE databasename
+CREATE DATABASE tabae_development
 
 # start pg
 
@@ -27,3 +27,16 @@ Then follow the steps in: https://github.com/rails/webpacker/blob/master/docs/v4
 
 weback by hand
 ./bin/webpack-dev-server
+
+
+create role tabae with createdb login password 'ninja';
+
+
+UBUNTU:
+$sudo -i -u postgres
+$psql
+CREATE USER tabae WITH PASSWORD 'ninja';
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO tabae;
+CREATE DATABASE tabae_development;
+
+$rails db:migrate

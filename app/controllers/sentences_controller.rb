@@ -1,7 +1,10 @@
 class SentencesController < ApplicationController
   before_action :set_sentence, only: [:show, :edit, :update, :destroy]
   #before_action :set_json_response, only: [:apicreate]
-  before_action :authenticate_user!
+  before_action :authenticate_user!, except: [:welcome]
+
+  def welcome
+  end
 
   # DELETE /sentences/1
   # DELETE /sentences/1.json

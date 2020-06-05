@@ -21911,3 +21911,2330 @@ Completed 200 OK in 49ms (Views: 36.3ms | ActiveRecord: 6.6ms | Allocations: 209
 
 Started GET "/manifest.json" for 127.0.0.1 at 2020-05-29 08:58:38 +0200
 Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-29 08:58:39 +0200
+Started GET "/" for 127.0.0.1 at 2020-06-02 09:48:52 +0200
+  
+PG::ConnectionBad (fe_sendauth: no password supplied
+):
+  
+pg (1.2.0) lib/pg.rb:57:in `initialize'
+pg (1.2.0) lib/pg.rb:57:in `new'
+pg (1.2.0) lib/pg.rb:57:in `connect'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:46:in `postgresql_connection'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:889:in `new_connection'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:933:in `checkout_new_connection'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:912:in `try_to_checkout_new_connection'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:873:in `acquire_connection'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:595:in `checkout'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:439:in `connection'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1121:in `retrieve_connection'
+activerecord (6.0.2.1) lib/active_record/connection_handling.rb:238:in `retrieve_connection'
+activerecord (6.0.2.1) lib/active_record/connection_handling.rb:206:in `connection'
+activerecord (6.0.2.1) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-06-04 22:10:53 +0200
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "tabae_development" does not exist
+):
+  
+activerecord (6.0.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:50:in `rescue in postgresql_connection'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:33:in `postgresql_connection'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:889:in `new_connection'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:933:in `checkout_new_connection'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:912:in `try_to_checkout_new_connection'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:873:in `acquire_connection'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:595:in `checkout'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:439:in `connection'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1121:in `retrieve_connection'
+activerecord (6.0.2.1) lib/active_record/connection_handling.rb:238:in `retrieve_connection'
+activerecord (6.0.2.1) lib/active_record/connection_handling.rb:206:in `connection'
+activerecord (6.0.2.1) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE DATABASE "tabae_development" ENCODING = 'unicode'[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE DATABASE "tabae_development" ENCODING = 'unicode'[0m
+  [1m[35m (150.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (87.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(2358121714093346460)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateSentences (20200103094512)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (90.8ms)[0m  [1m[35mCREATE TABLE "sentences" ("id" bigserial primary key, "name" character varying, "sentence" text, "color" integer, "group" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200103094512"]]
+  [1m[35m (12.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to DeviseCreateUsers (20200103102601)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (68.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (62.7ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  [1m[35m (35.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[36mprimary::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200103102601"]]
+  [1m[35m (20.9ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddUserIdToSentences (20200103103224)
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "sentences" ADD "user_id" integer[0m
+  [1m[36mprimary::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200103103224"]]
+  [1m[35m (13.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-06-04 20:12:28.033786"], ["updated_at", "2020-06-04 20:12:28.033786"]]
+  [1m[35m (17.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(2358121714093346460)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2020-06-04 22:12:34 +0200
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SentencesController#index as HTML
+Completed 401 Unauthorized in 16ms (ActiveRecord: 0.0ms | Allocations: 1474)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-06-04 22:12:34 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 598)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 31.0ms | Allocations: 3356)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+ERROR: [Errno 21] Is a directory: 'bin'
+CRITICAL:root:Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/cliapp/app.py", line 182, in _run
+    self.settings.load_configs()
+  File "/usr/lib/python3/dist-packages/cliapp/settings.py", line 829, in load_configs
+    self._read_ini(pathname, f)
+  File "/usr/lib/python3/dist-packages/cliapp/settings.py", line 838, in _read_ini
+    cp.readfp(f)
+  File "/usr/lib/python3.8/configparser.py", line 763, in readfp
+    self.read_file(fp, source=filename)
+  File "/usr/lib/python3.8/configparser.py", line 718, in read_file
+    self._read(f, source)
+  File "/usr/lib/python3.8/configparser.py", line 1082, in _read
+    raise MissingSectionHeaderError(fpname, lineno, line)
+configparser.MissingSectionHeaderError: File contains no section headers.
+file: '/home/marcoo/Documents/RoR/tabae/config/webpack/development.js', line: 1
+"process.env.NODE_ENV = process.env.NODE_ENV || 'development'\n"
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/cliapp/app.py", line 182, in _run
+    self.settings.load_configs()
+  File "/usr/lib/python3/dist-packages/cliapp/settings.py", line 829, in load_configs
+    self._read_ini(pathname, f)
+  File "/usr/lib/python3/dist-packages/cliapp/settings.py", line 838, in _read_ini
+    cp.readfp(f)
+  File "/usr/lib/python3.8/configparser.py", line 763, in readfp
+    self.read_file(fp, source=filename)
+  File "/usr/lib/python3.8/configparser.py", line 718, in read_file
+    self._read(f, source)
+  File "/usr/lib/python3.8/configparser.py", line 1082, in _read
+    raise MissingSectionHeaderError(fpname, lineno, line)
+configparser.MissingSectionHeaderError: File contains no section headers.
+file: '/home/marcoo/Documents/RoR/tabae/config/webpack/development.js', line: 1
+"process.env.NODE_ENV = process.env.NODE_ENV || 'development'\n"
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7113ms (Views: 7080.9ms | ActiveRecord: 9.5ms | Allocations: 55746)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-04 22:12:41 +0200
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-04 22:19:39 +0200
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-06-04 22:21:23 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 526)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1913)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 10.4ms | ActiveRecord: 3.4ms | Allocations: 13171)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-04 22:21:23 +0200
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-04 22:21:26 +0200
+Started GET "/" for 127.0.0.1 at 2020-06-04 22:21:29 +0200
+Processing by MainController#index as HTML
+Redirected to http://127.0.0.1:3000/index.html
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 388)
+
+
+Started GET "/index.html" for 127.0.0.1 at 2020-06-04 22:21:29 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/i" for 127.0.0.1 at 2020-06-04 22:21:47 +0200
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/i"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-06-04 22:21:51 +0200
+Processing by MainController#index as HTML
+Redirected to http://127.0.0.1:3000/index.html
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 441)
+
+
+Started GET "/index.html" for 127.0.0.1 at 2020-06-04 22:21:51 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-06-04 22:22:11 +0200
+Processing by MainController#index as HTML
+Redirected to http://127.0.0.1:3000/index.html
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 390)
+
+
+Started GET "/index.html" for 127.0.0.1 at 2020-06-04 22:22:11 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-06-04 22:22:16 +0200
+Processing by MainController#index as HTML
+Redirected to http://127.0.0.1:3000/index.html
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 309)
+
+
+Started GET "/index.html" for 127.0.0.1 at 2020-06-04 22:22:16 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/index.html" for 127.0.0.1 at 2020-06-04 22:22:47 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-06-04 22:22:50 +0200
+Processing by MainController#index as HTML
+Redirected to http://127.0.0.1:3000/index.html
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 372)
+
+
+Started GET "/index.html" for 127.0.0.1 at 2020-06-04 22:22:50 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-06-04 22:23:16 +0200
+Processing by MainController#index as HTML
+Redirected to http://127.0.0.1:3000/index.html
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 197)
+
+
+Started GET "/index.html" for 127.0.0.1 at 2020-06-04 22:23:16 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-06-04 22:24:38 +0200
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#index as HTML
+Redirected to http://127.0.0.1:3000/index.html
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 486)
+
+
+Started GET "/index.html" for 127.0.0.1 at 2020-06-04 22:24:38 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-06-04 22:25:06 +0200
+Processing by MainController#index as HTML
+Redirected to http://127.0.0.1:3000/index.html
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 376)
+
+
+Started GET "/index.html" for 127.0.0.1 at 2020-06-04 22:25:06 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-06-04 22:25:19 +0200
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#index as HTML
+Redirected to http://127.0.0.1:3000/index.html
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 478)
+
+
+Started GET "/index.html" for 127.0.0.1 at 2020-06-04 22:25:19 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-06-04 22:25:45 +0200
+Processing by MainController#index as HTML
+Redirected to http://127.0.0.1:3000/index.html
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 386)
+
+
+Started GET "/index.html" for 127.0.0.1 at 2020-06-04 22:25:45 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-06-04 22:25:58 +0200
+Processing by MainController#index as HTML
+Redirected to http://127.0.0.1:3000/index.html
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 197)
+
+
+Started GET "/index.html" for 127.0.0.1 at 2020-06-04 22:25:58 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-06-04 22:26:43 +0200
+Processing by MainController#index as HTML
+Redirected to http://127.0.0.1:3000/index.html
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 305)
+
+
+Started GET "/index.html" for 127.0.0.1 at 2020-06-04 22:26:43 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-06-04 22:26:49 +0200
+Processing by MainController#index as HTML
+Redirected to http://127.0.0.1:3000/index.html
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 307)
+
+
+Started GET "/index.html" for 127.0.0.1 at 2020-06-04 22:26:49 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-06-04 22:27:02 +0200
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#index as HTML
+Redirected to http://127.0.0.1:3000/index.html
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 478)
+
+
+Started GET "/index.html" for 127.0.0.1 at 2020-06-04 22:27:02 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-06-04 22:27:46 +0200
+Processing by MainController#index as HTML
+Completed 406 Not Acceptable in 2ms (ActiveRecord: 0.0ms | Allocations: 2570)
+
+
+  
+ActionController::MissingExactTemplate (MainController#index is missing a template for request formats: text/html):
+  
+app/controllers/application_controller.rb:22:in `switch_locale'
+Started GET "/" for 127.0.0.1 at 2020-06-04 22:28:15 +0200
+Processing by MainController#index as HTML
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 635)
+
+
+  
+ActionController::MissingExactTemplate (MainController#index is missing a template for request formats: text/html):
+  
+app/controllers/application_controller.rb:22:in `switch_locale'
+Started GET "/" for 127.0.0.1 at 2020-06-04 22:30:03 +0200
+Processing by MainController#index as HTML
+Completed 406 Not Acceptable in 9ms (ActiveRecord: 0.0ms | Allocations: 2526)
+
+
+  
+ActionController::MissingExactTemplate (MainController#index is missing a template for request formats: text/html):
+  
+app/controllers/application_controller.rb:22:in `switch_locale'
+Started GET "/" for 127.0.0.1 at 2020-06-04 22:30:05 +0200
+Processing by MainController#index as HTML
+Completed 406 Not Acceptable in 1ms (ActiveRecord: 0.0ms | Allocations: 746)
+
+
+  
+ActionController::MissingExactTemplate (MainController#index is missing a template for request formats: text/html):
+  
+app/controllers/application_controller.rb:22:in `switch_locale'
+Started GET "/welcome" for 127.0.0.1 at 2020-06-04 22:31:44 +0200
+  
+SyntaxError (/home/marcoo/Documents/RoR/tabae/config/routes.rb:8: syntax error, unexpected =>, expecting `end'
+  'welcome' => 'main#index'
+            ^~
+/home/marcoo/Documents/RoR/tabae/config/routes.rb:12: syntax error, unexpected `end', expecting end-of-input):
+  
+config/routes.rb:8: syntax error, unexpected =>, expecting `end'
+config/routes.rb:12: syntax error, unexpected `end', expecting end-of-input
+config/routes.rb:8: syntax error, unexpected =>, expecting `end'
+config/routes.rb:12: syntax error, unexpected `end', expecting end-of-input
+config/routes.rb:8: syntax error, unexpected =>, expecting `end'
+config/routes.rb:12: syntax error, unexpected `end', expecting end-of-input
+Started GET "/welcome" for 127.0.0.1 at 2020-06-04 22:32:20 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/welcome"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-06-04 22:34:35 +0200
+Processing by SentencesController#welcome as HTML
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms | Allocations: 1149)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-06-04 22:34:35 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 598)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2637)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 19.4ms | ActiveRecord: 2.4ms | Allocations: 22804)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-04 22:34:35 +0200
+Started GET "/" for 127.0.0.1 at 2020-06-04 22:35:12 +0200
+  
+SyntaxError (/home/marcoo/Documents/RoR/tabae/app/controllers/sentences_controller.rb:4: syntax error, unexpected [, expecting `do' or '{' or '('
+...n :authenticate_user!, except [:welcome]
+...                              ^
+):
+  
+app/controllers/sentences_controller.rb:4: syntax error, unexpected [, expecting `do' or '{' or '('
+app/controllers/sentences_controller.rb:4: syntax error, unexpected [, expecting `do' or '{' or '('
+app/controllers/sentences_controller.rb:4: syntax error, unexpected [, expecting `do' or '{' or '('
+Started GET "/" for 127.0.0.1 at 2020-06-04 22:35:57 +0200
+  
+SyntaxError (/home/marcoo/Documents/RoR/tabae/app/controllers/sentences_controller.rb:4: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+...n :authenticate_user!, except :welcome
+...                              ^
+):
+  
+app/controllers/sentences_controller.rb:4: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/controllers/sentences_controller.rb:4: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/controllers/sentences_controller.rb:4: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+Started GET "/" for 127.0.0.1 at 2020-06-04 22:37:08 +0200
+  
+SyntaxError (/home/marcoo/Documents/RoR/tabae/app/controllers/sentences_controller.rb:4: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+...on :authenticate_user, except :welcome
+...                              ^
+):
+  
+app/controllers/sentences_controller.rb:4: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/controllers/sentences_controller.rb:4: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/controllers/sentences_controller.rb:4: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+Started GET "/" for 127.0.0.1 at 2020-06-04 22:41:01 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1857)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 7869)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-04 22:41:01 +0200
+Started GET "/" for 127.0.0.1 at 2020-06-04 22:43:37 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1905)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 4465)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tabae</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no,
+initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="manifest" href="/manifest.json" />
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+        <%= link_to "TaBaE", root_path , class: "navbar-brand"%>
+        <span class="offline_message text-light">Offline</span>
+        <button class="navbar-toggler only_online" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <ul class="navbar-nav mr-auto">
+                <% if user_signed_in? do %> 
+                    <li class="pl-4 nav-item">
+                        <%= link_to "Esci", destroy_user_session_path, method: :delete , class: "nav-link" %>
+                    </li>
+                <% else %>
+                    <li class="pl-4 nav-item">
+                        <%= link_to "login", new_user_session_path, class: "nav-link" %>
+                    </li>
+                <% end %>
+            </ul>
+        </div>
+    </nav>
+
+    <main role="main" class="container-fluid w">
+        <% unless notice.nil? %>
+        <p id="notice" class="notice"><%= notice %></p>
+        <% end %>
+        <% unless alert.nil? %>
+        <p id="alert" class="alert"><%= alert %></p>
+        <% end %>
+
+        <%= yield %>
+    </main>
+
+
+      <%= javascript_pack_tag 'checkconnection' %>
+</body>
+
+
+</html>
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:    
+4:    <head>
+5:        <title>Tabae</title>
+6:        <meta name="viewport" content="width=device-width, user-scalable=no,
+7:    initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+8:        <link rel="manifest" href="/manifest.json" />
+9:        <%= csrf_meta_tags %>
+10:        <%= csp_meta_tag %>
+11:        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+12:        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+13:    
+14:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+15:        <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+16:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+17:    </head>
+18:    
+19:    
+20:    <body>
+21:    
+22:        <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+23:            <%= link_to "TaBaE", root_path , class: "navbar-brand"%>
+24:            <span class="offline_message text-light">Offline</span>
+25:            <button class="navbar-toggler only_online" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+26:                <span class="navbar-toggler-icon"></span>
+27:            </button>
+28:            
+29:            <div class="collapse navbar-collapse" id="navbarCollapse">
+30:                <ul class="navbar-nav mr-auto">
+31:                </ul>
+32:                <ul class="navbar-nav mr-auto">
+33:                    <% if user_signed_in? do %> 
+34:                        <li class="pl-4 nav-item">
+35:                            <%= link_to "Esci", destroy_user_session_path, method: :delete , class: "nav-link" %>
+36:                        </li>
+37:                    <% else %>
+38:                        <li class="pl-4 nav-item">
+39:                            <%= link_to "login", new_user_session_path, class: "nav-link" %>
+40:                        </li>
+41:                    <% end %>
+42:                </ul>
+43:            </div>
+44:        </nav>
+45:    
+46:        <main role="main" class="container-fluid w">
+47:            <% unless notice.nil? %>
+48:            <p id="notice" class="notice"><%= notice %></p>
+49:            <% end %>
+50:            <% unless alert.nil? %>
+51:            <p id="alert" class="alert"><%= alert %></p>
+52:            <% end %>
+53:    
+54:            <%= yield %>
+55:        </main>
+56:    
+57:    
+58:          <%= javascript_pack_tag 'checkconnection' %>
+59:    </body>
+60:    
+61:    
+62:    </html>
+  
+app/views/layouts/application.html.erb:37: else without rescue is useless
+app/views/layouts/application.html.erb:64: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:37: else without rescue is useless
+app/views/layouts/application.html.erb:64: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:37: else without rescue is useless
+app/views/layouts/application.html.erb:64: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:37: else without rescue is useless
+app/views/layouts/application.html.erb:64: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:37: else without rescue is useless
+app/views/layouts/application.html.erb:64: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:37: else without rescue is useless
+app/views/layouts/application.html.erb:64: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/application_controller.rb:22:in `switch_locale'
+Started GET "/" for 127.0.0.1 at 2020-06-04 22:44:03 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 6.9ms | Allocations: 1905)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 28.0ms | ActiveRecord: 0.0ms | Allocations: 8293)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-04 22:44:03 +0200
+Started GET "/" for 127.0.0.1 at 2020-06-04 22:44:28 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1905)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 4480)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tabae</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no,
+initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="manifest" href="/manifest.json" />
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+        <%= link_to "TaBaE", root_path , class: "navbar-brand"%>
+        <span class="offline_message text-light">Offline</span>
+        <button class="navbar-toggler only_online" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <ul class="navbar-nav mr-auto">
+                <% if user_signed_in? do %> 
+                    <li class="pl-4 nav-item">
+                        <%= link_to "Esci", destroy_user_session_path, method: :delete , class: "nav-link" %>
+                    </li>
+                <% else %>
+                    <li class="pl-4 nav-item">
+                        <%= link_to "login", new_user_session_path%>
+                    </li>
+                <% end %>
+            </ul>
+        </div>
+    </nav>
+
+    <main role="main" class="container-fluid w">
+        <% unless notice.nil? %>
+        <p id="notice" class="notice"><%= notice %></p>
+        <% end %>
+        <% unless alert.nil? %>
+        <p id="alert" class="alert"><%= alert %></p>
+        <% end %>
+
+        <%= yield %>
+    </main>
+
+
+      <%= javascript_pack_tag 'checkconnection' %>
+</body>
+
+
+</html>
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:    
+4:    <head>
+5:        <title>Tabae</title>
+6:        <meta name="viewport" content="width=device-width, user-scalable=no,
+7:    initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+8:        <link rel="manifest" href="/manifest.json" />
+9:        <%= csrf_meta_tags %>
+10:        <%= csp_meta_tag %>
+11:        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+12:        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+13:    
+14:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+15:        <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+16:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+17:    </head>
+18:    
+19:    
+20:    <body>
+21:    
+22:        <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+23:            <%= link_to "TaBaE", root_path , class: "navbar-brand"%>
+24:            <span class="offline_message text-light">Offline</span>
+25:            <button class="navbar-toggler only_online" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+26:                <span class="navbar-toggler-icon"></span>
+27:            </button>
+28:            
+29:            <div class="collapse navbar-collapse" id="navbarCollapse">
+30:                <ul class="navbar-nav mr-auto">
+31:                </ul>
+32:                <ul class="navbar-nav mr-auto">
+33:                    <% if user_signed_in? do %> 
+34:                        <li class="pl-4 nav-item">
+35:                            <%= link_to "Esci", destroy_user_session_path, method: :delete , class: "nav-link" %>
+36:                        </li>
+37:                    <% else %>
+38:                        <li class="pl-4 nav-item">
+39:                            <%= link_to "login", new_user_session_path%>
+40:                        </li>
+41:                    <% end %>
+42:                </ul>
+43:            </div>
+44:        </nav>
+45:    
+46:        <main role="main" class="container-fluid w">
+47:            <% unless notice.nil? %>
+48:            <p id="notice" class="notice"><%= notice %></p>
+49:            <% end %>
+50:            <% unless alert.nil? %>
+51:            <p id="alert" class="alert"><%= alert %></p>
+52:            <% end %>
+53:    
+54:            <%= yield %>
+55:        </main>
+56:    
+57:    
+58:          <%= javascript_pack_tag 'checkconnection' %>
+59:    </body>
+60:    
+61:    
+62:    </html>
+  
+app/views/layouts/application.html.erb:37: else without rescue is useless
+app/views/layouts/application.html.erb:64: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:37: else without rescue is useless
+app/views/layouts/application.html.erb:64: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:37: else without rescue is useless
+app/views/layouts/application.html.erb:64: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:37: else without rescue is useless
+app/views/layouts/application.html.erb:64: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:37: else without rescue is useless
+app/views/layouts/application.html.erb:64: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:37: else without rescue is useless
+app/views/layouts/application.html.erb:64: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/application_controller.rb:22:in `switch_locale'
+Started GET "/" for 127.0.0.1 at 2020-06-04 22:44:36 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1905)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 4467)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tabae</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no,
+initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="manifest" href="/manifest.json" />
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+        <%= link_to "TaBaE", root_path , class: "navbar-brand"%>
+        <span class="offline_message text-light">Offline</span>
+        <button class="navbar-toggler only_online" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <ul class="navbar-nav mr-auto">
+                <% if user_signed_in? do %> 
+                    <li class="pl-4 nav-item">
+                        <%= link_to "Esci", destroy_user_session_path, method: :delete , class: "nav-link" %>
+                    </li>
+                <% else %>
+                    
+                <% end %>
+            </ul>
+        </div>
+    </nav>
+
+    <main role="main" class="container-fluid w">
+        <% unless notice.nil? %>
+        <p id="notice" class="notice"><%= notice %></p>
+        <% end %>
+        <% unless alert.nil? %>
+        <p id="alert" class="alert"><%= alert %></p>
+        <% end %>
+
+        <%= yield %>
+    </main>
+
+
+      <%= javascript_pack_tag 'checkconnection' %>
+</body>
+
+
+</html>
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:    
+4:    <head>
+5:        <title>Tabae</title>
+6:        <meta name="viewport" content="width=device-width, user-scalable=no,
+7:    initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+8:        <link rel="manifest" href="/manifest.json" />
+9:        <%= csrf_meta_tags %>
+10:        <%= csp_meta_tag %>
+11:        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+12:        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+13:    
+14:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+15:        <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+16:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+17:    </head>
+18:    
+19:    
+20:    <body>
+21:    
+22:        <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+23:            <%= link_to "TaBaE", root_path , class: "navbar-brand"%>
+24:            <span class="offline_message text-light">Offline</span>
+25:            <button class="navbar-toggler only_online" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+26:                <span class="navbar-toggler-icon"></span>
+27:            </button>
+28:            
+29:            <div class="collapse navbar-collapse" id="navbarCollapse">
+30:                <ul class="navbar-nav mr-auto">
+31:                </ul>
+32:                <ul class="navbar-nav mr-auto">
+33:                    <% if user_signed_in? do %> 
+34:                        <li class="pl-4 nav-item">
+35:                            <%= link_to "Esci", destroy_user_session_path, method: :delete , class: "nav-link" %>
+36:                        </li>
+37:                    <% else %>
+38:                        
+39:                    <% end %>
+40:                </ul>
+41:            </div>
+42:        </nav>
+43:    
+44:        <main role="main" class="container-fluid w">
+45:            <% unless notice.nil? %>
+46:            <p id="notice" class="notice"><%= notice %></p>
+47:            <% end %>
+48:            <% unless alert.nil? %>
+49:            <p id="alert" class="alert"><%= alert %></p>
+50:            <% end %>
+51:    
+52:            <%= yield %>
+53:        </main>
+54:    
+55:    
+56:          <%= javascript_pack_tag 'checkconnection' %>
+57:    </body>
+58:    
+59:    
+60:    </html>
+  
+app/views/layouts/application.html.erb:37: else without rescue is useless
+app/views/layouts/application.html.erb:62: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:37: else without rescue is useless
+app/views/layouts/application.html.erb:62: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:37: else without rescue is useless
+app/views/layouts/application.html.erb:62: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:37: else without rescue is useless
+app/views/layouts/application.html.erb:62: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:37: else without rescue is useless
+app/views/layouts/application.html.erb:62: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:37: else without rescue is useless
+app/views/layouts/application.html.erb:62: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/application_controller.rb:22:in `switch_locale'
+Started GET "/" for 127.0.0.1 at 2020-06-04 22:44:36 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1816)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 3516)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tabae</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no,
+initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="manifest" href="/manifest.json" />
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+        <%= link_to "TaBaE", root_path , class: "navbar-brand"%>
+        <span class="offline_message text-light">Offline</span>
+        <button class="navbar-toggler only_online" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <ul class="navbar-nav mr-auto">
+                <% if user_signed_in? do %> 
+                    <li class="pl-4 nav-item">
+                        <%= link_to "Esci", destroy_user_session_path, method: :delete , class: "nav-link" %>
+                    </li>
+                <% else %>
+                    
+                <% end %>
+            </ul>
+        </div>
+    </nav>
+
+    <main role="main" class="container-fluid w">
+        <% unless notice.nil? %>
+        <p id="notice" class="notice"><%= notice %></p>
+        <% end %>
+        <% unless alert.nil? %>
+        <p id="alert" class="alert"><%= alert %></p>
+        <% end %>
+
+        <%= yield %>
+    </main>
+
+
+      <%= javascript_pack_tag 'checkconnection' %>
+</body>
+
+
+</html>
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:    
+4:    <head>
+5:        <title>Tabae</title>
+6:        <meta name="viewport" content="width=device-width, user-scalable=no,
+7:    initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+8:        <link rel="manifest" href="/manifest.json" />
+9:        <%= csrf_meta_tags %>
+10:        <%= csp_meta_tag %>
+11:        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+12:        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+13:    
+14:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+15:        <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+16:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+17:    </head>
+18:    
+19:    
+20:    <body>
+21:    
+22:        <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+23:            <%= link_to "TaBaE", root_path , class: "navbar-brand"%>
+24:            <span class="offline_message text-light">Offline</span>
+25:            <button class="navbar-toggler only_online" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+26:                <span class="navbar-toggler-icon"></span>
+27:            </button>
+28:            
+29:            <div class="collapse navbar-collapse" id="navbarCollapse">
+30:                <ul class="navbar-nav mr-auto">
+31:                </ul>
+32:                <ul class="navbar-nav mr-auto">
+33:                    <% if user_signed_in? do %> 
+34:                        <li class="pl-4 nav-item">
+35:                            <%= link_to "Esci", destroy_user_session_path, method: :delete , class: "nav-link" %>
+36:                        </li>
+37:                    <% else %>
+38:                        
+39:                    <% end %>
+40:                </ul>
+41:            </div>
+42:        </nav>
+43:    
+44:        <main role="main" class="container-fluid w">
+45:            <% unless notice.nil? %>
+46:            <p id="notice" class="notice"><%= notice %></p>
+47:            <% end %>
+48:            <% unless alert.nil? %>
+49:            <p id="alert" class="alert"><%= alert %></p>
+50:            <% end %>
+51:    
+52:            <%= yield %>
+53:        </main>
+54:    
+55:    
+56:          <%= javascript_pack_tag 'checkconnection' %>
+57:    </body>
+58:    
+59:    
+60:    </html>
+  
+app/views/layouts/application.html.erb:37: else without rescue is useless
+app/views/layouts/application.html.erb:62: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:37: else without rescue is useless
+app/views/layouts/application.html.erb:62: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:37: else without rescue is useless
+app/views/layouts/application.html.erb:62: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:37: else without rescue is useless
+app/views/layouts/application.html.erb:62: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:37: else without rescue is useless
+app/views/layouts/application.html.erb:62: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:37: else without rescue is useless
+app/views/layouts/application.html.erb:62: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/application_controller.rb:22:in `switch_locale'
+Started GET "/" for 127.0.0.1 at 2020-06-04 22:44:37 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1818)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 3518)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tabae</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no,
+initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="manifest" href="/manifest.json" />
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+        <%= link_to "TaBaE", root_path , class: "navbar-brand"%>
+        <span class="offline_message text-light">Offline</span>
+        <button class="navbar-toggler only_online" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <ul class="navbar-nav mr-auto">
+                <% if user_signed_in? do %> 
+                    <li class="pl-4 nav-item">
+                        <%= link_to "Esci", destroy_user_session_path, method: :delete , class: "nav-link" %>
+                    </li>
+                <% else %>
+                    
+                <% end %>
+            </ul>
+        </div>
+    </nav>
+
+    <main role="main" class="container-fluid w">
+        <% unless notice.nil? %>
+        <p id="notice" class="notice"><%= notice %></p>
+        <% end %>
+        <% unless alert.nil? %>
+        <p id="alert" class="alert"><%= alert %></p>
+        <% end %>
+
+        <%= yield %>
+    </main>
+
+
+      <%= javascript_pack_tag 'checkconnection' %>
+</body>
+
+
+</html>
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:    
+4:    <head>
+5:        <title>Tabae</title>
+6:        <meta name="viewport" content="width=device-width, user-scalable=no,
+7:    initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+8:        <link rel="manifest" href="/manifest.json" />
+9:        <%= csrf_meta_tags %>
+10:        <%= csp_meta_tag %>
+11:        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+12:        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+13:    
+14:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+15:        <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+16:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+17:    </head>
+18:    
+19:    
+20:    <body>
+21:    
+22:        <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+23:            <%= link_to "TaBaE", root_path , class: "navbar-brand"%>
+24:            <span class="offline_message text-light">Offline</span>
+25:            <button class="navbar-toggler only_online" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+26:                <span class="navbar-toggler-icon"></span>
+27:            </button>
+28:            
+29:            <div class="collapse navbar-collapse" id="navbarCollapse">
+30:                <ul class="navbar-nav mr-auto">
+31:                </ul>
+32:                <ul class="navbar-nav mr-auto">
+33:                    <% if user_signed_in? do %> 
+34:                        <li class="pl-4 nav-item">
+35:                            <%= link_to "Esci", destroy_user_session_path, method: :delete , class: "nav-link" %>
+36:                        </li>
+37:                    <% else %>
+38:                        
+39:                    <% end %>
+40:                </ul>
+41:            </div>
+42:        </nav>
+43:    
+44:        <main role="main" class="container-fluid w">
+45:            <% unless notice.nil? %>
+46:            <p id="notice" class="notice"><%= notice %></p>
+47:            <% end %>
+48:            <% unless alert.nil? %>
+49:            <p id="alert" class="alert"><%= alert %></p>
+50:            <% end %>
+51:    
+52:            <%= yield %>
+53:        </main>
+54:    
+55:    
+56:          <%= javascript_pack_tag 'checkconnection' %>
+57:    </body>
+58:    
+59:    
+60:    </html>
+  
+app/views/layouts/application.html.erb:37: else without rescue is useless
+app/views/layouts/application.html.erb:62: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:37: else without rescue is useless
+app/views/layouts/application.html.erb:62: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:37: else without rescue is useless
+app/views/layouts/application.html.erb:62: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:37: else without rescue is useless
+app/views/layouts/application.html.erb:62: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:37: else without rescue is useless
+app/views/layouts/application.html.erb:62: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:37: else without rescue is useless
+app/views/layouts/application.html.erb:62: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/application_controller.rb:22:in `switch_locale'
+Started GET "/" for 127.0.0.1 at 2020-06-04 22:44:47 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 7.3ms | Allocations: 1905)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms | Allocations: 4486)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tabae</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no,
+initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="manifest" href="/manifest.json" />
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+        <%= link_to "TaBaE", root_path , class: "navbar-brand"%>
+        <span class="offline_message text-light">Offline</span>
+        <button class="navbar-toggler only_online" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <ul class="navbar-nav mr-auto">
+                <% if user_signed_in? do %> 
+                    <li class="pl-4 nav-item">
+                        <%= link_to "Esci", destroy_user_session_path, method: :delete , class: "nav-link"%>
+                    </li>
+                <% else %>
+                    <li class="pl-4 nav-item">
+                        <%= link_to "login", new_user_session_path %>
+                    </li>
+                <% end %>
+            </ul>
+        </div>
+    </nav>
+
+    <main role="main" class="container-fluid w">
+        <% unless notice.nil? %>
+        <p id="notice" class="notice"><%= notice %></p>
+        <% end %>
+        <% unless alert.nil? %>
+        <p id="alert" class="alert"><%= alert %></p>
+        <% end %>
+
+        <%= yield %>
+    </main>
+
+
+      <%= javascript_pack_tag 'checkconnection' %>
+</body>
+
+
+</html>
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:    
+4:    <head>
+5:        <title>Tabae</title>
+6:        <meta name="viewport" content="width=device-width, user-scalable=no,
+7:    initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+8:        <link rel="manifest" href="/manifest.json" />
+9:        <%= csrf_meta_tags %>
+10:        <%= csp_meta_tag %>
+11:        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+12:        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+13:    
+14:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+15:        <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+16:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+17:    </head>
+18:    
+19:    
+20:    <body>
+21:    
+22:        <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+23:            <%= link_to "TaBaE", root_path , class: "navbar-brand"%>
+24:            <span class="offline_message text-light">Offline</span>
+25:            <button class="navbar-toggler only_online" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+26:                <span class="navbar-toggler-icon"></span>
+27:            </button>
+28:            
+29:            <div class="collapse navbar-collapse" id="navbarCollapse">
+30:                <ul class="navbar-nav mr-auto">
+31:                </ul>
+32:                <ul class="navbar-nav mr-auto">
+33:                    <% if user_signed_in? do %> 
+34:                        <li class="pl-4 nav-item">
+35:                            <%= link_to "Esci", destroy_user_session_path, method: :delete , class: "nav-link"%>
+36:                        </li>
+37:                    <% else %>
+38:                        <li class="pl-4 nav-item">
+39:                            <%= link_to "login", new_user_session_path %>
+40:                        </li>
+41:                    <% end %>
+42:                </ul>
+43:            </div>
+44:        </nav>
+45:    
+46:        <main role="main" class="container-fluid w">
+47:            <% unless notice.nil? %>
+48:            <p id="notice" class="notice"><%= notice %></p>
+49:            <% end %>
+50:            <% unless alert.nil? %>
+51:            <p id="alert" class="alert"><%= alert %></p>
+52:            <% end %>
+53:    
+54:            <%= yield %>
+55:        </main>
+56:    
+57:    
+58:          <%= javascript_pack_tag 'checkconnection' %>
+59:    </body>
+60:    
+61:    
+62:    </html>
+  
+app/views/layouts/application.html.erb:37: else without rescue is useless
+app/views/layouts/application.html.erb:64: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:37: else without rescue is useless
+app/views/layouts/application.html.erb:64: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:37: else without rescue is useless
+app/views/layouts/application.html.erb:64: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:37: else without rescue is useless
+app/views/layouts/application.html.erb:64: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:37: else without rescue is useless
+app/views/layouts/application.html.erb:64: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:37: else without rescue is useless
+app/views/layouts/application.html.erb:64: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/application_controller.rb:22:in `switch_locale'
+Started GET "/" for 127.0.0.1 at 2020-06-04 22:45:04 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1905)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 4449)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tabae</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no,
+initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="manifest" href="/manifest.json" />
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+        <%= link_to "TaBaE", root_path , class: "navbar-brand"%>
+        <span class="offline_message text-light">Offline</span>
+        <button class="navbar-toggler only_online" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <ul class="navbar-nav mr-auto">
+                <% if user_signed_in? do %> 
+                    <li class="pl-4 nav-item">
+                    <%= link_to "Esci", destroy_user_session_path, method: :delete , class: "nav-link"%>
+                </li>
+              
+            <% end %>
+            </ul>
+        </div>
+    </nav>
+
+    <main role="main" class="container-fluid w">
+        <% unless notice.nil? %>
+        <p id="notice" class="notice"><%= notice %></p>
+        <% end %>
+        <% unless alert.nil? %>
+        <p id="alert" class="alert"><%= alert %></p>
+        <% end %>
+
+        <%= yield %>
+    </main>
+
+
+      <%= javascript_pack_tag 'checkconnection' %>
+</body>
+
+
+</html>
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:    
+4:    <head>
+5:        <title>Tabae</title>
+6:        <meta name="viewport" content="width=device-width, user-scalable=no,
+7:    initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+8:        <link rel="manifest" href="/manifest.json" />
+9:        <%= csrf_meta_tags %>
+10:        <%= csp_meta_tag %>
+11:        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+12:        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+13:    
+14:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+15:        <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+16:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+17:    </head>
+18:    
+19:    
+20:    <body>
+21:    
+22:        <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+23:            <%= link_to "TaBaE", root_path , class: "navbar-brand"%>
+24:            <span class="offline_message text-light">Offline</span>
+25:            <button class="navbar-toggler only_online" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+26:                <span class="navbar-toggler-icon"></span>
+27:            </button>
+28:            
+29:            <div class="collapse navbar-collapse" id="navbarCollapse">
+30:                <ul class="navbar-nav mr-auto">
+31:                </ul>
+32:                <ul class="navbar-nav mr-auto">
+33:                    <% if user_signed_in? do %> 
+34:                        <li class="pl-4 nav-item">
+35:                        <%= link_to "Esci", destroy_user_session_path, method: :delete , class: "nav-link"%>
+36:                    </li>
+37:                  
+38:                <% end %>
+39:                </ul>
+40:            </div>
+41:        </nav>
+42:    
+43:        <main role="main" class="container-fluid w">
+44:            <% unless notice.nil? %>
+45:            <p id="notice" class="notice"><%= notice %></p>
+46:            <% end %>
+47:            <% unless alert.nil? %>
+48:            <p id="alert" class="alert"><%= alert %></p>
+49:            <% end %>
+50:    
+51:            <%= yield %>
+52:        </main>
+53:    
+54:    
+55:          <%= javascript_pack_tag 'checkconnection' %>
+56:    </body>
+57:    
+58:    
+59:    </html>
+  
+app/views/layouts/application.html.erb:61: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:61: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:61: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:61: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:61: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:61: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/application_controller.rb:22:in `switch_locale'
+Started GET "/" for 127.0.0.1 at 2020-06-04 22:45:30 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1905)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 4448)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tabae</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no,
+initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="manifest" href="/manifest.json" />
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+        <%= link_to "TaBaE", root_path , class: "navbar-brand"%>
+        <span class="offline_message text-light">Offline</span>
+        <button class="navbar-toggler only_online" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <ul class="navbar-nav mr-auto">
+                <% if user_signed_in? do %> 
+                 
+                    <%= link_to "Esci", destroy_user_session_path, method: :delete , class: "nav-link"%>
+                
+            <% end %>
+            </ul>
+        </div>
+    </nav>
+
+    <main role="main" class="container-fluid w">
+        <% unless notice.nil? %>
+        <p id="notice" class="notice"><%= notice %></p>
+        <% end %>
+        <% unless alert.nil? %>
+        <p id="alert" class="alert"><%= alert %></p>
+        <% end %>
+
+        <%= yield %>
+    </main>
+
+
+      <%= javascript_pack_tag 'checkconnection' %>
+</body>
+
+
+</html>
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:    
+4:    <head>
+5:        <title>Tabae</title>
+6:        <meta name="viewport" content="width=device-width, user-scalable=no,
+7:    initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+8:        <link rel="manifest" href="/manifest.json" />
+9:        <%= csrf_meta_tags %>
+10:        <%= csp_meta_tag %>
+11:        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+12:        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+13:    
+14:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+15:        <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+16:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+17:    </head>
+18:    
+19:    
+20:    <body>
+21:    
+22:        <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+23:            <%= link_to "TaBaE", root_path , class: "navbar-brand"%>
+24:            <span class="offline_message text-light">Offline</span>
+25:            <button class="navbar-toggler only_online" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+26:                <span class="navbar-toggler-icon"></span>
+27:            </button>
+28:            
+29:            <div class="collapse navbar-collapse" id="navbarCollapse">
+30:                <ul class="navbar-nav mr-auto">
+31:                </ul>
+32:                <ul class="navbar-nav mr-auto">
+33:                    <% if user_signed_in? do %> 
+34:                     
+35:                        <%= link_to "Esci", destroy_user_session_path, method: :delete , class: "nav-link"%>
+36:                    
+37:                <% end %>
+38:                </ul>
+39:            </div>
+40:        </nav>
+41:    
+42:        <main role="main" class="container-fluid w">
+43:            <% unless notice.nil? %>
+44:            <p id="notice" class="notice"><%= notice %></p>
+45:            <% end %>
+46:            <% unless alert.nil? %>
+47:            <p id="alert" class="alert"><%= alert %></p>
+48:            <% end %>
+49:    
+50:            <%= yield %>
+51:        </main>
+52:    
+53:    
+54:          <%= javascript_pack_tag 'checkconnection' %>
+55:    </body>
+56:    
+57:    
+58:    </html>
+  
+app/views/layouts/application.html.erb:60: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:60: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:60: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:60: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:60: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:60: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/application_controller.rb:22:in `switch_locale'
+Started GET "/" for 127.0.0.1 at 2020-06-04 22:45:39 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 6.8ms | Allocations: 1905)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms | Allocations: 4429)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tabae</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no,
+initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="manifest" href="/manifest.json" />
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+        <%= link_to "TaBaE", root_path , class: "navbar-brand"%>
+        <span class="offline_message text-light">Offline</span>
+        <button class="navbar-toggler only_online" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+            </ul>
+            <ul class="navbar-nav mr-auto">
+                <% if user_signed_in? do %> 
+                 
+                 
+                
+            <% end %>
+            </ul>
+        </div>
+    </nav>
+
+    <main role="main" class="container-fluid w">
+        <% unless notice.nil? %>
+        <p id="notice" class="notice"><%= notice %></p>
+        <% end %>
+        <% unless alert.nil? %>
+        <p id="alert" class="alert"><%= alert %></p>
+        <% end %>
+
+        <%= yield %>
+    </main>
+
+
+      <%= javascript_pack_tag 'checkconnection' %>
+</body>
+
+
+</html>
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:    
+4:    <head>
+5:        <title>Tabae</title>
+6:        <meta name="viewport" content="width=device-width, user-scalable=no,
+7:    initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+8:        <link rel="manifest" href="/manifest.json" />
+9:        <%= csrf_meta_tags %>
+10:        <%= csp_meta_tag %>
+11:        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+12:        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+13:    
+14:        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+15:        <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+16:        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+17:    </head>
+18:    
+19:    
+20:    <body>
+21:    
+22:        <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+23:            <%= link_to "TaBaE", root_path , class: "navbar-brand"%>
+24:            <span class="offline_message text-light">Offline</span>
+25:            <button class="navbar-toggler only_online" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+26:                <span class="navbar-toggler-icon"></span>
+27:            </button>
+28:            
+29:            <div class="collapse navbar-collapse" id="navbarCollapse">
+30:                <ul class="navbar-nav mr-auto">
+31:                </ul>
+32:                <ul class="navbar-nav mr-auto">
+33:                    <% if user_signed_in? do %> 
+34:                     
+35:                     
+36:                    
+37:                <% end %>
+38:                </ul>
+39:            </div>
+40:        </nav>
+41:    
+42:        <main role="main" class="container-fluid w">
+43:            <% unless notice.nil? %>
+44:            <p id="notice" class="notice"><%= notice %></p>
+45:            <% end %>
+46:            <% unless alert.nil? %>
+47:            <p id="alert" class="alert"><%= alert %></p>
+48:            <% end %>
+49:    
+50:            <%= yield %>
+51:        </main>
+52:    
+53:    
+54:          <%= javascript_pack_tag 'checkconnection' %>
+55:    </body>
+56:    
+57:    
+58:    </html>
+  
+app/views/layouts/application.html.erb:60: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:60: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:60: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:60: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:60: syntax error, unexpected end-of-input, expecting `end'
+app/views/layouts/application.html.erb:60: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/application_controller.rb:22:in `switch_locale'
+Started GET "/" for 127.0.0.1 at 2020-06-04 22:46:07 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1905)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 8530)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-04 22:46:07 +0200
+Started GET "/" for 127.0.0.1 at 2020-06-04 22:46:24 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 8.3ms | Allocations: 1905)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 22.5ms | ActiveRecord: 0.0ms | Allocations: 8497)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-04 22:46:25 +0200
+Started GET "/" for 127.0.0.1 at 2020-06-04 22:46:35 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1908)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 8507)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-04 22:46:35 +0200
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-06-04 22:46:41 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 537)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1935)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 9.2ms | ActiveRecord: 4.0ms | Allocations: 12699)
+
+
+Started GET "/" for 127.0.0.1 at 2020-06-04 22:46:44 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1818)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 7127)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-06-04 22:46:47 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1030)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 6653)
+
+
