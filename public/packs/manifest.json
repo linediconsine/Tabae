@@ -1,15 +1,15 @@
 {
-  "application.js": "/packs/js/application-8bc6ff609c1f4ffb1354.js",
-  "application.js.map": "/packs/js/application-8bc6ff609c1f4ffb1354.js.map",
+  "application.js": "/packs/js/application-963af10d0426e32e026f.js",
+  "application.js.map": "/packs/js/application-963af10d0426e32e026f.js.map",
   "checkconnection.js": "/packs/js/checkconnection-48e000021bc491ba853f.js",
   "checkconnection.js.map": "/packs/js/checkconnection-48e000021bc491ba853f.js.map",
   "entrypoints": {
     "application": {
       "js": [
-        "/packs/js/application-8bc6ff609c1f4ffb1354.js"
+        "/packs/js/application-963af10d0426e32e026f.js"
       ],
       "js.map": [
-        "/packs/js/application-8bc6ff609c1f4ffb1354.js.map"
+        "/packs/js/application-963af10d0426e32e026f.js.map"
       ]
     },
     "checkconnection": {
@@ -38,18 +38,34 @@
     },
     "stylesheets/_custom": {
       "js": [
-        "/packs/js/stylesheets/_custom-9a36a2df2ff0c8c8d948.js"
+        "/packs/js/stylesheets/_custom-44677c7d441519efd3f3.js"
       ],
       "js.map": [
-        "/packs/js/stylesheets/_custom-9a36a2df2ff0c8c8d948.js.map"
+        "/packs/js/stylesheets/_custom-44677c7d441519efd3f3.js.map"
       ]
     },
     "stylesheets/application": {
       "js": [
-        "/packs/js/stylesheets/application-2ef3b4ee2228477885aa.js"
+        "/packs/js/stylesheets/application-b17786721d13e2c7ec30.js"
       ],
       "js.map": [
-        "/packs/js/stylesheets/application-2ef3b4ee2228477885aa.js.map"
+        "/packs/js/stylesheets/application-b17786721d13e2c7ec30.js.map"
+      ]
+    },
+    "stylesheets/squiggles_dark": {
+      "js": [
+        "/packs/js/stylesheets/squiggles_dark-31a6c3cc154d68f0aba2.js"
+      ],
+      "js.map": [
+        "/packs/js/stylesheets/squiggles_dark-31a6c3cc154d68f0aba2.js.map"
+      ]
+    },
+    "stylesheets/squiggles": {
+      "js": [
+        "/packs/js/stylesheets/squiggles-811792d16a149203a917.js"
+      ],
+      "js.map": [
+        "/packs/js/stylesheets/squiggles-811792d16a149203a917.js.map"
       ]
     },
     "voice": {
@@ -63,12 +79,18 @@
   },
   "localstorage.js": "/packs/js/localstorage-aab74820b4c2cb5b79b0.js",
   "localstorage.js.map": "/packs/js/localstorage-aab74820b4c2cb5b79b0.js.map",
+  "media/packs/stylesheets/squiggles.png": "/packs/media/packs/stylesheets/squiggles-bc20c22241336b9f411d2f4982498048.png",
+  "media/packs/stylesheets/squiggles_dark.jpg": "/packs/media/packs/stylesheets/squiggles_dark-1387c8d3de11a7d7095187b0c76eafd9.jpg",
   "serviceworker.js": "/packs/js/serviceworker-27991ce78e92a96fff46.js",
   "serviceworker.js.map": "/packs/js/serviceworker-27991ce78e92a96fff46.js.map",
-  "stylesheets/_custom.js": "/packs/js/stylesheets/_custom-9a36a2df2ff0c8c8d948.js",
-  "stylesheets/_custom.js.map": "/packs/js/stylesheets/_custom-9a36a2df2ff0c8c8d948.js.map",
-  "stylesheets/application.js": "/packs/js/stylesheets/application-2ef3b4ee2228477885aa.js",
-  "stylesheets/application.js.map": "/packs/js/stylesheets/application-2ef3b4ee2228477885aa.js.map",
+  "stylesheets/_custom.js": "/packs/js/stylesheets/_custom-44677c7d441519efd3f3.js",
+  "stylesheets/_custom.js.map": "/packs/js/stylesheets/_custom-44677c7d441519efd3f3.js.map",
+  "stylesheets/application.js": "/packs/js/stylesheets/application-b17786721d13e2c7ec30.js",
+  "stylesheets/application.js.map": "/packs/js/stylesheets/application-b17786721d13e2c7ec30.js.map",
+  "stylesheets/squiggles.js": "/packs/js/stylesheets/squiggles-811792d16a149203a917.js",
+  "stylesheets/squiggles.js.map": "/packs/js/stylesheets/squiggles-811792d16a149203a917.js.map",
+  "stylesheets/squiggles_dark.js": "/packs/js/stylesheets/squiggles_dark-31a6c3cc154d68f0aba2.js",
+  "stylesheets/squiggles_dark.js.map": "/packs/js/stylesheets/squiggles_dark-31a6c3cc154d68f0aba2.js.map",
   "voice.js": "/packs/js/voice-9c7b42c2f701547e0c6e.js",
   "voice.js.map": "/packs/js/voice-9c7b42c2f701547e0c6e.js.map"
 }

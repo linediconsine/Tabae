@@ -42,18 +42,20 @@ initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     </nav>
 
     <main role="main" class="container-fluid w">
-        <% unless notice.nil? %>
-        <p id="notice" class="notice"><%= notice %></p>
-        <% end %>
-        <% unless alert.nil? %>
-        <p id="alert" class="alert"><%= alert %></p>
-        <% end %>
+        <div class="text-center">
+            <% unless notice.nil? %>
+            <p id="notice" class="notice"><%= notice %></p>
+            <% end %>
+            <% unless alert.nil? %>
+            <p id="alert" class="alert"><%= alert %></p>
+            <% end %>
+        </div>
 
         <%= yield %>
     </main>
 
 
-      <%= javascript_pack_tag 'checkconnection' %>
+    <%= javascript_pack_tag 'checkconnection' %>
 </body>
 
 

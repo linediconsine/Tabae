@@ -22,11 +22,13 @@ $font-size-base: 1.3rem;
 
 .card {
   border-radius: 10px;
+ 
 }
-.card-text {
-  color: #3e33b9;
-  font-size: 1.2rem;
-}
+
 a.nav-link {
+  color: #fff;
+}
+.a-white a,
+.a-white a:hover {
   color: #fff;
 }
