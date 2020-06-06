@@ -27015,3 +27015,945 @@ Completed 200 OK in 50ms (Views: 47.7ms | ActiveRecord: 0.0ms | Allocations: 780
 Started GET "/manifest.json" for 127.0.0.1 at 2020-05-31 19:07:47 +0200
 Started GET "/serviceworker.js" for 127.0.0.1 at 2020-05-31 19:07:48 +0200
 >>>>>>> bfb13381d5ed0b982165ecc0696f755e012062bd
+Started GET "/" for 127.0.0.1 at 2020-06-05 10:01:24 +0200
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 5.8ms | Allocations: 2149)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5474ms (Views: 5465.1ms | ActiveRecord: 0.0ms | Allocations: 52447)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-05 10:01:30 +0200
+Started GET "/" for 127.0.0.1 at 2020-06-05 10:57:30 +0200
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2149)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 61ms (Views: 51.7ms | ActiveRecord: 0.0ms | Allocations: 18910)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-05 10:57:30 +0200
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-06-05 10:57:33 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.2ms | Allocations: 598)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 10.2ms | Allocations: 4924)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 25.5ms | ActiveRecord: 8.3ms | Allocations: 16307)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-06-05 10:59:39 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 802)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+yarn run v1.22.4
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+
+
+error Command "webpack" not found.
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8705ms (Views: 8702.5ms | ActiveRecord: 0.0ms | Allocations: 7981)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-05 10:59:48 +0200
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-06-05 10:59:53 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 798)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.0ms | Allocations: 6617)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-05 10:59:54 +0200
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-06-05 10:59:55 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 799)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 23.4ms | ActiveRecord: 0.0ms | Allocations: 6620)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-05 10:59:55 +0200
+Started GET "/" for 127.0.0.1 at 2020-06-05 10:59:57 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 7.7ms | Allocations: 1906)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.0ms | Allocations: 7409)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-05 10:59:58 +0200
+Started GET "/" for 127.0.0.1 at 2020-06-05 11:00:44 +0200
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2149)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 64ms (Views: 56.8ms | ActiveRecord: 0.0ms | Allocations: 18925)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-05 11:00:44 +0200
+Started GET "/" for 127.0.0.1 at 2020-06-05 11:00:55 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 8.8ms | Allocations: 1908)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 25.2ms | ActiveRecord: 0.0ms | Allocations: 7403)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-05 11:00:55 +0200
+Started GET "/" for 127.0.0.1 at 2020-06-05 11:00:55 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1904)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 24.2ms | ActiveRecord: 0.0ms | Allocations: 7392)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-05 11:00:55 +0200
+Started GET "/" for 127.0.0.1 at 2020-06-05 11:00:55 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1904)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.0ms | Allocations: 7384)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-05 11:00:55 +0200
+Started GET "/" for 127.0.0.1 at 2020-06-05 11:00:55 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1904)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 7387)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-05 11:00:55 +0200
+Started GET "/" for 127.0.0.1 at 2020-06-05 11:00:55 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1904)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 7380)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-05 11:00:56 +0200
+Started GET "/" for 127.0.0.1 at 2020-06-05 11:00:56 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1908)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 7403)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-05 11:00:56 +0200
+Started GET "/" for 127.0.0.1 at 2020-06-05 11:00:56 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1904)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 16.5ms | ActiveRecord: 0.0ms | Allocations: 7382)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-05 11:00:56 +0200
+Started GET "/packs/media/packs/stylesheets/squiggles_dark-1387c8d3de11a7d7095187b0c76eafd9.jpg" for 127.0.0.1 at 2020-06-05 11:01:38 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/packs/media/packs/stylesheets/squiggles_dark-1387c8d3de11a7d7095187b0c76eafd9.jpg"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-06-05 11:01:41 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1913)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 7441)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-05 11:01:41 +0200
+Started GET "/" for 127.0.0.1 at 2020-06-05 11:02:22 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1906)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 7399)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-05 11:02:22 +0200
+Started GET "/" for 127.0.0.1 at 2020-06-05 11:02:26 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 8.6ms | Allocations: 1906)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 27.0ms | ActiveRecord: 0.0ms | Allocations: 7396)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-05 11:02:26 +0200
+Started GET "/" for 127.0.0.1 at 2020-06-05 11:02:27 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1904)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 7395)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-05 11:02:27 +0200
+Started GET "/" for 127.0.0.1 at 2020-06-05 11:02:27 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1904)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 7390)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-05 11:02:27 +0200
+Started GET "/" for 127.0.0.1 at 2020-06-05 11:04:59 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1906)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 7390)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-05 11:04:59 +0200
+Started GET "/packs/media/packs/stylesheets/squiggles_dark-1387c8d3de11a7d7095187b0c76eafd9.jpg" for 127.0.0.1 at 2020-06-05 11:05:14 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/packs/media/packs/stylesheets/squiggles_dark-1387c8d3de11a7d7095187b0c76eafd9.jpg"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-06-05 11:05:16 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 8.8ms | Allocations: 1906)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 25.8ms | ActiveRecord: 0.0ms | Allocations: 7386)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-05 11:05:16 +0200
+Started GET "/packs/media/packs/stylesheets/squiggles_dark-1387c8d3de11a7d7095187b0c76eafd9.jpg" for 127.0.0.1 at 2020-06-05 11:05:21 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/packs/media/packs/stylesheets/squiggles_dark-1387c8d3de11a7d7095187b0c76eafd9.jpg"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-06-05 11:05:43 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1906)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 7403)
+
+
+Started GET "/packs/media/packs/stylesheets/squiggles_dark-1387c8d3de11a7d7095187b0c76eafd9.jpg" for 127.0.0.1 at 2020-06-05 11:05:43 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/packs/media/packs/stylesheets/squiggles_dark-1387c8d3de11a7d7095187b0c76eafd9.jpg"):
+  
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-05 11:05:43 +0200
+Started GET "/" for 127.0.0.1 at 2020-06-05 11:08:30 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/marcoo/Documents/RoR/tabae/public/packs
+[Webpacker] Browserslist: caniuse-lite is outdated. Please run next command `yarn upgrade`
+
+[Webpacker] Hash: 51079957ad1983c5679e
+Version: webpack 4.41.5
+Time: 4220ms
+Built at: 06/05/2020 11:08:35 AM
+                                                                      Asset      Size                      Chunks                         Chunk Names
+                                     js/application-2922cd45cb0d9005f8e6.js  1.36 MiB                 application  [emitted] [immutable]  application
+                                 js/application-2922cd45cb0d9005f8e6.js.map   1.5 MiB                 application  [emitted] [dev]        application
+                                 js/checkconnection-48e000021bc491ba853f.js  4.27 KiB             checkconnection  [emitted] [immutable]  checkconnection
+                             js/checkconnection-48e000021bc491ba853f.js.map  4.05 KiB             checkconnection  [emitted] [dev]        checkconnection
+                                    js/localstorage-aab74820b4c2cb5b79b0.js  3.93 KiB                localstorage  [emitted] [immutable]  localstorage
+                                js/localstorage-aab74820b4c2cb5b79b0.js.map  3.62 KiB                localstorage  [emitted] [dev]        localstorage
+                                   js/serviceworker-27991ce78e92a96fff46.js  5.51 KiB               serviceworker  [emitted] [immutable]  serviceworker
+                               js/serviceworker-27991ce78e92a96fff46.js.map  5.76 KiB               serviceworker  [emitted] [dev]        serviceworker
+                             js/stylesheets/_custom-bfc5b183563c79fb2407.js  15.7 KiB         stylesheets/_custom  [emitted] [immutable]  stylesheets/_custom
+                         js/stylesheets/_custom-bfc5b183563c79fb2407.js.map  15.8 KiB         stylesheets/_custom  [emitted] [dev]        stylesheets/_custom
+                         js/stylesheets/application-e6621b97e5471a3ef0a6.js   687 KiB     stylesheets/application  [emitted] [immutable]  stylesheets/application
+                     js/stylesheets/application-e6621b97e5471a3ef0a6.js.map   711 KiB     stylesheets/application  [emitted] [dev]        stylesheets/application
+                       js/stylesheets/happy-bunch-3-a2acaea3324f51acc7ea.js  4.11 KiB   stylesheets/happy-bunch-3  [emitted] [immutable]  stylesheets/happy-bunch-3
+                   js/stylesheets/happy-bunch-3-a2acaea3324f51acc7ea.js.map  3.75 KiB   stylesheets/happy-bunch-3  [emitted] [dev]        stylesheets/happy-bunch-3
+                         js/stylesheets/happy-bunch-aa7e51c46ae75d1e6faa.js  4.09 KiB     stylesheets/happy-bunch  [emitted] [immutable]  stylesheets/happy-bunch
+                     js/stylesheets/happy-bunch-aa7e51c46ae75d1e6faa.js.map  3.74 KiB     stylesheets/happy-bunch  [emitted] [dev]        stylesheets/happy-bunch
+                            js/stylesheets/humaaans-e1dab312a8aa369ad4db.js  4.07 KiB        stylesheets/humaaans  [emitted] [immutable]  stylesheets/humaaans
+                        js/stylesheets/humaaans-e1dab312a8aa369ad4db.js.map  3.73 KiB        stylesheets/humaaans  [emitted] [dev]        stylesheets/humaaans
+                           js/stylesheets/squiggles-811792d16a149203a917.js  4.08 KiB       stylesheets/squiggles  [emitted] [immutable]  stylesheets/squiggles
+                       js/stylesheets/squiggles-811792d16a149203a917.js.map  3.73 KiB       stylesheets/squiggles  [emitted] [dev]        stylesheets/squiggles
+                      js/stylesheets/squiggles_dark-31a6c3cc154d68f0aba2.js  4.11 KiB  stylesheets/squiggles_dark  [emitted] [immutable]  stylesheets/squiggles_dark
+                  js/stylesheets/squiggles_dark-31a6c3cc154d68f0aba2.js.map  3.75 KiB  stylesheets/squiggles_dark  [emitted] [dev]        stylesheets/squiggles_dark
+                                           js/voice-9c7b42c2f701547e0c6e.js  4.38 KiB                       voice  [emitted] [immutable]  voice
+                                       js/voice-9c7b42c2f701547e0c6e.js.map  4.18 KiB                       voice  [emitted] [dev]        voice
+                                                              manifest.json  5.18 KiB                              [emitted]              
+   media/packs/stylesheets/happy-bunch-047755d92bea57e559e04c635902ab80.png  66.4 KiB                              [emitted]              
+ media/packs/stylesheets/happy-bunch-3-0c8d0dcb3a895a408a699dabc4156e62.png  69.1 KiB                              [emitted]              
+      media/packs/stylesheets/humaaans-bb6d70232d284d48e74fbc6bce4b367f.png  44.8 KiB                              [emitted]              
+     media/packs/stylesheets/squiggles-bc20c22241336b9f411d2f4982498048.png  36.9 KiB                              [emitted]              
+media/packs/stylesheets/squiggles_dark-1387c8d3de11a7d7095187b0c76eafd9.jpg  32.4 KiB                              [emitted]              
+Entrypoint application = js/application-2922cd45cb0d9005f8e6.js js/application-2922cd45cb0d9005f8e6.js.map
+Entrypoint checkconnection = js/checkconnection-48e000021bc491ba853f.js js/checkconnection-48e000021bc491ba853f.js.map
+Entrypoint localstorage = js/localstorage-aab74820b4c2cb5b79b0.js js/localstorage-aab74820b4c2cb5b79b0.js.map
+Entrypoint serviceworker = js/serviceworker-27991ce78e92a96fff46.js js/serviceworker-27991ce78e92a96fff46.js.map
+Entrypoint stylesheets/_custom = js/stylesheets/_custom-bfc5b183563c79fb2407.js js/stylesheets/_custom-bfc5b183563c79fb2407.js.map
+Entrypoint stylesheets/application = js/stylesheets/application-e6621b97e5471a3ef0a6.js js/stylesheets/application-e6621b97e5471a3ef0a6.js.map
+Entrypoint stylesheets/happy-bunch-3 = js/stylesheets/happy-bunch-3-a2acaea3324f51acc7ea.js js/stylesheets/happy-bunch-3-a2acaea3324f51acc7ea.js.map
+Entrypoint stylesheets/happy-bunch = js/stylesheets/happy-bunch-aa7e51c46ae75d1e6faa.js js/stylesheets/happy-bunch-aa7e51c46ae75d1e6faa.js.map
+Entrypoint stylesheets/humaaans = js/stylesheets/humaaans-e1dab312a8aa369ad4db.js js/stylesheets/humaaans-e1dab312a8aa369ad4db.js.map
+Entrypoint stylesheets/squiggles_dark = js/stylesheets/squiggles_dark-31a6c3cc154d68f0aba2.js js/stylesheets/squiggles_dark-31a6c3cc154d68f0aba2.js.map
+Entrypoint stylesheets/squiggles = js/stylesheets/squiggles-811792d16a149203a917.js js/stylesheets/squiggles-811792d16a149203a917.js.map
+Entrypoint voice = js/voice-9c7b42c2f701547e0c6e.js js/voice-9c7b42c2f701547e0c6e.js.map
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.1 KiB {application} [built]
+[./app/javascript/packs/checkconnection.js] 363 bytes {checkconnection} [built]
+[./app/javascript/packs/localstorage.js] 33 bytes {localstorage} [built]
+[./app/javascript/packs/serviceworker.js] 1.6 KiB {serviceworker} [built]
+[./app/javascript/packs/stylesheets/_custom.scss] 725 bytes {stylesheets/_custom} [built]
+[./app/javascript/packs/stylesheets/application.scss] 729 bytes {stylesheets/application} {application} [built]
+[./app/javascript/packs/stylesheets/happy-bunch-3.png] 120 bytes {stylesheets/happy-bunch-3} [built]
+[./app/javascript/packs/stylesheets/happy-bunch.png] 118 bytes {stylesheets/happy-bunch} [built]
+[./app/javascript/packs/stylesheets/humaaans.png] 115 bytes {stylesheets/humaaans} [built]
+[./app/javascript/packs/stylesheets/squiggles.png] 116 bytes {stylesheets/squiggles} {application} {stylesheets/application} [built]
+[./app/javascript/packs/stylesheets/squiggles_dark.jpg] 121 bytes {stylesheets/squiggles_dark} [built]
+[./app/javascript/packs/voice.js] 530 bytes {voice} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/packs/stylesheets/_custom.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/packs/stylesheets/_custom.scss 1.22 KiB {stylesheets/_custom} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/packs/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/packs/stylesheets/application.scss 671 KiB {application} {stylesheets/application} [built]
+    + 39 hidden modules
+
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 6390.9ms | Allocations: 3412)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6398ms (Views: 6396.8ms | ActiveRecord: 0.0ms | Allocations: 8978)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-05 11:08:36 +0200
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-06-05 11:08:40 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 598)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 6.7ms | Allocations: 4818)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 15.1ms | ActiveRecord: 3.1ms | Allocations: 16317)
+
+
+Started GET "/" for 127.0.0.1 at 2020-06-05 11:08:48 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1948)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 7540)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-06-05 11:08:51 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 802)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 6721)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2020-06-05 11:09:16 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.2ms | Allocations: 198)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 119)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 8.8ms | Allocations: 1859)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 25.3ms | ActiveRecord: 0.0ms | Allocations: 8443)
+
+
+Started POST "/users" for 127.0.0.1 at 2020-06-05 11:09:24 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"Z/68ikWT0EFtLiuBRlmnc1QG/TU+fUmeviqYHliI4ElbRc42XVrryO5+KUppCa8G7PWhyxrU0rXzlAxBzeR60Q==", "user"=>{"email"=>"linediconsine@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/application_controller.rb:22:in `switch_locale'
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "linediconsine@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `switch_locale'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "linediconsine@gmail.com"], ["encrypted_password", "$2a$11$Cbmj03Tk.An9Mhy34/dA0Ouw/tI4uaOX0cu0has2fBUT5euxL/m7m"], ["created_at", "2020-06-05 09:09:24.307612"], ["updated_at", "2020-06-05 09:09:24.307612"]]
+  ↳ app/controllers/application_controller.rb:22:in `switch_locale'
+  [1m[35m (46.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/application_controller.rb:22:in `switch_locale'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 280ms (ActiveRecord: 47.6ms | Allocations: 7775)
+
+
+Started GET "/" for 127.0.0.1 at 2020-06-05 11:09:24 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1946)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:33
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 18.5ms | ActiveRecord: 0.8ms | Allocations: 8502)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-05 11:09:24 +0200
+Started GET "/" for 127.0.0.1 at 2020-06-06 12:37:04 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/marcoo/Documents/RoR/tabae/public/packs
+[Webpacker] Browserslist: caniuse-lite is outdated. Please run next command `yarn upgrade`
+
+[Webpacker] Hash: 8c8e3ace619006e0d1b8
+Version: webpack 4.41.5
+Time: 1798ms
+Built at: 06/06/2020 12:37:07 PM
+                                                                      Asset      Size                      Chunks                         Chunk Names
+                                     js/application-08a598c120b3b7fcbd3a.js  1.36 MiB                 application  [emitted] [immutable]  application
+                                 js/application-08a598c120b3b7fcbd3a.js.map   1.5 MiB                 application  [emitted] [dev]        application
+                                 js/checkconnection-48e000021bc491ba853f.js  4.27 KiB             checkconnection  [emitted] [immutable]  checkconnection
+                             js/checkconnection-48e000021bc491ba853f.js.map  4.05 KiB             checkconnection  [emitted] [dev]        checkconnection
+                                    js/localstorage-aab74820b4c2cb5b79b0.js  3.93 KiB                localstorage  [emitted] [immutable]  localstorage
+                                js/localstorage-aab74820b4c2cb5b79b0.js.map  3.62 KiB                localstorage  [emitted] [dev]        localstorage
+                                   js/serviceworker-27991ce78e92a96fff46.js  5.51 KiB               serviceworker  [emitted] [immutable]  serviceworker
+                               js/serviceworker-27991ce78e92a96fff46.js.map  5.76 KiB               serviceworker  [emitted] [dev]        serviceworker
+                             js/stylesheets/_custom-13da505f31dff950f146.js  15.7 KiB         stylesheets/_custom  [emitted] [immutable]  stylesheets/_custom
+                         js/stylesheets/_custom-13da505f31dff950f146.js.map  15.8 KiB         stylesheets/_custom  [emitted] [dev]        stylesheets/_custom
+                         js/stylesheets/application-9d74ce08fb99ab66a971.js   687 KiB     stylesheets/application  [emitted] [immutable]  stylesheets/application
+                     js/stylesheets/application-9d74ce08fb99ab66a971.js.map   711 KiB     stylesheets/application  [emitted] [dev]        stylesheets/application
+                       js/stylesheets/happy-bunch-3-a2acaea3324f51acc7ea.js  4.11 KiB   stylesheets/happy-bunch-3  [emitted] [immutable]  stylesheets/happy-bunch-3
+                   js/stylesheets/happy-bunch-3-a2acaea3324f51acc7ea.js.map  3.75 KiB   stylesheets/happy-bunch-3  [emitted] [dev]        stylesheets/happy-bunch-3
+                         js/stylesheets/happy-bunch-aa7e51c46ae75d1e6faa.js  4.09 KiB     stylesheets/happy-bunch  [emitted] [immutable]  stylesheets/happy-bunch
+                     js/stylesheets/happy-bunch-aa7e51c46ae75d1e6faa.js.map  3.74 KiB     stylesheets/happy-bunch  [emitted] [dev]        stylesheets/happy-bunch
+                            js/stylesheets/humaaans-e1dab312a8aa369ad4db.js  4.07 KiB        stylesheets/humaaans  [emitted] [immutable]  stylesheets/humaaans
+                        js/stylesheets/humaaans-e1dab312a8aa369ad4db.js.map  3.73 KiB        stylesheets/humaaans  [emitted] [dev]        stylesheets/humaaans
+                           js/stylesheets/squiggles-811792d16a149203a917.js  4.08 KiB       stylesheets/squiggles  [emitted] [immutable]  stylesheets/squiggles
+                       js/stylesheets/squiggles-811792d16a149203a917.js.map  3.73 KiB       stylesheets/squiggles  [emitted] [dev]        stylesheets/squiggles
+                      js/stylesheets/squiggles_dark-31a6c3cc154d68f0aba2.js  4.11 KiB  stylesheets/squiggles_dark  [emitted] [immutable]  stylesheets/squiggles_dark
+                  js/stylesheets/squiggles_dark-31a6c3cc154d68f0aba2.js.map  3.75 KiB  stylesheets/squiggles_dark  [emitted] [dev]        stylesheets/squiggles_dark
+                                           js/voice-9c7b42c2f701547e0c6e.js  4.38 KiB                       voice  [emitted] [immutable]  voice
+                                       js/voice-9c7b42c2f701547e0c6e.js.map  4.18 KiB                       voice  [emitted] [dev]        voice
+                                                              manifest.json  5.18 KiB                              [emitted]              
+   media/packs/stylesheets/happy-bunch-047755d92bea57e559e04c635902ab80.png  66.4 KiB                              [emitted]              
+ media/packs/stylesheets/happy-bunch-3-0c8d0dcb3a895a408a699dabc4156e62.png  69.1 KiB                              [emitted]              
+      media/packs/stylesheets/humaaans-bb6d70232d284d48e74fbc6bce4b367f.png  44.8 KiB                              [emitted]              
+     media/packs/stylesheets/squiggles-bc20c22241336b9f411d2f4982498048.png  36.9 KiB                              [emitted]              
+media/packs/stylesheets/squiggles_dark-1387c8d3de11a7d7095187b0c76eafd9.jpg  32.4 KiB                              [emitted]              
+Entrypoint application = js/application-08a598c120b3b7fcbd3a.js js/application-08a598c120b3b7fcbd3a.js.map
+Entrypoint checkconnection = js/checkconnection-48e000021bc491ba853f.js js/checkconnection-48e000021bc491ba853f.js.map
+Entrypoint localstorage = js/localstorage-aab74820b4c2cb5b79b0.js js/localstorage-aab74820b4c2cb5b79b0.js.map
+Entrypoint serviceworker = js/serviceworker-27991ce78e92a96fff46.js js/serviceworker-27991ce78e92a96fff46.js.map
+Entrypoint stylesheets/_custom = js/stylesheets/_custom-13da505f31dff950f146.js js/stylesheets/_custom-13da505f31dff950f146.js.map
+Entrypoint stylesheets/application = js/stylesheets/application-9d74ce08fb99ab66a971.js js/stylesheets/application-9d74ce08fb99ab66a971.js.map
+Entrypoint stylesheets/happy-bunch-3 = js/stylesheets/happy-bunch-3-a2acaea3324f51acc7ea.js js/stylesheets/happy-bunch-3-a2acaea3324f51acc7ea.js.map
+Entrypoint stylesheets/happy-bunch = js/stylesheets/happy-bunch-aa7e51c46ae75d1e6faa.js js/stylesheets/happy-bunch-aa7e51c46ae75d1e6faa.js.map
+Entrypoint stylesheets/humaaans = js/stylesheets/humaaans-e1dab312a8aa369ad4db.js js/stylesheets/humaaans-e1dab312a8aa369ad4db.js.map
+Entrypoint stylesheets/squiggles_dark = js/stylesheets/squiggles_dark-31a6c3cc154d68f0aba2.js js/stylesheets/squiggles_dark-31a6c3cc154d68f0aba2.js.map
+Entrypoint stylesheets/squiggles = js/stylesheets/squiggles-811792d16a149203a917.js js/stylesheets/squiggles-811792d16a149203a917.js.map
+Entrypoint voice = js/voice-9c7b42c2f701547e0c6e.js js/voice-9c7b42c2f701547e0c6e.js.map
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.1 KiB {application} [built]
+[./app/javascript/packs/checkconnection.js] 363 bytes {checkconnection} [built]
+[./app/javascript/packs/localstorage.js] 33 bytes {localstorage} [built]
+[./app/javascript/packs/serviceworker.js] 1.6 KiB {serviceworker} [built]
+[./app/javascript/packs/stylesheets/_custom.scss] 725 bytes {stylesheets/_custom} [built]
+[./app/javascript/packs/stylesheets/application.scss] 729 bytes {stylesheets/application} {application} [built]
+[./app/javascript/packs/stylesheets/happy-bunch-3.png] 120 bytes {stylesheets/happy-bunch-3} [built]
+[./app/javascript/packs/stylesheets/happy-bunch.png] 118 bytes {stylesheets/happy-bunch} [built]
+[./app/javascript/packs/stylesheets/humaaans.png] 115 bytes {stylesheets/humaaans} [built]
+[./app/javascript/packs/stylesheets/squiggles.png] 116 bytes {stylesheets/squiggles} {application} {stylesheets/application} [built]
+[./app/javascript/packs/stylesheets/squiggles_dark.jpg] 121 bytes {stylesheets/squiggles_dark} [built]
+[./app/javascript/packs/voice.js] 530 bytes {voice} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/packs/stylesheets/_custom.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/packs/stylesheets/_custom.scss 1.22 KiB {stylesheets/_custom} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/packs/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/packs/stylesheets/application.scss 671 KiB {application} {stylesheets/application} [built]
+    + 39 hidden modules
+
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 3270.3ms | Allocations: 3361)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:33
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3279ms (Views: 3277.7ms | ActiveRecord: 0.6ms | Allocations: 9840)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-06 12:37:07 +0200
+Started GET "/" for 127.0.0.1 at 2020-06-06 12:37:37 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/marcoo/Documents/RoR/tabae/public/packs
+[Webpacker] Browserslist: caniuse-lite is outdated. Please run next command `yarn upgrade`
+
+[Webpacker] Hash: a235e1260f2d4956b08c
+Version: webpack 4.41.5
+Time: 1804ms
+Built at: 06/06/2020 12:37:40 PM
+                                                                      Asset      Size                      Chunks                         Chunk Names
+                                     js/application-7bbcd9d6b132ec99e345.js  1.36 MiB                 application  [emitted] [immutable]  application
+                                 js/application-7bbcd9d6b132ec99e345.js.map  1.49 MiB                 application  [emitted] [dev]        application
+                                 js/checkconnection-48e000021bc491ba853f.js  4.27 KiB             checkconnection  [emitted] [immutable]  checkconnection
+                             js/checkconnection-48e000021bc491ba853f.js.map  4.05 KiB             checkconnection  [emitted] [dev]        checkconnection
+                                    js/localstorage-aab74820b4c2cb5b79b0.js  3.93 KiB                localstorage  [emitted] [immutable]  localstorage
+                                js/localstorage-aab74820b4c2cb5b79b0.js.map  3.62 KiB                localstorage  [emitted] [dev]        localstorage
+                                   js/serviceworker-27991ce78e92a96fff46.js  5.51 KiB               serviceworker  [emitted] [immutable]  serviceworker
+                               js/serviceworker-27991ce78e92a96fff46.js.map  5.76 KiB               serviceworker  [emitted] [dev]        serviceworker
+                             js/stylesheets/_custom-13da505f31dff950f146.js  15.7 KiB         stylesheets/_custom  [emitted] [immutable]  stylesheets/_custom
+                         js/stylesheets/_custom-13da505f31dff950f146.js.map  15.8 KiB         stylesheets/_custom  [emitted] [dev]        stylesheets/_custom
+                         js/stylesheets/application-0d13183d4eaf54a288f9.js   685 KiB     stylesheets/application  [emitted] [immutable]  stylesheets/application
+                     js/stylesheets/application-0d13183d4eaf54a288f9.js.map   710 KiB     stylesheets/application  [emitted] [dev]        stylesheets/application
+                       js/stylesheets/happy-bunch-3-a2acaea3324f51acc7ea.js  4.11 KiB   stylesheets/happy-bunch-3  [emitted] [immutable]  stylesheets/happy-bunch-3
+                   js/stylesheets/happy-bunch-3-a2acaea3324f51acc7ea.js.map  3.75 KiB   stylesheets/happy-bunch-3  [emitted] [dev]        stylesheets/happy-bunch-3
+                         js/stylesheets/happy-bunch-aa7e51c46ae75d1e6faa.js  4.09 KiB     stylesheets/happy-bunch  [emitted] [immutable]  stylesheets/happy-bunch
+                     js/stylesheets/happy-bunch-aa7e51c46ae75d1e6faa.js.map  3.74 KiB     stylesheets/happy-bunch  [emitted] [dev]        stylesheets/happy-bunch
+                            js/stylesheets/humaaans-e1dab312a8aa369ad4db.js  4.07 KiB        stylesheets/humaaans  [emitted] [immutable]  stylesheets/humaaans
+                        js/stylesheets/humaaans-e1dab312a8aa369ad4db.js.map  3.73 KiB        stylesheets/humaaans  [emitted] [dev]        stylesheets/humaaans
+                           js/stylesheets/squiggles-811792d16a149203a917.js  4.08 KiB       stylesheets/squiggles  [emitted] [immutable]  stylesheets/squiggles
+                       js/stylesheets/squiggles-811792d16a149203a917.js.map  3.73 KiB       stylesheets/squiggles  [emitted] [dev]        stylesheets/squiggles
+                      js/stylesheets/squiggles_dark-31a6c3cc154d68f0aba2.js  4.11 KiB  stylesheets/squiggles_dark  [emitted] [immutable]  stylesheets/squiggles_dark
+                  js/stylesheets/squiggles_dark-31a6c3cc154d68f0aba2.js.map  3.75 KiB  stylesheets/squiggles_dark  [emitted] [dev]        stylesheets/squiggles_dark
+                                           js/voice-9c7b42c2f701547e0c6e.js  4.38 KiB                       voice  [emitted] [immutable]  voice
+                                       js/voice-9c7b42c2f701547e0c6e.js.map  4.18 KiB                       voice  [emitted] [dev]        voice
+                                                              manifest.json  5.18 KiB                              [emitted]              
+   media/packs/stylesheets/happy-bunch-047755d92bea57e559e04c635902ab80.png  66.4 KiB                              [emitted]              
+ media/packs/stylesheets/happy-bunch-3-0c8d0dcb3a895a408a699dabc4156e62.png  69.1 KiB                              [emitted]              
+      media/packs/stylesheets/humaaans-bb6d70232d284d48e74fbc6bce4b367f.png  44.8 KiB                              [emitted]              
+     media/packs/stylesheets/squiggles-bc20c22241336b9f411d2f4982498048.png  36.9 KiB                              [emitted]              
+media/packs/stylesheets/squiggles_dark-1387c8d3de11a7d7095187b0c76eafd9.jpg  32.4 KiB                              [emitted]              
+Entrypoint application = js/application-7bbcd9d6b132ec99e345.js js/application-7bbcd9d6b132ec99e345.js.map
+Entrypoint checkconnection = js/checkconnection-48e000021bc491ba853f.js js/checkconnection-48e000021bc491ba853f.js.map
+Entrypoint localstorage = js/localstorage-aab74820b4c2cb5b79b0.js js/localstorage-aab74820b4c2cb5b79b0.js.map
+Entrypoint serviceworker = js/serviceworker-27991ce78e92a96fff46.js js/serviceworker-27991ce78e92a96fff46.js.map
+Entrypoint stylesheets/_custom = js/stylesheets/_custom-13da505f31dff950f146.js js/stylesheets/_custom-13da505f31dff950f146.js.map
+Entrypoint stylesheets/application = js/stylesheets/application-0d13183d4eaf54a288f9.js js/stylesheets/application-0d13183d4eaf54a288f9.js.map
+Entrypoint stylesheets/happy-bunch-3 = js/stylesheets/happy-bunch-3-a2acaea3324f51acc7ea.js js/stylesheets/happy-bunch-3-a2acaea3324f51acc7ea.js.map
+Entrypoint stylesheets/happy-bunch = js/stylesheets/happy-bunch-aa7e51c46ae75d1e6faa.js js/stylesheets/happy-bunch-aa7e51c46ae75d1e6faa.js.map
+Entrypoint stylesheets/humaaans = js/stylesheets/humaaans-e1dab312a8aa369ad4db.js js/stylesheets/humaaans-e1dab312a8aa369ad4db.js.map
+Entrypoint stylesheets/squiggles_dark = js/stylesheets/squiggles_dark-31a6c3cc154d68f0aba2.js js/stylesheets/squiggles_dark-31a6c3cc154d68f0aba2.js.map
+Entrypoint stylesheets/squiggles = js/stylesheets/squiggles-811792d16a149203a917.js js/stylesheets/squiggles-811792d16a149203a917.js.map
+Entrypoint voice = js/voice-9c7b42c2f701547e0c6e.js js/voice-9c7b42c2f701547e0c6e.js.map
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.1 KiB {application} [built]
+[./app/javascript/packs/checkconnection.js] 363 bytes {checkconnection} [built]
+[./app/javascript/packs/localstorage.js] 33 bytes {localstorage} [built]
+[./app/javascript/packs/serviceworker.js] 1.6 KiB {serviceworker} [built]
+[./app/javascript/packs/stylesheets/_custom.scss] 725 bytes {stylesheets/_custom} [built]
+[./app/javascript/packs/stylesheets/application.scss] 729 bytes {stylesheets/application} {application} [built]
+[./app/javascript/packs/stylesheets/happy-bunch-3.png] 120 bytes {stylesheets/happy-bunch-3} [built]
+[./app/javascript/packs/stylesheets/happy-bunch.png] 118 bytes {stylesheets/happy-bunch} [built]
+[./app/javascript/packs/stylesheets/humaaans.png] 115 bytes {stylesheets/humaaans} [built]
+[./app/javascript/packs/stylesheets/squiggles.png] 116 bytes {stylesheets/squiggles} [built]
+[./app/javascript/packs/stylesheets/squiggles_dark.jpg] 121 bytes {stylesheets/squiggles_dark} [built]
+[./app/javascript/packs/voice.js] 530 bytes {voice} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/packs/stylesheets/_custom.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/packs/stylesheets/_custom.scss 1.22 KiB {stylesheets/_custom} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/packs/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/packs/stylesheets/application.scss 671 KiB {application} {stylesheets/application} [built]
+    + 38 hidden modules
+
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 3233.5ms | Allocations: 3361)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:33
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3241ms (Views: 3240.1ms | ActiveRecord: 0.5ms | Allocations: 9850)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-06 12:37:41 +0200
+Started GET "/" for 127.0.0.1 at 2020-06-06 12:37:43 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1948)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:33
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.4ms | Allocations: 8721)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2020-06-06 12:37:45 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"5gjNAqJFcBYmXO8eVOwRjXHI3VPulVrfP/G/4SHjEU+OrwuFJrKez5PdZ7Vfpork8o8s+5JDPKP/rFWM/Xxl5g=="}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 38ms (ActiveRecord: 0.9ms | Allocations: 4402)
+
+
+Started GET "/" for 127.0.0.1 at 2020-06-06 12:37:45 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1946)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 7551)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-06 12:37:45 +0200
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-06-06 12:37:48 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 131)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 807)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 16.4ms | ActiveRecord: 0.0ms | Allocations: 7114)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-06-06 12:37:59 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"kui1we/O26EtpGgTi+5Ek9bF62dor8ZUBGAfqY/jbJTzJnrrTDsRbokFUci3jvZEjHUJ/ZOSa+9asf7n2q/PvQ==", "user"=>{"email"=>"linediconsine@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "linediconsine@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `switch_locale'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 111ms (ActiveRecord: 0.5ms | Allocations: 2770)
+
+
+Started GET "/" for 127.0.0.1 at 2020-06-06 12:37:59 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1946)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:33
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.4ms | Allocations: 8332)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-06 12:37:59 +0200
+Started GET "/" for 127.0.0.1 at 2020-06-06 12:42:21 +0200
+Processing by SentencesController#welcome as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sentences_controller.rb:7:in `welcome'
+Redirected to http://127.0.0.1:3000/sentences
+Completed 302 Found in 10ms (ActiveRecord: 3.7ms | Allocations: 5284)
+
+
+Started GET "/sentences" for 127.0.0.1 at 2020-06-06 12:42:21 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `switch_locale'
+  [1m[36mSentence Load (0.6ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:23:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/marcoo/Documents/RoR/tabae/public/packs
+[Webpacker] Browserslist: caniuse-lite is outdated. Please run next command `yarn upgrade`
+
+[Webpacker] Hash: c9d6d1b90e19f96a9e09
+Version: webpack 4.41.5
+Time: 1765ms
+Built at: 06/06/2020 12:42:24 PM
+                                                                      Asset      Size                      Chunks                         Chunk Names
+                                     js/application-a2ec89dc4b4df24ad260.js  1.36 MiB                 application  [emitted] [immutable]  application
+                                 js/application-a2ec89dc4b4df24ad260.js.map  1.49 MiB                 application  [emitted] [dev]        application
+                                 js/checkconnection-48e000021bc491ba853f.js  4.27 KiB             checkconnection  [emitted] [immutable]  checkconnection
+                             js/checkconnection-48e000021bc491ba853f.js.map  4.05 KiB             checkconnection  [emitted] [dev]        checkconnection
+                                    js/localstorage-aab74820b4c2cb5b79b0.js  3.93 KiB                localstorage  [emitted] [immutable]  localstorage
+                                js/localstorage-aab74820b4c2cb5b79b0.js.map  3.62 KiB                localstorage  [emitted] [dev]        localstorage
+                                   js/serviceworker-27991ce78e92a96fff46.js  5.51 KiB               serviceworker  [emitted] [immutable]  serviceworker
+                               js/serviceworker-27991ce78e92a96fff46.js.map  5.76 KiB               serviceworker  [emitted] [dev]        serviceworker
+                             js/stylesheets/_custom-13da505f31dff950f146.js  15.7 KiB         stylesheets/_custom  [emitted] [immutable]  stylesheets/_custom
+                         js/stylesheets/_custom-13da505f31dff950f146.js.map  15.8 KiB         stylesheets/_custom  [emitted] [dev]        stylesheets/_custom
+                         js/stylesheets/application-95787dda857ed04c75ef.js   685 KiB     stylesheets/application  [emitted] [immutable]  stylesheets/application
+                     js/stylesheets/application-95787dda857ed04c75ef.js.map   710 KiB     stylesheets/application  [emitted] [dev]        stylesheets/application
+                       js/stylesheets/happy-bunch-3-a2acaea3324f51acc7ea.js  4.11 KiB   stylesheets/happy-bunch-3  [emitted] [immutable]  stylesheets/happy-bunch-3
+                   js/stylesheets/happy-bunch-3-a2acaea3324f51acc7ea.js.map  3.75 KiB   stylesheets/happy-bunch-3  [emitted] [dev]        stylesheets/happy-bunch-3
+                         js/stylesheets/happy-bunch-aa7e51c46ae75d1e6faa.js  4.09 KiB     stylesheets/happy-bunch  [emitted] [immutable]  stylesheets/happy-bunch
+                     js/stylesheets/happy-bunch-aa7e51c46ae75d1e6faa.js.map  3.74 KiB     stylesheets/happy-bunch  [emitted] [dev]        stylesheets/happy-bunch
+                            js/stylesheets/humaaans-e1dab312a8aa369ad4db.js  4.07 KiB        stylesheets/humaaans  [emitted] [immutable]  stylesheets/humaaans
+                        js/stylesheets/humaaans-e1dab312a8aa369ad4db.js.map  3.73 KiB        stylesheets/humaaans  [emitted] [dev]        stylesheets/humaaans
+                           js/stylesheets/squiggles-811792d16a149203a917.js  4.08 KiB       stylesheets/squiggles  [emitted] [immutable]  stylesheets/squiggles
+                       js/stylesheets/squiggles-811792d16a149203a917.js.map  3.73 KiB       stylesheets/squiggles  [emitted] [dev]        stylesheets/squiggles
+                      js/stylesheets/squiggles_dark-31a6c3cc154d68f0aba2.js  4.11 KiB  stylesheets/squiggles_dark  [emitted] [immutable]  stylesheets/squiggles_dark
+                  js/stylesheets/squiggles_dark-31a6c3cc154d68f0aba2.js.map  3.75 KiB  stylesheets/squiggles_dark  [emitted] [dev]        stylesheets/squiggles_dark
+                                           js/voice-9c7b42c2f701547e0c6e.js  4.38 KiB                       voice  [emitted] [immutable]  voice
+                                       js/voice-9c7b42c2f701547e0c6e.js.map  4.18 KiB                       voice  [emitted] [dev]        voice
+                                                              manifest.json  5.18 KiB                              [emitted]              
+   media/packs/stylesheets/happy-bunch-047755d92bea57e559e04c635902ab80.png  66.4 KiB                              [emitted]              
+ media/packs/stylesheets/happy-bunch-3-0c8d0dcb3a895a408a699dabc4156e62.png  69.1 KiB                              [emitted]              
+      media/packs/stylesheets/humaaans-bb6d70232d284d48e74fbc6bce4b367f.png  44.8 KiB                              [emitted]              
+     media/packs/stylesheets/squiggles-bc20c22241336b9f411d2f4982498048.png  36.9 KiB                              [emitted]              
+media/packs/stylesheets/squiggles_dark-1387c8d3de11a7d7095187b0c76eafd9.jpg  32.4 KiB                              [emitted]              
+Entrypoint application = js/application-a2ec89dc4b4df24ad260.js js/application-a2ec89dc4b4df24ad260.js.map
+Entrypoint checkconnection = js/checkconnection-48e000021bc491ba853f.js js/checkconnection-48e000021bc491ba853f.js.map
+Entrypoint localstorage = js/localstorage-aab74820b4c2cb5b79b0.js js/localstorage-aab74820b4c2cb5b79b0.js.map
+Entrypoint serviceworker = js/serviceworker-27991ce78e92a96fff46.js js/serviceworker-27991ce78e92a96fff46.js.map
+Entrypoint stylesheets/_custom = js/stylesheets/_custom-13da505f31dff950f146.js js/stylesheets/_custom-13da505f31dff950f146.js.map
+Entrypoint stylesheets/application = js/stylesheets/application-95787dda857ed04c75ef.js js/stylesheets/application-95787dda857ed04c75ef.js.map
+Entrypoint stylesheets/happy-bunch-3 = js/stylesheets/happy-bunch-3-a2acaea3324f51acc7ea.js js/stylesheets/happy-bunch-3-a2acaea3324f51acc7ea.js.map
+Entrypoint stylesheets/happy-bunch = js/stylesheets/happy-bunch-aa7e51c46ae75d1e6faa.js js/stylesheets/happy-bunch-aa7e51c46ae75d1e6faa.js.map
+Entrypoint stylesheets/humaaans = js/stylesheets/humaaans-e1dab312a8aa369ad4db.js js/stylesheets/humaaans-e1dab312a8aa369ad4db.js.map
+Entrypoint stylesheets/squiggles_dark = js/stylesheets/squiggles_dark-31a6c3cc154d68f0aba2.js js/stylesheets/squiggles_dark-31a6c3cc154d68f0aba2.js.map
+Entrypoint stylesheets/squiggles = js/stylesheets/squiggles-811792d16a149203a917.js js/stylesheets/squiggles-811792d16a149203a917.js.map
+Entrypoint voice = js/voice-9c7b42c2f701547e0c6e.js js/voice-9c7b42c2f701547e0c6e.js.map
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.1 KiB {application} [built]
+[./app/javascript/packs/checkconnection.js] 363 bytes {checkconnection} [built]
+[./app/javascript/packs/localstorage.js] 33 bytes {localstorage} [built]
+[./app/javascript/packs/serviceworker.js] 1.6 KiB {serviceworker} [built]
+[./app/javascript/packs/stylesheets/_custom.scss] 725 bytes {stylesheets/_custom} [built]
+[./app/javascript/packs/stylesheets/application.scss] 729 bytes {stylesheets/application} {application} [built]
+[./app/javascript/packs/stylesheets/happy-bunch-3.png] 120 bytes {stylesheets/happy-bunch-3} [built]
+[./app/javascript/packs/stylesheets/happy-bunch.png] 118 bytes {stylesheets/happy-bunch} [built]
+[./app/javascript/packs/stylesheets/humaaans.png] 115 bytes {stylesheets/humaaans} [built]
+[./app/javascript/packs/stylesheets/squiggles.png] 116 bytes {stylesheets/squiggles} [built]
+[./app/javascript/packs/stylesheets/squiggles_dark.jpg] 121 bytes {stylesheets/squiggles_dark} [built]
+[./app/javascript/packs/voice.js] 530 bytes {voice} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/packs/stylesheets/_custom.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/packs/stylesheets/_custom.scss 1.22 KiB {stylesheets/_custom} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/packs/stylesheets/application.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/packs/stylesheets/application.scss 671 KiB {application} {stylesheets/application} [built]
+    + 38 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 124.8ms | Allocations: 3104)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 3325.6ms | Allocations: 6981)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3459ms (Views: 3342.7ms | ActiveRecord: 5.1ms | Allocations: 25085)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-06 12:42:25 +0200
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2020-06-06 12:42:27 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"kTtmbsEd78RI9rCO5RywaATQneUyQV+sdfu/awbjKmtfsHB4+95nr2tBaPK1U0kVHEJdGie8Mjb0sIPtIPNl/Q=="}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 11ms (ActiveRecord: 1.0ms | Allocations: 2432)
+
+
+Started GET "/" for 127.0.0.1 at 2020-06-06 12:42:27 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1946)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.0ms | Allocations: 7588)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-06 12:42:27 +0200
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-06-06 12:42:30 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 143)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 871)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 7342)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-06-06 12:42:35 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"N5IGeY6TJTqoRzqclj/31RzVfjdhhulQDyi7E0JzNl2vw5sV9RsFuvQbCQ8wvZxllnLECBH0UMYsCcAUCSogIw==", "user"=>{"email"=>"linediconsine@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "linediconsine@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `switch_locale'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 119ms (ActiveRecord: 0.6ms | Allocations: 2214)
+
+
+Started GET "/" for 127.0.0.1 at 2020-06-06 12:42:35 +0200
+Processing by SentencesController#welcome as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sentences_controller.rb:7:in `welcome'
+Redirected to http://127.0.0.1:3000/sentences
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1179)
+
+
+Started GET "/sentences" for 127.0.0.1 at 2020-06-06 12:42:35 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `switch_locale'
+  [1m[36mSentence Load (0.2ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:23:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 2.3ms | Allocations: 2401)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 4442)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 9.7ms | ActiveRecord: 0.5ms | Allocations: 11688)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-06 12:42:35 +0200
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2020-06-06 12:42:44 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"l6bbnugcL8QdMtZJ7SJS6YYijPeimPRVa+kLFHU3b8Cr1x79UxGbhfDeN1WpKsS4EJDqtAkdnkRpTBac/wX7Pg=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms | Allocations: 2123)
+
+
+Started GET "/" for 127.0.0.1 at 2020-06-06 12:42:44 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1948)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 7569)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-06 12:42:45 +0200

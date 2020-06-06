@@ -1,15 +1,15 @@
 {
-  "application.js": "/packs/js/application-963af10d0426e32e026f.js",
-  "application.js.map": "/packs/js/application-963af10d0426e32e026f.js.map",
+  "application.js": "/packs/js/application-a2ec89dc4b4df24ad260.js",
+  "application.js.map": "/packs/js/application-a2ec89dc4b4df24ad260.js.map",
   "checkconnection.js": "/packs/js/checkconnection-48e000021bc491ba853f.js",
   "checkconnection.js.map": "/packs/js/checkconnection-48e000021bc491ba853f.js.map",
   "entrypoints": {
     "application": {
       "js": [
-        "/packs/js/application-963af10d0426e32e026f.js"
+        "/packs/js/application-a2ec89dc4b4df24ad260.js"
       ],
       "js.map": [
-        "/packs/js/application-963af10d0426e32e026f.js.map"
+        "/packs/js/application-a2ec89dc4b4df24ad260.js.map"
       ]
     },
     "checkconnection": {
@@ -38,18 +38,42 @@
     },
     "stylesheets/_custom": {
       "js": [
-        "/packs/js/stylesheets/_custom-44677c7d441519efd3f3.js"
+        "/packs/js/stylesheets/_custom-13da505f31dff950f146.js"
       ],
       "js.map": [
-        "/packs/js/stylesheets/_custom-44677c7d441519efd3f3.js.map"
+        "/packs/js/stylesheets/_custom-13da505f31dff950f146.js.map"
       ]
     },
     "stylesheets/application": {
       "js": [
-        "/packs/js/stylesheets/application-b17786721d13e2c7ec30.js"
+        "/packs/js/stylesheets/application-95787dda857ed04c75ef.js"
       ],
       "js.map": [
-        "/packs/js/stylesheets/application-b17786721d13e2c7ec30.js.map"
+        "/packs/js/stylesheets/application-95787dda857ed04c75ef.js.map"
+      ]
+    },
+    "stylesheets/happy-bunch-3": {
+      "js": [
+        "/packs/js/stylesheets/happy-bunch-3-a2acaea3324f51acc7ea.js"
+      ],
+      "js.map": [
+        "/packs/js/stylesheets/happy-bunch-3-a2acaea3324f51acc7ea.js.map"
+      ]
+    },
+    "stylesheets/happy-bunch": {
+      "js": [
+        "/packs/js/stylesheets/happy-bunch-aa7e51c46ae75d1e6faa.js"
+      ],
+      "js.map": [
+        "/packs/js/stylesheets/happy-bunch-aa7e51c46ae75d1e6faa.js.map"
+      ]
+    },
+    "stylesheets/humaaans": {
+      "js": [
+        "/packs/js/stylesheets/humaaans-e1dab312a8aa369ad4db.js"
+      ],
+      "js.map": [
+        "/packs/js/stylesheets/humaaans-e1dab312a8aa369ad4db.js.map"
       ]
     },
     "stylesheets/squiggles_dark": {
@@ -79,14 +103,23 @@
   },
   "localstorage.js": "/packs/js/localstorage-aab74820b4c2cb5b79b0.js",
   "localstorage.js.map": "/packs/js/localstorage-aab74820b4c2cb5b79b0.js.map",
+  "media/packs/stylesheets/happy-bunch-3.png": "/packs/media/packs/stylesheets/happy-bunch-3-0c8d0dcb3a895a408a699dabc4156e62.png",
+  "media/packs/stylesheets/happy-bunch.png": "/packs/media/packs/stylesheets/happy-bunch-047755d92bea57e559e04c635902ab80.png",
+  "media/packs/stylesheets/humaaans.png": "/packs/media/packs/stylesheets/humaaans-bb6d70232d284d48e74fbc6bce4b367f.png",
   "media/packs/stylesheets/squiggles.png": "/packs/media/packs/stylesheets/squiggles-bc20c22241336b9f411d2f4982498048.png",
   "media/packs/stylesheets/squiggles_dark.jpg": "/packs/media/packs/stylesheets/squiggles_dark-1387c8d3de11a7d7095187b0c76eafd9.jpg",
   "serviceworker.js": "/packs/js/serviceworker-27991ce78e92a96fff46.js",
   "serviceworker.js.map": "/packs/js/serviceworker-27991ce78e92a96fff46.js.map",
-  "stylesheets/_custom.js": "/packs/js/stylesheets/_custom-44677c7d441519efd3f3.js",
-  "stylesheets/_custom.js.map": "/packs/js/stylesheets/_custom-44677c7d441519efd3f3.js.map",
-  "stylesheets/application.js": "/packs/js/stylesheets/application-b17786721d13e2c7ec30.js",
-  "stylesheets/application.js.map": "/packs/js/stylesheets/application-b17786721d13e2c7ec30.js.map",
+  "stylesheets/_custom.js": "/packs/js/stylesheets/_custom-13da505f31dff950f146.js",
+  "stylesheets/_custom.js.map": "/packs/js/stylesheets/_custom-13da505f31dff950f146.js.map",
+  "stylesheets/application.js": "/packs/js/stylesheets/application-95787dda857ed04c75ef.js",
+  "stylesheets/application.js.map": "/packs/js/stylesheets/application-95787dda857ed04c75ef.js.map",
+  "stylesheets/happy-bunch-3.js": "/packs/js/stylesheets/happy-bunch-3-a2acaea3324f51acc7ea.js",
+  "stylesheets/happy-bunch-3.js.map": "/packs/js/stylesheets/happy-bunch-3-a2acaea3324f51acc7ea.js.map",
+  "stylesheets/happy-bunch.js": "/packs/js/stylesheets/happy-bunch-aa7e51c46ae75d1e6faa.js",
+  "stylesheets/happy-bunch.js.map": "/packs/js/stylesheets/happy-bunch-aa7e51c46ae75d1e6faa.js.map",
+  "stylesheets/humaaans.js": "/packs/js/stylesheets/humaaans-e1dab312a8aa369ad4db.js",
+  "stylesheets/humaaans.js.map": "/packs/js/stylesheets/humaaans-e1dab312a8aa369ad4db.js.map",
   "stylesheets/squiggles.js": "/packs/js/stylesheets/squiggles-811792d16a149203a917.js",
   "stylesheets/squiggles.js.map": "/packs/js/stylesheets/squiggles-811792d16a149203a917.js.map",
   "stylesheets/squiggles_dark.js": "/packs/js/stylesheets/squiggles_dark-31a6c3cc154d68f0aba2.js",

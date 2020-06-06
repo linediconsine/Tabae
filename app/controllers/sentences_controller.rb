@@ -4,6 +4,7 @@ class SentencesController < ApplicationController
   before_action :authenticate_user!, except: [:welcome]
 
   def welcome
+    redirect_to sentences_path if signed_in?
   end
 
   # DELETE /sentences/1
