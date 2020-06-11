@@ -27,7 +27,7 @@ import "./stylesheets/application.scss";
 import axios from "axios";
 //import vue from "vue";
 
-document.addEventListener("turbolinks:load", () => {
-  $('[data-toggle="tooltip"]').tooltip();
-  $('[data-toggle="popover"]').popover();
-});
+// document.addEventListener("turbolinks:load", () => {
+//   $('[data-toggle="tooltip"]').tooltip();
+//   $('[data-toggle="popover"]').popover();
+// });
