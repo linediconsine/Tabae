@@ -1,58 +1,75 @@
-
-<div class="text-center">
-
- 
-
-  <h1 class="text-center" style="text-transform: uppercase;color: #FFF;font-weight: bolder;font-size: 1.8em;padding: 1em;"> Use Tabae synthetize voice whenevr you are! </h1>
- 
-
-  <section>
-    <%= image_tag("happy-bunch-3.png", :alt => "A group of people having a conversation", :style => "width:100%;padding:5px;") %>
-  </section>
-  
-  <section class="mx-auto tb-separe" style="max-width:80%">
-    <h2>How to start with Tabae</h2>
-    <ul class="list-group">
-        <li class="list-group-item list-group-item-primary">
-        <%= link_to "Sign up ( Hey! its free )", new_user_registration_path  %> 
-        </li>
-        <li class="list-group-item list-group-item-primary" >Prepare your sentences whenever works better for you</li>
-        <li class="list-group-item list-group-item-primary">Login on any device you need Tabae system</li>
-        <li class="list-group-item list-group-item-primary">Thats it!</li>
-    </ul>
-  </section>
-
-<section  class="row tb-separe">
-        <div class="col-xl-6 mx-auto">
-        <%= image_tag("sitting.png", :alt => "A person sitting on a desk using a computer", :style => "padding:1em;width:80%") %>
-        </div>
-        <div class="col-xl-6 m-auto">
-          <h3 >Tabae works with all the most popular browsers on PCs, Macs, Tablets or phones</h3>
-       </div>
-      
-</section>
-
-  <section class="row tb-separe">
-    
-        <div class="col-xl-4 mx-auto">
-          <%= image_tag("humaaans.png", :alt => "A person sending an email", :style => "padding:1em;width:100%") %>
-        </div>
-        <div class="col-xl-6">
-          <p class="text-left h3 m-auto" style="padding: 3em;">
-            - No personal data required for sign up <br/>
-            - Use it everywhere<br/>
-            - Use open standard<br/>
-            and we would love to hear your thougth<br/>
-          </p>
-  </section>
-    
-
-    <%= javascript_pack_tag 'voice' %>
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css"/>
-    <style>
-    .tb-separe{
-        padding: 10rem 1.5rem !important;
+<style>
+    body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        font-size: 1.3rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #fff;
+        text-align: left;
+        background-color: #5d48f6;
     }
 </style>
-    </div>
+<div class="text-center">
 
+
+
+    <h1 class="text-center" style="text-transform: uppercase;color: #FFF;font-weight: bolder;font-size: 1.8em;padding: 1em 1em 1em 0.2em;"> The synthesized voice dashboard <br>(it's easy to use in any device)</h1>
+    <p>Tabae aims to be an assistive dashboard</p>
+
+
+    <section>
+        <%= image_tag("happy-bunch-3.png", :alt => "A group of people having a conversation", :style => "width:100%;padding:5px;") %>
+    </section>
+
+    <section class="mx-auto tb-separe" style="max-width:80%">
+        <h2>How to start with Tabae</h2>
+        <ul class="list-group">
+            <li class="list-group-item list-group-item-primary" style="background-color: #FFF;">
+                <%= link_to "Sign up ( Hey! it’s free )", new_user_registration_path  %>
+            </li>
+            <li class="list-group-item list-group-item-primary" style="background-color: #FFF;">Prepare your sentences whenever works better for you</li>
+            <li class="list-group-item list-group-item-primary" style="background-color: #FFF;">Log in on any device you need Tabae</li>
+            <li class="list-group-item list-group-item-primary" style="background-color: #FFF;">That’s it!</li>
+        </ul>
+    </section>
+
+    <section class="row tb-separe">
+        <div class="col-xl-6 mx-auto">
+            <%= image_tag("sitting.png", :alt => "A person sitting on a desk using a computer", :style => "padding:1em;width:80%") %>
+        </div>
+        <div class="col-xl-6 m-auto">
+            <h3>Tabae works with all the most popular browsers on PCs, Macs, Tablets or phones</h3>
+        </div>
+
+    </section>
+
+    <section class="row tb-separe">
+
+        <div class="col-xl-4 mx-auto">
+            <%= image_tag("humaaans.png", :alt => "A person sending an email", :style => "padding:1em;width:100%") %>
+        </div>
+        <div class="col-xl-6">
+
+            <section class="mx-auto tb-separe" style="max-width:80%">
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-primary" style="background-color: #FFF;">
+                        No personal data required for sign up
+                    </li>
+                    <li class="list-group-item list-group-item-primary" style="background-color: #FFF;">Use it everywhere</li>
+                    <li class="list-group-item list-group-item-primary" style="background-color: #FFF;">Use open standard</li>
+                    <li class="list-group-item list-group-item-primary" style="background-color: #FFF;">and we would love to hear your thoughts</li>
+                </ul>
+            </section>
+        </div>
+    </section>
+
+
+    <%= javascript_pack_tag 'voice' %>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+    <style>
+        .tb-separe {
+            padding: 10rem 1.5rem !important;
+        }
+    </style>
+</div>
