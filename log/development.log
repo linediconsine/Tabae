@@ -39110,3 +39110,492 @@ Completed 200 OK in 17ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 949
 
 
 Started GET "/manifest.json" for 127.0.0.1 at 2020-06-11 16:18:45 +0200
+Started GET "/" for 127.0.0.1 at 2020-06-20 14:44:38 +0200
+  
+PG::ConnectionBad (could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+):
+  
+pg (1.2.0) lib/pg.rb:57:in `initialize'
+pg (1.2.0) lib/pg.rb:57:in `new'
+pg (1.2.0) lib/pg.rb:57:in `connect'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:46:in `postgresql_connection'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:889:in `new_connection'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:933:in `checkout_new_connection'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:912:in `try_to_checkout_new_connection'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:873:in `acquire_connection'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:595:in `checkout'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:439:in `connection'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1121:in `retrieve_connection'
+activerecord (6.0.2.1) lib/active_record/connection_handling.rb:238:in `retrieve_connection'
+activerecord (6.0.2.1) lib/active_record/connection_handling.rb:206:in `connection'
+activerecord (6.0.2.1) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-06-20 14:44:40 +0200
+  
+PG::ConnectionBad (could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+):
+  
+pg (1.2.0) lib/pg.rb:57:in `initialize'
+pg (1.2.0) lib/pg.rb:57:in `new'
+pg (1.2.0) lib/pg.rb:57:in `connect'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:46:in `postgresql_connection'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:889:in `new_connection'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:933:in `checkout_new_connection'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:912:in `try_to_checkout_new_connection'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:873:in `acquire_connection'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:595:in `checkout'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:439:in `connection'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1121:in `retrieve_connection'
+activerecord (6.0.2.1) lib/active_record/connection_handling.rb:238:in `retrieve_connection'
+activerecord (6.0.2.1) lib/active_record/connection_handling.rb:206:in `connection'
+activerecord (6.0.2.1) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2020-06-20 14:45:05 +0200
+  [1m[35m (13.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Volumes/Elements/work/RoR/tabae2/tabae/public/packs
+[Webpacker] Browserslist: caniuse-lite is outdated. Please run next command `yarn upgrade`
+
+[Webpacker] Hash: 87a2f1afedf6cb2f9b10
+Version: webpack 4.41.5
+Time: 7485ms
+Built at: 06/20/2020 2:45:20 PM
+                                                                      Asset      Size                      Chunks                         Chunk Names
+                                     js/application-aa7f92ccc7de0e3706f6.js  1.36 MiB                 application  [emitted] [immutable]  application
+                                 js/application-aa7f92ccc7de0e3706f6.js.map   1.5 MiB                 application  [emitted] [dev]        application
+                                 js/checkconnection-48e000021bc491ba853f.js  4.27 KiB             checkconnection  [emitted] [immutable]  checkconnection
+                             js/checkconnection-48e000021bc491ba853f.js.map  4.05 KiB             checkconnection  [emitted] [dev]        checkconnection
+                                    js/localstorage-aab74820b4c2cb5b79b0.js  3.93 KiB                localstorage  [emitted] [immutable]  localstorage
+                                js/localstorage-aab74820b4c2cb5b79b0.js.map  3.62 KiB                localstorage  [emitted] [dev]        localstorage
+                                   js/serviceworker-27991ce78e92a96fff46.js  5.51 KiB               serviceworker  [emitted] [immutable]  serviceworker
+                               js/serviceworker-27991ce78e92a96fff46.js.map  5.76 KiB               serviceworker  [emitted] [dev]        serviceworker
+                             js/stylesheets/_custom-f98ddebf9bb579701803.js  15.7 KiB         stylesheets/_custom  [emitted] [immutable]  stylesheets/_custom
+                         js/stylesheets/_custom-f98ddebf9bb579701803.js.map  15.8 KiB         stylesheets/_custom  [emitted] [dev]        stylesheets/_custom
+                         js/stylesheets/application-c2a01d26a418c3c306f0.js   686 KiB     stylesheets/application  [emitted] [immutable]  stylesheets/application
+                     js/stylesheets/application-c2a01d26a418c3c306f0.js.map   710 KiB     stylesheets/application  [emitted] [dev]        stylesheets/application
+                       js/stylesheets/happy-bunch-3-a2acaea3324f51acc7ea.js  4.11 KiB   stylesheets/happy-bunch-3  [emitted] [immutable]  stylesheets/happy-bunch-3
+                   js/stylesheets/happy-bunch-3-a2acaea3324f51acc7ea.js.map  3.75 KiB   stylesheets/happy-bunch-3  [emitted] [dev]        stylesheets/happy-bunch-3
+                         js/stylesheets/happy-bunch-aa7e51c46ae75d1e6faa.js  4.09 KiB     stylesheets/happy-bunch  [emitted] [immutable]  stylesheets/happy-bunch
+                     js/stylesheets/happy-bunch-aa7e51c46ae75d1e6faa.js.map  3.74 KiB     stylesheets/happy-bunch  [emitted] [dev]        stylesheets/happy-bunch
+                            js/stylesheets/humaaans-e1dab312a8aa369ad4db.js  4.07 KiB        stylesheets/humaaans  [emitted] [immutable]  stylesheets/humaaans
+                        js/stylesheets/humaaans-e1dab312a8aa369ad4db.js.map  3.73 KiB        stylesheets/humaaans  [emitted] [dev]        stylesheets/humaaans
+                             js/stylesheets/sitting-d9ede5bc588f96fa9fe4.js  4.07 KiB         stylesheets/sitting  [emitted] [immutable]  stylesheets/sitting
+                         js/stylesheets/sitting-d9ede5bc588f96fa9fe4.js.map  3.72 KiB         stylesheets/sitting  [emitted] [dev]        stylesheets/sitting
+                           js/stylesheets/squiggles-811792d16a149203a917.js  4.08 KiB       stylesheets/squiggles  [emitted] [immutable]  stylesheets/squiggles
+                       js/stylesheets/squiggles-811792d16a149203a917.js.map  3.73 KiB       stylesheets/squiggles  [emitted] [dev]        stylesheets/squiggles
+                      js/stylesheets/squiggles_dark-31a6c3cc154d68f0aba2.js  4.11 KiB  stylesheets/squiggles_dark  [emitted] [immutable]  stylesheets/squiggles_dark
+                  js/stylesheets/squiggles_dark-31a6c3cc154d68f0aba2.js.map  3.75 KiB  stylesheets/squiggles_dark  [emitted] [dev]        stylesheets/squiggles_dark
+                                           js/voice-9c7b42c2f701547e0c6e.js  4.38 KiB                       voice  [emitted] [immutable]  voice
+                                       js/voice-9c7b42c2f701547e0c6e.js.map  4.18 KiB                       voice  [emitted] [dev]        voice
+                                                              manifest.json  5.68 KiB                              [emitted]              
+   media/packs/stylesheets/happy-bunch-047755d92bea57e559e04c635902ab80.png  66.4 KiB                              [emitted]              
+ media/packs/stylesheets/happy-bunch-3-0c8d0dcb3a895a408a699dabc4156e62.png  69.1 KiB                              [emitted]              
+      media/packs/stylesheets/humaaans-bb6d70232d284d48e74fbc6bce4b367f.png  44.8 KiB                              [emitted]              
+       media/packs/stylesheets/sitting-b70d539087aee6180b45994918da1684.png  27.3 KiB                              [emitted]              
+     media/packs/stylesheets/squiggles-bc20c22241336b9f411d2f4982498048.png  36.9 KiB                              [emitted]              
+media/packs/stylesheets/squiggles_dark-1387c8d3de11a7d7095187b0c76eafd9.jpg  32.4 KiB                              [emitted]              
+Entrypoint application = js/application-aa7f92ccc7de0e3706f6.js js/application-aa7f92ccc7de0e3706f6.js.map
+Entrypoint checkconnection = js/checkconnection-48e000021bc491ba853f.js js/checkconnection-48e000021bc491ba853f.js.map
+Entrypoint localstorage = js/localstorage-aab74820b4c2cb5b79b0.js js/localstorage-aab74820b4c2cb5b79b0.js.map
+Entrypoint serviceworker = js/serviceworker-27991ce78e92a96fff46.js js/serviceworker-27991ce78e92a96fff46.js.map
+Entrypoint stylesheets/_custom = js/stylesheets/_custom-f98ddebf9bb579701803.js js/stylesheets/_custom-f98ddebf9bb579701803.js.map
+Entrypoint stylesheets/application = js/stylesheets/application-c2a01d26a418c3c306f0.js js/stylesheets/application-c2a01d26a418c3c306f0.js.map
+Entrypoint stylesheets/happy-bunch-3 = js/stylesheets/happy-bunch-3-a2acaea3324f51acc7ea.js js/stylesheets/happy-bunch-3-a2acaea3324f51acc7ea.js.map
+Entrypoint stylesheets/happy-bunch = js/stylesheets/happy-bunch-aa7e51c46ae75d1e6faa.js js/stylesheets/happy-bunch-aa7e51c46ae75d1e6faa.js.map
+Entrypoint stylesheets/humaaans = js/stylesheets/humaaans-e1dab312a8aa369ad4db.js js/stylesheets/humaaans-e1dab312a8aa369ad4db.js.map
+Entrypoint stylesheets/sitting = js/stylesheets/sitting-d9ede5bc588f96fa9fe4.js js/stylesheets/sitting-d9ede5bc588f96fa9fe4.js.map
+Entrypoint stylesheets/squiggles_dark = js/stylesheets/squiggles_dark-31a6c3cc154d68f0aba2.js js/stylesheets/squiggles_dark-31a6c3cc154d68f0aba2.js.map
+Entrypoint stylesheets/squiggles = js/stylesheets/squiggles-811792d16a149203a917.js js/stylesheets/squiggles-811792d16a149203a917.js.map
+Entrypoint voice = js/voice-9c7b42c2f701547e0c6e.js js/voice-9c7b42c2f701547e0c6e.js.map
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.11 KiB {application} [built]
+[./app/javascript/packs/checkconnection.js] 363 bytes {checkconnection} [built]
+[./app/javascript/packs/localstorage.js] 33 bytes {localstorage} [built]
+[./app/javascript/packs/serviceworker.js] 1.6 KiB {serviceworker} [built]
+[./app/javascript/packs/stylesheets/_custom.scss] 725 bytes {stylesheets/_custom} [built]
+[./app/javascript/packs/stylesheets/application.scss] 729 bytes {stylesheets/application} {application} [built]
+[./app/javascript/packs/stylesheets/happy-bunch-3.png] 120 bytes {stylesheets/happy-bunch-3} [built]
+[./app/javascript/packs/stylesheets/happy-bunch.png] 118 bytes {stylesheets/happy-bunch} [built]
+[./app/javascript/packs/stylesheets/humaaans.png] 115 bytes {stylesheets/humaaans} [built]
+[./app/javascript/packs/stylesheets/sitting.png] 114 bytes {stylesheets/sitting} [built]
+[./app/javascript/packs/stylesheets/squiggles.png] 116 bytes {stylesheets/squiggles} [built]
+[./app/javascript/packs/stylesheets/squiggles_dark.jpg] 121 bytes {stylesheets/squiggles_dark} [built]
+[./app/javascript/packs/voice.js] 530 bytes {voice} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/packs/stylesheets/_custom.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/packs/stylesheets/_custom.scss 1.23 KiB {stylesheets/_custom} [built]
+    + 39 hidden modules
+
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 13804.0ms | Allocations: 35535)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13860ms (Views: 13851.0ms | ActiveRecord: 0.0ms | Allocations: 43871)
+
+
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-06-20 14:45:21 +0200
+Started GET "/users/sign_in" for 127.0.0.1 at 2020-06-20 14:45:29 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 11.7ms | Allocations: 596)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 209.2ms | Allocations: 4933)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 271ms (Views: 234.8ms | ActiveRecord: 13.4ms | Allocations: 17699)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2020-06-20 14:45:33 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"jbkW0wSU4bXGdOctOwBjjIdLKEf07zfM2f5Bbxf8Jjsg5PA/wdu1ExsTJ0BOQxJBD9uB4w30Ub/YXNTK3XLeIg==", "user"=>{"email"=>"linediconsine@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (5.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "linediconsine@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `switch_locale'
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 292ms (ActiveRecord: 8.0ms | Allocations: 4506)
+
+
+Started GET "/" for 127.0.0.1 at 2020-06-20 14:45:33 +0200
+Processing by SentencesController#welcome as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/sentences_controller.rb:7:in `welcome'
+Redirected to http://127.0.0.1:3000/sentences
+Completed 302 Found in 5ms (ActiveRecord: 1.7ms | Allocations: 1208)
+
+
+Started GET "/sentences" for 127.0.0.1 at 2020-06-20 14:45:33 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `switch_locale'
+  [1m[36mSentence Load (2.8ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:23:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/index.html.erb within layouts/application (Duration: 14.1ms | Allocations: 5385)
+Completed 500 Internal Server Error in 155ms (ActiveRecord: 7.1ms | Allocations: 15130)
+
+
+  
+ActionView::Template::Error (undefined method `emptycon?' for #<Array:0x00007fb69fffb8a8>
+Did you mean?  empty?):
+    15:             <div class="row" id="main">
+    16:                
+    17:                 
+    18:                <%  if @sentences.emptycon? %> 
+    19:                     <div class="m-auto py-3">
+    20:                         <section  class="card p-3 bg-dark">
+    21:                             <div class="row">
+  
+app/views/sentences/index.html.erb:18
+app/controllers/application_controller.rb:22:in `switch_locale'
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-06-20 14:45:34 +0200
+Started GET "/sentences" for 127.0.0.1 at 2020-06-20 14:45:53 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `switch_locale'
+  [1m[36mSentence Load (2.0ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:23:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 74.2ms | Allocations: 6056)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 88.4ms | Allocations: 13070)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 139ms (Views: 125.3ms | ActiveRecord: 2.8ms | Allocations: 22922)
+
+
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-06-20 14:45:54 +0200
+Started GET "/sentences/8/edit" for 127.0.0.1 at 2020-06-20 14:45:57 +0200
+Processing by SentencesController#edit as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mSentence Load (2.5ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/sentences_controller.rb:100:in `set_sentence'
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `switch_locale'
+  Rendering sentences/edit.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 26.7ms | Allocations: 3247)
+  Rendered sentences/edit.html.erb within layouts/application (Duration: 50.9ms | Allocations: 3520)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 90ms (Views: 78.4ms | ActiveRecord: 3.5ms | Allocations: 11884)
+
+
+Started DELETE "/sentences/8" for 127.0.0.1 at 2020-06-20 14:46:00 +0200
+Processing by SentencesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"r7bu3m7oR8bLQlaRxbmfv+n0vtxlZ05aggJJt8rjXQEPi3+qqVtZAv22NrIuJ6IiU4Pg5KcYIz7AVFhmkBwzEg==", "id"=>"8"}
+  [1m[36mSentence Load (0.4ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/sentences_controller.rb:100:in `set_sentence'
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `switch_locale'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/sentences_controller.rb:13:in `destroy'
+  [1m[36mSentence Destroy (0.5ms)[0m  [1m[31mDELETE FROM "sentences" WHERE "sentences"."id" = $1[0m  [["id", 8]]
+  ↳ app/controllers/sentences_controller.rb:13:in `destroy'
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/sentences_controller.rb:13:in `destroy'
+Redirected to http://127.0.0.1:3000/sentences
+Completed 302 Found in 15ms (ActiveRecord: 3.6ms | Allocations: 3578)
+
+
+Started GET "/sentences" for 127.0.0.1 at 2020-06-20 14:46:00 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (4.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `switch_locale'
+  [1m[36mSentence Load (6.1ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:23:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 13.0ms | Allocations: 3037)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 28.8ms | Allocations: 8992)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 75ms (Views: 59.6ms | ActiveRecord: 10.6ms | Allocations: 17487)
+
+
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-06-20 14:46:01 +0200
+Started GET "/sentences" for 127.0.0.1 at 2020-06-20 14:48:17 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `switch_locale'
+  [1m[36mSentence Load (0.4ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:23:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 30.6ms | Allocations: 3427)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 185.5ms | Allocations: 9942)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 247ms (Views: 236.1ms | ActiveRecord: 1.7ms | Allocations: 19750)
+
+
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-06-20 14:48:18 +0200
+Started GET "/sentences" for 127.0.0.1 at 2020-06-20 14:48:28 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `switch_locale'
+  [1m[36mSentence Load (0.4ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:23:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 7.2ms | Allocations: 3041)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 173.4ms | Allocations: 8996)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 216ms (Views: 209.0ms | ActiveRecord: 0.7ms | Allocations: 17479)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2020-06-20 14:48:34 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"p676x4qsGYRZLXMgiDHy4F1AV/aqpouG0pV+a4IjqqkHk2uzTR8HQG/ZEwNjr8995zcJzmjZ5uKQw2+62NzEug=="}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 82ms (ActiveRecord: 0.9ms | Allocations: 4799)
+
+
+Started GET "/" for 127.0.0.1 at 2020-06-20 14:48:34 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 19.4ms | Allocations: 4225)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 42ms (Views: 39.7ms | ActiveRecord: 0.0ms | Allocations: 11079)
+
+
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-06-20 14:48:35 +0200
+Started GET "/" for 127.0.0.1 at 2020-06-20 14:49:38 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 493.4ms | Allocations: 3984)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 767ms (Views: 744.9ms | ActiveRecord: 0.0ms | Allocations: 11308)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-20 14:49:40 +0200
+Started GET "/" for 127.0.0.1 at 2020-06-20 14:49:45 +0200
+Processing by SentencesController#welcome as */*
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 77.6ms | Allocations: 3984)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 117ms (Views: 112.4ms | ActiveRecord: 0.0ms | Allocations: 10848)
+
+
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-06-20 14:49:47 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-06-20 14:52:08 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-06-20 14:52:08 +0200
+Started GET "/" for 127.0.0.1 at 2020-06-20 14:52:10 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 216.2ms | Allocations: 4242)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 312ms (Views: 300.9ms | ActiveRecord: 0.0ms | Allocations: 12265)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-20 14:52:11 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-06-20 14:52:12 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-06-20 14:52:19 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-06-20 14:52:19 +0200
+Started GET "/" for 127.0.0.1 at 2020-06-20 14:52:21 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 12.6ms | Allocations: 3990)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.0ms | Allocations: 10703)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-20 14:52:21 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-06-20 14:52:23 +0200
+Started GET "/" for 127.0.0.1 at 2020-06-20 15:02:58 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 283.2ms | Allocations: 4242)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 517ms (Views: 501.0ms | ActiveRecord: 0.0ms | Allocations: 12268)
+
+
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-06-20 15:03:00 +0200
+Started GET "/" for 127.0.0.1 at 2020-06-20 15:03:24 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 132.3ms | Allocations: 4232)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 164ms (Views: 161.8ms | ActiveRecord: 0.0ms | Allocations: 12249)
+
+
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-06-20 15:03:25 +0200
+Started GET "/" for 127.0.0.1 at 2020-06-20 15:06:08 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 183.2ms | Allocations: 4247)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 241ms (Views: 238.6ms | ActiveRecord: 0.0ms | Allocations: 12271)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-20 15:06:10 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-06-20 15:06:12 +0200
+Started GET "/" for 127.0.0.1 at 2020-06-20 15:06:21 +0200
+Processing by SentencesController#welcome as */*
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 128.9ms | Allocations: 3984)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 220ms (Views: 216.7ms | ActiveRecord: 0.0ms | Allocations: 13209)
+
+
+Started GET "/" for 127.0.0.1 at 2020-06-20 15:07:32 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 169.0ms | Allocations: 4235)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 227ms (Views: 224.3ms | ActiveRecord: 0.0ms | Allocations: 12262)
+
+
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-06-20 15:07:33 +0200
+Started GET "/" for 127.0.0.1 at 2020-06-20 15:09:49 +0200
+Processing by SentencesController#welcome as HTML
+  Rendering sentences/welcome.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/welcome.html.erb within layouts/application (Duration: 271.9ms | Allocations: 4243)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 385ms (Views: 376.4ms | ActiveRecord: 0.0ms | Allocations: 12268)
+
+
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-06-20 15:09:51 +0200
