@@ -73,7 +73,7 @@
 </div>
 <script>
     //if (localStorage.getItem("_m_tabae") == null){
-    stored = < %= raw @sentences.to_json() % > ;
+    stored = <%= raw @sentences.to_json() %> ;
     localStorage.setItem("_m_tabae", JSON.stringify(stored));
     //}
 </script>

@@ -39599,3 +39599,123 @@ Completed 200 OK in 385ms (Views: 376.4ms | ActiveRecord: 0.0ms | Allocations: 1
 
 
 Started GET "/serviceworker.js" for 127.0.0.1 at 2020-06-20 15:09:51 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-06-20 15:39:53 +0200
+  [1m[35m (4.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-06-20 15:39:55 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-06-20 15:39:56 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-06-20 15:39:59 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-06-20 15:40:23 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-06-20 15:40:23 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-06-20 15:40:24 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-06-20 15:40:27 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-06-20 15:41:01 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-06-20 15:41:01 +0200
+Started GET "/sentences" for 127.0.0.1 at 2020-06-20 15:41:02 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `switch_locale'
+  [1m[36mSentence Load (0.6ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:23:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Volumes/Elements/work/RoR/tabae2/tabae/public/packs
+[Webpacker] Browserslist: caniuse-lite is outdated. Please run next command `yarn upgrade`
+
+[Webpacker] Hash: 87a2f1afedf6cb2f9b10
+Version: webpack 4.41.5
+Time: 8228ms
+Built at: 06/20/2020 3:41:16 PM
+                                                                      Asset      Size                      Chunks                         Chunk Names
+                                     js/application-aa7f92ccc7de0e3706f6.js  1.36 MiB                 application  [emitted] [immutable]  application
+                                 js/application-aa7f92ccc7de0e3706f6.js.map   1.5 MiB                 application  [emitted] [dev]        application
+                                 js/checkconnection-48e000021bc491ba853f.js  4.27 KiB             checkconnection  [emitted] [immutable]  checkconnection
+                             js/checkconnection-48e000021bc491ba853f.js.map  4.05 KiB             checkconnection  [emitted] [dev]        checkconnection
+                                    js/localstorage-aab74820b4c2cb5b79b0.js  3.93 KiB                localstorage  [emitted] [immutable]  localstorage
+                                js/localstorage-aab74820b4c2cb5b79b0.js.map  3.62 KiB                localstorage  [emitted] [dev]        localstorage
+                                   js/serviceworker-27991ce78e92a96fff46.js  5.51 KiB               serviceworker  [emitted] [immutable]  serviceworker
+                               js/serviceworker-27991ce78e92a96fff46.js.map  5.76 KiB               serviceworker  [emitted] [dev]        serviceworker
+                             js/stylesheets/_custom-f98ddebf9bb579701803.js  15.7 KiB         stylesheets/_custom  [emitted] [immutable]  stylesheets/_custom
+                         js/stylesheets/_custom-f98ddebf9bb579701803.js.map  15.8 KiB         stylesheets/_custom  [emitted] [dev]        stylesheets/_custom
+                         js/stylesheets/application-c2a01d26a418c3c306f0.js   686 KiB     stylesheets/application  [emitted] [immutable]  stylesheets/application
+                     js/stylesheets/application-c2a01d26a418c3c306f0.js.map   710 KiB     stylesheets/application  [emitted] [dev]        stylesheets/application
+                       js/stylesheets/happy-bunch-3-a2acaea3324f51acc7ea.js  4.11 KiB   stylesheets/happy-bunch-3  [emitted] [immutable]  stylesheets/happy-bunch-3
+                   js/stylesheets/happy-bunch-3-a2acaea3324f51acc7ea.js.map  3.75 KiB   stylesheets/happy-bunch-3  [emitted] [dev]        stylesheets/happy-bunch-3
+                         js/stylesheets/happy-bunch-aa7e51c46ae75d1e6faa.js  4.09 KiB     stylesheets/happy-bunch  [emitted] [immutable]  stylesheets/happy-bunch
+                     js/stylesheets/happy-bunch-aa7e51c46ae75d1e6faa.js.map  3.74 KiB     stylesheets/happy-bunch  [emitted] [dev]        stylesheets/happy-bunch
+                            js/stylesheets/humaaans-e1dab312a8aa369ad4db.js  4.07 KiB        stylesheets/humaaans  [emitted] [immutable]  stylesheets/humaaans
+                        js/stylesheets/humaaans-e1dab312a8aa369ad4db.js.map  3.73 KiB        stylesheets/humaaans  [emitted] [dev]        stylesheets/humaaans
+                             js/stylesheets/sitting-d9ede5bc588f96fa9fe4.js  4.07 KiB         stylesheets/sitting  [emitted] [immutable]  stylesheets/sitting
+                         js/stylesheets/sitting-d9ede5bc588f96fa9fe4.js.map  3.72 KiB         stylesheets/sitting  [emitted] [dev]        stylesheets/sitting
+                           js/stylesheets/squiggles-811792d16a149203a917.js  4.08 KiB       stylesheets/squiggles  [emitted] [immutable]  stylesheets/squiggles
+                       js/stylesheets/squiggles-811792d16a149203a917.js.map  3.73 KiB       stylesheets/squiggles  [emitted] [dev]        stylesheets/squiggles
+                      js/stylesheets/squiggles_dark-31a6c3cc154d68f0aba2.js  4.11 KiB  stylesheets/squiggles_dark  [emitted] [immutable]  stylesheets/squiggles_dark
+                  js/stylesheets/squiggles_dark-31a6c3cc154d68f0aba2.js.map  3.75 KiB  stylesheets/squiggles_dark  [emitted] [dev]        stylesheets/squiggles_dark
+                                           js/voice-9c7b42c2f701547e0c6e.js  4.38 KiB                       voice  [emitted] [immutable]  voice
+                                       js/voice-9c7b42c2f701547e0c6e.js.map  4.18 KiB                       voice  [emitted] [dev]        voice
+                                                              manifest.json  5.68 KiB                              [emitted]              
+   media/packs/stylesheets/happy-bunch-047755d92bea57e559e04c635902ab80.png  66.4 KiB                              [emitted]              
+ media/packs/stylesheets/happy-bunch-3-0c8d0dcb3a895a408a699dabc4156e62.png  69.1 KiB                              [emitted]              
+      media/packs/stylesheets/humaaans-bb6d70232d284d48e74fbc6bce4b367f.png  44.8 KiB                              [emitted]              
+       media/packs/stylesheets/sitting-b70d539087aee6180b45994918da1684.png  27.3 KiB                              [emitted]              
+     media/packs/stylesheets/squiggles-bc20c22241336b9f411d2f4982498048.png  36.9 KiB                              [emitted]              
+media/packs/stylesheets/squiggles_dark-1387c8d3de11a7d7095187b0c76eafd9.jpg  32.4 KiB                              [emitted]              
+Entrypoint application = js/application-aa7f92ccc7de0e3706f6.js js/application-aa7f92ccc7de0e3706f6.js.map
+Entrypoint checkconnection = js/checkconnection-48e000021bc491ba853f.js js/checkconnection-48e000021bc491ba853f.js.map
+Entrypoint localstorage = js/localstorage-aab74820b4c2cb5b79b0.js js/localstorage-aab74820b4c2cb5b79b0.js.map
+Entrypoint serviceworker = js/serviceworker-27991ce78e92a96fff46.js js/serviceworker-27991ce78e92a96fff46.js.map
+Entrypoint stylesheets/_custom = js/stylesheets/_custom-f98ddebf9bb579701803.js js/stylesheets/_custom-f98ddebf9bb579701803.js.map
+Entrypoint stylesheets/application = js/stylesheets/application-c2a01d26a418c3c306f0.js js/stylesheets/application-c2a01d26a418c3c306f0.js.map
+Entrypoint stylesheets/happy-bunch-3 = js/stylesheets/happy-bunch-3-a2acaea3324f51acc7ea.js js/stylesheets/happy-bunch-3-a2acaea3324f51acc7ea.js.map
+Entrypoint stylesheets/happy-bunch = js/stylesheets/happy-bunch-aa7e51c46ae75d1e6faa.js js/stylesheets/happy-bunch-aa7e51c46ae75d1e6faa.js.map
+Entrypoint stylesheets/humaaans = js/stylesheets/humaaans-e1dab312a8aa369ad4db.js js/stylesheets/humaaans-e1dab312a8aa369ad4db.js.map
+Entrypoint stylesheets/sitting = js/stylesheets/sitting-d9ede5bc588f96fa9fe4.js js/stylesheets/sitting-d9ede5bc588f96fa9fe4.js.map
+Entrypoint stylesheets/squiggles_dark = js/stylesheets/squiggles_dark-31a6c3cc154d68f0aba2.js js/stylesheets/squiggles_dark-31a6c3cc154d68f0aba2.js.map
+Entrypoint stylesheets/squiggles = js/stylesheets/squiggles-811792d16a149203a917.js js/stylesheets/squiggles-811792d16a149203a917.js.map
+Entrypoint voice = js/voice-9c7b42c2f701547e0c6e.js js/voice-9c7b42c2f701547e0c6e.js.map
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 1.11 KiB {application} [built]
+[./app/javascript/packs/checkconnection.js] 363 bytes {checkconnection} [built]
+[./app/javascript/packs/localstorage.js] 33 bytes {localstorage} [built]
+[./app/javascript/packs/serviceworker.js] 1.6 KiB {serviceworker} [built]
+[./app/javascript/packs/stylesheets/_custom.scss] 725 bytes {stylesheets/_custom} [built]
+[./app/javascript/packs/stylesheets/application.scss] 729 bytes {stylesheets/application} {application} [built]
+[./app/javascript/packs/stylesheets/happy-bunch-3.png] 120 bytes {stylesheets/happy-bunch-3} [built]
+[./app/javascript/packs/stylesheets/happy-bunch.png] 118 bytes {stylesheets/happy-bunch} [built]
+[./app/javascript/packs/stylesheets/humaaans.png] 115 bytes {stylesheets/humaaans} [built]
+[./app/javascript/packs/stylesheets/sitting.png] 114 bytes {stylesheets/sitting} [built]
+[./app/javascript/packs/stylesheets/squiggles.png] 116 bytes {stylesheets/squiggles} [built]
+[./app/javascript/packs/stylesheets/squiggles_dark.jpg] 121 bytes {stylesheets/squiggles_dark} [built]
+[./app/javascript/packs/voice.js] 530 bytes {voice} [built]
+[./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./app/javascript/packs/stylesheets/_custom.scss] ./node_modules/css-loader/dist/cjs.js??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/sass-loader/dist/cjs.js??ref--7-3!./app/javascript/packs/stylesheets/_custom.scss 1.23 KiB {stylesheets/_custom} [built]
+    + 39 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 41.0ms | Allocations: 4000)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 14375.0ms | Allocations: 13232)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15649ms (Views: 15479.6ms | ActiveRecord: 22.7ms | Allocations: 87579)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-20 15:41:18 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-06-20 15:41:21 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-06-20 15:41:40 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-06-20 15:41:40 +0200
+Started GET "/sentences" for 127.0.0.1 at 2020-06-20 15:41:41 +0200
+Processing by SentencesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:22:in `switch_locale'
+  [1m[36mSentence Load (2.0ms)[0m  [1m[34mSELECT "sentences".* FROM "sentences" WHERE "sentences"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/sentences_controller.rb:23:in `index'
+  Rendering sentences/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sentences/_form.html.erb (Duration: 8.0ms | Allocations: 3434)
+  Rendered sentences/index.html.erb within layouts/application (Duration: 21.5ms | Allocations: 7926)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 61ms (Views: 42.4ms | ActiveRecord: 3.6ms | Allocations: 18008)
+
+
+Started GET "/manifest.json" for 127.0.0.1 at 2020-06-20 15:41:41 +0200
+Started GET "/serviceworker.js" for 127.0.0.1 at 2020-06-20 15:41:44 +0200
