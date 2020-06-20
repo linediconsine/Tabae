@@ -72,4 +72,30 @@
             padding: 10rem 1.5rem !important;
         }
     </style>
+
+    <button id="welcomemodal" type="button" style="display:none" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
+
+<div id="welcome" class="modal fade bd-example-modal-lg show" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" style="border: 1px solid;">
+    <div class="modal-content bg-dark p-3">
+    <button type="button" class="close" style="text-align: end;color: #FFF;" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+    </button>
+    <br>
+      <h3>Howdy! </h3>
+<p>This project is born out of necessity. <br>
+<br>We are now in a private testing phase. <br> 
+The idea of you using this tool makes the team happy, but, 
+please do not consider this a stable instrument. 
+<br>We are working hard to make this tool accessible and easy to use.
+</p><br>
+<p>Thanks</p>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+    document.getElementById('welcomemodal').click()
+</script>
+
 </div>
