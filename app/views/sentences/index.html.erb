@@ -13,40 +13,40 @@
 
         <div class="fluid-container pt-3">
             <div class="row" id="main">
-               
-                
-               <%  if @sentences.emptycon? %> 
-                    <div class="m-auto py-3">
-                        <section  class="card p-3 bg-dark">
-                            <div class="row">
-                                <div class="col-6 m-auto">
-                                    <%= image_tag("home.png", :alt => "A person sitting on a desk using a computer", :style => "width:80%") %>
-                                </div>
-                                
-                                <div class="col-6 m-auto">
-                                    <p >Hi there!<br> You don't have any sentence.</p>
-                                </div>
+
+
+                <%  if @sentences.empty? %>
+                <div class="m-auto py-3">
+                    <section class="card p-3 bg-dark">
+                        <div class="row">
+                            <div class="col-6 m-auto">
+                                <%= image_tag("home.png", :alt => "A person sitting on a desk using a computer", :style => "width:80%") %>
                             </div>
-            
-                        </section>  
-                    </div>
+
+                            <div class="col-6 m-auto">
+                                <p>Hi there!<br> You don't have any sentence.</p>
+                            </div>
+                        </div>
+
+                    </section>
+                </div>
                 <% else %>
 
-                    <% @sentences.each_with_index do |sentence,index| %>
-                        <div class="col-lg-4 my-1">
-                        <div class="card bg-dark a-white">
-                            <a class="d-block p-1 view overlay zoom" id="sentence_<%= index %>" href="" onClick="voice('<%= escape_javascript sentence.sentence %>')">
-                                <div class="card-body">
-                                    <p class="card-text"><%= truncate(sentence.sentence, :length => 30) %> </p>
-                                </div>
-                            </a>
-    
-                            <div class="card-footer small" style="padding: 7px 10px">
-                                <%= link_to t('edit'), edit_sentence_path(sentence) , class: "card-link float-right"%>
+                <% @sentences.each_with_index do |sentence,index| %>
+                <div class="col-lg-4 my-1">
+                    <div class="card bg-dark a-white">
+                        <a class="d-block p-1 view overlay zoom" id="sentence_<%= index %>" href="" onClick="voice('<%= escape_javascript sentence.sentence %>')">
+                            <div class="card-body">
+                                <p class="card-text"><%= truncate(sentence.sentence, :length => 30) %> </p>
                             </div>
+                        </a>
+
+                        <div class="card-footer small" style="padding: 7px 10px">
+                            <%= link_to t('edit'), edit_sentence_path(sentence) , class: "card-link float-right"%>
                         </div>
-                        </div>
-                    <% end %>
+                    </div>
+                </div>
+                <% end %>
 
                 <% end %>
             </div>
@@ -56,7 +56,7 @@
     </section>
 
     <section class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-        <div id="new">
+        <div id="new" class="pt-3">
             <%= render 'form', sentence: @sentence %>
             <div>
     </section>
@@ -73,7 +73,7 @@
 </div>
 <script>
     //if (localStorage.getItem("_m_tabae") == null){
-    stored = < %= raw @sentences.to_json() % > ;
+    stored = <%= raw @sentences.to_json() %> ;
     localStorage.setItem("_m_tabae", JSON.stringify(stored));
     //}
 </script>
