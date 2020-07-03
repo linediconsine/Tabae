@@ -8,6 +8,9 @@
         color: #fff;
         text-align: left;
         background-color: #5d48f6;
+        background: rgb(92, 20, 199);
+        background: radial-gradient(circle, rgba(92, 20, 199, 1) 0%, rgba(0, 0, 0, 1) 100%);
+
     }
 </style>
 <div class="text-center">
@@ -19,7 +22,7 @@
 
 
     <section>
-        <%= image_tag("happy-bunch-3.png", :alt => "A group of people having a conversation", :style => "width:100%;padding:5px;") %>
+        <%= image_tag("happy-bunch-3_trasp.png", :alt => "A group of people having a conversation", :style => "width:100%;padding:5px;") %>
     </section>
 
     <section class="mx-auto tb-separe" style="max-width:80%">
@@ -36,7 +39,7 @@
 
     <section class="row tb-separe">
         <div class="col-xl-6 mx-auto">
-            <%= image_tag("sitting.png", :alt => "A person sitting on a desk using a computer", :style => "padding:1em;width:80%") %>
+            <%= image_tag("sitting_trasp.png", :alt => "A person sitting on a desk using a computer", :style => "padding:1em;width:80%") %>
         </div>
         <div class="col-xl-6 m-auto">
             <h3>Tabae works with all the most popular browsers on PCs, Macs, Tablets or phones</h3>
@@ -47,7 +50,7 @@
     <section class="row tb-separe">
 
         <div class="col-xl-4 mx-auto">
-            <%= image_tag("humaaans.png", :alt => "A person sending an email", :style => "padding:1em;width:100%") %>
+            <%= image_tag("humaaans_trasp.png", :alt => "A person sending an email", :style => "padding:1em;width:100%") %>
         </div>
         <div class="col-xl-6">
 
@@ -75,27 +78,27 @@
 
     <button id="welcomemodal" type="button" style="display:none" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
 
-<div id="welcome" class="modal fade bd-example-modal-lg show" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" style="border: 1px solid;">
-    <div class="modal-content bg-dark p-3">
-    <button type="button" class="close" style="text-align: end;color: #FFF;" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">×</span>
-    </button>
-    <br>
-      <h3>Howdy! </h3>
-<p>This project is born out of necessity. <br>
-<br>We are now in a private testing phase. <br> 
-The idea of you using this tool makes the team happy, but, 
-please do not consider this a stable instrument. 
-<br>We are working hard to make this tool accessible and easy to use.
-</p><br>
-<p>Thanks</p>
+    <div id="welcome" class="modal fade bd-example-modal-lg show" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" style="border: 1px solid;">
+            <div class="modal-content bg-dark p-3">
+                <button type="button" class="close" style="text-align: end;color: #FFF;" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                <br>
+                <h3>Howdy! </h3>
+                <p>This project is born out of necessity. <br>
+                    <br>We are now in a private testing phase. <br>
+                    The idea of you using this tool makes the team happy, but,
+                    please do not consider this a stable instrument.
+                    <br>We are working hard to make this tool accessible and easy to use.
+                </p><br>
+                <p>Thanks</p>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 
-<script type="text/javascript">
-    document.getElementById('welcomemodal').click()
-</script>
+    <script type="text/javascript">
+        document.getElementById('welcomemodal').click()
+    </script>
 
 </div>
