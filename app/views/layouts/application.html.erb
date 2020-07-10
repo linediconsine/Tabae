@@ -3,6 +3,25 @@
 
 <head>
     <title>Tabae</title>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <meta name="viewport" content="width=device-width, user-scalable=no,
 initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <link rel="manifest" href="/manifest.json" />
@@ -25,19 +44,19 @@ initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
         <button class="navbar-toggler only_online" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        
+
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
             </ul>
             <ul class="navbar-nav">
-            <% if user_signed_in?  %> 
+                <% if user_signed_in?  %>
                 <li class="pl-4 nav-item">
                     <%= link_to "Esci", destroy_user_session_path, method: :delete , class: "nav-link" %>
                 </li>
-            <% else %>
-                <%= link_to "Sign up", new_user_registration_path, :class => 'nav-link mx-2'  %> 
+                <% else %>
+                <%= link_to "Sign up", new_user_registration_path, :class => 'nav-link mx-2'  %>
                 <%= link_to "Login", new_user_session_path, :class => 'nav-link mx-2'  %>
-            <% end %>
+                <% end %>
             </ul>
         </div>
     </nav>
@@ -57,6 +76,10 @@ initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 
 
     <%= javascript_pack_tag 'checkconnection' %>
+
+
+
+
 </body>
 
 

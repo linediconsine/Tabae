@@ -1,10 +1,12 @@
 class SentencesController < ApplicationController
   before_action :set_sentence, only: [:show, :edit, :update, :destroy]
-  #before_action :set_json_response, only: [:apicreate]
-  before_action :authenticate_user!, except: [:welcome]
+  before_action :authenticate_user!, except: [:welcome,:coming_soon]
 
   def welcome
     redirect_to sentences_path if signed_in?
+  end
+
+  def coming_soon
   end
 
   # DELETE /sentences/1
