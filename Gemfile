@@ -7,7 +7,7 @@ gem 'devise'
 # gem 'google_sign_in' 
 # https://github.com/basecamp/google_sign_in
 gem 'bootstrap',  '~>4.3.1'
-
+gem 'config'
 gem 'serviceworker-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
