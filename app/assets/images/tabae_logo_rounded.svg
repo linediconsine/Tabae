@@ -13,7 +13,7 @@
    viewBox="0 0 210 297"
    version="1.1"
    id="svg8"
-   sodipodi:docname="tabae_logo.svg"
+   sodipodi:docname="tabae_logo_rounded.svg"
    inkscape:version="1.0 (4035a4f, 2020-05-01)"
    inkscape:export-filename="/Users/marco-explorabiotech/Documents/RoR/tabae/app/assets/images/tabae_logo.png"
    inkscape:export-xdpi="90.780609"
@@ -91,6 +91,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
