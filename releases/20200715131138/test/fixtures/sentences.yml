@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  sentence: MyText
+  color: 1
+  group: MyString
+
+two:
+  name: MyString
+  sentence: MyText
+  color: 1
+  group: MyString
