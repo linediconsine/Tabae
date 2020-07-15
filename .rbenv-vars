@@ -1,0 +1,9 @@
+# For Postgres
+DATABASE_URL=postgresql://tabae:cavallo@127.0.0.1/tabae
+# For MySQL
+#DATABASE_URL=mysql2://deploy:$omeFancyPassword123@localhost/myapp 
+RAILS_MASTER_KEY=ohai 
+SECRET_KEY_BASE=1234567890 
+
+#STRIPE_PUBLIC_KEY=x
+#STRIPE_PRIVATE_KEY=y
