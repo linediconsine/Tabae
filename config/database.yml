@@ -87,4 +87,4 @@ production:
   <<: *default
   database: tabae_production
   username: tabae
-  password: <%= ENV['TABAE_DATABASE_PASSWORD'] %>
+  password: cavallo
