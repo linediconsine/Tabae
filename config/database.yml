@@ -31,7 +31,7 @@ development:
   #database: tabae_development
   database: tabae
   username: tabae
-  password: tabae_cavallo
+  password: cavallo
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -90,5 +90,9 @@ production:
   <<: *default
   database: tabae
   username: tabae
+<<<<<<< HEAD
   password: tabae_cavallo 
 # <%= ENV['TABAE_DATABASE_PASSWORD'] %>
+=======
+  password: cavallo
+>>>>>>> cf04fdb969e6d962401a16aa31247cd05945af39
