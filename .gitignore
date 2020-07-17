@@ -10,6 +10,7 @@
 /test/version_tmp/
 /tmp/
 node_modules/
+/public/packs/js/
 # Used by dotenv library to load environment variables.
 # .env
 
@@ -66,3 +67,5 @@ yarn-debug.log*
 config/settings.local.yml
 config/settings/*.local.yml
 config/environments/*.local.yml
+
+/config/master.key

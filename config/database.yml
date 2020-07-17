@@ -20,15 +20,18 @@ default: &default
   encoding: unicode
   # For details on connection pooling, see Rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+#  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  database: tabae
   username: tabae
-  password: <%= ENV['TABAE_DATABASE_PASSWORD'] %>
-  host: localhost
+  password: tabae_cavallo
+  host: 127.0.0.1
 
 development:
   <<: *default
-  database: tabae_development
-
+  #database: tabae_development
+  database: tabae
+  username: tabae
+  password: tabae_cavallo
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -85,6 +88,7 @@ test:
 #
 production:
   <<: *default
-  database: tabae_production
+  database: tabae
   username: tabae
-  password: <%= ENV['TABAE_DATABASE_PASSWORD'] %>
+  password: tabae_cavallo 
+# <%= ENV['TABAE_DATABASE_PASSWORD'] %>
