@@ -4464,3 +4464,404 @@ I, [2020-07-17T01:46:34.801806 #1282]  INFO -- : [e6ee2e17-ced3-4902-ad29-6c4089
 I, [2020-07-17T01:46:34.803827 #1282]  INFO -- : [e6ee2e17-ced3-4902-ad29-6c4089b840c9] [Webpacker] Everything's up-to-date. Nothing to do
 I, [2020-07-17T01:46:34.806287 #1282]  INFO -- : [e6ee2e17-ced3-4902-ad29-6c4089b840c9] [Webpacker] Everything's up-to-date. Nothing to do
 I, [2020-07-17T01:46:34.806620 #1282]  INFO -- : [e6ee2e17-ced3-4902-ad29-6c4089b840c9] Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 3337)
+I, [2020-07-17T02:10:23.824112 #1282]  INFO -- : [2e49c944-a7bd-4a19-9561-278fad57da30] Started GET "/" for 209.17.96.122 at 2020-07-17 02:10:23 +0000
+I, [2020-07-17T02:10:23.827112 #1282]  INFO -- : [2e49c944-a7bd-4a19-9561-278fad57da30] Processing by SentencesController#welcome as */*
+I, [2020-07-17T02:10:23.830545 #1282]  INFO -- : [2e49c944-a7bd-4a19-9561-278fad57da30] Completed 500 Internal Server Error in 3ms (Allocations: 663)
+F, [2020-07-17T02:10:23.831102 #1282] FATAL -- : [2e49c944-a7bd-4a19-9561-278fad57da30]   
+[2e49c944-a7bd-4a19-9561-278fad57da30] NoMethodError (undefined method `include?' for nil:NilClass):
+[2e49c944-a7bd-4a19-9561-278fad57da30]   
+[2e49c944-a7bd-4a19-9561-278fad57da30] app/controllers/application_controller.rb:25:in `block in switch_locale'
+[2e49c944-a7bd-4a19-9561-278fad57da30] app/controllers/application_controller.rb:24:in `each'
+[2e49c944-a7bd-4a19-9561-278fad57da30] app/controllers/application_controller.rb:24:in `switch_locale'
+I, [2020-07-17T04:57:47.663251 #1282]  INFO -- : [622728c7-710f-4e53-a95f-7969378834e3] Started GET "/solr/admin/info/system?wt=json" for 195.54.160.21 at 2020-07-17 04:57:47 +0000
+F, [2020-07-17T04:57:47.663840 #1282] FATAL -- : [622728c7-710f-4e53-a95f-7969378834e3]   
+[622728c7-710f-4e53-a95f-7969378834e3] ActionController::RoutingError (No route matches [GET] "/solr/admin/info/system"):
+[622728c7-710f-4e53-a95f-7969378834e3]   
+[622728c7-710f-4e53-a95f-7969378834e3] actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+[622728c7-710f-4e53-a95f-7969378834e3] actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[622728c7-710f-4e53-a95f-7969378834e3] railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+[622728c7-710f-4e53-a95f-7969378834e3] railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+[622728c7-710f-4e53-a95f-7969378834e3] activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+[622728c7-710f-4e53-a95f-7969378834e3] activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+[622728c7-710f-4e53-a95f-7969378834e3] activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+[622728c7-710f-4e53-a95f-7969378834e3] railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+[622728c7-710f-4e53-a95f-7969378834e3] actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[622728c7-710f-4e53-a95f-7969378834e3] actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[622728c7-710f-4e53-a95f-7969378834e3] rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+[622728c7-710f-4e53-a95f-7969378834e3] rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+[622728c7-710f-4e53-a95f-7969378834e3] activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[622728c7-710f-4e53-a95f-7969378834e3] actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[622728c7-710f-4e53-a95f-7969378834e3] rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+[622728c7-710f-4e53-a95f-7969378834e3] actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:76:in `call'
+[622728c7-710f-4e53-a95f-7969378834e3] railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+[622728c7-710f-4e53-a95f-7969378834e3] /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+[622728c7-710f-4e53-a95f-7969378834e3] /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+[622728c7-710f-4e53-a95f-7969378834e3] /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+[622728c7-710f-4e53-a95f-7969378834e3] /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+[622728c7-710f-4e53-a95f-7969378834e3] /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+I, [2020-07-17T05:07:24.033375 #1282]  INFO -- : [bd0bb5a3-eaa4-4897-97f9-feb2d1428c21] Started GET "/?XDEBUG_SESSION_START=phpstorm" for 195.54.160.21 at 2020-07-17 05:07:24 +0000
+I, [2020-07-17T05:07:24.034026 #1282]  INFO -- : [bd0bb5a3-eaa4-4897-97f9-feb2d1428c21] Processing by SentencesController#welcome as HTML
+I, [2020-07-17T05:07:24.034073 #1282]  INFO -- : [bd0bb5a3-eaa4-4897-97f9-feb2d1428c21]   Parameters: {"XDEBUG_SESSION_START"=>"phpstorm"}
+I, [2020-07-17T05:07:24.035310 #1282]  INFO -- : [bd0bb5a3-eaa4-4897-97f9-feb2d1428c21] Completed 500 Internal Server Error in 1ms (Allocations: 649)
+F, [2020-07-17T05:07:24.035710 #1282] FATAL -- : [bd0bb5a3-eaa4-4897-97f9-feb2d1428c21]   
+[bd0bb5a3-eaa4-4897-97f9-feb2d1428c21] NoMethodError (undefined method `include?' for nil:NilClass):
+[bd0bb5a3-eaa4-4897-97f9-feb2d1428c21]   
+[bd0bb5a3-eaa4-4897-97f9-feb2d1428c21] app/controllers/application_controller.rb:25:in `block in switch_locale'
+[bd0bb5a3-eaa4-4897-97f9-feb2d1428c21] app/controllers/application_controller.rb:24:in `each'
+[bd0bb5a3-eaa4-4897-97f9-feb2d1428c21] app/controllers/application_controller.rb:24:in `switch_locale'
+I, [2020-07-17T05:18:08.068938 #1282]  INFO -- : [a2c6f9eb-c1cc-406a-bfcb-6328e3195923] Started POST "/boaform/admin/formLogin" for 93.174.93.139 at 2020-07-17 05:18:08 +0000
+F, [2020-07-17T05:18:08.069502 #1282] FATAL -- : [a2c6f9eb-c1cc-406a-bfcb-6328e3195923]   
+[a2c6f9eb-c1cc-406a-bfcb-6328e3195923] ActionController::RoutingError (No route matches [POST] "/boaform/admin/formLogin"):
+[a2c6f9eb-c1cc-406a-bfcb-6328e3195923]   
+[a2c6f9eb-c1cc-406a-bfcb-6328e3195923] actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+[a2c6f9eb-c1cc-406a-bfcb-6328e3195923] actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[a2c6f9eb-c1cc-406a-bfcb-6328e3195923] railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+[a2c6f9eb-c1cc-406a-bfcb-6328e3195923] railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+[a2c6f9eb-c1cc-406a-bfcb-6328e3195923] activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+[a2c6f9eb-c1cc-406a-bfcb-6328e3195923] activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+[a2c6f9eb-c1cc-406a-bfcb-6328e3195923] activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+[a2c6f9eb-c1cc-406a-bfcb-6328e3195923] railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+[a2c6f9eb-c1cc-406a-bfcb-6328e3195923] actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[a2c6f9eb-c1cc-406a-bfcb-6328e3195923] actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[a2c6f9eb-c1cc-406a-bfcb-6328e3195923] rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+[a2c6f9eb-c1cc-406a-bfcb-6328e3195923] rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+[a2c6f9eb-c1cc-406a-bfcb-6328e3195923] activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[a2c6f9eb-c1cc-406a-bfcb-6328e3195923] actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[a2c6f9eb-c1cc-406a-bfcb-6328e3195923] rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+[a2c6f9eb-c1cc-406a-bfcb-6328e3195923] actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:76:in `call'
+[a2c6f9eb-c1cc-406a-bfcb-6328e3195923] railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+[a2c6f9eb-c1cc-406a-bfcb-6328e3195923] /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+[a2c6f9eb-c1cc-406a-bfcb-6328e3195923] /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:157:in `accept_and_process_next_request'
+[a2c6f9eb-c1cc-406a-bfcb-6328e3195923] /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+[a2c6f9eb-c1cc-406a-bfcb-6328e3195923] /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+[a2c6f9eb-c1cc-406a-bfcb-6328e3195923] /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+I, [2020-07-17T05:19:33.880649 #1282]  INFO -- : [a87c0f89-2f15-40db-8ad7-685220eb4755] Started GET "/?a=fetch&content=<php>die(@md5(HelloThinkCMF))</php>" for 195.54.160.21 at 2020-07-17 05:19:33 +0000
+I, [2020-07-17T05:19:33.881603 #1282]  INFO -- : [a87c0f89-2f15-40db-8ad7-685220eb4755] Processing by SentencesController#welcome as HTML
+I, [2020-07-17T05:19:33.881658 #1282]  INFO -- : [a87c0f89-2f15-40db-8ad7-685220eb4755]   Parameters: {"a"=>"fetch", "content"=>"<php>die(@md5(HelloThinkCMF))</php>", "sentence"=>{}}
+I, [2020-07-17T05:19:33.882932 #1282]  INFO -- : [a87c0f89-2f15-40db-8ad7-685220eb4755] Completed 500 Internal Server Error in 1ms (Allocations: 649)
+F, [2020-07-17T05:19:33.883358 #1282] FATAL -- : [a87c0f89-2f15-40db-8ad7-685220eb4755]   
+[a87c0f89-2f15-40db-8ad7-685220eb4755] NoMethodError (undefined method `include?' for nil:NilClass):
+[a87c0f89-2f15-40db-8ad7-685220eb4755]   
+[a87c0f89-2f15-40db-8ad7-685220eb4755] app/controllers/application_controller.rb:25:in `block in switch_locale'
+[a87c0f89-2f15-40db-8ad7-685220eb4755] app/controllers/application_controller.rb:24:in `each'
+[a87c0f89-2f15-40db-8ad7-685220eb4755] app/controllers/application_controller.rb:24:in `switch_locale'
+I, [2020-07-17T05:24:05.686726 #1282]  INFO -- : [de84cfcd-0ec0-45b2-8d14-773d61a4e91c] Started GET "/index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=HelloThinkPHP" for 195.54.160.21 at 2020-07-17 05:24:05 +0000
+F, [2020-07-17T05:24:05.688368 #1282] FATAL -- : [de84cfcd-0ec0-45b2-8d14-773d61a4e91c]   
+[de84cfcd-0ec0-45b2-8d14-773d61a4e91c] ActionController::RoutingError (No route matches [GET] "/index.php"):
+[de84cfcd-0ec0-45b2-8d14-773d61a4e91c]   
+[de84cfcd-0ec0-45b2-8d14-773d61a4e91c] actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+[de84cfcd-0ec0-45b2-8d14-773d61a4e91c] actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[de84cfcd-0ec0-45b2-8d14-773d61a4e91c] railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+[de84cfcd-0ec0-45b2-8d14-773d61a4e91c] railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+[de84cfcd-0ec0-45b2-8d14-773d61a4e91c] activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+[de84cfcd-0ec0-45b2-8d14-773d61a4e91c] activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+[de84cfcd-0ec0-45b2-8d14-773d61a4e91c] activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+[de84cfcd-0ec0-45b2-8d14-773d61a4e91c] railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+[de84cfcd-0ec0-45b2-8d14-773d61a4e91c] actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[de84cfcd-0ec0-45b2-8d14-773d61a4e91c] actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[de84cfcd-0ec0-45b2-8d14-773d61a4e91c] rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+[de84cfcd-0ec0-45b2-8d14-773d61a4e91c] rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+[de84cfcd-0ec0-45b2-8d14-773d61a4e91c] activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[de84cfcd-0ec0-45b2-8d14-773d61a4e91c] actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[de84cfcd-0ec0-45b2-8d14-773d61a4e91c] rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+[de84cfcd-0ec0-45b2-8d14-773d61a4e91c] actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:76:in `call'
+[de84cfcd-0ec0-45b2-8d14-773d61a4e91c] railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+[de84cfcd-0ec0-45b2-8d14-773d61a4e91c] /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+[de84cfcd-0ec0-45b2-8d14-773d61a4e91c] /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+[de84cfcd-0ec0-45b2-8d14-773d61a4e91c] /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+[de84cfcd-0ec0-45b2-8d14-773d61a4e91c] /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+[de84cfcd-0ec0-45b2-8d14-773d61a4e91c] /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+I, [2020-07-17T07:57:18.973410 #1282]  INFO -- : [203d06e6-cdeb-46fa-8d4f-9612b8df9f22] Started GET "/" for 194.15.36.37 at 2020-07-17 07:57:18 +0000
+I, [2020-07-17T07:57:18.974955 #1282]  INFO -- : [203d06e6-cdeb-46fa-8d4f-9612b8df9f22] Processing by SentencesController#welcome as HTML
+I, [2020-07-17T07:57:18.977113 #1282]  INFO -- : [203d06e6-cdeb-46fa-8d4f-9612b8df9f22] Redirected to http://3.123.202.97/coming_soon
+I, [2020-07-17T07:57:18.977201 #1282]  INFO -- : [203d06e6-cdeb-46fa-8d4f-9612b8df9f22] Filter chain halted as :use_coming_soon rendered or redirected
+I, [2020-07-17T07:57:18.977414 #1282]  INFO -- : [203d06e6-cdeb-46fa-8d4f-9612b8df9f22] Completed 302 Found in 2ms (Allocations: 228)
+I, [2020-07-17T08:24:45.376727 #1282]  INFO -- : [9d6e34b5-a020-4691-baa8-62860a6f19e4] Started POST "/api/jsonws/invoke" for 195.54.160.21 at 2020-07-17 08:24:45 +0000
+F, [2020-07-17T08:24:45.379438 #1282] FATAL -- : [9d6e34b5-a020-4691-baa8-62860a6f19e4]   
+[9d6e34b5-a020-4691-baa8-62860a6f19e4] ActionController::RoutingError (No route matches [POST] "/api/jsonws/invoke"):
+[9d6e34b5-a020-4691-baa8-62860a6f19e4]   
+[9d6e34b5-a020-4691-baa8-62860a6f19e4] actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+[9d6e34b5-a020-4691-baa8-62860a6f19e4] actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[9d6e34b5-a020-4691-baa8-62860a6f19e4] railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+[9d6e34b5-a020-4691-baa8-62860a6f19e4] railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+[9d6e34b5-a020-4691-baa8-62860a6f19e4] activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+[9d6e34b5-a020-4691-baa8-62860a6f19e4] activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+[9d6e34b5-a020-4691-baa8-62860a6f19e4] activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+[9d6e34b5-a020-4691-baa8-62860a6f19e4] railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+[9d6e34b5-a020-4691-baa8-62860a6f19e4] actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[9d6e34b5-a020-4691-baa8-62860a6f19e4] actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[9d6e34b5-a020-4691-baa8-62860a6f19e4] rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+[9d6e34b5-a020-4691-baa8-62860a6f19e4] rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+[9d6e34b5-a020-4691-baa8-62860a6f19e4] activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[9d6e34b5-a020-4691-baa8-62860a6f19e4] actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[9d6e34b5-a020-4691-baa8-62860a6f19e4] rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+[9d6e34b5-a020-4691-baa8-62860a6f19e4] actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:76:in `call'
+[9d6e34b5-a020-4691-baa8-62860a6f19e4] railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+[9d6e34b5-a020-4691-baa8-62860a6f19e4] /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+[9d6e34b5-a020-4691-baa8-62860a6f19e4] /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:157:in `accept_and_process_next_request'
+[9d6e34b5-a020-4691-baa8-62860a6f19e4] /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+[9d6e34b5-a020-4691-baa8-62860a6f19e4] /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+[9d6e34b5-a020-4691-baa8-62860a6f19e4] /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+I, [2020-07-17T08:39:11.496774 #1282]  INFO -- : [2bf77950-4103-43de-af11-193e1d263b20] Started GET "/" for 83.97.20.31 at 2020-07-17 08:39:11 +0000
+I, [2020-07-17T08:39:11.497376 #1282]  INFO -- : [2bf77950-4103-43de-af11-193e1d263b20] Processing by SentencesController#welcome as HTML
+I, [2020-07-17T08:39:11.498726 #1282]  INFO -- : [2bf77950-4103-43de-af11-193e1d263b20] Completed 500 Internal Server Error in 1ms (Allocations: 649)
+F, [2020-07-17T08:39:11.499148 #1282] FATAL -- : [2bf77950-4103-43de-af11-193e1d263b20]   
+[2bf77950-4103-43de-af11-193e1d263b20] NoMethodError (undefined method `include?' for nil:NilClass):
+[2bf77950-4103-43de-af11-193e1d263b20]   
+[2bf77950-4103-43de-af11-193e1d263b20] app/controllers/application_controller.rb:25:in `block in switch_locale'
+[2bf77950-4103-43de-af11-193e1d263b20] app/controllers/application_controller.rb:24:in `each'
+[2bf77950-4103-43de-af11-193e1d263b20] app/controllers/application_controller.rb:24:in `switch_locale'
+I, [2020-07-17T09:02:24.467850 #1282]  INFO -- : [33d5d170-8dfb-4211-a96c-35825397d7ef] Started GET "/" for 194.15.36.37 at 2020-07-17 09:02:24 +0000
+I, [2020-07-17T09:02:24.468526 #1282]  INFO -- : [33d5d170-8dfb-4211-a96c-35825397d7ef] Processing by SentencesController#welcome as HTML
+I, [2020-07-17T09:02:24.469075 #1282]  INFO -- : [33d5d170-8dfb-4211-a96c-35825397d7ef] Redirected to http://3.123.202.97/coming_soon
+I, [2020-07-17T09:02:24.469156 #1282]  INFO -- : [33d5d170-8dfb-4211-a96c-35825397d7ef] Filter chain halted as :use_coming_soon rendered or redirected
+I, [2020-07-17T09:02:24.469317 #1282]  INFO -- : [33d5d170-8dfb-4211-a96c-35825397d7ef] Completed 302 Found in 1ms (Allocations: 228)
+I, [2020-07-17T10:45:55.446832 #1282]  INFO -- : [75f5aecd-0a90-4a42-aefd-ab24e6c4f8af] Started GET "/" for 35.225.152.97 at 2020-07-17 10:45:55 +0000
+I, [2020-07-17T10:45:55.447470 #1282]  INFO -- : [75f5aecd-0a90-4a42-aefd-ab24e6c4f8af] Processing by SentencesController#welcome as */*
+I, [2020-07-17T10:45:55.448820 #1282]  INFO -- : [75f5aecd-0a90-4a42-aefd-ab24e6c4f8af] Completed 500 Internal Server Error in 1ms (Allocations: 649)
+F, [2020-07-17T10:45:55.449237 #1282] FATAL -- : [75f5aecd-0a90-4a42-aefd-ab24e6c4f8af]   
+[75f5aecd-0a90-4a42-aefd-ab24e6c4f8af] NoMethodError (undefined method `include?' for nil:NilClass):
+[75f5aecd-0a90-4a42-aefd-ab24e6c4f8af]   
+[75f5aecd-0a90-4a42-aefd-ab24e6c4f8af] app/controllers/application_controller.rb:25:in `block in switch_locale'
+[75f5aecd-0a90-4a42-aefd-ab24e6c4f8af] app/controllers/application_controller.rb:24:in `each'
+[75f5aecd-0a90-4a42-aefd-ab24e6c4f8af] app/controllers/application_controller.rb:24:in `switch_locale'
+I, [2020-07-17T11:13:12.520504 #1282]  INFO -- : [40846a68-4a24-41a8-a6c6-207644a1779f] Started GET "/TP/public/index.php" for 120.53.124.104 at 2020-07-17 11:13:12 +0000
+F, [2020-07-17T11:13:12.521154 #1282] FATAL -- : [40846a68-4a24-41a8-a6c6-207644a1779f]   
+[40846a68-4a24-41a8-a6c6-207644a1779f] ActionController::RoutingError (No route matches [GET] "/TP/public/index.php"):
+[40846a68-4a24-41a8-a6c6-207644a1779f]   
+[40846a68-4a24-41a8-a6c6-207644a1779f] actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+[40846a68-4a24-41a8-a6c6-207644a1779f] actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[40846a68-4a24-41a8-a6c6-207644a1779f] railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+[40846a68-4a24-41a8-a6c6-207644a1779f] railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+[40846a68-4a24-41a8-a6c6-207644a1779f] activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+[40846a68-4a24-41a8-a6c6-207644a1779f] activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+[40846a68-4a24-41a8-a6c6-207644a1779f] activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+[40846a68-4a24-41a8-a6c6-207644a1779f] railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+[40846a68-4a24-41a8-a6c6-207644a1779f] actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[40846a68-4a24-41a8-a6c6-207644a1779f] actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[40846a68-4a24-41a8-a6c6-207644a1779f] rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+[40846a68-4a24-41a8-a6c6-207644a1779f] rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+[40846a68-4a24-41a8-a6c6-207644a1779f] activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[40846a68-4a24-41a8-a6c6-207644a1779f] actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[40846a68-4a24-41a8-a6c6-207644a1779f] rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+[40846a68-4a24-41a8-a6c6-207644a1779f] actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:76:in `call'
+[40846a68-4a24-41a8-a6c6-207644a1779f] railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+[40846a68-4a24-41a8-a6c6-207644a1779f] /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+[40846a68-4a24-41a8-a6c6-207644a1779f] /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+[40846a68-4a24-41a8-a6c6-207644a1779f] /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+[40846a68-4a24-41a8-a6c6-207644a1779f] /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+[40846a68-4a24-41a8-a6c6-207644a1779f] /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+I, [2020-07-17T11:13:12.942996 #1282]  INFO -- : [ade33e8f-cd8f-46a2-ae61-4eed38a73e57] Started GET "/TP/index.php" for 120.53.124.104 at 2020-07-17 11:13:12 +0000
+F, [2020-07-17T11:13:12.943602 #1282] FATAL -- : [ade33e8f-cd8f-46a2-ae61-4eed38a73e57]   
+[ade33e8f-cd8f-46a2-ae61-4eed38a73e57] ActionController::RoutingError (No route matches [GET] "/TP/index.php"):
+[ade33e8f-cd8f-46a2-ae61-4eed38a73e57]   
+[ade33e8f-cd8f-46a2-ae61-4eed38a73e57] actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+[ade33e8f-cd8f-46a2-ae61-4eed38a73e57] actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[ade33e8f-cd8f-46a2-ae61-4eed38a73e57] railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+[ade33e8f-cd8f-46a2-ae61-4eed38a73e57] railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+[ade33e8f-cd8f-46a2-ae61-4eed38a73e57] activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+[ade33e8f-cd8f-46a2-ae61-4eed38a73e57] activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+[ade33e8f-cd8f-46a2-ae61-4eed38a73e57] activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+[ade33e8f-cd8f-46a2-ae61-4eed38a73e57] railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+[ade33e8f-cd8f-46a2-ae61-4eed38a73e57] actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[ade33e8f-cd8f-46a2-ae61-4eed38a73e57] actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[ade33e8f-cd8f-46a2-ae61-4eed38a73e57] rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+[ade33e8f-cd8f-46a2-ae61-4eed38a73e57] rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+[ade33e8f-cd8f-46a2-ae61-4eed38a73e57] activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[ade33e8f-cd8f-46a2-ae61-4eed38a73e57] actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[ade33e8f-cd8f-46a2-ae61-4eed38a73e57] rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+[ade33e8f-cd8f-46a2-ae61-4eed38a73e57] actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:76:in `call'
+[ade33e8f-cd8f-46a2-ae61-4eed38a73e57] railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+[ade33e8f-cd8f-46a2-ae61-4eed38a73e57] /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+[ade33e8f-cd8f-46a2-ae61-4eed38a73e57] /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+[ade33e8f-cd8f-46a2-ae61-4eed38a73e57] /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+[ade33e8f-cd8f-46a2-ae61-4eed38a73e57] /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+[ade33e8f-cd8f-46a2-ae61-4eed38a73e57] /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+I, [2020-07-17T11:13:13.334811 #1282]  INFO -- : [c39bbe4d-e2af-4b48-82e4-9d5bb53341f5] Started GET "/thinkphp/html/public/index.php" for 120.53.124.104 at 2020-07-17 11:13:13 +0000
+F, [2020-07-17T11:13:13.335416 #1282] FATAL -- : [c39bbe4d-e2af-4b48-82e4-9d5bb53341f5]   
+[c39bbe4d-e2af-4b48-82e4-9d5bb53341f5] ActionController::RoutingError (No route matches [GET] "/thinkphp/html/public/index.php"):
+[c39bbe4d-e2af-4b48-82e4-9d5bb53341f5]   
+[c39bbe4d-e2af-4b48-82e4-9d5bb53341f5] actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+[c39bbe4d-e2af-4b48-82e4-9d5bb53341f5] actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[c39bbe4d-e2af-4b48-82e4-9d5bb53341f5] railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+[c39bbe4d-e2af-4b48-82e4-9d5bb53341f5] railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+[c39bbe4d-e2af-4b48-82e4-9d5bb53341f5] activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+[c39bbe4d-e2af-4b48-82e4-9d5bb53341f5] activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+[c39bbe4d-e2af-4b48-82e4-9d5bb53341f5] activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+[c39bbe4d-e2af-4b48-82e4-9d5bb53341f5] railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+[c39bbe4d-e2af-4b48-82e4-9d5bb53341f5] actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[c39bbe4d-e2af-4b48-82e4-9d5bb53341f5] actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[c39bbe4d-e2af-4b48-82e4-9d5bb53341f5] rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+[c39bbe4d-e2af-4b48-82e4-9d5bb53341f5] rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+[c39bbe4d-e2af-4b48-82e4-9d5bb53341f5] activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[c39bbe4d-e2af-4b48-82e4-9d5bb53341f5] actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[c39bbe4d-e2af-4b48-82e4-9d5bb53341f5] rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+[c39bbe4d-e2af-4b48-82e4-9d5bb53341f5] actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:76:in `call'
+[c39bbe4d-e2af-4b48-82e4-9d5bb53341f5] railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+[c39bbe4d-e2af-4b48-82e4-9d5bb53341f5] /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+[c39bbe4d-e2af-4b48-82e4-9d5bb53341f5] /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+[c39bbe4d-e2af-4b48-82e4-9d5bb53341f5] /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+[c39bbe4d-e2af-4b48-82e4-9d5bb53341f5] /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+[c39bbe4d-e2af-4b48-82e4-9d5bb53341f5] /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+I, [2020-07-17T11:13:13.930076 #1282]  INFO -- : [ca6c84ed-3476-4457-84d1-6cf9c76a2f2f] Started GET "/html/public/index.php" for 120.53.124.104 at 2020-07-17 11:13:13 +0000
+F, [2020-07-17T11:13:13.930670 #1282] FATAL -- : [ca6c84ed-3476-4457-84d1-6cf9c76a2f2f]   
+[ca6c84ed-3476-4457-84d1-6cf9c76a2f2f] ActionController::RoutingError (No route matches [GET] "/html/public/index.php"):
+[ca6c84ed-3476-4457-84d1-6cf9c76a2f2f]   
+[ca6c84ed-3476-4457-84d1-6cf9c76a2f2f] actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+[ca6c84ed-3476-4457-84d1-6cf9c76a2f2f] actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[ca6c84ed-3476-4457-84d1-6cf9c76a2f2f] railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+[ca6c84ed-3476-4457-84d1-6cf9c76a2f2f] railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+[ca6c84ed-3476-4457-84d1-6cf9c76a2f2f] activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+[ca6c84ed-3476-4457-84d1-6cf9c76a2f2f] activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+[ca6c84ed-3476-4457-84d1-6cf9c76a2f2f] activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+[ca6c84ed-3476-4457-84d1-6cf9c76a2f2f] railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+[ca6c84ed-3476-4457-84d1-6cf9c76a2f2f] actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[ca6c84ed-3476-4457-84d1-6cf9c76a2f2f] actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[ca6c84ed-3476-4457-84d1-6cf9c76a2f2f] rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+[ca6c84ed-3476-4457-84d1-6cf9c76a2f2f] rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+[ca6c84ed-3476-4457-84d1-6cf9c76a2f2f] activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[ca6c84ed-3476-4457-84d1-6cf9c76a2f2f] actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[ca6c84ed-3476-4457-84d1-6cf9c76a2f2f] rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+[ca6c84ed-3476-4457-84d1-6cf9c76a2f2f] actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:76:in `call'
+[ca6c84ed-3476-4457-84d1-6cf9c76a2f2f] railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+[ca6c84ed-3476-4457-84d1-6cf9c76a2f2f] /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+[ca6c84ed-3476-4457-84d1-6cf9c76a2f2f] /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+[ca6c84ed-3476-4457-84d1-6cf9c76a2f2f] /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+[ca6c84ed-3476-4457-84d1-6cf9c76a2f2f] /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+[ca6c84ed-3476-4457-84d1-6cf9c76a2f2f] /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+I, [2020-07-17T11:13:14.320955 #1282]  INFO -- : [e600b1d7-a220-40e3-ab51-b7273d153879] Started GET "/public/index.php" for 120.53.124.104 at 2020-07-17 11:13:14 +0000
+F, [2020-07-17T11:13:14.321540 #1282] FATAL -- : [e600b1d7-a220-40e3-ab51-b7273d153879]   
+[e600b1d7-a220-40e3-ab51-b7273d153879] ActionController::RoutingError (No route matches [GET] "/public/index.php"):
+[e600b1d7-a220-40e3-ab51-b7273d153879]   
+[e600b1d7-a220-40e3-ab51-b7273d153879] actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+[e600b1d7-a220-40e3-ab51-b7273d153879] actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[e600b1d7-a220-40e3-ab51-b7273d153879] railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+[e600b1d7-a220-40e3-ab51-b7273d153879] railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+[e600b1d7-a220-40e3-ab51-b7273d153879] activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+[e600b1d7-a220-40e3-ab51-b7273d153879] activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+[e600b1d7-a220-40e3-ab51-b7273d153879] activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+[e600b1d7-a220-40e3-ab51-b7273d153879] railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+[e600b1d7-a220-40e3-ab51-b7273d153879] actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[e600b1d7-a220-40e3-ab51-b7273d153879] actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[e600b1d7-a220-40e3-ab51-b7273d153879] rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+[e600b1d7-a220-40e3-ab51-b7273d153879] rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+[e600b1d7-a220-40e3-ab51-b7273d153879] activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[e600b1d7-a220-40e3-ab51-b7273d153879] actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[e600b1d7-a220-40e3-ab51-b7273d153879] rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+[e600b1d7-a220-40e3-ab51-b7273d153879] actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:76:in `call'
+[e600b1d7-a220-40e3-ab51-b7273d153879] railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+[e600b1d7-a220-40e3-ab51-b7273d153879] /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+[e600b1d7-a220-40e3-ab51-b7273d153879] /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+[e600b1d7-a220-40e3-ab51-b7273d153879] /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+[e600b1d7-a220-40e3-ab51-b7273d153879] /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+[e600b1d7-a220-40e3-ab51-b7273d153879] /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+I, [2020-07-17T11:13:14.744975 #1282]  INFO -- : [8126b7e7-cc81-438b-b0a8-10be976f568f] Started GET "/TP/html/public/index.php" for 120.53.124.104 at 2020-07-17 11:13:14 +0000
+F, [2020-07-17T11:13:14.745549 #1282] FATAL -- : [8126b7e7-cc81-438b-b0a8-10be976f568f]   
+[8126b7e7-cc81-438b-b0a8-10be976f568f] ActionController::RoutingError (No route matches [GET] "/TP/html/public/index.php"):
+[8126b7e7-cc81-438b-b0a8-10be976f568f]   
+[8126b7e7-cc81-438b-b0a8-10be976f568f] actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+[8126b7e7-cc81-438b-b0a8-10be976f568f] actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[8126b7e7-cc81-438b-b0a8-10be976f568f] railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+[8126b7e7-cc81-438b-b0a8-10be976f568f] railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+[8126b7e7-cc81-438b-b0a8-10be976f568f] activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+[8126b7e7-cc81-438b-b0a8-10be976f568f] activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+[8126b7e7-cc81-438b-b0a8-10be976f568f] activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+[8126b7e7-cc81-438b-b0a8-10be976f568f] railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+[8126b7e7-cc81-438b-b0a8-10be976f568f] actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[8126b7e7-cc81-438b-b0a8-10be976f568f] actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[8126b7e7-cc81-438b-b0a8-10be976f568f] rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+[8126b7e7-cc81-438b-b0a8-10be976f568f] rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+[8126b7e7-cc81-438b-b0a8-10be976f568f] activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[8126b7e7-cc81-438b-b0a8-10be976f568f] actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[8126b7e7-cc81-438b-b0a8-10be976f568f] rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+[8126b7e7-cc81-438b-b0a8-10be976f568f] actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:76:in `call'
+[8126b7e7-cc81-438b-b0a8-10be976f568f] railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+[8126b7e7-cc81-438b-b0a8-10be976f568f] /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+[8126b7e7-cc81-438b-b0a8-10be976f568f] /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+[8126b7e7-cc81-438b-b0a8-10be976f568f] /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+[8126b7e7-cc81-438b-b0a8-10be976f568f] /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+[8126b7e7-cc81-438b-b0a8-10be976f568f] /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+I, [2020-07-17T11:13:16.136572 #1282]  INFO -- : [a81c6efd-5515-4e69-8bf6-bc0dd5c02abe] Started GET "/elrekt.php" for 120.53.124.104 at 2020-07-17 11:13:16 +0000
+F, [2020-07-17T11:13:16.137173 #1282] FATAL -- : [a81c6efd-5515-4e69-8bf6-bc0dd5c02abe]   
+[a81c6efd-5515-4e69-8bf6-bc0dd5c02abe] ActionController::RoutingError (No route matches [GET] "/elrekt.php"):
+[a81c6efd-5515-4e69-8bf6-bc0dd5c02abe]   
+[a81c6efd-5515-4e69-8bf6-bc0dd5c02abe] actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+[a81c6efd-5515-4e69-8bf6-bc0dd5c02abe] actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[a81c6efd-5515-4e69-8bf6-bc0dd5c02abe] railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+[a81c6efd-5515-4e69-8bf6-bc0dd5c02abe] railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+[a81c6efd-5515-4e69-8bf6-bc0dd5c02abe] activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+[a81c6efd-5515-4e69-8bf6-bc0dd5c02abe] activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+[a81c6efd-5515-4e69-8bf6-bc0dd5c02abe] activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+[a81c6efd-5515-4e69-8bf6-bc0dd5c02abe] railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+[a81c6efd-5515-4e69-8bf6-bc0dd5c02abe] actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[a81c6efd-5515-4e69-8bf6-bc0dd5c02abe] actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[a81c6efd-5515-4e69-8bf6-bc0dd5c02abe] rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+[a81c6efd-5515-4e69-8bf6-bc0dd5c02abe] rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+[a81c6efd-5515-4e69-8bf6-bc0dd5c02abe] activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[a81c6efd-5515-4e69-8bf6-bc0dd5c02abe] actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[a81c6efd-5515-4e69-8bf6-bc0dd5c02abe] rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+[a81c6efd-5515-4e69-8bf6-bc0dd5c02abe] actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:76:in `call'
+[a81c6efd-5515-4e69-8bf6-bc0dd5c02abe] railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+[a81c6efd-5515-4e69-8bf6-bc0dd5c02abe] /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+[a81c6efd-5515-4e69-8bf6-bc0dd5c02abe] /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+[a81c6efd-5515-4e69-8bf6-bc0dd5c02abe] /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+[a81c6efd-5515-4e69-8bf6-bc0dd5c02abe] /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+[a81c6efd-5515-4e69-8bf6-bc0dd5c02abe] /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+I, [2020-07-17T11:13:16.495231 #1282]  INFO -- : [50fc4253-aa32-4210-8b5a-d94c44400b9a] Started GET "/index.php" for 120.53.124.104 at 2020-07-17 11:13:16 +0000
+F, [2020-07-17T11:13:16.495814 #1282] FATAL -- : [50fc4253-aa32-4210-8b5a-d94c44400b9a]   
+[50fc4253-aa32-4210-8b5a-d94c44400b9a] ActionController::RoutingError (No route matches [GET] "/index.php"):
+[50fc4253-aa32-4210-8b5a-d94c44400b9a]   
+[50fc4253-aa32-4210-8b5a-d94c44400b9a] actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+[50fc4253-aa32-4210-8b5a-d94c44400b9a] actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+[50fc4253-aa32-4210-8b5a-d94c44400b9a] railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+[50fc4253-aa32-4210-8b5a-d94c44400b9a] railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+[50fc4253-aa32-4210-8b5a-d94c44400b9a] activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+[50fc4253-aa32-4210-8b5a-d94c44400b9a] activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+[50fc4253-aa32-4210-8b5a-d94c44400b9a] activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+[50fc4253-aa32-4210-8b5a-d94c44400b9a] railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+[50fc4253-aa32-4210-8b5a-d94c44400b9a] actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+[50fc4253-aa32-4210-8b5a-d94c44400b9a] actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+[50fc4253-aa32-4210-8b5a-d94c44400b9a] rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+[50fc4253-aa32-4210-8b5a-d94c44400b9a] rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+[50fc4253-aa32-4210-8b5a-d94c44400b9a] activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+[50fc4253-aa32-4210-8b5a-d94c44400b9a] actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+[50fc4253-aa32-4210-8b5a-d94c44400b9a] rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+[50fc4253-aa32-4210-8b5a-d94c44400b9a] actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:76:in `call'
+[50fc4253-aa32-4210-8b5a-d94c44400b9a] railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+[50fc4253-aa32-4210-8b5a-d94c44400b9a] /usr/lib/ruby/vendor_ruby/phusion_passenger/rack/thread_handler_extension.rb:107:in `process_request'
+[50fc4253-aa32-4210-8b5a-d94c44400b9a] /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:149:in `accept_and_process_next_request'
+[50fc4253-aa32-4210-8b5a-d94c44400b9a] /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler/thread_handler.rb:110:in `main_loop'
+[50fc4253-aa32-4210-8b5a-d94c44400b9a] /usr/lib/ruby/vendor_ruby/phusion_passenger/request_handler.rb:415:in `block (3 levels) in start_threads'
+[50fc4253-aa32-4210-8b5a-d94c44400b9a] /usr/lib/ruby/vendor_ruby/phusion_passenger/utils.rb:113:in `block in create_thread_and_abort_on_exception'
+I, [2020-07-17T11:13:16.886957 #1282]  INFO -- : [e22858ee-72f9-469b-a4f9-f4fbb97d8ce5] Started GET "/" for 120.53.124.104 at 2020-07-17 11:13:16 +0000
+I, [2020-07-17T11:13:16.887603 #1282]  INFO -- : [e22858ee-72f9-469b-a4f9-f4fbb97d8ce5] Processing by SentencesController#welcome as HTML
+I, [2020-07-17T11:13:16.888901 #1282]  INFO -- : [e22858ee-72f9-469b-a4f9-f4fbb97d8ce5] Completed 500 Internal Server Error in 1ms (Allocations: 649)
+F, [2020-07-17T11:13:16.889314 #1282] FATAL -- : [e22858ee-72f9-469b-a4f9-f4fbb97d8ce5]   
+[e22858ee-72f9-469b-a4f9-f4fbb97d8ce5] NoMethodError (undefined method `include?' for nil:NilClass):
+[e22858ee-72f9-469b-a4f9-f4fbb97d8ce5]   
+[e22858ee-72f9-469b-a4f9-f4fbb97d8ce5] app/controllers/application_controller.rb:25:in `block in switch_locale'
+[e22858ee-72f9-469b-a4f9-f4fbb97d8ce5] app/controllers/application_controller.rb:24:in `each'
+[e22858ee-72f9-469b-a4f9-f4fbb97d8ce5] app/controllers/application_controller.rb:24:in `switch_locale'
+I, [2020-07-17T11:48:03.508129 #1282]  INFO -- : [e2598eb6-691e-42a7-b40e-6be435165285] Started GET "/" for 80.82.70.140 at 2020-07-17 11:48:03 +0000
+I, [2020-07-17T11:48:03.508821 #1282]  INFO -- : [e2598eb6-691e-42a7-b40e-6be435165285] Processing by SentencesController#welcome as HTML
+I, [2020-07-17T11:48:03.509350 #1282]  INFO -- : [e2598eb6-691e-42a7-b40e-6be435165285] Redirected to http://3.123.202.97/coming_soon
+I, [2020-07-17T11:48:03.509443 #1282]  INFO -- : [e2598eb6-691e-42a7-b40e-6be435165285] Filter chain halted as :use_coming_soon rendered or redirected
+I, [2020-07-17T11:48:03.509640 #1282]  INFO -- : [e2598eb6-691e-42a7-b40e-6be435165285] Completed 302 Found in 1ms (Allocations: 228)
+I, [2020-07-17T11:50:18.621545 #1282]  INFO -- : [fbd651c4-95c7-4975-b181-f3287ecbec50] Started GET "/" for 156.96.156.142 at 2020-07-17 11:50:18 +0000
+I, [2020-07-17T11:50:18.622169 #1282]  INFO -- : [fbd651c4-95c7-4975-b181-f3287ecbec50] Processing by SentencesController#welcome as */*
+I, [2020-07-17T11:50:18.623426 #1282]  INFO -- : [fbd651c4-95c7-4975-b181-f3287ecbec50] Completed 500 Internal Server Error in 1ms (Allocations: 649)
+F, [2020-07-17T11:50:18.623860 #1282] FATAL -- : [fbd651c4-95c7-4975-b181-f3287ecbec50]   
+[fbd651c4-95c7-4975-b181-f3287ecbec50] NoMethodError (undefined method `include?' for nil:NilClass):
+[fbd651c4-95c7-4975-b181-f3287ecbec50]   
+[fbd651c4-95c7-4975-b181-f3287ecbec50] app/controllers/application_controller.rb:25:in `block in switch_locale'
+[fbd651c4-95c7-4975-b181-f3287ecbec50] app/controllers/application_controller.rb:24:in `each'
+[fbd651c4-95c7-4975-b181-f3287ecbec50] app/controllers/application_controller.rb:24:in `switch_locale'
+I, [2020-07-17T12:29:03.112732 #1282]  INFO -- : [1a669288-6f71-44df-b38f-00977a6e5e8f] Started GET "/" for 92.118.161.5 at 2020-07-17 12:29:03 +0000
+I, [2020-07-17T12:29:03.113409 #1282]  INFO -- : [1a669288-6f71-44df-b38f-00977a6e5e8f] Processing by SentencesController#welcome as HTML
+I, [2020-07-17T12:29:03.114704 #1282]  INFO -- : [1a669288-6f71-44df-b38f-00977a6e5e8f] Completed 500 Internal Server Error in 1ms (Allocations: 649)
+F, [2020-07-17T12:29:03.115174 #1282] FATAL -- : [1a669288-6f71-44df-b38f-00977a6e5e8f]   
+[1a669288-6f71-44df-b38f-00977a6e5e8f] NoMethodError (undefined method `include?' for nil:NilClass):
+[1a669288-6f71-44df-b38f-00977a6e5e8f]   
+[1a669288-6f71-44df-b38f-00977a6e5e8f] app/controllers/application_controller.rb:25:in `block in switch_locale'
+[1a669288-6f71-44df-b38f-00977a6e5e8f] app/controllers/application_controller.rb:24:in `each'
+[1a669288-6f71-44df-b38f-00977a6e5e8f] app/controllers/application_controller.rb:24:in `switch_locale'
