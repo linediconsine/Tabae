@@ -85,6 +85,6 @@ test:
 #
 production:
   <<: *default
-  database: tabae_production
+  database: tabae
   username: tabae
-  password: cavallo
+  password: tabae_cavallo
