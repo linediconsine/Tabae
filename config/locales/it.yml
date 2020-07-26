@@ -1,5 +1,6 @@
 it:
   sentences: "Frasi"
+  logout: "Esci"
   new_sentence: "Nuova Frase"
   delete: "Cancella"
   talk: "Parla"

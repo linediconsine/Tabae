@@ -70,3 +70,6 @@ config/settings/*.local.yml
 config/environments/*.local.yml
 
 /config/master.key
+/node_modules/
+/log/
+/public/assets/
