@@ -9,6 +9,9 @@ def use_coming_soon()
 
   if params[:pass] == 'testing' || session[:pass] =='testing'
     session[:pass] = 'testing'
+    if action_name == 'coming_soon'
+      redirect_to sentences_path
+    end
   end
 
   if Settings.comingsoon == true and action_name != 'coming_soon' and session[:pass] != 'testing'

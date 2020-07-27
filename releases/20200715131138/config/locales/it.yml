@@ -3,7 +3,7 @@ it:
   new_sentence: "Nuova Frase"
   delete: "Cancella"
   talk: "Parla"
-  save: "salve"
+  save: "salva"
   edit: "Edita"
 
   title:

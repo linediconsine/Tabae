@@ -3,9 +3,9 @@ it:
   logout: "Esci"
   new_sentence: "Nuova Frase"
   delete: "Cancella"
-  talk: "Parla"
+  talk: "parla"
   save: "salve"
-  edit: "Edita"
+  edit: "edita"
 
   title:
     edit_sentence: "Edita Frase"

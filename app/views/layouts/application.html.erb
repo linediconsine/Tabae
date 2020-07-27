@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Tabae</title>
@@ -83,11 +83,11 @@ initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
               <% if action_name != 'coming_soon' %>
                   <% if user_signed_in?  %>
                   <li class="pl-4 nav-item">
-                      <%= link_to  t("logout"), destroy_user_session_path, method: :delete , class: "nav-link" %>
+                      <%= link_to  t("logout"), destroy_user_session_path, method: :delete , class: "nav-link text-white" %>
                   </li>
                   <% else %>
-                  <%= link_to "Sign up", new_user_registration_path, :class => 'nav-link mx-2'  %>
-                  <%= link_to "Login", new_user_session_path, :class => 'nav-link mx-2'  %>
+                  <%= link_to "Sign up", new_user_registration_path, :class => 'nav-link mx-2 text-white'  %>
+                  <%= link_to "Login", new_user_session_path, :class => 'nav-link mx-2 text-white'  %>
                   <% end %>
               <% end %>
             </ul>
