@@ -39,6 +39,8 @@ en:
   talk: "Talk"
   save: "Save"
   edit: "Edit"
+  back_to_home: "Back to Sentences"
+  no_sentences: "Hi there!<br>You don't have any sentence."
   title:
     edit_sentence: "Edita Frase"
   devise:

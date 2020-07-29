@@ -6,6 +6,8 @@ it:
   talk: "parla"
   save: "salve"
   edit: "edita"
+  back_to_home: "Torna alla pagina principale"
+  no_sentences: "Hi there!<br>You don't have any sentence."
 
   title:
     edit_sentence: "Edita Frase"
