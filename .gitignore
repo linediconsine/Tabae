@@ -12,6 +12,9 @@
 node_modules/
 /public/packs/js/
 production.log
+Gemfile.lock
+yarn.lock
+public/packs/
 # Used by dotenv library to load environment variables.
 # .env
 
