@@ -8,7 +8,7 @@ it:
   edit: "edita"
   back_to_home: "Torna alla pagina principale"
   no_sentences: "Hi there!<br>You don't have any sentence."
-
+  sentence_deleted: "Frase cancellata"
   title:
     edit_sentence: "Edita Frase"
 

@@ -14,7 +14,7 @@ class SentencesController < ApplicationController
   def destroy
     @sentence.destroy
     respond_to do |format|
-      format.html { redirect_to sentences_url, notice: 'Ho cancellato la frase.' }
+      format.html { redirect_to sentences_url, notice: t('sentence_deleted') }
       format.json { head :no_content }
     end
   end

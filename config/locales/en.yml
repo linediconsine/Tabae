@@ -41,6 +41,7 @@ en:
   edit: "Edit"
   back_to_home: "Back to Sentences"
   no_sentences: "Hi there!<br>You don't have any sentence."
+  sentence_deleted: "Sentence deleted"
   title:
     edit_sentence: "Edita Frase"
   devise:
