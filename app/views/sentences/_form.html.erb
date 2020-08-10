@@ -1,4 +1,5 @@
 <%= javascript_pack_tag 'voice' %>
+<div class="p1">
 <%= form_with(model: sentence, local: true) do |form| %>
   <% if sentence.errors.any? %>
     <div id="error_explanation">
@@ -15,11 +16,16 @@
   <div class="field">
     <%= form.hidden_field :name %>
     <%= form.hidden_field :color %>
-    <%= form.hidden_field :group %>
   </div>
 
   <div class="field">
+     <%= label_tag(:sentence, "frase") %>
     <%= form.text_area :sentence, :required => true,:class => 'w-100 bg-light', style: 'min-height:14em' %>
+  </div>
+
+  <div class="field">
+     <%= label_tag(:group, "cartella") %>
+    <%= form.text_field :group, :required => false,:class => 'w-100 bg-light'%>
   </div>
 
 
@@ -36,3 +42,4 @@
     <% end %>
   </div>
 <% end %>
+</div>
