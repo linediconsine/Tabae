@@ -19,12 +19,12 @@
   </div>
 
   <div class="field">
-     <%= label_tag(:sentence, "frase") %>
+     <%= label_tag(:sentence, t('sentence')) %>
     <%= form.text_area :sentence, :required => true,:class => 'w-100 bg-light', style: 'min-height:14em' %>
   </div>
 
   <div class="field">
-     <%= label_tag(:group, "cartella") %>
+     <%= label_tag(:group, t('folder')) %>
      
     <%= form.text_field :group, :required => false,:class => 'w-100 bg-light'%>
   </div>
