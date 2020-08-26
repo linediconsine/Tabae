@@ -1,4 +1,5 @@
 <%= javascript_pack_tag 'voice' %>
+<div class="p1">
 <%= form_with(model: sentence, local: true) do |form| %>
   <% if sentence.errors.any? %>
     <div id="error_explanation">
@@ -15,24 +16,29 @@
   <div class="field">
     <%= form.hidden_field :name %>
     <%= form.hidden_field :color %>
-    <%= form.hidden_field :group %>
   </div>
 
   <div class="field">
+     <%= label_tag(:sentence, t('new sentence')) %>
     <%= form.text_area :sentence, :required => true,:class => 'w-100 bg-light', style: 'min-height:14em' %>
   </div>
 
+  <div class="field">
+     <%= label_tag(:group, t('folder')) %>
+     
+    <%= form.text_field :group, :required => false,:class => 'w-100 bg-light'%>
+  </div>
 
+  <div class="actions py-4">
 
-  <div class="actions">
-
-
-    <%= form.submit t('save') , :class => 'only_online btn btn-space btn-secondary'%>
+    <%= form.submit t('save') , :class => 'only_online btn btn-space btn-secondary w-25'%>
     <!-- <a class='only_offline btn btn-space btn-secondary'> Salva offline </a> -->
 
-    <a onclick="voice(document.getElementById('sentence_sentence').value)" class="btn btn-space btn-primary"><%= t "talk"%></a>
+    <a onclick="voice(document.getElementById('sentence_sentence').value)" class="btn btn-space btn-primary w-25"><%= t "talk"%></a>
     <% if action_name == 'edit' %>
-      <%= link_to t("delete"), sentence, method: :delete, data: { confirm: 'Conferma per cencellare' } , class: "btn btn-space btn-secondary" %>
+      <%= link_to t("delete"), sentence, method: :delete, data: { confirm: 'Conferma per cencellare' } , class: "btn btn-space btn-secondary w-25" %>
     <% end %>
+
   </div>
 <% end %>
+</div>

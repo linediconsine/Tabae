@@ -23,7 +23,17 @@ class SentencesController < ApplicationController
   # GET /sentences.json
   def index
     @sentences = current_user.sentences.all.reverse
+
+    @root_sentences = current_user.sentences.all.where(group: "").reverse
+
+    if params['group']
+      @body_class='group_selected' 
+      @folder = params['group']
+      @sentences = current_user.sentences.all.where(group: @folder).reverse
+    end
+
     @sentence = current_user.sentences.build
+    @groups = current_user.sentences.all.distinct.pluck(:group) 
   end
 
   # post /api/new (JSON)

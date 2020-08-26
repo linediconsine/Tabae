@@ -72,9 +72,22 @@ initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
         <%= link_to "TaBaE", root_path , class: "navbar-brand"%>
         <span class="offline_message text-light">Offline</span>
+
+     
+
         <button class="navbar-toggler only_online" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
+        <div class="text-center">
+            <% unless notice.nil? %>
+            <p id="notice" class="notice"><%= notice %></p>
+            <% end %>
+            <% unless alert.nil? %>
+            <p id="alert" class="alert"><%= alert %></p>
+            <% end %>
+        </div>
+
 
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
@@ -91,19 +104,13 @@ initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
                   <% end %>
               <% end %>
             </ul>
+
+
         </div>
     </nav>
 
-    <section role="main" class="container-fluid w">
-        <div class="text-center">
-            <% unless notice.nil? %>
-            <p id="notice" class="notice"><%= notice %></p>
-            <% end %>
-            <% unless alert.nil? %>
-            <p id="alert" class="alert"><%= alert %></p>
-            <% end %>
-        </div>
-
+    <section role="main" class="container-fluid <%=@body_class%>">
+        
         <%= yield %>
     </section>
 
