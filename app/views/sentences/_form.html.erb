@@ -20,13 +20,42 @@
 
   <div class="field">
      <%= label_tag(:sentence, t('new sentence')) %>
-    <%= form.text_area :sentence, :required => true,:class => 'w-100 bg-light', style: 'min-height:14em' %>
+     <%= form.text_area :sentence, :required => true,:class => 'w-100 bg-light', style: 'min-height:14em' %>
   </div>
 
-  <div class="field">
-     <%= label_tag(:group, t('folder')) %>
-     
-    <%= form.text_field :group, :required => false,:class => 'w-100 bg-light'%>
+  <div class="field" id="folder_comp">
+    <%= label_tag(:group, t('folder')) %>
+    <div>
+      <%= select_tag "folders", options_for_select(@groups,@groups.to_s),:class => ' w-100 bg-light', :onchange => 'thisOrNew("folders","sentence_group")'  %>
+    </div>
+    <div class="hiddenIf py-2">
+      <%= form.text_field :group, :required => false, :placeholder => "New folder name",:class => ' w-100 bg-light'%>
+    </div>
+    <script>
+      function thisOrNew(_source_id,_target_id){
+        const sourceElm = document.getElementById(_source_id);
+        const targetElm = document.getElementById(_target_id);
+
+        const sourceElvalue = sourceElm.options[sourceElm.options.length - 1].value;
+
+        if(sourceElm.value != sourceElvalue){
+           document.getElementById('folder_comp').classList.remove('showNew');
+          document.getElementById(_target_id).value = document.getElementById(_source_id).value;
+        }else{
+          document.getElementById('folder_comp').classList.add('showNew');
+          document.getElementById(_target_id).value = ""
+          document.getElementById(_target_id).focus()
+        }
+      }
+    </script>
+    <style>
+      .hiddenIf{
+        display:none
+      }
+      .showNew .hiddenIf{
+        display:block;
+      }
+    </style>
   </div>
 
   <div class="actions py-4">

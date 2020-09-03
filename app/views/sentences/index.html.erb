@@ -71,11 +71,11 @@
 
 
                     <% @sentences.each_with_index do |sentence,index| %>
-                    <div class="col-lg-4 my-1">
+                    <div class="col-lg-2 mr-2 mb-2">
                         <div class="card bg-dark a-white">
                             <a class="d-block p-1 view overlay zoom" id="sentence_<%= index %>" href="" onClick="voice('<%= escape_javascript sentence.sentence %>')">
                                 <div class="card-body">
-                                    <p class="card-text"><%= truncate(sentence.sentence, :length => 30) %> </p>
+                                    <p class="card-text" style="height: 5em"><%= truncate(sentence.sentence, :length => 30) %> </p>
                                 </div>
                             </a>
 
@@ -101,10 +101,10 @@
     
     <section class="tab-pane fade" id="nav-group" role="tabpanel" aria-labelledby="nav-group-tab">
 
-           <div class="row" id="group">
+           <div class="row pt-2" id="group">
                 <% @groups.each_with_index do |group,index| %>
                     <% if group != "" %>
-                    <div class="col-lg-4 my-1">
+                    <div class="col-lg-2  mr-2 mb-2">
                             <div class="card bg-dark a-white">
                                 <a class="d-block p-1 view overlay zoom">
                                     <div class="card-body">

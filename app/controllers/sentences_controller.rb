@@ -33,7 +33,7 @@ class SentencesController < ApplicationController
     end
 
     @sentence = current_user.sentences.build
-    @groups = current_user.sentences.all.distinct.pluck(:group) 
+    @groups = current_user.sentences.all.distinct.pluck(:group).push('New folder') 
   end
 
   # post /api/new (JSON)
@@ -71,6 +71,7 @@ class SentencesController < ApplicationController
 
   # GET /sentences/1/edit
   def edit
+    @groups = current_user.sentences.all.distinct.pluck(:group).push('New folder') 
   end
 
   # POST /sentences
