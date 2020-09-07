@@ -6,6 +6,10 @@ class SentencesController < ApplicationController
     redirect_to sentences_path if signed_in?
   end
 
+  def terms_and_condtions
+    redirect_to 'https://www.termsfeed.com/live/63999ede-eb51-48e9-971d-e421680a87e6'
+  end
+
   def coming_soon
   end
 

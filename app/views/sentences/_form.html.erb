@@ -35,7 +35,6 @@
       function thisOrNew(_source_id,_target_id){
         const sourceElm = document.getElementById(_source_id);
         const targetElm = document.getElementById(_target_id);
-
         const sourceElvalue = sourceElm.options[sourceElm.options.length - 1].value;
 
         if(sourceElm.value != sourceElvalue){
@@ -47,6 +46,7 @@
           document.getElementById(_target_id).focus()
         }
       }
+      thisOrNew("folders","sentence_group")
     </script>
     <style>
       .hiddenIf{
