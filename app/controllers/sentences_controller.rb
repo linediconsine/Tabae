@@ -7,6 +7,7 @@ class SentencesController < ApplicationController
   end
 
   def terms_and_condtions
+    # page is created by for now let use the free services from termsfeed they hosted the terms
     redirect_to 'https://www.termsfeed.com/live/63999ede-eb51-48e9-971d-e421680a87e6'
   end
 
