@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   resources :sentences
 
   root 'sentences#welcome'
-
+  
+  # secondary routing 
   get '/terms_and_condtions', to: "sentences#terms_and_condtions"
 
   get '/coming_soon', to: 'sentences#coming_soon'
