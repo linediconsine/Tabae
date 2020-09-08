@@ -9,6 +9,7 @@
 /test/tmp/
 /test/version_tmp/
 /tmp/
+/log/
 node_modules/
 /public/packs/js/
 production.log
