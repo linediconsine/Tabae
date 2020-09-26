@@ -94,10 +94,37 @@ initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
             </ul>
             <ul class="navbar-nav">
               <% if action_name != 'coming_soon' %>
+
+
+
+
+
                   <% if user_signed_in?  %>
-                  <li class="pl-4 nav-item">
-                      <%= link_to  t("logout"), destroy_user_session_path, method: :delete , class: "nav-link text-white" %>
-                  </li>
+
+                  <div class="dropdown pl-4 nav-item">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Hi, <%= current_user.email %>
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    
+
+    <%= link_to  t("profile"), edit_user_registration_path , class: "dropdown-item" %>
+
+    <%= link_to  t("logout"), destroy_user_session_path, method: :delete , class: "dropdown-item" %>
+         
+    <div class="dropdown-divider"></div>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="#">
+
+      <div>Fast login (QR code)</div>
+      <%= image_tag("coming_soon.png", :alt => "Coming soon", :style => "width:300px;padding:2em 0px ;border 1px solid ") %>
+   
+    </a>
+    
+           
+  </div>
+</div>
+
                   <% else %>
                     <%= link_to "Sign up", new_user_registration_path, :class => 'nav-link mx-2 text-white'  %>
                     <%= link_to "Login", new_user_session_path, :class => 'nav-link mx-2 text-white'  %>
@@ -135,7 +162,7 @@ initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <!-- End Google Tag Manager (noscSript) -->
 
     <!-- Footer -->
-<footer class="page-footer font-small blue pt-4">
+<footer class="page-footer font-small blue pt-4 bg-dark">
 
   <!-- Footer Links -->
   <div class="container-fluid text-center text-md-left">
@@ -151,11 +178,11 @@ initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
       <div class="col-md-3 mb-md-0 mb-3 small">
 
         <!-- Links -->
-        <h5 class="text-uppercase small">Links</h5>
+        <h5 class="small">LINKS :</h5>
 
         <ul class="list-unstyled">
           <li>
-            <a href="/terms_and_condtions">Terms and conditions</a>
+            <a class="text-light" href="/terms_and_condtions">Terms and conditions</a>
           </li>
            <!-- 
            <li>

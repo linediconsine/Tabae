@@ -60,4 +60,28 @@ Rails.application.configure do
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
+
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    from: 'support@tabae.cloud',
+    user_name: 'support@tabae.cloud',
+    password: 'support2020@',
+    address: 'smtps.aruba.it',
+    domain: 'tabae.cloud',
+    port: '465',
+    ssl: true,
+    authentication: :login,
+
+  }
+
+#   gitlab_rails['smtp_enable'] = true
+# gitlab_rails['smtp_address'] = "smtps.aruba.it"
+# gitlab_rails['smtp_port'] = 465
+# gitlab_rails['smtp_user_name'] = "user@yourdomain.com"
+# gitlab_rails['smtp_password'] = "password"
+# gitlab_rails['smtp_domain'] = "yourdomain.com"
+# gitlab_rails['smtp_authentication'] = "login"
+# gitlab_rails['smtp_ssl'] = true
+
 end
