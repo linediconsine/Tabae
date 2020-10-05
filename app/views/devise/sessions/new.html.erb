@@ -1,17 +1,17 @@
-<div class="text-center card login-form pb-3">
+<div class="text-center card login-form w-75 pb-3">
     <h2 class="pb-3">LOG IN</h2>
 
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-    <div class="field">
+    <div class="form-group">
         <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email", 'aria-label':"e-mail", class:"form-control" %>
     </div>
 
-    <div class="field pt-2">
+    <div class="form-group pt-2">
         <%= f.password_field :password, autocomplete: "current-password", placeholder: "Password", 'aria-label':"password", class:"form-control w-100" %>
     </div>
 
     <% if devise_mapping.rememberable? %>
-    <div class="field">
+    <div class="form-group">
         <%= f.check_box :remember_me %>
         <%= f.label :remember_me %>
     </div>

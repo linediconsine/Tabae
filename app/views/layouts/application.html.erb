@@ -78,52 +78,45 @@ initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
         <button class="navbar-toggler only_online" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
-        <div class="text-center">
-            <% unless notice.nil? %>
-            <p id="notice" class="notice"><%= notice %></p>
-            <% end %>
-            <% unless alert.nil? %>
-            <p id="alert" class="alert"><%= alert %></p>
-            <% end %>
-        </div>
-
+        <% unless ( notice.nil? &&  alert.nil?) %>
+          <div class="text-center">
+              <% unless notice.nil? %>
+              <div id="notice" class="notice"><%= notice %></div>
+              <% end %>
+              <% unless alert.nil? %>
+              <div id="alert" class="alert"><%= alert %></div>
+              <% end %>
+          </div>
+        <% end %>
 
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto">
-            </ul>
+           
             <ul class="navbar-nav">
               <% if action_name != 'coming_soon' %>
-
-
-
-
 
                   <% if user_signed_in?  %>
 
                   <div class="dropdown pl-4 nav-item">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Hi, <%= current_user.email %>
-  </button>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Hi, <%= current_user.email %>
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
     
 
-    <%= link_to  t("profile"), edit_user_registration_path , class: "dropdown-item" %>
+                      <%= link_to  t("profile"), edit_user_registration_path , class: "dropdown-item" %>
 
-    <%= link_to  t("logout"), destroy_user_session_path, method: :delete , class: "dropdown-item" %>
-         
-    <div class="dropdown-divider"></div>
-    <div class="dropdown-divider"></div>
-    <!--<a class="dropdown-item" href="#">
+                      <%= link_to  t("logout"), destroy_user_session_path, method: :delete , class: "dropdown-item" %>
+                          
+                      <div class="dropdown-divider"></div>
+                      <div class="dropdown-divider"></div>
+                      <!--<a class="dropdown-item" href="#">
 
-      <div>Fast login (QR code)</div>
-      <%= image_tag("coming_soon.png", :alt => "Coming soon", :style => "width:300px;padding:2em 0px ;border 1px solid ") %>
-   
-    </a>
-    -->
-    
-           
-  </div>
+                        <div>Fast login (QR code)</div>
+                        <%= image_tag("coming_soon.png", :alt => "Coming soon", :style => "width:300px;padding:2em 0px ;border 1px solid ") %>
+                    
+                      </a>
+                      -->
+                </div>
 </div>
 
                   <% else %>
@@ -163,6 +156,7 @@ initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <!-- End Google Tag Manager (noscSript) -->
 
     <!-- Footer -->
+    <div class="p-5"></div>
 <footer class="page-footer font-small blue pt-4 bg-dark">
 
   <!-- Footer Links -->
