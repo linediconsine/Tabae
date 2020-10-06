@@ -85,3 +85,14 @@
 //   background: #88cf8f;
 //   border: none;
 // }
+
+.sm-small {
+    font-size: 6pt;
+  }
+
+@media only screen and (max-width: 400px) {
+    .sm-small {
+      font-size: 6pt;
+    }
+  }
+  

@@ -71,3 +71,12 @@ html, body {
 .push {
   height: 50px;
 }
+
+
+
+
+@media only screen and (max-width: 400px) {
+  .sm-small {
+    font-size: 6pt;
+  }
+}

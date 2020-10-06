@@ -55,7 +55,15 @@ initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
- 
+    <style>
+    
+        @media only screen and (max-width: 600px) {
+          .sm-small {
+            font-size: 17px;
+          }
+        }
+
+    </style>
 </head>
 
 
@@ -84,7 +92,7 @@ initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
                   <% if user_signed_in?  %>
 
                   <div class="dropdown" style="margin-left: auto;">
-                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <button class="sm-small  btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Hi, <%= current_user.email %>
                       </button>
                       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
