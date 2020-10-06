@@ -35,6 +35,8 @@ class SentencesController < ApplicationController
       @body_class='group_selected' 
       @folder = params['group']
       @sentences = current_user.sentences.all.where(group: @folder).reverse
+    else
+      @sentences = @root_sentences
     end
 
     @sentence = current_user.sentences.build

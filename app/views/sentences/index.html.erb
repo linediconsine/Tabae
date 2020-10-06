@@ -74,38 +74,39 @@
 
 
                 <%  if @sentences.empty? %>
-                <div class="m-auto py-3">
-                    <section class="card p-3 bg-dark">
-                        <div class="row">
-                            <div class="col-6 m-auto">
-                                <%= image_tag("home.png", :alt => "A person sitting on a desk using a computer", :style => "width:80%") %>
+
+                    <div class="m-auto py-3">
+                        <section class="card p-3 bg-dark">
+                            <div class="row">
+                                <div class="col-6 m-auto">
+                                    <%= image_tag("home.png", :alt => "A person sitting on a desk using a computer", :style => "width:80%") %>
+                                </div>
+
+                                <div class="col-6 m-auto">
+                                    <p>Hi there!<br> You dont have any sentence.</p>
+                                </div>
                             </div>
 
-                            <div class="col-6 m-auto">
-                                <p>Hi there!<br> You don't have any sentence.</p>
-                            </div>
-                        </div>
+                        </section>
+                    </div>
 
-                    </section>
-                </div>
                 <% else %>
-                    
-
+            
 
                     <% @sentences.each_with_index do |sentence,index| %>
-                    <div class="col-lg-2 mr-2 mb-2">
-                        <div class="card bg-dark a-white">
-                            <a class="d-block view overlay zoom" id="sentence_<%= index %>" href="" onClick="voice('<%= escape_javascript sentence.sentence %>')">
-                                <div class="card-body">
-                                    <p class="card-text" style="height: 80pt;overflow: hidden;text-align: center;"><%= truncate(sentence.sentence, :length => 30) %> </p>
-                                </div>
-                            </a>
+                        <div class="col-lg-2 mr-2 mb-2">
+                            <div class="card bg-dark a-white">
+                                <a class="d-block view overlay zoom" id="sentence_<%= index %>" href="" onClick="voice('<%= escape_javascript sentence.sentence %>')">
+                                    <div class="card-body">
+                                        <p class="card-text" style="height: 80pt;overflow: hidden;text-align: center;"><%= truncate(sentence.sentence, :length => 30) %></p>
+                                    </div>
+                                </a>
 
-                            <div class="card-footer small" style="padding: 7px 10px">
-                                <%= link_to t('edit'), edit_sentence_path(sentence) , class: "card-link float-right"%>
+                                <div class="card-footer small" style="padding: 7px 10px">
+                                    <%= link_to t('edit'), edit_sentence_path(sentence) , class: "card-link float-right"%>
+                                </div>
                             </div>
                         </div>
-                    </div>
                     <% end %>
 
                 <% end %>
@@ -161,9 +162,7 @@
                                     <div class="card-body text-center py-2 mx-0" style="height: 80pt;overflow: hidden;text-align: center;">
                                         <a href="<%= sentences_path(:group => group) %>"  class="d-block">
                                             <p class="card-text">
-                                                <span class="checkBigTitle"> 
-                                                <%= group %>
-                                                </span>
+                                                <span class="checkBigTitle"><%= group %></span>
                                             </p>
                                         </a>
                                     </div>

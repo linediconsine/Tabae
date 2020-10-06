@@ -55,15 +55,7 @@ initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-5BBDD7T');</script>
-  <!-- End Google Tag Manager -->
-
+ 
 </head>
 
 
@@ -75,9 +67,6 @@ initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 
      
 
-        <button class="navbar-toggler only_online" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
         <% unless ( notice.nil? &&  alert.nil?) %>
           <div class="text-center">
               <% unless notice.nil? %>
@@ -89,14 +78,12 @@ initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
           </div>
         <% end %>
 
-        <div class="collapse navbar-collapse" id="navbarCollapse">
            
-            <ul class="navbar-nav">
               <% if action_name != 'coming_soon' %>
 
                   <% if user_signed_in?  %>
 
-                  <div class="dropdown pl-4 nav-item">
+                  <div class="dropdown" style="margin-left: auto;">
                       <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Hi, <%= current_user.email %>
                       </button>
@@ -116,22 +103,18 @@ initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
                     
                       </a>
                       -->
-                </div>
-</div>
+                    </div>
+                  </div>
 
                   <% else %>
                     <%= link_to "Sign up", new_user_registration_path, :class => 'nav-link mx-2 text-white'  %>
                     <%= link_to "Login", new_user_session_path, :class => 'nav-link mx-2 text-white'  %>
                   <% end %>
               <% end %>
-            </ul>
-
-
-        </div>
+         
     </nav>
 
-    <section role="main" class="container-fluid wrapper <%=@body_class%>">
-        
+    <section role="main" class="container-fluid wrapper <%=@body_class%>" >
         <%= yield %>
     </section>
 
@@ -164,8 +147,6 @@ initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 
     <!-- Grid row -->
     <div class="row">
-
-   
 
       <hr class="clearfix w-100 d-md-none pb-3">
 
@@ -200,6 +181,16 @@ initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 
 </footer>
 <!-- Footer -->
+
+<div>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5BBDD7T');</script>
+<!-- End Google Tag Manager -->
+</div>
 </body>
 
 
