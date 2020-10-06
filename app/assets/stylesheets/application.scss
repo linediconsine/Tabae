@@ -73,10 +73,15 @@ html, body {
 }
 
 
-
-
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
   .sm-small {
-    font-size: 6pt;
+    font-size: 17px;
   }
 }
+
+.TextBigger{
+    font-size: 3em;
+    vertical-align: super;
+    margin: 0;
+    padding: 0;
+  }

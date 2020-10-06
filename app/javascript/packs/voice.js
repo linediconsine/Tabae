@@ -14,3 +14,9 @@ window.voice = (sentence) => {
   voice.text = sentence;
   speechSynthesis.speak(voice);
 };
+
+
+
+
+
+
