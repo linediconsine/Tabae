@@ -66,7 +66,7 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
     from: 'support@tabae.cloud',
     user_name: 'support@tabae.cloud',
-    password: 'support2020@',
+    password: '2020supp__123',
     address: 'smtps.aruba.it',
     domain: 'tabae.cloud',
     port: '465',
