@@ -1,5 +1,13 @@
+
+Login
+testing@tabae.cloud
+testing123
+
 Check if connection is working:
 https://stackoverflow.com/questions/189430/detect-the-internet-connection-is-offline
+
+https://medium.com/@bitadj/completely-uninstall-and-reinstall-psql-on-osx-551390904b86
+
 
 1. use browse memory and upload message when online
 2. hide any action will make the app offline when offline
