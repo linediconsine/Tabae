@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   
   # secondary routing 
   get '/terms_and_condtions', to: "sentences#terms_and_condtions"
+  get '/privacy_policy', to: "sentences#privacy_policy"
+  get '/disclaimer', to: "sentences#disclaimer"
 
   get '/coming_soon', to: 'sentences#coming_soon'
 

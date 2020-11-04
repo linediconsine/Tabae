@@ -16,6 +16,10 @@ class SentencesController < ApplicationController
     redirect_to 'https://www.termsfeed.com/live/33f23ca0-f3c7-4866-a6d1-8e4f290605bf'
   end
 
+  def disclaimer
+  end
+
+
   
   def coming_soon
   end
