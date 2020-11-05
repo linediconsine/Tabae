@@ -1,12 +1,12 @@
 class SentencesController < ApplicationController
   before_action :set_sentence, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!, except: [:welcome,:coming_soon]
+  before_action :authenticate_user!, except: [:welcome,:coming_soon,:terms_and_conditions,:privacy_policy]
 
   def welcome
     redirect_to sentences_path if signed_in?
   end
 
-  def terms_and_condtions
+  def terms_and_conditions
     # page is created by for now let use the free services from termsfeed they hosted the terms
     redirect_to 'https://www.termsfeed.com/live/63999ede-eb51-48e9-971d-e421680a87e6'
   end

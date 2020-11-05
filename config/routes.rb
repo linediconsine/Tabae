@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   root 'sentences#welcome'
   
   # secondary routing 
-  get '/terms_and_condtions', to: "sentences#terms_and_condtions"
+  get '/terms_and_conditions', to: "sentences#terms_and_conditions"
   get '/privacy_policy', to: "sentences#privacy_policy"
   get '/disclaimer', to: "sentences#disclaimer"
 

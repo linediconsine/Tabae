@@ -17,9 +17,10 @@
 
 
 
-    <h1 class="text-center" style="text-transform: uppercase;color: #FFF;font-weight: bolder;font-size: 1.8em;padding: 1em 1em 1em 0.2em;"> The synthesized voice dashboard <br>(it's easy to use in any device)</h1>
+    <h1 class="text-center" style="text-transform: uppercase;color: #FFF;font-weight: bolder;font-size: 1.8em;padding: 1em 1em 1em 0.2em;"> The synthesized voice dashboard <br><small>(it's easy to use in any device)</small></h1>
+    <!--
     <p>Tabae aims to be an assistive dashboard</p>
-
+    -->
 
 
     <section>
@@ -89,13 +90,17 @@
              -->
                      <h3>Howdy! </h3>
                 <p class="small">This project is born out of necessity. <br>
-                    <br>We are now in a private testing phase. <br>
+                    <br>We are now in beta testing. <br>
                     The idea of you using this tool makes the team happy, but,
-                    please do not consider this a stable instrument.
+                    please do not consider Tabae stable and production ready.
                     <br>We are working hard to make this tool accessible and easy to use.
                   <br>
                   <br> <br>
-                  <p class="bold">Please Agree our Terms and conditions and Privacy Policy before sign up</p>
+                  <p class="bold">Before continue please agree our 
+                   <%= link_to "Terms and conditions", terms_and_conditions_path, class: "text-light"  %>
+                   and 
+                   <%= link_to "Privacy Policy", privacy_policy_path, class: "text-light"   %>
+                   </p>
 
                   <br>
                   <p>Thanks</p>
@@ -110,30 +115,7 @@ We will also use Google analytics to understand how our users use this service.
                  We believe in using less user data as possible to deliver a great web app.
                 </p>
                 <br><br>
-                <h3>Disclaimer</h3>
-                 <p class="small">
-Please note that this is a beta version of the Tabae platform which is
-still undergoing final testing before its official release. The
-platform, its software and all content found on it are provided on an
-“as is” and “as available” basis. Tabae does not give any warranties,
-whether express or implied, as to the suitability or usability of the
-website, its software or any of its content.
-</p>
-<p class="small">
-Tabae will not be liable for any loss, whether such loss is direct,
-indirect, special or consequential, suffered by any party as a result
-of their use of the Tabae platform, its software or content. Any
-downloading or uploading of material to the website is done at the
-user’s own risk and the user will be solely responsible for any
-damage to any computer system or loss of data that results from such
-activities.</p>
-<p class="small">
-Should you encounter any bugs, glitches, lack of functionality or
-other problems on the website, please let us know immediately so we
-can rectify these accordingly. Your help in this regard is greatly
-appreciated! You can write to us at this address support@Tabae.cloud.
-</p>
- <br> <br>
+   
  
            -->
               <div class="text-center">
