@@ -88,7 +88,7 @@ class SentencesController < ApplicationController
 
   # GET /sentences/1/edit
   def edit
-    @groups = current_user.sentences.all.distinct.pluck(:group).push('New folder') 
+    @groups = current_user.sentences.all.distinct.pluck(:group).push('') .push('New folder') 
   end
 
   # POST /sentences

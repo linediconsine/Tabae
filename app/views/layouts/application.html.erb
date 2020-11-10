@@ -68,23 +68,9 @@ initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 
 <body>
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <%= link_to "TaBaE", root_path , class: "navbar-brand"%>
         <span class="offline_message text-light">Offline</span>
-
-     
-
-        <% unless ( notice.nil? &&  alert.nil?) %>
-          <div class="text-center">
-              <% unless notice.nil? %>
-              <div id="notice" class="notice"><%= notice %></div>
-              <% end %>
-              <% unless alert.nil? %>
-              <div id="alert" class="alert"><%= alert %></div>
-              <% end %>
-          </div>
-        <% end %>
-
            
               <% if action_name != 'coming_soon' %>
 
@@ -120,6 +106,19 @@ initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
               <% end %>
          
     </nav>
+
+    <div class="mb-4">
+        <% unless ( notice.nil? &&  alert.nil?) %>
+          <div class="text-center">
+              <% unless notice.nil? %>
+              <div id="notice" class="notice"><%= notice %></div>
+              <% end %>
+              <% unless alert.nil? %>
+              <div id="alert" class="alert"><%= alert %></div>
+              <% end %>
+          </div>
+        <% end %>
+    </div>
 
     <section role="main" class="container-fluid wrapper <%=@body_class%>" >
         <%= yield %>

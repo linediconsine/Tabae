@@ -27,11 +27,11 @@
         <%= image_tag("happy-bunch-3_trasp.png", :alt => "A group of people having a conversation", :style => "width:100%;padding:5px;") %>
     </section>
 
-    <section class="mx-auto tb-separe" style="max-width:80%">
+    <section class="mx-auto tb-separe">
         <h2>How to start with Tabae</h2>
         <ul class="list-group">
             <li class="list-group-item list-group-item-primary" style="background-color: #b0d9fb;;">
-                <%= link_to "Sign up ( Hey! it’s free )", new_user_registration_path  %>
+                <%= link_to "Sign up ( Hey! it’s free )", new_user_registration_path, style: "text-decoration:underline"  %>
             </li>
             <li class="list-group-item list-group-item-primary" style="background-color: #b0d9fb;">Prepare your sentences whenever works better for you</li>
             <li class="list-group-item list-group-item-primary" style="background-color: #b0d9fb;;">Log in on any device you need Tabae</li>
@@ -56,7 +56,7 @@
         </div>
         <div class="col-xl-6">
 
-            <section class="mx-auto tb-separe" style="max-width:80%">
+            <section class="p-5">
                 <ul class="list-group">
                     <li class="list-group-item list-group-item-primary" style="background-color: #b0d9fb;;">
                         No personal data required for sign up
@@ -95,14 +95,13 @@
                     please do not consider Tabae stable and production ready.
                     <br>We are working hard to make this tool accessible and easy to use.
                   <br>
-                  <br> <br>
+               
                   <p class="bold">Before continue please agree our 
-                   <%= link_to "Terms and conditions", terms_and_conditions_path, class: "text-light"  %>
+                   <%= link_to "Terms and conditions", terms_and_conditions_path, class: "text-light",style:"text-decoration: underline"  %>
                    and 
-                   <%= link_to "Privacy Policy", privacy_policy_path, class: "text-light"   %>
+                   <%= link_to "Privacy Policy", privacy_policy_path, class: "text-light text-decoration-underline",style:"text-decoration: underline"   %>
                    </p>
-
-                  <br>
+               
                   <p>Thanks</p>
                 </p> 
                 <!--

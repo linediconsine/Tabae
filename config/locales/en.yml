@@ -44,7 +44,7 @@ en:
   sentence_deleted: "Sentence deleted"
   group: "folders"
   title:
-    edit_sentence: "Edita Frase"
+    edit_sentence: "Edit sentence"
   devise:
     confirmations:
       confirmed: "Your email address has been successfully confirmed."
