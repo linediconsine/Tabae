@@ -100,8 +100,10 @@ initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
                   </div>
 
                   <% else %>
-                    <%= link_to "Sign up", new_user_registration_path, :class => 'nav-link mx-2 text-white'  %>
+
+                    <%= link_to "Sign up", new_user_registration_path, :class => 'nav-link text-white',:style => 'margin-left: auto;'  %>
                     <%= link_to "Login", new_user_session_path, :class => 'nav-link mx-2 text-white'  %>
+                  
                   <% end %>
               <% end %>
          
@@ -162,7 +164,7 @@ initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
         <!-- Links -->
         <h5 class="small">LEGAL :</h5>
 
-        <ul class="list-unstyled">
+        <ul class="list-unstyled small">
           <li>
             <a class="text-light" href="/terms_and_condtions">Terms and conditions</a>
           </li>
