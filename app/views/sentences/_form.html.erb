@@ -35,7 +35,7 @@
       function thisOrNew(_source_id,_target_id){
         const sourceElm = document.getElementById(_source_id);
         const targetElm = document.getElementById(_target_id);
-        const sourceElvalue = sourceElm.options[sourceElm.options.length - 1].value;
+        const sourceElvalue = 'New folder';
 
         if(sourceElm.value != sourceElvalue){
            document.getElementById('folder_comp').classList.remove('showNew');

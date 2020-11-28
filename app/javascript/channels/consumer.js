@@ -3,4 +3,8 @@
 
 import { createConsumer } from "@rails/actioncable"
 
+import Pickr from '@simonwep/pickr';
+import Pickr from '@simonwep/pickr/dist/pickr.es5.min';
+
 export default createConsumer()
+

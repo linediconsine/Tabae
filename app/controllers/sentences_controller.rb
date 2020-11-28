@@ -38,8 +38,14 @@ class SentencesController < ApplicationController
   # GET /sentences.json
   def index
     @sentences = current_user.sentences.all.reverse
+    @root_sentences = current_user.sentences.all.where(group: ["Home",""]).reverse
 
-    @root_sentences = current_user.sentences.all.where(group: "").reverse
+    @groups = current_user.sentences.all.distinct.pluck(:group).push('New folder') 
+    @folders_name = current_user.sentences.all.distinct.pluck(:group)
+    
+    if @groups.exclude?('Home')
+      @groups.push('Home')
+    end
 
     if params['group']
       @body_class='group_selected' 
@@ -50,7 +56,6 @@ class SentencesController < ApplicationController
     end
 
     @sentence = current_user.sentences.build
-    @groups = current_user.sentences.all.distinct.pluck(:group).push('New folder') 
   end
 
   # post /api/new (JSON)
@@ -88,14 +93,18 @@ class SentencesController < ApplicationController
 
   # GET /sentences/1/edit
   def edit
-    @groups = current_user.sentences.all.distinct.pluck(:group).push('').push('New folder') 
+    @groups = current_user.sentences.all.distinct.pluck(:group).push('New folder') 
+    if @groups.exclude?('Home')
+      @groups.push('Home')
+    end
+
   end
 
   # POST /sentences
   # POST /sentences.json
   def create
     @sentence = current_user.sentences.build(sentence_params)
-
+  
     respond_to do |format|
       if @sentence.save
         format.html { redirect_to @sentence, notice: 'Ho aggiunto la frase a quelle salvate.' }

@@ -83,7 +83,7 @@
                                 </div>
 
                                 <div class="col-6 m-auto">
-                                    <p>Hi there!<br> You dont have any sentence.</p>
+                                    <p>Hi there!<br> You dont have any sentence in your Home space.</p>
                                 </div>
                             </div>
 
@@ -126,7 +126,7 @@
 
            <div class="row pt-2" id="group">
                 
-                <%  if @groups.length < 2 %>
+                <%  if @folders_name.length < 2 %>
                 <div class="row">
                 <div class="m-auto py-3  w-75">
                     <section class="card p-3 bg-dark">
@@ -147,7 +147,7 @@
                 <% end %>
 
                 <% @groups.each_with_index do |group,index| %>
-                    <% if group != "" and group != @groups.last %>
+                    <% if group != "" and group != "New folder" and group != "Home" %>
                     <div class="col-lg-2  mr-2 mb-2">
                             <div class="card bg-info a-white">
 
