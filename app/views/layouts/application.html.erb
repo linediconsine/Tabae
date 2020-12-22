@@ -55,6 +55,7 @@ initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
     <style>
           
       @media only screen and (max-width: 600px) {
@@ -88,6 +89,13 @@ initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
                       <%= link_to  t("logout"), destroy_user_session_path, method: :delete , class: "dropdown-item" %>
                           
                       <div class="dropdown-divider"></div>
+                      <div class="p-2 text-dark d-none d-md-block d-xl-block">
+                      <p class="small" style="margin:0">Fast login by QR</p>
+                      <div id="qrcode" ></div>
+                          <script type="text/javascript">
+                          new QRCode(document.getElementById("qrcode"), "<%= @domain %>/api/login?email=<%=current_user.email %>&token=<%= current_user.uuid %>");
+                          </script>
+                      </div>
                       <div class="dropdown-divider"></div>
                       <!--<a class="dropdown-item" href="#">
 
@@ -128,7 +136,7 @@ initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 
 
     <%= javascript_pack_tag 'checkconnection' %>
-
+   
 
     <!-- Cookie Consent by https://www.TermsFeed.com -->
         <script type="text/javascript" src="//www.termsfeed.com/public/cookie-consent/3.1.0/cookie-consent.js"></script>

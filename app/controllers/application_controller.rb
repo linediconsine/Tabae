@@ -2,8 +2,10 @@ class ApplicationController < ActionController::Base
     before_action :authenticate_with_http_basic
     around_action :switch_locale
     before_action :use_coming_soon
-
+  
 private
+
+
 
 def use_coming_soon()
 

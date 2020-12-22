@@ -1,0 +1,128 @@
+      <div class="card small text-dark p-3">
+        TaBaE uses the voices on your device, 
+        In this experimental phase:
+        <br><br>
+        - you will need to choose a voice in any device 
+        <br>
+        ( If you use a phone and a desktop you will need to do this on both)
+        <br>
+        - It can happen that you will need to set this setting again if you reset your device
+    </div>
+
+        <div class="card wrap-form my-3">
+        <div class="py-3">
+        <form>
+        <div class="form-group">
+          <label for="voiceSelect">Select a voice</label>
+          <select id="voiceSelect" class="w-100"></select>
+        </div>
+
+         <div class="form-group">
+          <label for="text">Try new voice with this sentence:</label>
+          <textarea id="text" class="txt w-100">I am using Tabae</textarea>
+        </div>
+         <div class="form-group">
+          <button class="btn btn-lg btn-primary btn-block">Say it</button>
+        </div>
+          <a class="btn btn-lg btn-danger btn-block" onclick="save()">Use this voice for TaBaE</a>
+          </form>
+        </div>
+
+        <script>
+   
+
+
+
+var synth = window.speechSynthesis;
+
+var inputForm = document.querySelector('form');
+var inputTxt = document.querySelector('.txt');
+var voiceSelect = document.querySelector('select');
+
+var pitch = document.querySelector('#pitch');
+var pitchValue = document.querySelector('.pitch-value');
+var rate = document.querySelector('#rate');
+var rateValue = document.querySelector('.rate-value');
+
+var voices = [];
+
+function populateVoiceList() {
+  voices = synth.getVoices();
+
+  for(var i = 0; i < voices.length ; i++) {
+    var option = document.createElement('option');
+    option.textContent = voices[i].name + ' (' + voices[i].lang + ')';
+
+    if(voices[i].default) {
+      option.textContent += ' -- DEFAULT';
+    }
+
+    const selected = localStorage.getItem("_m_tabae_voice") != null ? JSON.parse(localStorage.getItem("_m_tabae_voice")) : 'none';
+       
+
+    option.setAttribute('data-lang', voices[i].lang);
+    option.setAttribute('data-name', voices[i].name);
+    if(selected.voice == voices[i].name){
+        option.selected = 'selected'
+    }
+    
+    voiceSelect.appendChild(option);
+  }
+}
+
+populateVoiceList();
+if (speechSynthesis.onvoiceschanged !== undefined) {
+  speechSynthesis.onvoiceschanged = populateVoiceList;
+}
+
+inputForm.onsubmit = function(event) {
+  event.preventDefault();
+
+  var utterThis = new SpeechSynthesisUtterance(inputTxt.value);
+  var selectedOption = voiceSelect.selectedOptions[0].getAttribute('data-name');
+
+  for(var i = 0; i < voices.length ; i++) {
+    if(voices[i].name === selectedOption) {
+      utterThis.voice = voices[i];
+    }
+  }
+  utterThis.pitch = 1//pitch.value;
+  utterThis.rate = 1//rate.value;
+  synth.speak(utterThis);
+
+  inputTxt.blur();
+}
+
+function save(){
+    stored = {
+        voice : voiceSelect.selectedOptions[0].getAttribute('data-name'),
+        lang : voiceSelect.selectedOptions[0].getAttribute('data-lang')
+    };
+    localStorage.setItem("_m_tabae_voice", JSON.stringify(stored));
+
+    // if (localStorage.getItem("_m_tabae_voice") != null){
+    //     const device_voice = JSON.parse(localStorage.getItem("_m_tabae_voice")).voice;
+    //     console.log("load it it");
+    //     console.log(device_voice);
+
+    //     var utterThis = new SpeechSynthesisUtterance(inputTxt.value)
+
+    //     for(var i = 0; i < voices.length ; i++) {
+    //         if(voices[i].name === device_voice) {
+    //         utterThis.voice = voices[i];
+    //         }
+    //     }
+    //     utterThis.pitch = 1//pitch.value;
+    //     utterThis.rate = 1//rate.value;
+
+    //     synth.speak(utterThis);
+    // }
+
+}
+
+
+
+        </script>
+        
+        </div>
+

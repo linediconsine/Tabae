@@ -1,6 +1,7 @@
 class SentencesController < ApplicationController
   before_action :set_sentence, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user!, except: [:welcome,:coming_soon,:terms_and_conditions,:privacy_policy]
+  before_action :authenticate_user!, except: [:welcome,:coming_soon,:terms_and_conditions,:privacy_policy,:token_access]
+  skip_before_action :verify_authenticity_token, only: [:apicreate,:token_access]
 
   def welcome
     redirect_to sentences_path if signed_in?
@@ -37,10 +38,11 @@ class SentencesController < ApplicationController
   # GET /sentences
   # GET /sentences.json
   def index
+    @domain = request.base_url 
     @sentences = current_user.sentences.all.reverse
     @root_sentences = current_user.sentences.all.where(group: ["Home",""]).reverse
 
-    @groups = current_user.sentences.all.distinct.pluck(:group).push('New folder') 
+    @groups = current_user.sentences.all.distinct.pluck(:group)
     @folders_name = current_user.sentences.all.distinct.pluck(:group)
     
     if @groups.exclude?('Home')
@@ -59,6 +61,36 @@ class SentencesController < ApplicationController
   end
 
   # post /api/new (JSON)
+
+  def get_api_usertoken
+    request.format = :json
+    if current_user.uuid == nil
+      @current_user.uuid = SecureRandom.uuid
+      @current_user.save()
+    end
+
+    respond_to do |format|
+      format.json { render json: current_user.to_json(:only => [ :email, :uuid ])  }
+    end
+  end
+
+  def token_access
+    @token =  params['token']
+    @email =  params['email']
+    @user_temptative = User.where(email: @email,uuid:@token)
+    
+    if  @user_temptative.exists?
+
+      sign_in(@user_temptative[0])
+      redirect_to action: "index"
+    else
+      redirect_to action: "index"
+    end
+
+  end
+
+
+
   def apicreate
     request.format = :json
     
@@ -93,7 +125,7 @@ class SentencesController < ApplicationController
 
   # GET /sentences/1/edit
   def edit
-    @groups = current_user.sentences.all.distinct.pluck(:group).push('New folder') 
+    @groups = current_user.sentences.all.distinct.pluck(:group) 
     if @groups.exclude?('Home')
       @groups.push('Home')
     end
@@ -144,4 +176,13 @@ class SentencesController < ApplicationController
     def sentence_params
       params.require(:sentence).permit(:name, :sentence, :color, :group)
     end
+
+    def authenticate
+      authenticate_or_request_with_http_basic do |email, password|
+        user = User.where(email: email).first
+        !user.nil? && user.valid_password?(password)
+      end
+      warden.custom_failure! if performed?
+    end
+
 end

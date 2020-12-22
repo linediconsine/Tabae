@@ -18,3 +18,17 @@ module Tabae
     # the framework and any gems in your application.
   end
 end
+
+
+Sentry.init do |config|
+  config.dsn = 'https://8d9c8f1a9d6648c3866ef290e3338293@o492770.ingest.sentry.io/5560603'
+  config.breadcrumbs_logger = [:active_support_logger]
+
+  # To activate performance monitoring, set one of these options.
+  # We recommend adjusting the value in production:
+  config.traces_sample_rate = 0.5
+  # or
+  config.traces_sampler = lambda do |context|
+    true
+  end
+end

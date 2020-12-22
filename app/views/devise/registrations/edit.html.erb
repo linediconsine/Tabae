@@ -7,12 +7,15 @@
     <!--
     <a class="nav-link" id="v-pills-board-tab" data-toggle="pill" href="#v-pills-board" role="tab" aria-controls="v-pills-board" aria-selected="false">Board</a>
     -->
+    <a class="nav-link active" id="v-pills-voice-tab" data-toggle="pill" href="#v-pills-voice" role="tab" aria-controls="v-pills-delete" aria-selected="false">Voice</a>
     <a class="nav-link" id="v-pills-edit-tab" data-toggle="pill" href="#v-pills-edit" role="tab" aria-controls="v-pills-edit" aria-selected="false">Email/Password</a>
     <a class="nav-link" id="v-pills-delete-tab" data-toggle="pill" href="#v-pills-delete" role="tab" aria-controls="v-pills-delete" aria-selected="false">Delete account</a>
+
   </div>
   <div class="tab-content w-100" id="v-pills-tabContent">
-    <div class="tab-pane fade" id="v-pills-board" role="tabpanel" aria-labelledby="v-pills-board-tab">
-      
+    <div class="tab-pane fade active show" id="v-pills-voice" role="tabpanel" aria-labelledby="v-pills-voice-tab">
+
+      <%= render "setup_voice" %>
     </div>
     <div class="tab-pane fade" id="v-pills-edit" role="tabpanel" aria-labelledby="v-pills-edit-tab">
     <div class="card wrap-form pb-3">

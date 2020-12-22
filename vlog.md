@@ -48,3 +48,7 @@ GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO tabae;
 CREATE DATABASE tabae_development;
 
 $rails db:migrate
+
+http://127.0.0.1:3000/api/login?email=testing@tabae.cloud&token=3dddddf3-f298-4123-8a44-cbbe3ae95912
+
+User.where(email: 'testing@tabae.cloud',uuid:'3dddddf3-f298-4123-8a44-cbbe3ae95912').exists?
