@@ -78,7 +78,7 @@ class SentencesController < ApplicationController
   def token_access
     #@tk = params['tk']
 
-    crypt = ActiveSupport::MessageEncryptor.new(Rails.application.secrets.secret_key_base[0..31])
+    crypt = ActiveSupport::MessageEncryptor.new(Settings.secret[0..31])
     decrypted_data = crypt.decrypt_and_verify(params['tk'])
 
       @token =  decrypted_data.split("@@@")[0]
