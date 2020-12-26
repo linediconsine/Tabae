@@ -38,6 +38,7 @@ class SentencesController < ApplicationController
   # GET /sentences
   # GET /sentences.json
   def index
+    create_token(current_user)
     @domain = request.base_url 
     @sentences = current_user.sentences.all.reverse
     @root_sentences = current_user.sentences.all.where(group: ["Home",""]).reverse
@@ -75,8 +76,14 @@ class SentencesController < ApplicationController
   end
 
   def token_access
-    @token =  params['token']
-    @email =  params['email']
+    #@tk = params['tk']
+
+    crypt = ActiveSupport::MessageEncryptor.new(Rails.application.secrets.secret_key_base[0..31])
+    decrypted_data = crypt.decrypt_and_verify(params['tk'])
+
+      @token =  decrypted_data.split("@@@")[0]
+      @email =  decrypted_data.split("@@@")[1]
+
     @user_temptative = User.where(email: @email,uuid:@token)
     
     if  @user_temptative.exists?
@@ -175,6 +182,13 @@ class SentencesController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def sentence_params
       params.require(:sentence).permit(:name, :sentence, :color, :group)
+    end
+
+    def create_token(_user)
+      if _user.uuid == nil
+        _user.uuid = SecureRandom.uuid
+        _user.save()
+      end
     end
 
     def authenticate

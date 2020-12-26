@@ -78,7 +78,7 @@ initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
                   <% if user_signed_in?  %>
 
                   <div class="dropdown" style="margin-left: auto;">
-                      <button class="sm-small  btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <button class="btn-sm btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Hi, <%= current_user.email %>
                       </button>
                       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -87,17 +87,11 @@ initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
                       <%= link_to  t("profile"), edit_user_registration_path , class: "dropdown-item" %>
 
                       <%= link_to  t("logout"), destroy_user_session_path, method: :delete , class: "dropdown-item" %>
-                          
+                        <!--  
                       <div class="dropdown-divider"></div>
-                      <div class="p-2 text-dark d-none d-md-block d-xl-block">
-                      <p class="small" style="margin:0">Fast login by QR</p>
-                      <div id="qrcode" ></div>
-                          <script type="text/javascript">
-                          new QRCode(document.getElementById("qrcode"), "<%= @domain %>/api/login?email=<%=current_user.email %>&token=<%= current_user.uuid %>");
-                          </script>
-                      </div>
+                      
                       <div class="dropdown-divider"></div>
-                      <!--<a class="dropdown-item" href="#">
+                      <a class="dropdown-item" href="#">
 
                         <div>Fast login (QR code)</div>
                         <%= image_tag("coming_soon.png", :alt => "Coming soon", :style => "width:300px;padding:2em 0px ;border 1px solid ") %>
@@ -110,7 +104,7 @@ initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
                   <% else %>
 
                     <%= link_to "Sign up", new_user_registration_path, :class => 'nav-link text-white',:style => 'margin-left: auto;'  %>
-                    <%= link_to "Login", new_user_session_path, :class => 'nav-link mx-2 text-white'  %>
+                    <%= link_to "Login", new_user_session_path, :class => 'btn btn-secondary'  %>
                   
                   <% end %>
               <% end %>

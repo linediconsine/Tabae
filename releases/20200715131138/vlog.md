@@ -11,6 +11,9 @@ psql -c '\x' -c 'ALTER USER tabae CREATEDB;'
 psql -c '\x' -c 'ALTER USER amph CREATEDB;'
 CREATE DATABASE tabae_development
 
+
+rails credentials:edit
+
 # start pg
 
 pg_ctl -D /usr/local/var/postgres start

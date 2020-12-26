@@ -1,4 +1,8 @@
-<div class="text-center card login-form w-75 pb-3">
+
+<div class="row">
+<div class="col-md-4"></div>
+  <div class="col-md-4">
+<div class="text-center card login-form pb-3">
     <h2 class="pb-3">LOG IN</h2>
 
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
@@ -25,4 +29,5 @@
     <div class="text-center a-white pt-5">
         <%= render "devise/shared/links" %>
     </div>
+</div></div>
 </div>
