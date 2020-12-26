@@ -26,7 +26,7 @@
   <div class="field" id="folder_comp">
     <%= label_tag(:group, t('folder')) %>
     <div>
-      <%= select_tag "folders", options_for_select(@groups,@groups.to_s),:class => ' w-100 bg-light', :onchange => 'thisOrNew("folders","sentence_group")'  %>
+      <%= select_tag "folders", options_for_select(@groups,@groups.to_s),:class => ' w-100 bg-light form-control form-control-lg', :onchange => 'thisOrNew("folders","sentence_group")'  %>
     </div>
     <div class="hiddenIf py-2">
       <%= form.text_field :group, :required => false, :placeholder => "New folder name",:class => ' w-100 bg-light'%>
