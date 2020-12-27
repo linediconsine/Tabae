@@ -38,7 +38,7 @@ def switch_locale(&action)
   end
   
   I18n.with_locale(locale, &action)
-  puts "locale: " + locale.to_s
+
 end
 
 end
