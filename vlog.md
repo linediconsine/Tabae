@@ -62,3 +62,5 @@ Expansion revenue is any revenue that is generated in excess from a customer's i
 Adressable market
 
 lift-ai tracking beahvior to understand if its a good client
+
+Customer acquisition cost

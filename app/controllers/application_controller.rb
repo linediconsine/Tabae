@@ -25,7 +25,8 @@ end
 def switch_locale(&action)
   locale = I18n.default_locale
   
-  browser_lang = request.env['HTTP_ACCEPT_LANGUAGE']
+  browser_lang = request.env['HTTP_ACCEPT_LANGUAGE'].to_s
+  
   I18n.available_locales.each do |lng|
     if browser_lang.include? lng.to_s
       locale = lng
