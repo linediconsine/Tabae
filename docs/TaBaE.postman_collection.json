@@ -1,0 +1,55 @@
+{
+	"variables": [],
+	"info": {
+		"name": "TaBaE",
+		"_postman_id": "b88dd3a5-3041-37a4-44cb-1316c41ac2d9",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:3000/sentences.json",
+			"request": {
+				"url": "http://127.0.0.1:3000/sentences.json",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:3000/sentences/1.json",
+			"request": {
+				"url": "http://127.0.0.1:3000/sentences.json",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "New sentence",
+			"request": {
+				"url": "http://127.0.0.1:3000/api/new",
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "token",
+			"request": {
+				"url": "http://127.0.0.1:3000/api/login",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
