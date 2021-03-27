@@ -46,9 +46,16 @@ class SentencesController < ApplicationController
     @groups = current_user.sentences.all.distinct.pluck(:group)
     @folders_name = current_user.sentences.all.distinct.pluck(:group)
     
+    puts "group"
+    puts @groups
+
     if @groups.exclude?('Home')
       @groups.push('Home')
     end
+    if @groups.exclude?('New folder')
+      @groups.push('New folder')
+    end
+   
 
     if params['group']
       @body_class='group_selected' 
