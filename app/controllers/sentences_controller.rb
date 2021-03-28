@@ -25,6 +25,17 @@ class SentencesController < ApplicationController
   def coming_soon
   end
 
+
+  # GET /dashboard.json
+  def dashboard
+    @sentences = current_user.sentences.all.reverse
+
+    respond_to do |format|
+      format.json { render json:  @sentences.to_json()  }
+    end
+  end
+
+    
   # DELETE /sentences/1
   # DELETE /sentences/1.json
   def destroy
