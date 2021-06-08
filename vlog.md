@@ -64,3 +64,5 @@ Adressable market
 lift-ai tracking beahvior to understand if its a good client
 
 Customer acquisition cost
+
+npm install node-sass@latest
