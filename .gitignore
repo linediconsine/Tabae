@@ -16,6 +16,7 @@ production.log
 Gemfile.lock
 yarn.lock
 public/packs/
+package-lock.json
 # Used by dotenv library to load environment variables.
 # .env
 
