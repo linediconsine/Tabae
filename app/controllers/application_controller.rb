@@ -7,8 +7,7 @@ private
 
 
 
-def use_coming_soon()
-
+def use_coming_soon() 
   if params[:pass] == 'testing' || session[:pass] =='testing'
     session[:pass] = 'testing'
     if action_name == 'coming_soon'
@@ -19,7 +18,6 @@ def use_coming_soon()
   if Settings.comingsoon == true and action_name != 'coming_soon' and session[:pass] != 'testing'
       redirect_to coming_soon_path
   end
-
 end
 
 def switch_locale(&action)

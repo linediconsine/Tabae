@@ -32,3 +32,4 @@ import axios from "axios";
 //   $('[data-toggle="tooltip"]').tooltip();
 //   $('[data-toggle="popover"]').popover();
 // });
+

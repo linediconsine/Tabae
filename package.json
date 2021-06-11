@@ -9,8 +9,7 @@
     "@rails/webpacker": "5.4.0",
     "@simonwep/pickr": "^1.8.1",
     "axios": "^0.21.1",
-    "bootstrap": "^5.0.0-beta3",
-    "jquery": "^3.6.0",
+    "bootstrap": "^5.0.1",
     "turbolinks": "^5.2.0"
   },
   "version": "0.1.0",

@@ -56,14 +56,13 @@ initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   
-    <style>
-          
+  <style>
       @media only screen and (max-width: 600px) {
         .sm-small {
           font-size: 14px;
         }
       }
-</style>
+  </style>
 </head>
 
 
@@ -78,7 +77,7 @@ initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
                   <% if user_signed_in?  %>
 
                   <div class="dropdown" style="margin-left: auto;">
-                      <button class="dropdown-toggle btn btn-secondary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <button class="dropdown-toggle btn btn-secondary" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Hi, <%= current_user.email %>
                       </button>
                       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -131,7 +130,7 @@ initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 <footer class="page-footer font-small blue pt-4 bg-dark">
 
   <!-- Footer Links -->
-  <div class="container-fluid text-center text-md-left bg-dark">
+  <div class="container-fluid text-left">
 
     <!-- Grid row -->
     <div class="row">
