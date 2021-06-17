@@ -3,6 +3,8 @@
 <div class="text-center">
     
 <main class="form-signin">
+
+  
     <img class="mb-4" src="/apple-icon.png" alt="" width="100px">
                                 
     <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
@@ -12,11 +14,12 @@
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
         <div class="form-floating">
             <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email", 'aria-label':"e-mail", class:"form-control" %>
+            <label for="email">Email address</label>
         </div>
-
+        
         <div class="form-floating">
             <%= f.password_field :password, autocomplete: "current-password", placeholder: "Password", 'aria-label':"password", class:"form-control w-100" %>
-         
+            <label for="password">Password</label>
         </div>
 
         <% if devise_mapping.rememberable? %>    
@@ -39,3 +42,5 @@
 
     
   
+
+</div>
