@@ -23,10 +23,12 @@
     -->
 
 
-    <section>
-     
-     <%= video_tag("/demo.mp4", controls: true, size: "512x320") %>
+    <section class="ifDesktop" style="width:512px;overflow:hidden;margin: 0px auto">
+        <%= video_tag("/demo.mp4", controls: true, size: "512x320") %>
+    </section>
 
+    <section class="ifMobile">
+        <%= image_tag("happy-bunch-3_trasp.png", :alt => "A person sending an email", :style => "width:99%;padding:1em 0") %>
     </section>
 
     <section class="mx-auto tb-separe">

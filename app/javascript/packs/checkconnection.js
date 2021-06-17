@@ -1,4 +1,4 @@
-window.Checkconnection = () => {
+const Checkconnection = () => {
   const body = document.querySelector("body");
   if (navigator.onLine) {
     
@@ -9,9 +9,27 @@ window.Checkconnection = () => {
     body.classList.remove("online");
   }
 };
-window.Checkconnection();
+
+
+const DetectMob = () => {
+  const body = document.querySelector("body");
+  console.log(`window.innerWidth: ${window.innerWidth}   window.innerHeight: ${window.innerHeight}`)
+  if  ( window.innerWidth <= 800 )   {
+    console.log("mobile")
+    body.classList.add("mobile");
+    body.classList.remove("desktop");
+  } else {
+    console.log("desktop")
+    body.classList.remove("mobile");
+    body.classList.add("desktop");
+  }
+};
+
+Checkconnection();
+DetectMob();
 setInterval(function () {
-  window.Checkconnection();
+  Checkconnection();
+  DetectMob();
 }, 3000);
 
 /*

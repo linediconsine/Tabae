@@ -135,3 +135,15 @@ html, body {
   from {bottom: 30px; opacity: 1;}
   to {bottom: 0; opacity: 0;}
 }
+
+body.mobile .ifDesktop {
+  display: none;
+}
+
+body.desktop .ifMobile {
+  display: none;
+}
+
+body.mobile .tb-separe {
+  padding: 3rem 1.5rem !important;
+}
