@@ -1,5 +1,5 @@
 // Your variable overrides
-$body-bg: #6d84fe;
+$body-bg: #4654a1;
 $body-color: #fff;
 $input-focus-border-color: #6d2077;
 $input-focus-color: #000;
@@ -33,4 +33,24 @@ a.nav-link {
 .a-white a,
 .a-white a:hover {
   color: #fff;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+.form-signin .form-floating label{
+  color: $input-focus-color; 
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }

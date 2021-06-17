@@ -3,14 +3,15 @@
 @import "~bootstrap/scss/bootstrap"; // never forget the semicolon at the end
 
 // app/javascript/packs/stylesheets/_custom.scss
-h1 {
-  color: red;
-}
 
 body.offline .only_online,
 body.online .offline_message,
 body.online .only_offline {
   display: none;
+}
+*::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: red;
+  opacity: 1; /* Firefox */
 }
 
 .login-form {
