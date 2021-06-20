@@ -9,7 +9,7 @@ The setups steps expect following tools installed on the system.
 ##### 1. Check out the repository
 
 ```bash
-git clone git@github.com:organization/project-name.git
+git clone https://github.com/linediconsine/tabae.git
 ```
 
 ##### 2. Create database.yml file
