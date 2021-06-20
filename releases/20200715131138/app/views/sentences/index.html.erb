@@ -1,0 +1,79 @@
+<%= javascript_pack_tag 'voice' %>
+
+
+<% if user_signed_in? %>
+<div class="nav nav-pills" id="nav-tab" role="tablist">
+    <a class="nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><%= t "sentences" %></a>
+    <a class="nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><%= t "new_sentence" %></a>
+</div>
+<% end %>
+
+<div class="tab-content" id="nav-tabContent">
+    <section class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
+        <div class="fluid-container pt-3">
+            <div class="row" id="main">
+
+
+                <%  if @sentences.empty? %>
+                <div class="m-auto py-3">
+                    <section class="card p-3 bg-dark">
+                        <div class="row">
+                            <div class="col-6 m-auto">
+                                <%= image_tag("home.png", :alt => "A person sitting on a desk using a computer", :style => "width:80%") %>
+                            </div>
+
+                            <div class="col-6 m-auto">
+                                <p>Hi there!<br> You don't have any sentence.</p>
+                            </div>
+                        </div>
+
+                    </section>
+                </div>
+                <% else %>
+
+                <% @sentences.each_with_index do |sentence,index| %>
+                <div class="col-lg-4 my-1">
+                    <div class="card bg-dark a-white">
+                        <a class="d-block p-1 view overlay zoom" id="sentence_<%= index %>" href="" onClick="voice('<%= escape_javascript sentence.sentence %>')">
+                            <div class="card-body">
+                                <p class="card-text"><%= truncate(sentence.sentence, :length => 30) %> </p>
+                            </div>
+                        </a>
+
+                        <div class="card-footer small" style="padding: 7px 10px">
+                            <%= link_to t('edit'), edit_sentence_path(sentence) , class: "card-link float-right"%>
+                        </div>
+                    </div>
+                </div>
+                <% end %>
+
+                <% end %>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+        <div id="new" class="pt-3">
+            <%= render 'form', sentence: @sentence %>
+            <div>
+    </section>
+
+    <section class="tab-pane fade" id="nav-icons" role="tabpanel" aria-labelledby="nav-icons-tab">
+        <i class="fas fa-toilet"></i>
+
+
+        <i class="fa fa-car"></i>
+        <i class="fa fa-car" style="font-size:48px;"></i>
+        <i class="fa fa-car" style="font-size:60px;color:red;"></i>
+
+    </section>
+</div>
+<script>
+    //if (localStorage.getItem("_m_tabae") == null){
+    stored = <%= raw @sentences.to_json() %> ;
+    localStorage.setItem("_m_tabae", JSON.stringify(stored));
+    //}
+</script>

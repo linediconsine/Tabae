@@ -1,0 +1,56 @@
+// Your variable overrides
+$body-bg: #4654a1;
+$body-color: #fff;
+$input-focus-border-color: #6d2077;
+$input-focus-color: #000;
+$input-color: #000;
+
+$theme-colors: (
+  "primary": #222,
+  "secondary": #cacaca,
+  "success": #bec0d3,
+  "info": #0f81c7,
+  "warning": #0de2ea,
+  "danger": #06648c,
+  "light": #ececec,
+  "dark": #222222,
+);
+
+// Typography
+//$font-size-base: 12px; // this changes the font-size throughout bootstrap
+//$font-family-sans-serif: "Raleway", sans-serif;
+$font-size-base: 1.3rem;
+//$line-height-base: 1.2;
+
+.card {
+  border-radius: 10px;
+ 
+}
+
+a.nav-link {
+  color: #fff;
+}
+.a-white a,
+.a-white a:hover {
+  color: #fff;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+.form-signin .form-floating label{
+  color: $input-focus-color; 
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}

@@ -1,0 +1,43 @@
+<section class="card bg-dark m-3 p-3">
+  <h2>About user data:</h2>
+  We uses cookies to mantains user session, and browser storage to allow user to use Tabae offline.<br>
+  We will also use Google analytics to understand how our users uses this service. <br>
+  <br>
+  We believe in using less user data as possible for deliver a great web app.
+</section>
+
+<div class="text-center card login-form w-50 pb-3">
+
+    <h2>Sign up</h2>
+
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+    <div class="field pb-2">
+        <%= f.label :email %><br>
+        <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+    </div>
+
+    <div class="field pb-2">
+        <%= f.label :password %>
+        <% if @minimum_password_length %>
+        <small>(<%= @minimum_password_length %> characters minimum)</small>
+        <% end %><br>
+        <%= f.password_field :password, autocomplete: "new-password" %>
+    </div>
+
+    <div class="field pb-2">
+        <%= f.label :password_confirmation %><br>
+        <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+    </div>
+
+
+
+    <div class="actions">
+        <%= f.submit "Sign up", class: 'btn' %>
+    </div>
+    <% end %>
+
+
+
+</div>

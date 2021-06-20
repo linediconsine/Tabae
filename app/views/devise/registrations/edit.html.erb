@@ -1,0 +1,96 @@
+
+ <%= link_to "Back", :back, :class => 'btn btn-secondary mb-3'  %>
+
+
+
+<div class="row">
+
+  <div class="col-md-3 col-sm-offset-1">
+    <div class="nav flex-column nav-pills pr-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+      <a class="nav-link active" id="v-pills-voice-tab" data-bs-toggle="pill" href="#v-pills-voice" role="tab" aria-controls="v-pills-voice" aria-selected="false">Voice</a>
+      <a class="nav-link " id="v-pills-fastlogin-tab" data-bs-toggle="pill" href="#v-pills-fastlogin" role="tab" aria-controls="v-pills-fastlogin" aria-selected="false">Fast login</a>
+      <a class="nav-link" id="v-pills-edit-tab" data-bs-toggle="pill" href="#v-pills-edit" role="tab" aria-controls="v-pills-edit" aria-selected="false">Email/Password</a>
+      <a class="nav-link" id="v-pills-delete-tab" data-bs-toggle="pill" href="#v-pills-delete" role="tab" aria-controls="v-pills-delete" aria-selected="false">Delete account</a>
+    </div>
+  </div>
+  <div class="col-md-9">
+        <div class="tab-content w-100" id="v-pills-tabContent">
+          
+          <div class="tab-pane fade active show" id="v-pills-voice" role="tabpanel" aria-labelledby="v-pills-voice-tab">
+              <%= render "setup_voice" %>
+          </div>
+          
+          <div class="tab-pane fade" id="v-pills-fastlogin" role="tabpanel" aria-labelledby="v-pills-fastlogin-tab">
+              <%= render "fast_login" %>
+          </div>
+          
+          <div class="tab-pane fade" id="v-pills-edit" role="tabpanel" aria-labelledby="v-pills-edit-tab">
+          <div class="card wrap-form pb-3">
+
+              <h2>Edit <%= resource_name.to_s.humanize %></h2>
+              <div class="p-3"></div>
+              <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+                <%= render "devise/shared/error_messages", resource: resource %>
+              <h3>Edit Email</h3>
+                <div class="form-group">
+                  <%= f.label :email %>
+                  <%= f.email_field :email, autofocus: true, autocomplete: "email" , class:"form-control" %>
+                </div>
+
+
+                <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+                  <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+                <% end %>
+
+              
+                <div class="p-3"></div>
+                <h3>Edit Password</h3>
+                <div class="form-group pt-3">
+                  <%= f.label :password %> <small>(leave blank if you dont want to change it)</small>
+                  <%= f.password_field :password, autocomplete: "new-password", class:"form-control"  %>
+                  <% if @minimum_password_length %>
+                    <small><%= @minimum_password_length %> characters minimum</small>
+                  <% end %>
+                </div>
+
+                <div class="form-group">
+                  <%= f.label :password_confirmation %>
+                  <%= f.password_field :password_confirmation, autocomplete: "new-password", class:"form-control"  %>
+                </div>
+                <div class="p-3"></div>
+
+              
+
+                <div class="form-group">
+                  <h3>*Confirm your changes</h3>
+                  <%= f.label :current_password %> <small>(we need your current password to confirm your changes)</small>
+                  <%= f.password_field :current_password, autocomplete: "current-password" , class:"form-control" %>
+                </div>
+
+                <div class="actions">
+                  <%= f.submit "Update", :class => 'btn btn-lg btn-primary btn-block'  %>
+                </div>
+              <% end %>
+
+              </div>
+
+          </div>
+
+          <div class="tab-pane fade" id="v-pills-delete" role="tabpanel" aria-labelledby="v-pills-delete-tab">
+            <div class="text-center card wrap-form mb-5">
+              <h3>Cancel my account</h3>
+              <p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, :class => 'btn btn-lg btn-danger btn-block'  %></p>
+            </div>
+            <div class="p-3"></div>
+        </div>
+  </div>
+</div>
+
+
+
+</div>
+
+<div class="p-5"></div>
+
+ <%= link_to "Back", :back, :class => 'btn btn-secondary mb-3'  %>
+

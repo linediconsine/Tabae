@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>You are not connected to the Internet</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    body {
+      background-color: #efefef;
+      color: #2e2f30;
+      text-align: center;
+      font-family: arial, sans-serif;
+      margin: 0;
+    }
+
+    .white {
+      color: #fff;
+    }
+
+    .a_link {
+      text-decoration: underline;
+    }
+
+    div.dialog {
+      width: 95%;
+      max-width: 33em;
+      margin: 4em auto 0;
+    }
+
+    div.dialog>div {
+      border: 1px solid #ccc;
+      border-right-color: #999;
+      border-left-color: #999;
+      border-bottom-color: #bbb;
+      border-top: #b00100 solid 4px;
+      border-top-left-radius: 9px;
+      border-top-right-radius: 9px;
+      background-color: white;
+      padding: 7px 12% 0;
+      box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+    }
+
+    div.dialog>p {
+      margin: 0 0 1em;
+      padding: 1em;
+      background-color: #f7f7f7;
+      border: 1px solid #ccc;
+      border-right-color: #999;
+      border-left-color: #999;
+      border-bottom-color: #999;
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+      border-top-color: #dadada;
+      color: #666;
+      box-shadow: 0 3px 8px rgba(50, 50, 50, 0.17);
+    }
+
+    nav {
+      font-size: 100%;
+      color: #fff;
+      line-height: 1.5em;
+      margin: 0;
+      padding: 3px 10px;
+      background-color: #6b2e2b;
+    }
+
+    div.sentence {
+      padding: 10px;
+      background-color: #f8f9fa !important;
+      border: 1px solid;
+      margin: 5px;
+      border-radius: 10px;
+    }
+
+    div.sentence a {
+      display: block;
+    }
+
+    #newsentence {
+      padding: 10px 30px;
+    }
+
+    #newsentence textarea {
+      width: 85%;
+      display: block;
+      height: 5em;
+      border: 1px solid #000;
+    }
+
+    #newsentence button {
+      width: 85%;
+      display: block;
+    }
+
+    body.offline .only_online,
+    body.online .offline_message,
+    body.online .only_offline {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <h1 class="only_offline">Offline</h1>
+    <a class="only_online white a_link" href="/sentences">
+      <h1>Tabae online</h1>
+    </a>
+  </nav>
+
+  <!-- This file lives in public/404.html -->
+  <!--<a>Frasi</a> <a>Nuova Frase</a> -->
+  <div class="fluid-container pt-3">
+    <div class="row" id="sentence">
+    </div>
+  </div>
+
+  <div id="newsentence" style="display: none;">
+    <textarea> </textarea>
+    <button>Parla</button>
+  </div>
+</body>
+
+<script>
+  window.items = JSON.parse(localStorage.getItem("_m_tabae"));
+
+  if (items != null) {
+    const $app = document.querySelector("#sentence");
+    templatize = (item) => {
+      console.log(item.sentence);
+
+
+
+
+      return `
+        <div class="card bg-dark a-white">
+          <a class="d-block p-1 view overlay zoom"  href="" onClick="voice('${item.sentence}')"">
+            <div class="card-body">
+              <p class="card-text">${item.sentence} </p>
+            </div>
+          </a>
+        </div>
+     `;
+    };
+    const map1 = items.map((x) => templatize(x));
+    $app.innerHTML = map1.join("");
+  }
+
+  window.voice = (sentence) => {
+    const ttsAPI = "speechSynthesis" in window;
+    const voice = new SpeechSynthesisUtterance();
+    const voices = window.speechSynthesis.getVoices();
+    // msg.voice = voices[10]; // Note: some voices don't support altering params
+    voice.volume = 1; // 0 to 1
+    voice.rate = 1; // 0.1 to 10
+    voice.pitch = 1; // 0 to 2
+
+    const browserLanguagse =
+      window.navigator["userLanguage"] || window.navigator.language;
+    voice.lang = browserLanguagse;
+
+    voice.text = sentence;
+    speechSynthesis.speak(voice);
+  };
+
+  window.Checkconnection = () => {
+    const $body = document.querySelector("body");
+    if (navigator.onLine) {
+      $body.classList.remove("offline");
+      $body.classList.add("online");
+    } else {
+      $body.classList.remove("online");
+      $body.classList.add("offline");
+    }
+  };
+  window.Checkconnection();
+  setInterval(function () {
+    window.Checkconnection();
+  }, 3000);
+</script>
+
+</html>

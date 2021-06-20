@@ -1,0 +1,44 @@
+// app/javascript/packs/stylesheets/application.scss
+@import "./_custom";
+@import "~bootstrap/scss/bootstrap"; // never forget the semicolon at the end
+
+// app/javascript/packs/stylesheets/_custom.scss
+
+body.offline .only_online,
+body.online .offline_message,
+body.online .only_offline {
+  display: none;
+}
+*::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: red;
+  opacity: 1; /* Firefox */
+}
+
+.login-form {
+  margin: 50px auto;
+  margin-bottom: 15px;
+  background: #05050a61;
+  padding: 30px;
+}
+
+.wrap-form {
+  background: #05050a61;
+  padding: 10px 30px;
+}
+
+
+.separe{
+  padding: 10rem 1.5rem !important;
+}
+/* 
+body {
+  background: url("squiggles.png"); 
+  z-index: -10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+*/

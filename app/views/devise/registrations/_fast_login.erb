@@ -1,0 +1,22 @@
+
+ <div class="card wrap-form my-3">
+        <div class="py-3">
+                <%
+                    crypt = ActiveSupport::MessageEncryptor.new(Settings.secret[0..31])
+                    inclear_fastlogin = current_user.uuid + '@@@' +current_user.email 
+
+                    @fastlogin= crypt.encrypt_and_sign(inclear_fastlogin)
+                %>
+  
+            <div class="p-2 text-dark d-none d-md-block d-xl-block ">
+                <h2 class="small text-white" style="margin:0">Fast login by QR</h2>
+                <div id="qrcode" ></div>
+                <script type="text/javascript">
+                    new QRCode(document.getElementById("qrcode"), "<%= request.base_url %>/api/login?tk=<%= u @fastlogin %>");
+                </script>
+            </div>
+            <!--
+            <%= link_to "Change QR", new_user_session_path, :class => 'btn btn-secondary'  %>
+            -->
+        </div>
+</div>

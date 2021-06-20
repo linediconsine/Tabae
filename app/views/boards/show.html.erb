@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Columns:</strong>
+  <%= @board.columns %>
+</p>
+
+<p>
+  <strong>Rows:</strong>
+  <%= @board.rows %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @board.User_id %>
+</p>
+
+<p>
+  <strong>Has many:</strong>
+  <%= @board.has_many %>
+</p>
+
+<%= link_to 'Edit', edit_board_path(@board) %> |
+<%= link_to 'Back', boards_path %>
