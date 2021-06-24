@@ -1,6 +1,13 @@
+![tabae logo](https://github.com/linediconsine/tabae/blob/main/public/apple-icon-152x152.png?raw=true)
+
+## Tabae is an open-source project voice synthetized dashboard.
+### This project is born out of necessity for helping a friend who loses his voice to communicate.
+
+See the [live service](https://www.tabae.cloud)
+
 ##### Prerequisites
 
-The setups steps expect following tools installed on the system.
+The setup steps expect the following tools installed on the system.
 
 - Github
 - Ruby [2.7.0](https://github.com/organization/project-name/blob/master/.ruby-version#L1)
