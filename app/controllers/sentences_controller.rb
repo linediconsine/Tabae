@@ -151,8 +151,13 @@ class SentencesController < ApplicationController
   # GET /sentences/1/edit
   def edit
     @groups = current_user.sentences.all.distinct.pluck(:group) 
+    @actual_group = Sentence.find(params["id"]).group
+
     if @groups.exclude?('Home')
       @groups.push('Home')
+    end
+    if @groups.exclude?('New folder')
+      @groups.push('New folder')
     end
 
   end
