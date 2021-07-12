@@ -150,3 +150,5 @@ yarn-debug.log*
 !/storage/.keep
 /public/uploads
 
+config/database.yml
+.idea/
