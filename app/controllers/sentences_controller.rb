@@ -55,20 +55,7 @@ class SentencesController < ApplicationController
     @domain = request.base_url
 
     @sentences = current_user.sentences.all
-
-    if session[:order] == "first"
-      @sentences = @sentences.reverse
-    end
-
     @root_sentences = current_user.sentences.all.where(group: ["Home",""])
-
-    if session[:order] == "first"
-      @root_sentences = @root_sentences.reverse
-    end
-
-    @groups = current_user.sentences.all.distinct.pluck(:group)
-    @folders_name = current_user.sentences.all.distinct.pluck(:group)
-
 
     if params['order']
       if params['order'] == "first"
@@ -78,6 +65,13 @@ class SentencesController < ApplicationController
       end
     end
 
+    if session[:order] == "first"
+      @root_sentences = @root_sentences.reverse
+      @sentences = @sentences.reverse
+    end
+
+    @groups = current_user.sentences.all.distinct.pluck(:group)
+    @folders_name = current_user.sentences.all.distinct.pluck(:group)
 
     if @groups.exclude?('Home')
       @groups.push('Home')
