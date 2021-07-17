@@ -50,15 +50,34 @@ class SentencesController < ApplicationController
   # GET /sentences.json
   def index
     create_token(current_user)
-    @domain = request.base_url 
-    @sentences = current_user.sentences.all.reverse
-    @root_sentences = current_user.sentences.all.where(group: ["Home",""]).reverse
+
+    #session[:current_user_id]
+    @domain = request.base_url
+
+    @sentences = current_user.sentences.all
+
+    if session[:order] == "first"
+      @sentences = @sentences.reverse
+    end
+
+    @root_sentences = current_user.sentences.all.where(group: ["Home",""])
+
+    if session[:order] == "first"
+      @root_sentences = @root_sentences.reverse
+    end
 
     @groups = current_user.sentences.all.distinct.pluck(:group)
     @folders_name = current_user.sentences.all.distinct.pluck(:group)
-    
-    puts "group"
-    puts @groups
+
+
+    if params['order']
+      if params['order'] == "first"
+        session[:order] = "first"
+      else
+        session[:order] = "last"
+      end
+    end
+
 
     if @groups.exclude?('Home')
       @groups.push('Home')
