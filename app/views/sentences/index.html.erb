@@ -73,10 +73,13 @@
         Order
       </button>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+
         <li>
-          <a class="dropdown-item<% if session[:order] == "first" %>bg-secondary<% end %>" href="/?order=first">New senteces first</a></li>
+          <% _class = session[:order] == "first" ? 'dropdown-item bg-secondary' : 'dropdown-item' %>
+          <%= link_to 'New senteces first', url_for( :order => 'first',:group => @folder ), :class => _class %>
         <li>
-          <a class="dropdown-item<% if session[:order] != "first" %>bg-secondary<% end %>" href="/?order=last">Old sentencs first</a>
+          <% _class = session[:order] == "last" ? 'dropdown-item bg-secondary' : 'dropdown-item' %>
+          <%= link_to 'Old sentencs first', url_for( :order => 'last',:group => @folder  ), :class => "dropdown-item"  %>
         </li>
       </ul>
 
@@ -143,7 +146,7 @@
 
     <div class="row pt-2" id="group">
 
-      <% if @folders_name.length < 2 %>
+      <% if @folders_name.length < 1 %>
         <div class="row">
           <div class="m-auto py-3">
             <section class="card p-3 bg-dark">

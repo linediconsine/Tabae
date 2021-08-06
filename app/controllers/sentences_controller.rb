@@ -65,10 +65,7 @@ class SentencesController < ApplicationController
       end
     end
 
-    if session[:order] == "first"
-      @root_sentences = @root_sentences.reverse
-      @sentences = @sentences.reverse
-    end
+
 
     @groups = current_user.sentences.all.distinct.pluck(:group)
     @folders_name = current_user.sentences.all.distinct.pluck(:group)
@@ -87,6 +84,11 @@ class SentencesController < ApplicationController
       @sentences = current_user.sentences.all.where(group: @folder).reverse
     else
       @sentences = @root_sentences
+    end
+
+    if session[:order] == "first"
+      @root_sentences = @root_sentences.reverse
+      @sentences = @sentences.reverse
     end
 
     @sentence = current_user.sentences.build
