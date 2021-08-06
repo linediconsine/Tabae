@@ -86,7 +86,7 @@ class SentencesController < ApplicationController
       @sentences = @root_sentences
     end
 
-    if session[:order] == "first"
+    if session[:order] == "last"
       @root_sentences = @root_sentences.reverse
       @sentences = @sentences.reverse
     end
