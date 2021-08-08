@@ -1,5 +1,5 @@
 
- <div class="card wrap-form my-3">
+ <div class="card wrap-form my-3 ifDesktop">
         <div class="py-3">
                 <%
                     crypt = ActiveSupport::MessageEncryptor.new(Settings.secret[0..31])
@@ -20,3 +20,6 @@
             -->
         </div>
 </div>
+ <div class="card wrap-form my-3 ifMobile">
+   <h2>Fast login is disabled on mobile phone ( load this page on tablet or Desktop)</h2>
+ </div>
