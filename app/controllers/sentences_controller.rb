@@ -1,7 +1,8 @@
 class SentencesController < ApplicationController
-  before_action :set_sentence, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:welcome,:coming_soon,:terms_and_conditions,:privacy_policy,:token_access]
   skip_before_action :verify_authenticity_token, only: [:apicreate,:token_access]
+  before_action :set_sentence, only: [:show, :edit, :update, :destroy]
+  before_action :set_board, except: [:welcome,:coming_soon,:terms_and_conditions,:privacy_policy,:token_access]
 
   def welcome
     redirect_to sentences_path if signed_in?
@@ -28,7 +29,7 @@ class SentencesController < ApplicationController
 
   # GET /dashboard.json
   def dashboard
-    @sentences = current_user.sentences.all.reverse
+    @sentences = @Board.sentences.all.reverse
 
     respond_to do |format|
       format.json { render json:  @sentences.to_json()  }
@@ -54,21 +55,20 @@ class SentencesController < ApplicationController
     #session[:current_user_id]
     @domain = request.base_url
 
-    @sentences = current_user.sentences.all
+    @sentences = @Board.sentences.all
 
     if session[:order] == "first"
       @sentences = @sentences.reverse
     end
 
-    @root_sentences = current_user.sentences.all.where(group: ["Home",""])
+    @root_sentences = @Board.sentences.all.where(group: ["Home",""])
 
     if session[:order] == "first"
       @root_sentences = @root_sentences.reverse
     end
 
-    @groups = current_user.sentences.all.distinct.pluck(:group)
-    @folders_name = current_user.sentences.all.distinct.pluck(:group)
-
+    @groups = @Board.sentences.all.distinct.pluck(:group)
+    @folders_name = @Board.sentences.all.distinct.pluck(:group)
 
     if params['order']
       if params['order'] == "first"
@@ -78,24 +78,22 @@ class SentencesController < ApplicationController
       end
     end
 
-
     if @groups.exclude?('Home')
       @groups.push('Home')
     end
     if @groups.exclude?('New folder')
       @groups.push('New folder')
     end
-   
 
     if params['group']
       @body_class='group_selected' 
       @folder = params['group']
-      @sentences = current_user.sentences.all.where(group: @folder).reverse
+      @sentences = @Board.sentences.all.where(group: @folder).reverse
     else
       @sentences = @root_sentences
     end
 
-    @sentence = current_user.sentences.build
+    @sentence = @Board.sentences.build
   end
 
   # post /api/new (JSON)
@@ -139,7 +137,7 @@ class SentencesController < ApplicationController
     request.format = :json
     
     @api_sentence =  params['sentence']
-    @sentence = current_user.sentences.new()
+    @sentence = @Board.sentences.new()
     
     @sentence.sentence = @api_sentence 
     @sentence.name = @api_sentence 
@@ -164,12 +162,12 @@ class SentencesController < ApplicationController
 
   # GET /sentences/new
   def new
-    @sentence = current_user.sentences.build
+    @sentence = @Board.sentences.build
   end
 
   # GET /sentences/1/edit
   def edit
-    @groups = current_user.sentences.all.distinct.pluck(:group) 
+
     @actual_group = Sentence.find(params["id"]).group
 
     if @groups.exclude?('Home')
@@ -184,8 +182,9 @@ class SentencesController < ApplicationController
   # POST /sentences
   # POST /sentences.json
   def create
-    @sentence = current_user.sentences.build(sentence_params)
-  
+    @sentence = @Board.sentences.build(sentence_params)
+    @sentence.user_id = current_user.id #temporaray patch
+
     respond_to do |format|
       if @sentence.save
         format.html { redirect_to @sentence, notice: 'Ho aggiunto la frase a quelle salvate.' }
@@ -215,6 +214,26 @@ class SentencesController < ApplicationController
 
 
   private
+
+  def set_board
+    if current_user.boards.count == 0
+      #
+      # update user to the new Model
+      #
+      _board = current_user.boards.new()
+      _board.name = 'default'
+      _board.rows = 3
+      _board.columns = 6
+      _board.save()
+
+      current_user.sentences.each do |s|
+        _board.sentences.new(name: s.name,sentence: s.sentence,group: s.group, user_id: s.user_id, board_id: _board.id, color: s.color).save()
+      end
+    end
+
+    @Board = current_user.boards[0]
+    @groups = @Board.sentences.all.distinct.pluck(:group)
+  end
     # Use callbacks to share common setup or constraints between actions.
     def set_sentence
       @sentence = Sentence.find(params[:id])
