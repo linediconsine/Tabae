@@ -72,8 +72,8 @@
       <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
         Order
       </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
 
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
         <li>
           <% _class = session[:order] == "first" ? 'dropdown-item bg-secondary' : 'dropdown-item' %>
           <%= link_to 'New senteces first', url_for( :order => 'first',:group => @folder ), :class => _class %>

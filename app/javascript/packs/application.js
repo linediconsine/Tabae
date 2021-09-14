@@ -25,6 +25,10 @@ import  "packs/qrcode";
 
 import "bootstrap";
 import "./stylesheets/application.scss";
+
+
+
+
 import axios from "axios";
 //import vue from "vue";
 
