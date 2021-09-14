@@ -27,7 +27,6 @@
     <%= label_tag(:group, t('folder')) %>
 
     <div>
-      <%= @actual_group %>
       <%= select_tag "folders", options_for_select(@groups,@actual_group),:class => ' w-100 bg-light form-control form-control-lg', :onchange => 'thisOrNew("folders","sentence_group")'  %>
     </div>
     <div class="hiddenIf py-2">
