@@ -1,16 +1,18 @@
 
-    <div class="mb-4">
+
         <% unless ( notice.nil? &&  alert.nil?) %>
-          <div id="snackbar" class="show text-center" role="alert" aria-live="assertive" aria-atomic="true">
-              <% unless notice.nil? %>
-              <div id="notice" class=""><%= notice %></div>
-              <% end %>
-              <% unless alert.nil? %>
-              <div id="alert" class=""><%= alert %></div>
-              <% end %>
+          <div class="mb-2">
+            <div id="snackbar" class="show text-center" role="alert" aria-live="assertive" aria-atomic="true">
+                <% unless notice.nil? %>
+                <div id="notice" class=""><%= notice %></div>
+                <% end %>
+                <% unless alert.nil? %>
+                <div id="alert" class=""><%= alert %></div>
+                <% end %>
+            </div>
           </div>
         <% end %>
-    </div>
+
     <script>
       setTimeout(function(){ 
           if(document.querySelector('#snackbar') != null ){

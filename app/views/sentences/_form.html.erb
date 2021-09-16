@@ -1,4 +1,10 @@
 <%= javascript_pack_tag 'voice' %>
+<!-- One of the following themes -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"/> <!-- 'classic' theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/monolith.min.css"/> <!-- 'monolith' theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/nano.min.css"/> <!-- 'nano' theme -->
+
+
 <div class="p1">
 <%= form_with(model: sentence, local: true) do |form| %>
   <% if sentence.errors.any? %>
@@ -15,7 +21,6 @@
 
   <div class="field">
     <%= form.hidden_field :name %>
-    <%= form.hidden_field :color %>
   </div>
 
   <div class="field">
@@ -58,6 +63,17 @@
       }
     </style>
   </div>
+
+    <div class="field">
+      <%= label_tag(:sentence, t('color')) %>
+      <%= form.color_field :color,:class => 'w-100',:list=>'presets'%>
+      <datalist id="presets">
+        <option value="#cccccc">Grey</option>
+        <option value="#ffffff">White</option>
+        <option value="#6699cc">Blue</option>
+      </datalist>
+    </div>
+
 
   <div class="actions py-4">
 

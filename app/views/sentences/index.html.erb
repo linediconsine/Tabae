@@ -1,13 +1,14 @@
 <%= javascript_pack_tag 'voice' %>
 <%= javascript_pack_tag 'serviceworker-companion' %>
 
-    <% if user_signed_in?  %>
-     <nav aria-label="breadcrumb" style="font-size:2em">
-            <ol class="breadcrumb bg-dark ">
+<div class="row ">
+  <% if user_signed_in?  %>
+     <nav class="col-md-5" aria-label="breadcrumb" style="font-size:1.2em">
+            <ol class="breadcrumb bg-dark rounded my-2">
                  <% if @folder %>
                 
-                    <li class="breadcrumb-item text-light px-3 small"><a class="text-light" href="/">
-                     
+                    <li class="text-light px-3 small"><a class="text-light" href="/">
+
                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
                             <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
@@ -44,26 +45,28 @@
             </div>
                   </ol>
                 </nav>
-        <% end %>
+  <% end %>
 
-<% if user_signed_in? %>
-<div class="nav nav-pills" id="nav-tab" role="tablist">
+    <% if user_signed_in? %>
+<div class="nav nav-pills col-md-7 rounded" id="nav-tab" role="tablist">
 
-   <a class="nav-link text-capitalize  mr-3" id="nav-group-tab" data-bs-toggle="tab" href="#nav-group" role="tab" aria-controls="nav-group" aria-selected="false">
+   <a class="nav-link text-capitalize small mr-3" id="nav-group-tab" data-bs-toggle="tab" href="#nav-group" role="tab" aria-controls="nav-group" aria-selected="false">
    
         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-folder" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path d="M9.828 4a3 3 0 0 1-2.12-.879l-.83-.828A1 1 0 0 0 6.173 2H2.5a1 1 0 0 0-1 .981L1.546 4h-1L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3v1z"/>
             <path fill-rule="evenodd" d="M13.81 4H2.19a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91h10.348a1 1 0 0 0 .995-.91l.637-7A1 1 0 0 0 13.81 4zM2.19 3A2 2 0 0 0 .198 5.181l.637 7A2 2 0 0 0 2.826 14h10.348a2 2 0 0 0 1.991-1.819l.637-7A2 2 0 0 0 13.81 3H2.19z"/>
         </svg> <%= t "group" %> 
-    
+
     </a>
 
 
-    <a class="nav-link active text-capitalize" id="nav-home-tab" data-bs-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">
-    <%= t "sentences" %>
+
+
+    <a class="nav-link active text-capitalize " id="nav-home-tab" data-bs-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">
+      <%= t "sentences" %>
     </a>
 
-    <a class="nav-link text-capitalize btn btn-dark" id="nav-profile-tab" data-bs-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><%= t "new_sentence" %></a>
+    <a class="nav-link text-capitalize btn-dark small" id="nav-profile-tab" data-bs-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><%= t "new_sentence" %></a>
 
 
 
@@ -81,6 +84,8 @@
 
 
 <% end %>
+</div>
+
 
 <div class="tab-content" id="nav-tabContent">
     <section class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
@@ -109,8 +114,8 @@
                         <div class="col-lg-2 mr-2 mb-2">
                             <div class="card bg-dark a-white">
                                 <a class="d-block view overlay zoom" id="sentence_<%= index %>" href="" onClick="voice('<%= escape_javascript sentence.sentence %>')">
-                                    <div class="card-body">
-                                        <p class="card-text" style="height: 80pt;overflow: hidden;text-align: center;"><%= truncate(sentence.sentence, :length => 30) %></p>
+                                    <div class="card-body rounded-top" style="<%= sanitize("background-color:" +  sentence.color) %>">
+                                        <p class="card-text" style="height: 30pt;overflow: hidden;text-align: center;mix-blend-mode: difference;"><%= truncate(sentence.sentence, :length => 30) %></p>
                                     </div>
                                 </a>
 
