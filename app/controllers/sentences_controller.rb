@@ -52,6 +52,8 @@ class SentencesController < ApplicationController
   def index
     create_token(current_user)
 
+    @edit_mode = params['edit'] == "true"
+
     #session[:current_user_id]
     @domain = request.base_url
 
@@ -93,6 +95,9 @@ class SentencesController < ApplicationController
       @sentences = @root_sentences
     end
 
+    if params['search']
+      @sentences = @sentences.where("sentence like ?", "%#{params['search']}%")
+    end
     @sentence = @Board.sentences.build
   end
 
@@ -242,7 +247,7 @@ class SentencesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def sentence_params
-      params.require(:sentence).permit(:name, :sentence, :color, :group)
+      params.require(:sentence).permit(:name, :sentence, :color, :group,:search)
     end
 
     def create_token(_user)

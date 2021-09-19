@@ -1,0 +1,10 @@
+
+<div class="dropdown" style="margin-left: auto">
+  <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    Order
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item  <% if session[:order] == "first" %>bg-secondary<% end %>" href="/?order=first">New senteces first</a></li>
+    <li><a class="dropdown-item <% if session[:order] != "first" %>bg-secondary<% end %>" href="/?order=last">Old sentencs first</a></li>
+  </ul>
+</div>

@@ -70,20 +70,24 @@ initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 
     <nav class="navbar navbar-expand-md navbar-dark bg-dark px-1">
         <%= link_to "TaBaE", root_path , class: "navbar-brand"%>
-        <span class="offline_message text-light">Offline</span>
-           
-              <% if action_name != 'coming_soon' %>
 
-                  <% if user_signed_in?  %>
+        <span class="offline_message text-light">Offline</span>
+        <% if action_name != 'coming_soon' %>
+        <% if user_signed_in?  %>
+
+            <%= render "application/breadcrumbs" %>
 
                   <div class="dropdown" style="margin-left: auto;">
                       <button class="dropdown-toggle btn btn-secondary" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Hi, <%= current_user.email %>
+                        <span class="d-none d-sm-block" style="float:left">Hi, <%= current_user.email %></span>
                       </button>
                       <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-    
-
-                      <%= link_to  t("profile"), edit_user_registration_path , class: "dropdown-item" %>
+                        <% if @edit_mode %>
+                          <%= link_to  t("edit"), sentences_path(:edit => false) , class: "dropdown-item" %>
+                        <% else %>
+                          <%= link_to  t("edit"), sentences_path(:edit => true) , class: "dropdown-item" %>
+                      <% end %>
+                        <%= link_to  t("profile"), edit_user_registration_path , class: "dropdown-item" %>
 
                       <%= link_to  t("logout"), destroy_user_session_path, method: :delete , class: "dropdown-item" %>
                      

@@ -1,231 +1,186 @@
-<%= javascript_pack_tag 'voice' %>
-<%= javascript_pack_tag 'serviceworker-companion' %>
+  <%= javascript_pack_tag 'voice' %>
+  <%= javascript_pack_tag 'serviceworker-companion' %>
 
-<div class="row ">
-  <% if user_signed_in?  %>
-     <nav class="col-md-5" aria-label="breadcrumb" style="font-size:1.2em">
-            <ol class="breadcrumb bg-dark rounded my-2">
-                 <% if @folder %>
-                
-                    <li class="text-light px-3 small"><a class="text-light" href="/">
+  <div class="row mt-3">
 
-                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
-                            <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
-                        </svg> Home</a></li>
-                        <li class="breadcrumb-item active text-light small" aria-current="page">
-                        <a class="text-light text-capitalize   px-3 active " href="#">
-                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-folder" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9.828 4a3 3 0 0 1-2.12-.879l-.83-.828A1 1 0 0 0 6.173 2H2.5a1 1 0 0 0-1 .981L1.546 4h-1L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3v1z"/>
-                                <path fill-rule="evenodd" d="M13.81 4H2.19a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91h10.348a1 1 0 0 0 .995-.91l.637-7A1 1 0 0 0 13.81 4zM2.19 3A2 2 0 0 0 .198 5.181l.637 7A2 2 0 0 0 2.826 14h10.348a2 2 0 0 0 1.991-1.819l.637-7A2 2 0 0 0 13.81 3H2.19z"/>
-                            </svg> 
-                            <%= @folder %>
-                            </a>
-                        
-                    </li>
-                <% else %>
-               
-                    <li class="breadcrumb-item  small active px-3 " aria-current="page">
-                        <a class="text-light small" href="#">
-                            <svg style="vertical-align: sub;"  width="1em" height="1em" viewBox="0 0 16 16" class="p-1 bi bi-house-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
-                                <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
-                            </svg>Home
-                        </a>
-                    </li>
-                  
-            <% end %>
-            <div style="margin-left: auto; display:none">
-              <a class="d-block" onClick="window.voice.cancel()">
-                      <svg style="vertical-align: sub;" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-stop-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M5 3.5h6A1.5 1.5 0 0 1 12.5 5v6a1.5 1.5 0 0 1-1.5 1.5H5A1.5 1.5 0 0 1 3.5 11V5A1.5 1.5 0 0 1 5 3.5z"/>
-                      </svg>
+    <div class="col-md-2 rounded" id="nav-tab" role="tablist">
 
-              </a>
+      <%= form_tag(sentences_path, method: :get, class: "col-12 col-lg-auto") do %>
+        <%= search_field_tag(:search, params[:search], class: 'form-control',placeholder: 'Search...','aria-label':'search') %>
+      <% end %>
+    </div>
+
+
+            <div class="nav nav-pills col-md-10 rounded mt-2 mt-sm-0" id="nav-tab" role="tablist">
+
+               <a class="nav-link text-capitalize small mr-3" id="nav-group-tab" data-bs-toggle="tab" href="#nav-group" role="tab" aria-controls="nav-group" aria-selected="false">
+
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-folder" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.828 4a3 3 0 0 1-2.12-.879l-.83-.828A1 1 0 0 0 6.173 2H2.5a1 1 0 0 0-1 .981L1.546 4h-1L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3v1z"/>
+                        <path fill-rule="evenodd" d="M13.81 4H2.19a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91h10.348a1 1 0 0 0 .995-.91l.637-7A1 1 0 0 0 13.81 4zM2.19 3A2 2 0 0 0 .198 5.181l.637 7A2 2 0 0 0 2.826 14h10.348a2 2 0 0 0 1.991-1.819l.637-7A2 2 0 0 0 13.81 3H2.19z"/>
+                    </svg> <%= t "group" %>
+
+                </a>
+
+
+                <a class="nav-link active text-capitalize " id="nav-home-tab" data-bs-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">
+                  <%= t "sentences" %>
+                </a>
+                <a class="nav-link text-capitalize btn-dark small" id="nav-profile-tab" data-bs-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><%= t "new_sentence" %></a>
+
+                <%= render "order_dropdown" %>
+
             </div>
-                  </ol>
-                </nav>
-  <% end %>
-
-    <% if user_signed_in? %>
-<div class="nav nav-pills col-md-7 rounded" id="nav-tab" role="tablist">
-
-   <a class="nav-link text-capitalize small mr-3" id="nav-group-tab" data-bs-toggle="tab" href="#nav-group" role="tab" aria-controls="nav-group" aria-selected="false">
-   
-        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-folder" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9.828 4a3 3 0 0 1-2.12-.879l-.83-.828A1 1 0 0 0 6.173 2H2.5a1 1 0 0 0-1 .981L1.546 4h-1L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3v1z"/>
-            <path fill-rule="evenodd" d="M13.81 4H2.19a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91h10.348a1 1 0 0 0 .995-.91l.637-7A1 1 0 0 0 13.81 4zM2.19 3A2 2 0 0 0 .198 5.181l.637 7A2 2 0 0 0 2.826 14h10.348a2 2 0 0 0 1.991-1.819l.637-7A2 2 0 0 0 13.81 3H2.19z"/>
-        </svg> <%= t "group" %> 
-
-    </a>
 
 
 
-
-    <a class="nav-link active text-capitalize " id="nav-home-tab" data-bs-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">
-      <%= t "sentences" %>
-    </a>
-
-    <a class="nav-link text-capitalize btn-dark small" id="nav-profile-tab" data-bs-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><%= t "new_sentence" %></a>
-
-
-
-  <div class="dropdown" style="margin-left: auto">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-      Order
-    </button>
-    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-      <li><a class="dropdown-item  <% if session[:order] == "first" %>bg-secondary<% end %>" href="/?order=first">New senteces first</a></li>
-      <li><a class="dropdown-item <% if session[:order] != "first" %>bg-secondary<% end %>" href="/?order=last">Old sentencs first</a></li>
-    </ul>
   </div>
-</div>
 
 
+  <div class="tab-content" id="nav-tabContent">
+      <section class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
 
-<% end %>
-</div>
-
-
-<div class="tab-content" id="nav-tabContent">
-    <section class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-
-        <div class="fluid-container pt-3">
-            <div class="row" id="main">
+          <div class="fluid-container pt-3">
+              <div class="row" id="main">
 
 
-                <%  if @sentences.empty? %>
+                  <%  if @sentences.empty? %>
 
-                    <div class="m-auto py-3">
-                        <section class="card p-3 bg-dark">
-                            <div class="row">
-                                <div class="col-12 m-auto">
-                                    <p>Hi there!<br> You dont have any sentence in your Home space.</p>
-                                </div>
-                            </div>
+                      <div class="m-auto py-3">
+                          <section class="card p-3 bg-dark">
+                              <div class="row">
+                                  <div class="col-12 m-auto">
+                                      <p>Hi there!<br> You dont have any sentence in your Home space.</p>
+                                  </div>
+                              </div>
 
-                        </section>
-                    </div>
+                          </section>
+                      </div>
 
-                <% else %>
-            
+                  <% else %>
 
-                    <% @sentences.each_with_index do |sentence,index| %>
-                        <div class="col-lg-2 mr-2 mb-2">
-                            <div class="card bg-dark a-white">
-                                <a class="d-block view overlay zoom" id="sentence_<%= index %>" href="" onClick="voice('<%= escape_javascript sentence.sentence %>')">
-                                    <div class="card-body rounded-top" style="<%= sanitize("background-color:" +  sentence.color) %>">
-                                        <p class="card-text" style="height: 30pt;overflow: hidden;text-align: center;mix-blend-mode: difference;"><%= truncate(sentence.sentence, :length => 30) %></p>
-                                    </div>
-                                </a>
 
-                                <div class="card-footer small" style="padding: 7px 10px">
-                                    <%= link_to t('edit'), edit_sentence_path(sentence) , class: "card-link float-right"%>
-                                </div>
-                            </div>
-                        </div>
-                    <% end %>
+                      <% @sentences.each_with_index do |sentence,index| %>
+                          <div class="col-md-2 mr-2 col-6 mb-2">
+                              <div class="card bg-dark a-white">
+                                  <a class="d-block view overlay zoom" id="sentence_<%= index %>" href="" onClick="voice('<%= escape_javascript sentence.sentence %>')">
+                                      <div class="card-body rounded-top" style="<%= sanitize("background-color:" +  sentence.color) %>">
 
-                <% end %>
+                                          <p class="card-text" style="height: 30pt;overflow: hidden;text-align: center;mix-blend-mode: difference;"><%= truncate(sentence.sentence, :length => 30) %></p>
+                                        <div class="text-align: end;">
+                                          <span style="mix-blend-mode: difference;font-size: 12px;"><%= index %></span>
+                                        </div>
+                                      </div>
+                                  </a>
+                                <% if  @edit_mode %>
+                                    <div class="card-footer small" >
+                                        <%= link_to t('edit'), edit_sentence_path(sentence) , class: "card-link float-right"%>
+                                      </div>
+                                <% end %>
+                              </div>
+                          </div>
+                      <% end %>
+
+                  <% end %>
+              </div>
+          </div>
+
+
+      </section>
+
+      <section class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+          <div id="new" class="pt-3">
+              <%= render 'form', sentence: @sentence %>
             </div>
-        </div>
+      </section>
+
+      <section class="tab-pane fade" id="nav-group" role="tabpanel" aria-labelledby="nav-group-tab">
+
+             <div class="row pt-2" id="group">
+
+                  <%  if @folders_name.length < 2 %>
+                  <div class="row">
+                  <div class="m-auto py-3">
+                      <section class="card p-3 bg-dark">
+                          <div class="row">
+                              <div class="col-12 m-auto">
+                                  <p>Hi there!<br> You dont have any folder.</p>
+                                  <p>When you create a new sentence you can also create a folder</p>
+                              </div>
+                          </div>
+
+                      </section>
+                  </div>
+                  </div>
+                  <% end %>
+
+                  <% @groups.each_with_index do |group,index| %>
+                      <% if group != "" and group != "New folder" and group != "Home" %>
+                      <div class="col-lg-2  mr-2 mb-2">
+                              <div class="card bg-info a-white">
+
+                                   <div class="text-left small p-3">
+                                              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-folder" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                  <path d="M9.828 4a3 3 0 0 1-2.12-.879l-.83-.828A1 1 0 0 0 6.173 2H2.5a1 1 0 0 0-1 .981L1.546 4h-1L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3v1z"/>
+                                                  <path fill-rule="evenodd" d="M13.81 4H2.19a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91h10.348a1 1 0 0 0 .995-.91l.637-7A1 1 0 0 0 13.81 4zM2.19 3A2 2 0 0 0 .198 5.181l.637 7A2 2 0 0 0 2.826 14h10.348a2 2 0 0 0 1.991-1.819l.637-7A2 2 0 0 0 13.81 3H2.19z"/>
+                                              </svg>
+                                  </div>
 
 
-    </section>
+                                      <div class="card-body text-center py-2 mx-0" style="height: 80pt;overflow: hidden;text-align: center;">
+                                          <a href="<%= sentences_path(:group => group) %>"  class="d-block">
+                                              <p class="card-text">
+                                              <%
+                                                  container_folder = "normal"
+                                                  if group.length < 3
+                                                      container_folder = "TextBigger"
+                                                  end
+                                              %>
 
-    <section class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-        <div id="new" class="pt-3">
-            <%= render 'form', sentence: @sentence %>
-          </div>
-    </section>
-    
-    <section class="tab-pane fade" id="nav-group" role="tabpanel" aria-labelledby="nav-group-tab">
+                                                  <span class="<%= container_folder %>">
+                                                      <%= group %>
+                                                  </span>
+                                              </p>
+                                          </a>
+                                      </div>
 
-           <div class="row pt-2" id="group">
-                
-                <%  if @folders_name.length < 2 %>
-                <div class="row">
-                <div class="m-auto py-3">
-                    <section class="card p-3 bg-dark">
-                        <div class="row">
-                            <div class="col-12 m-auto">
-                                <p>Hi there!<br> You dont have any folder.</p>
-                                <p>When you create a new sentence you can also create a folder</p>
-                            </div>
-                        </div>
+                              </div>
+                          </div>
+                          <% end %>
+                  <% end %>
+            </div>
+      </section>
 
-                    </section>
-                </div>
-                </div>
-                <% end %>
-
-                <% @groups.each_with_index do |group,index| %>
-                    <% if group != "" and group != "New folder" and group != "Home" %>
-                    <div class="col-lg-2  mr-2 mb-2">
-                            <div class="card bg-info a-white">
-
-                                 <div class="text-left small p-3">
-                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-folder" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M9.828 4a3 3 0 0 1-2.12-.879l-.83-.828A1 1 0 0 0 6.173 2H2.5a1 1 0 0 0-1 .981L1.546 4h-1L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3v1z"/>
-                                                <path fill-rule="evenodd" d="M13.81 4H2.19a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91h10.348a1 1 0 0 0 .995-.91l.637-7A1 1 0 0 0 13.81 4zM2.19 3A2 2 0 0 0 .198 5.181l.637 7A2 2 0 0 0 2.826 14h10.348a2 2 0 0 0 1.991-1.819l.637-7A2 2 0 0 0 13.81 3H2.19z"/>
-                                            </svg> 
-                                </div>
-
-                             
-                                    <div class="card-body text-center py-2 mx-0" style="height: 80pt;overflow: hidden;text-align: center;">
-                                        <a href="<%= sentences_path(:group => group) %>"  class="d-block">
-                                            <p class="card-text">
-                                            <%
-                                                container_folder = "normal"
-                                                if group.length < 3 
-                                                    container_folder = "TextBigger"
-                                                end
-                                            %>
-
-                                                <span class="<%= container_folder %>">
-                                                    <%= group %>
-                                                </span>
-                                            </p>
-                                        </a>
-                                    </div>
-                             
-                            </div>
-                        </div>
-                        <% end %>
-                <% end %>
-          </div>
-    </section>
-
-    <section class="tab-pane fade" id="nav-icons" role="tabpanel" aria-labelledby="nav-icons-tab">
-        <i class="fas fa-toilet"></i>
+      <section class="tab-pane fade" id="nav-icons" role="tabpanel" aria-labelledby="nav-icons-tab">
+          <i class="fas fa-toilet"></i>
 
 
-        <i class="fa fa-car"></i>
-        <i class="fa fa-car" style="font-size:48px;"></i>
-        <i class="fa fa-car" style="font-size:60px;color:red;"></i>
+          <i class="fa fa-car"></i>
+          <i class="fa fa-car" style="font-size:48px;"></i>
+          <i class="fa fa-car" style="font-size:60px;color:red;"></i>
 
-    </section>
-</div>
-<script>
+      </section>
+  </div>
+  <script>
 
- console.log('fetch');
+   console.log('fetch');
 
-fetch('/dashboard.json')
-  .then(
-    function(response) {
-      if (response.status !== 200) {
-        console.log('Looks like there was a problem. Status Code: ' +
-          response.status);
-        return;
+  fetch('/dashboard.json')
+    .then(
+      function(response) {
+        if (response.status !== 200) {
+          console.log('Looks like there was a problem. Status Code: ' +
+            response.status);
+          return;
+        }
+
+        // Examine the text in the response
+        response.json().then(function(data) {
+          localStorage.setItem("_m_tabae", JSON.stringify(data));
+        });
       }
-
-      // Examine the text in the response
-      response.json().then(function(data) {
-        localStorage.setItem("_m_tabae", JSON.stringify(data));
-      });
-    }
-  )
-  .catch(function(err) {
-    console.log('Fetch Error :-S', err);
-  });
-</script>
+    )
+    .catch(function(err) {
+      console.log('Fetch Error :-S', err);
+    });
+  </script>
