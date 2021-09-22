@@ -75,24 +75,26 @@ initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
         <% if action_name != 'coming_soon' %>
         <% if user_signed_in?  %>
 
-            <%= render "application/breadcrumbs" %>
+          <%= render "application/breadcrumbs" %>
 
-                  <div class="dropdown" style="margin-left: auto;">
-                      <button class="dropdown-toggle btn btn-secondary" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="d-none d-sm-block" style="float:left">Hi, <%= current_user.email %></span>
-                      </button>
-                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <% if @edit_mode %>
-                          <%= link_to  t("edit"), sentences_path(:edit => false) , class: "dropdown-item" %>
-                        <% else %>
-                          <%= link_to  t("edit"), sentences_path(:edit => true) , class: "dropdown-item" %>
-                      <% end %>
-                        <%= link_to  t("profile"), edit_user_registration_path , class: "dropdown-item" %>
+          <div style="margin-left:auto">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="d-none d-sm-block" style="float:left">Hi, <%= current_user.email %></span>
+            </button>
+            <ul class="dropdown-menu">
+              <% if @edit_mode %>
+                <%= link_to  t("edit"), sentences_path(:edit => false) , class: "dropdown-item" %>
+              <% else %>
+                <%= link_to  t("edit"), sentences_path(:edit => true) , class: "dropdown-item" %>
+              <% end %>
 
-                      <%= link_to  t("logout"), destroy_user_session_path, method: :delete , class: "dropdown-item" %>
-                     
-                    </div>
-                  </div>
+              <%= link_to  t("profile"), edit_user_registration_path , class: "dropdown-item" %>
+
+              <%= link_to  t("logout"), destroy_user_session_path, method: :delete , class: "dropdown-item" %>
+            </ul>
+          </div>
+
+
 
                   <% else %>
 
