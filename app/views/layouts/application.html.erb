@@ -77,11 +77,11 @@ initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 
           <%= render "application/breadcrumbs" %>
 
-          <div style="margin-left:auto">
-            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          <div style="margin-left:auto" class="dropdown">
+            <button type="button" class="btn btn-secondary dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
               <span class="d-none d-sm-block" style="float:left">Hi, <%= current_user.email %></span>
             </button>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
               <% if @edit_mode %>
                 <%= link_to  t("edit"), sentences_path(:edit => false) , class: "dropdown-item" %>
               <% else %>
