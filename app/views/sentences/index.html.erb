@@ -64,7 +64,7 @@
                           <div class="col-md-2 mr-2 col-6 mb-2">
                               <div class="card bg-dark a-white">
                                   <a class="d-block view overlay zoom" id="sentence_<%= index %>" href="" onClick="voice('<%= escape_javascript sentence.sentence %>')">
-                                      <div class="card-body rounded-top" style="<%= sanitize("background-color:" +  sentence.color) %>">
+                                      <div class="card-body rounded-top" style="<%= sanitize("background-color:" +  (sentence.color|| "")) %>">
 
                                           <p class="card-text" style="height: 30pt;overflow: hidden;text-align: center;mix-blend-mode: difference;"><%= truncate(sentence.sentence, :length => 30) %></p>
                                         <div class="text-align: end;">
