@@ -3,12 +3,7 @@
 
   <div class="row mt-3">
 
-    <div class="col-md-2 rounded" id="nav-tab" role="tablist">
 
-      <%= form_tag(sentences_path, method: :get, class: "col-12 col-lg-auto") do %>
-        <%= search_field_tag(:search, params[:search], class: 'form-control',placeholder: 'Search...','aria-label':'search') %>
-      <% end %>
-    </div>
 
 
             <div class="nav nav-pills col-md-10 rounded mt-2 mt-sm-0" id="nav-tab" role="tablist">
@@ -95,7 +90,11 @@
       </section>
 
       <section class="tab-pane fade" id="nav-group" role="tabpanel" aria-labelledby="nav-group-tab">
-
+        <div class="col-md-2 rounded pt-2" id="nav-tab" role="tablist">
+          <%= form_tag(sentences_path, method: :get, class: "col-12 col-lg-auto") do %>
+            <%= search_field_tag(:search, params[:search], class: 'form-control',placeholder: 'Search...','aria-label':'search') %>
+          <% end %>
+        </div>
              <div class="row pt-2" id="group">
 
                   <%  if @folders_name.length < 2 %>

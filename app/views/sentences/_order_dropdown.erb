@@ -4,7 +4,7 @@
     Order
   </button>
   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-    <li><a class="dropdown-item  <% if session[:order] == "first" %>bg-secondary<% end %>" href="/?order=first">New senteces first</a></li>
-    <li><a class="dropdown-item <% if session[:order] != "first" %>bg-secondary<% end %>" href="/?order=last">Old sentencs first</a></li>
+    <li><%= link_to "New senteces first", request.query_parameters.merge({:order => "first"}), class: "dropdown-item" %></li>
+    <li><%= link_to "Old sentencs first", request.query_parameters.merge({:order => "last"}), class: "dropdown-item" %></li>
   </ul>
 </div>

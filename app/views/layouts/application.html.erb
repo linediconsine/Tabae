@@ -83,9 +83,9 @@ initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
             </button>
             <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
               <% if @edit_mode %>
-                <%= link_to  t("edit"), sentences_path(:edit => false) , class: "dropdown-item" %>
+                <%= link_to t("edit"), request.query_parameters.merge({:edit => false}), class: "dropdown-item" %>
               <% else %>
-                <%= link_to  t("edit"), sentences_path(:edit => true) , class: "dropdown-item" %>
+                <%= link_to t("edit"), request.query_parameters.merge({:edit => true}), class: "dropdown-item" %>
               <% end %>
 
               <%= link_to  t("profile"), edit_user_registration_path , class: "dropdown-item" %>
